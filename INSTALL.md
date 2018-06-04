@@ -1,13 +1,13 @@
 # Local Deployment and Development
 
-This tool is designed to be deployed to *heroku* ([see README.md](https://github.com/gedankenstuecke/oh_data_uploader/blob/master/README.md)). To install it
+This tool is designed to be deployed to *heroku* ([see README.md](https://github.com/OpenHumans/oh-app-demo/blob/master/README.md)). To install it
 locally to develop it further (or to deploy to non-heroku hosts) see the guidelines here:
 
 ### *Step 1: Install pipenv and needed packages*
 
 This project now [uses the recommended `pipenv` workflow for installing dependencies](http://pipenv.readthedocs.io/en/latest/).
 
-If you already have a `Python` installation on your end do the following to get started with all required Python packages do the following from the main `oh_data_uploader` folder: 
+If you already have a `Python` installation on your end do the following to get started with all required Python packages do the following from the main `oh_data_uploader` folder:
 
 ```
 pip install pipenv
@@ -15,7 +15,7 @@ pipenv install --three
 pipenv shell
 ```
 
-You should now be in a shell that is specifically set up with all the required Python packages. You can exit this shell any time by just writing `exit`. If new packages have been added to this repository any time, you can upgrade all the packages for it by typing `pipenv install` again and it will use the existing `Pipfile` and `Pipfile.lock` to install the appropriate modules. 
+You should now be in a shell that is specifically set up with all the required Python packages. You can exit this shell any time by just writing `exit`. If new packages have been added to this repository any time, you can upgrade all the packages for it by typing `pipenv install` again and it will use the existing `Pipfile` and `Pipfile.lock` to install the appropriate modules.
 
 ### *Step 2: Install Heroku Command Line Interface (CLI)*
 
