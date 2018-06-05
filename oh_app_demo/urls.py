@@ -1,4 +1,4 @@
-"""oh_data_uploader URL Configuration
+"""oh_app_demo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -21,7 +21,6 @@ urlpatterns = [
 ]
 
 urlpatterns = [
-    path('project-admin/', include('project_admin.urls')),
     path('', include('main.urls')),
     path('admin/', admin.site.urls),
 ]

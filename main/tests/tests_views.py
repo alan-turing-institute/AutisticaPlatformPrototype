@@ -1,46 +1,11 @@
+from io import BytesIO
+
 from django.test import TestCase, Client
 from django.core.management import call_command
 from django.conf import settings
-from project_admin.models import ProjectConfiguration, FileMetaData
-from open_humans.models import OpenHumansMember
+from openhumans.models import OpenHumansMember
 import markdown
 import vcr
-import json
-from io import BytesIO
-
-
-class AboutPageTestCase(TestCase):
-    """
-    Test cases for the about page.
-    """
-
-    def setUp(self):
-        """
-        Set up the app for following tests.
-        """
-        settings.DEBUG = True
-        call_command('init_proj_config')
-
-    def test_about_page(self):
-        """
-        Makes request to the about page.
-        """
-        c = Client()
-        response = c.get('/about')
-        self.assertEqual(response.status_code, 200)
-
-    def test_about_page_content(self):
-        """
-        Test whether content is rendered properly.
-        """
-        c = Client()
-        response = c.get('/about')
-        with open('_descriptions/about.md', 'r') as f:
-            content_file = f.readlines()
-        content = ""
-        for i in range(len(content_file)):
-            content += str(content_file[i])
-        self.assertIn(markdown.markdown(content).encode(), response.content)
 
 
 class IndexPageTestCase(TestCase):
@@ -53,7 +18,6 @@ class IndexPageTestCase(TestCase):
         Set up the app for following tests.
         """
         settings.DEBUG = True
-        call_command('init_proj_config')
 
     def test_index_page_content(self):
         """
@@ -61,12 +25,7 @@ class IndexPageTestCase(TestCase):
         """
         c = Client()
         response = c.get('/')
-        with open('_descriptions/index.md', 'r') as f:
-            content_file = f.readlines()
-        content = ""
-        for i in range(len(content_file)):
-            content += str(content_file[i])
-        self.assertIn(markdown.markdown(content).encode(), response.content)
+        self.assertEqual(response.status_code, 200)
 
 
 class LoginTestCase(TestCase):
@@ -77,11 +36,6 @@ class LoginTestCase(TestCase):
     def setUp(self):
         settings.DEBUG = True
         settings.OPENHUMANS_APP_BASE_URL = "http://127.0.0.1"
-        call_command('init_proj_config')
-        project_config = ProjectConfiguration.objects.get(id=1)
-        project_config.oh_client_id = "6yNYmUlXN1wLwQFQR0lnUohR1KMeVt"
-        project_config.oh_client_secret = "Y2xpZW50aWQ6Y2xpZW50c2VjcmV0"
-        project_config.save()
 
     @vcr.use_cassette('main/tests/fixtures/token_exchange_valid.yaml',
                       record_mode='none')
@@ -90,8 +44,8 @@ class LoginTestCase(TestCase):
         self.assertEqual(0,
                          OpenHumansMember.objects.all().count())
         response = c.get("/complete", {'code': 'mytestcode'})
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'main/complete.html')
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, "/overview")
         self.assertEqual(1,
                          OpenHumansMember.objects.all().count())
 
@@ -179,17 +133,6 @@ class UploadTestCase(TestCase):
         # set up project
         settings.DEBUG = True
         # settings.OPENHUMANS_APP_BASE_URL = "http://127.0.0.1"
-        call_command('init_proj_config')
-        project_config = ProjectConfiguration.objects.get(id=1)
-        project_config.oh_client_id = "6yNYmUlXN1wLwQFQR0lnUohR1KMeVt"
-        project_config.oh_client_secret = "Y2xpZW50aWQ6Y2xpZW50c2VjcmV0"
-        project_config.save()
-
-        self.oh_file = FileMetaData()
-        self.oh_file.name = "test"
-        self.oh_file.description = 'a test file'
-        self.oh_file.tags = json.dumps("my,tag,list")
-        self.oh_file.save()
 
         # set up user
         data = {"access_token": 'foo',
@@ -202,23 +145,22 @@ class UploadTestCase(TestCase):
         self.user.set_password('foobar')
         self.user.save()
 
-    def test_get_upload_old(self):
+    def test_get_upload(self):
         c = Client()
         c.login(username=self.user.username, password='foobar')
-        response = c.get("/upload_simple/")
+        response = c.get("/upload/")
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "a test file")
-        self.assertTemplateUsed(response, 'main/upload_old.html')
+        self.assertTemplateUsed(response, 'main/upload.html')
 
-    def test_upload_old_logged_out(self):
+    def test_upload_logged_out(self):
         c = Client()
-        response = c.get("/upload_simple/")
+        response = c.get("/upload/")
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, '/')
 
     @vcr.use_cassette('main/tests/fixtures/upload_file.yaml',
                       record_mode='none')
-    def test_post_upload_old(self):
+    def test_post_upload(self):
         c = Client()
         c.login(username=self.user.username, password='foobar')
         test_file = BytesIO(b'mybinarydata')

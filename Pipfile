@@ -1,19 +1,14 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [dev-packages]
-
 "flake8" = "*"
 coverage = "*"
 vcrpy = "*"
 
-
 [packages]
-
 arrow = "*"
 chardet = "*"
 dj-database-url = "*"
@@ -29,8 +24,7 @@ requests = "*"
 "urllib3" = "*"
 whitenoise = "*"
 requests-mock = "*"
-
+django-open-humans = {ref = "master", editable = true, git = "https://github.com/OpenHumans/django-open-humans.git"}
 
 [requires]
-
 python_version = "3.6"

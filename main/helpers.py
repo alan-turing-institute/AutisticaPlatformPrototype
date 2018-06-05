@@ -1,8 +1,7 @@
 import ohapi
 from django.conf import settings
-from open_humans.models import OpenHumansMember
+from openhumans.models import OpenHumansMember
 import logging
-from project_admin.models import ProjectConfiguration
 
 logger = logging.getLogger(__name__)
 OH_OAUTH2_REDIRECT_URI = '{}/complete'.format(settings.OPENHUMANS_APP_BASE_URL)
@@ -32,22 +31,32 @@ def get_create_member(data):
     return oh_member
 
 
+def oh_client_info():
+    client_info = {
+        'client_id': settings.OPENHUMANS_CLIENT_ID,
+        'client_secret': settings.OPENHUMANS_CLIENT_SECRET,
+    }
+    return client_info
+
+
 def oh_code_to_member(code):
     """
     Exchange code for token, use this to create and return OpenHumansMember.
     If a matching OpenHumansMember already exists in db, update and return it.
     """
-    proj_config = ProjectConfiguration.objects.get(id=1)
-    if not (proj_config.oh_client_secret and
-            proj_config.oh_client_id and code):
-        logger.error('OH_CLIENT_SECRET or code are unavailable')
+    if not (settings.OPENHUMANS_CLIENT_SECRET and
+            settings.OPENHUMANS_CLIENT_ID and code):
+        logger.error('OPENHUMANS_CLIENT_SECRET or ID or code are unavailable')
         return None
-    data = ohapi.api.oauth2_token_exchange(
-        client_id=proj_config.oh_client_id,
-        client_secret=proj_config.oh_client_secret,
-        code=code,
-        redirect_uri=OH_OAUTH2_REDIRECT_URI,
-        base_url=OH_BASE_URL)
+    params = {
+        'client_id': settings.OPENHUMANS_CLIENT_ID,
+        'client_secret': settings.OPENHUMANS_CLIENT_SECRET,
+        'code': code,
+        'base_url': OH_BASE_URL,
+    }
+    if settings.OPENHUMANS_REDIRECT_URI:
+        params['redirect_uri'] = settings.OPENHUMANS_REDIRECT_URI
+    data = ohapi.api.oauth2_token_exchange(**params)
     if 'error' in data:
         logger.debug('Error in token exchange: {}'.format(data))
         return None

@@ -87,9 +87,6 @@ body {
                   {% endif %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li {% if section == 'about' %} class="active" {%endif%}>
-                    <a href="{% url 'about' %}">About</a>
-                  </li>
                   {% if request.user.is_authenticated %}
                     {% if not is_admin %}
                     <li {% if section == 'list' %} class="active" {%endif%}>

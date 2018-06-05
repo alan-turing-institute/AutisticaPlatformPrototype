@@ -1,14 +1,15 @@
-from django.test import TestCase, Client, RequestFactory
-from django.core.management import call_command
-from django.conf import settings
-from open_humans.models import OpenHumansMember
-from main.views import upload_file_to_oh
-import requests_mock
 from unittest.mock import mock_open, patch
+from urllib.error import HTTPError
+
+from django.test import TestCase, Client, RequestFactory
+from django.conf import settings
+from openhumans.models import OpenHumansMember
+import requests_mock
+import vcr
+
+from main.views import upload_file_to_oh
 from main.templatetags.utilities import concatenate
 from main.helpers import get_create_member
-from urllib.error import HTTPError
-import vcr
 
 OH_BASE_URL = settings.OPENHUMANS_OH_BASE_URL
 OH_API_BASE = OH_BASE_URL + '/api/direct-sharing'
@@ -28,7 +29,6 @@ class LoginTestCase(TestCase):
         Set up the app for following tests
         """
         settings.DEBUG = True
-        call_command('init_proj_config')
         self.factory = RequestFactory()
         data = {"access_token": 'foo',
                 "refresh_token": 'bar',

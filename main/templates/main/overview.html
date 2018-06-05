@@ -8,13 +8,15 @@
       </p>
       <div class="row">
         <div class="col-md-6">
-          {% load utilities %}
-          {{overview|markdown}}
+          You can now use this project to add or remove data in Open Humans.
         </div>
         <div class="col-md-6">
           <div class="panel panel-default">
             <div class="panel-body">
-              {% include 'main/partials/upload_form.html' %}
+              <p>
+                Click here to upload a file:
+              </p>
+              <a href="{% url 'upload' %}">Upload file</a>
             </div>
           </div>
           <p>
