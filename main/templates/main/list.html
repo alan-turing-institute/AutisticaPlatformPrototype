@@ -1,7 +1,6 @@
 {% extends 'main/application.html' %}
 
 {% block content %}
-
     <h1>File List</h1>
     <p class="lead">This is a list of files you have uploaded to OpenHumans using this project.</p>
 
@@ -28,12 +27,22 @@
                 <a href="{{ file.download_url }}" class="btn btn-secondary btn-sm text-success" target="_blank">Download</a>
             </td>
             <td>
-                <a href="{% url 'delete' file_id=file.id %}" class="btn btn-secondary btn-sm text-danger">Delete</a>
+              <form action="{% url 'openhumans:delete_file'  %}" method="post">{% csrf_token %}
+                <input type="text" name="file_id" value={{ file.id }}  style="display:none"/>
+                <input type="text" name="next" value="{% url 'list' %}" style="display:none"/>
+                <button type="submit">Delete</button>
+              </form>
             </td>
         </tr>
         {% endfor %}
         </tbody>
     </table>
+
+    <form action="{% url 'openhumans:delete_all_files' %}" method="post">{% csrf_token %}
+        <input type="text" name="next" value="{% url 'list' %}" style="display:none"/>
+        <button type="submit">Delete  all files</button>
+    </form>
+
     {% else %}
     <div class="text-center">
         <p class="lead">No files uploaded</p>

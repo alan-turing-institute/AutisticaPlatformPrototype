@@ -12,10 +12,18 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+To override specific arguments of views provided by openhumans
+    1. Import the specific view : eg. from openhumans.views import delete_file
+    2. Before importing openhumans urls, override the specific url import: eg:
+    urlpatterns += [
+        url(r'^delete/(?P<file_id>\w+)/?$', delete_file.as_view(
+        scuccess_url='success', not_authorized_url='login'), name='openhumans')
+        ]
+
 """
 from django.contrib import admin
 from django.urls import include, path
-
+from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
@@ -23,4 +31,8 @@ urlpatterns = [
 urlpatterns = [
     path('', include('main.urls')),
     path('admin/', admin.site.urls),
+]
+
+urlpatterns += [
+    url('', include(('openhumans.urls', 'openhumans')))
 ]

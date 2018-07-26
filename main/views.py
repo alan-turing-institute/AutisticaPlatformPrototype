@@ -26,30 +26,6 @@ OH_DIRECT_UPLOAD_COMPLETE = OH_API_BASE + '/project/files/upload/complete/'
 OH_OAUTH2_REDIRECT_URI = '{}/complete'.format(settings.OPENHUMANS_APP_BASE_URL)
 
 
-def delete_file(request, file_id):
-    """
-    Delete specified file in Open Humans for this project member.
-    """
-    if request.user.is_authenticated and request.user.username != 'admin':
-        oh_member = request.user.openhumansmember
-        ohapi.api.delete_files(
-            project_member_id=oh_member.oh_id,
-            access_token=oh_member.get_access_token(**oh_client_info()),
-            file_id=file_id)
-        return redirect('list')
-    return redirect('index')
-
-
-def delete_all_oh_files(oh_member):
-    """
-    Delete all current project files in Open Humans for this project member.
-    """
-    ohapi.api.delete_files(
-        project_member_id=oh_member.oh_id,
-        access_token=oh_member.get_access_token(**oh_client_info()),
-        all_files=True)
-
-
 def raise_http_error(url, response, message):
     raise HTTPError(url, response.status_code, message, hdrs=None, fp=None)
 
