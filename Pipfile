@@ -1,30 +1,15 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-"flake8" = "*"
-coverage = "*"
-vcrpy = "*"
-
-[packages]
-arrow = "*"
-chardet = "*"
-dj-database-url = "*"
-django = "*"
-env-tools = "*"
-gunicorn = "*"
-idna = "*"
-markdown = "*"
-open-humans-api = "*"
-"psycopg2" = "*"
-pytz = "*"
-requests = "*"
-"urllib3" = "*"
-whitenoise = "*"
-requests-mock = "*"
-django-open-humans = {ref = "master", editable = true, git = "https://github.com/OpenHumans/django-open-humans.git"}
 
 [requires]
 python_version = "3.6"
+
+[packages]
+django = "*"
+django-heroku = "*"
+"fa64277" = {path = "/home/mad/projects/django-open-humans", editable = true}
+gunicorn = "*"

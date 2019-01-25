@@ -4,6 +4,7 @@ from urllib.error import HTTPError
 from django.test import TestCase, Client, RequestFactory
 from django.conf import settings
 from openhumans.models import OpenHumansMember
+from openhumans.settings import openhumans_settings
 import requests_mock
 import vcr
 
@@ -11,7 +12,7 @@ from main.views import upload_file_to_oh
 from main.templatetags.utilities import concatenate
 from main.helpers import get_create_member
 
-OH_BASE_URL = settings.OPENHUMANS_OH_BASE_URL
+OH_BASE_URL = openhumans_settings['OPENHUMANS_OH_BASE_URL']
 OH_API_BASE = OH_BASE_URL + '/api/direct-sharing'
 OH_DIRECT_UPLOAD = OH_API_BASE + '/project/files/upload/direct/'
 OH_DIRECT_UPLOAD_COMPLETE = OH_API_BASE + '/project/files/upload/complete/'
