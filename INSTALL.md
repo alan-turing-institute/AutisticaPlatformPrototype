@@ -57,14 +57,14 @@ Once this is done you can complete minimal setup by:
 information in Open Humans.
   * Set up an OAuth2 project, if you haven't already!
   * To get project info, click on the project name in https://www.openhumans.org/direct-sharing/projects/manage/
-* Set `OPENHUMANS_REDIRECT_URI` to `http://127.0.0.1:5000/complete`
+* Set `OPENHUMANS_APP_BASE_URL` to `http://127.0.0.1:5000`
   * Make sure this is an **exact match** to the redirect URL registered in Open Humans
 * Make sure to activate your `Python` environment with `pipenv shell`
 * Migrate your database using `heroku local:run python manage.py migrate`
 
 Now you can run the webserver of your local heroku environment using `heroku local`.
 
-This should give you a server up and running on `http://0.0.0.0:5000`.
+This should give you a server up and running on `http://127.0.0.1:5000`.
 
 ## FAQ
 
