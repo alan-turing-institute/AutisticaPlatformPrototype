@@ -1,0 +1,11 @@
+from django.db import models
+from openhumans.models import OpenHumansMember
+
+
+class PublicExperience(models.Model):
+    experience_text = models.TextField()
+    created_at = models.DateTimeField(auto_now=True)
+    experience_id = models.TextField()
+    open_humans_member = models.ForeignKey(OpenHumansMember,
+                                           blank=True, null=True,
+                                           on_delete=models.CASCADE)

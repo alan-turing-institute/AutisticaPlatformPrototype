@@ -11,5 +11,5 @@ python_version = "3.6"
 [packages]
 django = "*"
 django-heroku = "*"
-"fa64277" = {path = "/home/mad/projects/django-open-humans", editable = true}
+django-open-humans = "*" 
 gunicorn = "*"

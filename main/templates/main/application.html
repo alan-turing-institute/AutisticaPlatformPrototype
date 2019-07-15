@@ -80,6 +80,9 @@ body {
                   <li {% if section == 'home' %} class="active" {%endif%}>
                     <a href="{% url 'index' %}">Home</a>
                   </li>
+                  <li {% if section == 'public_experiences' %} class="active" {%endif%}>
+                    <a href="{% url 'public_experiences' %}">Public Experiences</a>
+                  </li>
                   {% if is_admin %}
                   <li>
                     <a href="{% url 'project-admin:home' %}">Project config</a>
@@ -90,7 +93,7 @@ body {
                   {% if request.user.is_authenticated %}
                     {% if not is_admin %}
                     <li {% if section == 'list' %} class="active" {%endif%}>
-                      <a href="{% url 'list' %}">File List</a>
+                      <a href="{% url 'list' %}">Your Experiences</a>
                     </li>
                     {% endif %}
                   <li>

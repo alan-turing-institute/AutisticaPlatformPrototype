@@ -1,0 +1,19 @@
+{% extends 'main/application.html' %}
+
+{% block content %}
+    <h1>File List</h1>
+    <p class="lead">This is a list of all public experiences</p>
+
+
+        {% for experience in experiences %}
+
+        <div class="panel panel-default">
+          <div class="panel-heading">{{experience.open_humans_member.oh_id}} - {{experience.created_at}}</div>
+          <div class="panel-body">
+            {{experience.experience_text}}
+          </div>
+        </div>
+
+        {% endfor %}
+
+{% endblock %}
