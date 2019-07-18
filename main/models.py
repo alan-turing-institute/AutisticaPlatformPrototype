@@ -9,3 +9,7 @@ class PublicExperience(models.Model):
     open_humans_member = models.ForeignKey(OpenHumansMember,
                                            blank=True, null=True,
                                            on_delete=models.CASCADE)
+    approved = models.CharField(
+        blank=False,
+        default='not reviewed',
+        max_length=50)

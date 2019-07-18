@@ -8,21 +8,18 @@
       </p>
       <div class="row">
         <div class="col-md-6">
-          You can now use this project to add or remove data in Open Humans.
+          You can now use this project to add or remove your Experiences.
         </div>
         <div class="col-md-6">
           <div class="panel panel-default">
             <div class="panel-body">
-              <p>
-                Click here to upload a file:
-              </p>
-              <a href="{% url 'upload' %}">Upload file</a>
+
+
+              {% include 'main/partials/upload_form.html' %}
             </div>
           </div>
           <p>
-            You can also take a look at the <a href="{% url 'list' %}">file list</a> or
-            visit <a href="{{ oh_proj_page }}">this project's page on Open Humans </a>
-            to see any data you've previously uploaded.
+            You can also take a look at the <a href="{% url 'list' %}">file list</a>.
           </p>
         </div>
       </div>

@@ -93,11 +93,28 @@ def list_files(request):
 
 
 def list_public_experiences(request):
-    experiences = PublicExperience.objects.all()
+    experiences = PublicExperience.objects.filter(approved='approved')
     return render(
         request,
         'main/public_experiences.html',
         context={'experiences': experiences})
+
+
+def moderate_public_experiences(request):
+    experiences = PublicExperience.objects.filter(approved='not reviewed')
+    return render(
+        request,
+        'main/moderate_public_experiences.html',
+        context={'experiences': experiences})
+
+
+def review_experience(request, experience_id):
+    experience = PublicExperience.objects.get(experience_id=experience_id)
+    print(experience)
+    experience.approved = 'approved'
+    experience.save()
+    print(experience.approved)
+    return redirect('moderate_public_experiences')
 
 
 def make_non_viewable(request, oh_file_id, file_uuid):
