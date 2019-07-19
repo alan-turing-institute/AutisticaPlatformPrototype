@@ -1,37 +1,35 @@
-# Local Deployment and Development
+# Installation & Local Deployment
 
-This app is designed to be deployable to *heroku* ([see README.md](https://github.com/OpenHumans/oh-app-demo/blob/master/README.md)).
+- [Installation & Local Deployment](#installation--local-deployment)
+    + [*Step 1: Install pipenv and needed packages*](#step-1-install-pipenv-and-needed-packages)
+    + [*Step 2: Install Heroku Command Line Interface (CLI)*](#step-2-install-heroku-command-line-interface-cli)
+    + [*Step 3: Set-up the local `.env` file*](#step-3-set-up-the-local-env-file)
+  * [FAQ](#faq)
 
-To install it locally to develop [django-open-humans](https://www.github.com/OpenHumans/django-open-humans/)
-or this app itself, see the guide below.
+To install this demo app follow the steps below
 
 ### *Step 1: Install pipenv and needed packages*
 
 This project [uses the recommended `pipenv` workflow for installing dependencies](http://pipenv.readthedocs.io/en/latest/).
 
-If you already have a `Python` installation on your end do the following to get started with all required Python packages do the following from the main `oh-app-demo` folder:
+If you already have a `Python 3.x` installation on your end do the following to get started with all required Python packages do the following from the main folder of this repository:
 
 ```
-pip install pipenv
-pipenv install --three
-pipenv shell
+pip install pipenv # install pipenv
+pipenv install --three # install dependencies
+pipenv shell #start virtual environment
 ```
 
-You should now be in a shell that is specifically set up with all the required Python packages. You can exit this shell any time by just writing `exit`. If new packages have been added to this repository any time, you can upgrade all the packages for it by typing `pipenv install` again and it will use the existing `Pipfile` and `Pipfile.lock` to install the appropriate modules.
+These steps first install `pipenv` on your system, then install all the dependencies that this specific application needs in a virtual environment and then loads this environment. After running it you should now be in a shell that is specifically set up with all the required Python packages. You can exit this shell any time by just writing `exit`.
 
-### *Step 2: Install a local copy of django-open-humans*
+**You can re-load your environment at any time by `cd`ing into the root folder of this repository and running `pipenv shell`**.
 
-For local development of [django-open-humans](https://www.github.com/OpenHumans/django-open-humans/),
-you should use `pip` to install your local version of that package in editable mode.
+If new packages have been added to this repository any time, you can upgrade all the packages for it by typing `pipenv install` again and it will use the existing `Pipfile` and `Pipfile.lock` to install the appropriate modules.
 
-While in your virtual environment for `oh-app-demo`:
-* Clone a copy of `django-open-humans` if you haven't already!
-* Navigate to your `django-open-humans` repository
-* Run `pip install -e .`
+### *Step 2: Install Heroku Command Line Interface (CLI)*
 
-### *Step 3: Install Heroku Command Line Interface (CLI)*
+This application is designed to be deployed on Heroku. To reproduce their production environment locally you should install the Heroku CLI to run this app locally, as it will make sure that the webserver works similarly and that the necessary environment variables are loaded as needed.
 
-You should install the Heroku CLI to run this app locally.
 Heroku has [installation instructions for MacOS, Windows, and Linux](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 
 If you are running MacOS the easiest way to do this is using [Homebrew](https://brew.sh/). After installing Homebrew you have two options:
@@ -49,9 +47,9 @@ brew install heroku
 The second option shown above adds the Heroku repository to your Homebrew configuration allowing you to access all of the Heroku library rather than the single `heroku` application.
 
 
-### *Step 4: Set-up the local `.env` file*
+### *Step 3: Set-up the local `.env` file*
 Once this is done you can complete minimal setup by:
-* Create an `.env` file from the example: `cp .env.sample .env`
+* Create an `.env` file from the example: `cp env.sample .env`
 * Edit `.env` to set a random string for `SECRET_KEY`
 * Set `OPENHUMANS_CLIENT_ID` and `OPENHUMANS_CLIENT_SECRET` using your project
 information in Open Humans.
@@ -70,7 +68,7 @@ This should give you a server up and running on `http://127.0.0.1:5000`.
 
 **When I run `heroku local` or use the app it crashes/complains about missing packages.**
 
-It seems that either new packages are required to run the latest version of `oh_app_demo` or that you're not in the `pipenv shell`. To check for both things run:
+It seems that either new packages are required to run the latest version of this repository or that you're not in the `pipenv shell`. To check for both things run:
 
 ```
 pipenv install
