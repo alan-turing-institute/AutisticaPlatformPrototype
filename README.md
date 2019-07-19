@@ -81,6 +81,16 @@ Logging into this app and storing data is handled through the Open Humans ecosys
 - This application [uses the `django-open-humans` Python library](https://django-open-humans.readthedocs.io/en/latest/) which provides a *Django* app that includes user management, the full OAuth2 workflow as well as additional functions to interact with the Open Humans API.
 - The `django-open-humans` library is [based on a more generic `open-humans-api` Python library](https://open-humans-api.readthedocs.io/en/latest/index.html), which can be used in non-Django based Python applications.
 
+## User Flow
+
+### Open Humans & Joining the project
+
+![](img/open-humans-interactions.png)
+
+### Demo app interactions
+
+![](img/interactions.png)
+
 ## Local Deployment and Development
 This app is written in *Python 3.6+*, uses the *Django 2.x* framework and is designed to be ultimately deployed to *Heroku*. You will need some additional modules and packages to locally experiment with this uploader template or to develop it further. A full step-by-step guide that should work for Mac OS (and with minor differences for Linux) [can be found in the INSTALL.md](https://github.com/gedankenstuecke/autistica-filemanagement-demo/blob/master/INSTALL.md).
 
