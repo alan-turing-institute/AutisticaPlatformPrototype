@@ -69,6 +69,8 @@ The `uuid` is used to correctly link publicly shared experiences to the files on
 ### Public Storage
 When a user flags an experience as publicly availble a copy of it will be deposited in this applications own database. The `Django` model to store those is found in `main/models.py`. In addition to linking it to the user, it also stores the `uuid`, linking it to the deposited data in Open Humans.
 
+**In all cases the data should be stored on Open Humans and be considered the canonical copy. The data stored in this application's database (e.g. public experiences) is just done as a way to cache the data for faster loading times**
+
 ## Limitations
 
 In this very simplistic demo app there is no proper handling of ownership of *Experiences* or of moderator roles, e.g. everyone can approve/moderate experiences in the queue.
