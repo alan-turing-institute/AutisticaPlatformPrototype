@@ -8,7 +8,6 @@ from django.contrib.auth import logout
 from django.shortcuts import redirect, render
 from .models import PublicExperience
 from openhumans.models import OpenHumansMember
-from ohapi import api
 import io
 import uuid
 
@@ -50,7 +49,7 @@ def upload(request):
     if request.method == 'POST':
         print(request.POST)
         experience_text = request.POST.get('experience')
-
+        wish_different_text = request.POST.get('wish_different')
         viewable = request.POST.get('viewable')
         if not viewable:
             viewable = 'not public'
@@ -62,6 +61,7 @@ def upload(request):
             experience_id = str(uuid.uuid1())
             output_json = {
                 'text': experience_text,
+                'wish_different': wish_different_text,
                 'timestamp': str(datetime.datetime.now())}
             output = io.StringIO()
             output.write(json.dumps(output_json))
@@ -74,9 +74,11 @@ def upload(request):
                 filename='testfile.json',
                 metadata=metadata)
             if viewable == 'viewable':
-                PublicExperience.objects.create(experience_text=experience_text,
-                                        open_humans_member=request.user.openhumansmember,
-                                        experience_id = experience_id)
+                PublicExperience.objects.create(
+                    experience_text=experience_text,
+                    difference_text=wish_different_text,
+                    open_humans_member=request.user.openhumansmember,
+                    experience_id=experience_id)
         return redirect('index')
     else:
         if request.user.is_authenticated:
@@ -151,17 +153,14 @@ def make_viewable(request, oh_file_id, file_uuid):
                 stream=output,
                 filename='testfile.json',
                 metadata=new_metadata)
-            request.user.openhumansmember.delete_single_file(file_id=oh_file_id)
-            PublicExperience.objects.create(experience_text=experience['text'],
-                                    open_humans_member=request.user.openhumansmember,
-                                    experience_id = file_uuid)
+            request.user.openhumansmember.delete_single_file(
+                file_id=oh_file_id)
+            PublicExperience.objects.create(
+                experience_text=experience['text'],
+                difference_text=experience['wish_different'],
+                open_humans_member=request.user.openhumansmember,
+                experience_id=file_uuid)
     return redirect('list')
-
-
-
-
-
-
 
 
 def make_non_research(request, oh_file_id, file_uuid):
@@ -178,7 +177,8 @@ def make_non_research(request, oh_file_id, file_uuid):
                 stream=output,
                 filename='testfile.json',
                 metadata=new_metadata)
-            request.user.openhumansmember.delete_single_file(file_id=oh_file_id)
+            request.user.openhumansmember.delete_single_file(
+                file_id=oh_file_id)
     return redirect('list')
 
 
@@ -196,5 +196,6 @@ def make_research(request, oh_file_id, file_uuid):
                 stream=output,
                 filename='testfile.json',
                 metadata=new_metadata)
-            request.user.openhumansmember.delete_single_file(file_id=oh_file_id)
+            request.user.openhumansmember.delete_single_file(
+                file_id=oh_file_id)
     return redirect('list')
