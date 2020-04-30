@@ -9,3 +9,8 @@ db.sqlite3
 dump.rdb
 .DS_Store
 .coverage
+.idea/autistica-filemanagement-demo.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
