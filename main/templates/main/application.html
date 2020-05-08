@@ -4,12 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% load static %}
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{{ config.project_title |default:"My Open Humans Project" }}</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css' rel='stylesheet'
-          type='text/css'>
+   <link href="/static/css/fa/all.min.css" rel="stylesheet">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
@@ -27,7 +28,6 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
 
-    {% load static %}
     <link rel="icon" type="image/png"
           href="{% static 'favicon.ico' %}">
      <link rel="stylesheet" type="text/css"
@@ -131,6 +131,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center logo on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="#"><i class="far fa-flag"></i></a>
             <a class="navbar-brand d-none d-lg-inline-block" href="#">
                 <svg class="site-header__logo__svg svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190"
                      height="32"#}
@@ -187,7 +188,7 @@
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
             </li>
         </ul>
     </div>
@@ -200,10 +201,7 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Guided</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">(Toggle)</a>
+                <a class="nav-link" href="#">Guided <i class="fas fa-toggle-on"></i></a>
             </li>
         </ul>
     </div>
