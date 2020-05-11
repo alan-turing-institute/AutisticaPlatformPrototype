@@ -1,137 +1,197 @@
 <html lang='en'>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% load static %}
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>{{config.project_title |default:"My Open Humans Project" }}</title>
+    <title>{{ config.project_title |default:"My Open Humans Project" }}</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+   <link href="/static/css/fa/all.min.css" rel="stylesheet">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 
-    {% load static %}
     <link rel="icon" type="image/png"
-      href="{% static 'favicon.ico' %}">
+          href="{% static 'favicon.ico' %}">
+     <link rel="stylesheet" type="text/css"
+          href="{% static 'css/main.css' %}">
 
-    <style>
-      body {
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
+</head>
 
-      .navbar {
-        margin-bottom: 20px;
-      }
+<body>
+<div class="container-lg px-0">
 
-
-      /* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
+    <!-- Static navbar -->
 
 
-.fcontainer .text-muted {
-  padding: 0 15px;
-  margin: 20px 0;
-}
-    </style>
-  </head>
+    <!-- placeholder from orignal demo -->
+    {#    <nav class="navbar navbar-expand-lg navbar-light bg-light">#}
+    {#        <a class="navbar-brand" href="{% url 'index' %}">#}
+    {#            <svg class="site-header__logo__svg svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="32"#}
+    {#                 viewBox="0 0 190 32">#}
+    {#                <defs>#}
+    {#                    <path id="a" d="M0 0h190v32H0z"></path>#}
+    {#                </defs>#}
+    {#                <clipPath id="b">#}
+    {#                    <use xlink:href="#a" overflow="visible"></use>#}
+    {#                </clipPath>#}
+    {#                <path d="M28.1 31.4L14 0 0 31.4h3.8l3.9-9.2h12.7l4 9.2h3.7zm-9-12.2H9l5-11.7 5.1 11.7zm31.8.8V.8h-3.4v19.8c0 5.7-2.5 8.1-7.3 8.1-4.9 0-7.3-2.6-7.3-8.1V.8h-3.4V20c0 7.9 3.4 12 10.7 12 7.1 0 10.7-3.8 10.7-12M72.5 3.9V.8H54.7v3.1h7.2v27.5h3.4V3.9h7.2zM79.7.8h-3.4v30.5h3.4V.8zm22.5 22.5c0-5.3-3.9-7.4-8.7-10-3.4-1.8-4.9-3.1-4.9-5.7 0-2.5 1.7-4.2 4.8-4.2 2.1 0 3.9.9 4.8 2.6l2.3-2.1c-1.6-2.4-3.9-3.6-7-3.6-5.1 0-8.4 3.1-8.4 7.5 0 3.8 1.7 6 7.2 8.7 5 2.5 6.3 4.4 6.3 6.9 0 3.6-2.3 5.4-5.9 5.4-2.8 0-5.3-1.4-6.3-4.1L84 26.8c1.4 3.3 4.6 5.2 8.6 5.2 6 0 9.6-3.4 9.6-8.7m20.1-19.4V.8h-17.8v3.1h7.2v27.5h3.4V3.9h7.2zm7.2-3.1h-3.4v30.5h3.4V.8zm30 28.6v-3.9c-2.6 2.1-6.4 3.3-9.8 3.3-7 0-12.7-5.2-12.7-12.7 0-7.3 5.9-12.6 13.3-12.6 3.1 0 6.7 1.2 9.3 3.3V2.9c-2.4-1.8-6-2.7-9.7-2.7-9.2 0-16.3 6.9-16.3 15.8 0 9.3 7 15.9 16.2 15.9 2.9.1 7.3-1 9.7-2.5m30.5 2L176 0l-14 31.4h3.8l3.9-9.2h12.7l4 9.2h3.6zm-9-12.2h-10.1L176 7.5l5 11.7z"#}
+    {#                      clip-path="url(#b)" fill="#253d7d"></path>#}
+    {#            </svg>#}
+    {#        </a>#}
+    {#        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"#}
+    {#                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">#}
+    {#            <span class="navbar-toggler-icon"></span>#}
+    {#        </button>#}
+    {##}
+    {#        <div class="collapse navbar-collapse" id="navbarToggler">#}
+    {#            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">#}
+    {#                <li class="nav-item {% if section == 'home' %} active {% endif %}">#}
+    {#                    <a class="nav-link" href="{% url 'index' %}">Home</a>#}
+    {#                </li>#}
+    {#                <li class="nav-item {% if section == 'public_experiences' %} active {% endif %}">#}
+    {#                    <a class="nav-link" href="{% url 'public_experiences' %}">Public Experiences</a>#}
+    {#                </li>#}
+    {#                <li class="nav-item {% if section == 'moderate_public_experiences' %} active {% endif %}">#}
+    {#                    <a class="nav-link" href="{% url 'moderate_public_experiences' %}">Moderate Public Experiences</a>#}
+    {#                </li>#}
+    {#                {% if request.user.is_authenticated %}#}
+    {#                    {% if not is_admin %}#}
+    {#                        <li class="nav-item">#}
+    {#                            <a class="nav-link" href="{% url 'upload' %}">Add Experience</a>#}
+    {#                        </li>#}
+    {#                        <li class="nav-item{% if section == 'list' %} active {% endif %}">#}
+    {#                            <a class="nav-link" href="{% url 'list' %}">Your Experiences</a>#}
+    {#                        </li>#}
+    {#                    {% endif %}#}
+    {#                    <li>#}
+    {#                        <form action="{% url 'logout' %}" method="post">{% csrf_token %}<input type="submit"#}
+    {#                                                                                               value="Log out"#}
+    {#                                                                                               style="margin-top:6px;"#}
+    {#                                                                                               class="btn btn-default">#}
+    {#                        </form>#}
+    {#                    </li>#}
+    {#                {% endif %}#}
+    {##}
+    {#        </div>#}
+    {#    </nav>#}
 
-  <body>
-        <div class="container">
-
-          <!-- Static navbar -->
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center logo on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="#"><i class="far fa-flag"></i>
+                <svg class="site-header__logo__svg svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146"
+                     height="25"#}
+                     viewBox="0 0 190 32">
+                    <defs>
+                        <path id="a" d="M0 0h190v32H0z"></path>
+                    </defs>
+                    <clipPath id="b">
+                        <use xlink:href="#a" overflow="visible"></use>
+                    </clipPath>
+                    <path d="M28.1 31.4L14 0 0 31.4h3.8l3.9-9.2h12.7l4 9.2h3.7zm-9-12.2H9l5-11.7 5.1 11.7zm31.8.8V.8h-3.4v19.8c0 5.7-2.5 8.1-7.3 8.1-4.9 0-7.3-2.6-7.3-8.1V.8h-3.4V20c0 7.9 3.4 12 10.7 12 7.1 0 10.7-3.8 10.7-12M72.5 3.9V.8H54.7v3.1h7.2v27.5h3.4V3.9h7.2zM79.7.8h-3.4v30.5h3.4V.8zm22.5 22.5c0-5.3-3.9-7.4-8.7-10-3.4-1.8-4.9-3.1-4.9-5.7 0-2.5 1.7-4.2 4.8-4.2 2.1 0 3.9.9 4.8 2.6l2.3-2.1c-1.6-2.4-3.9-3.6-7-3.6-5.1 0-8.4 3.1-8.4 7.5 0 3.8 1.7 6 7.2 8.7 5 2.5 6.3 4.4 6.3 6.9 0 3.6-2.3 5.4-5.9 5.4-2.8 0-5.3-1.4-6.3-4.1L84 26.8c1.4 3.3 4.6 5.2 8.6 5.2 6 0 9.6-3.4 9.6-8.7m20.1-19.4V.8h-17.8v3.1h7.2v27.5h3.4V3.9h7.2zm7.2-3.1h-3.4v30.5h3.4V.8zm30 28.6v-3.9c-2.6 2.1-6.4 3.3-9.8 3.3-7 0-12.7-5.2-12.7-12.7 0-7.3 5.9-12.6 13.3-12.6 3.1 0 6.7 1.2 9.3 3.3V2.9c-2.4-1.8-6-2.7-9.7-2.7-9.2 0-16.3 6.9-16.3 15.8 0 9.3 7 15.9 16.2 15.9 2.9.1 7.3-1 9.7-2.5m30.5 2L176 0l-14 31.4h3.8l3.9-9.2h12.7l4 9.2h3.6zm-9-12.2h-10.1L176 7.5l5 11.7z"
+                          clip-path="url(#b)" fill="#253d7d"></path>
+                </svg>
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <svg class="site-header__logo__svg svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190"
+                     height="32"#}
+                     viewBox="0 0 190 32">
+                    <defs>
+                        <path id="a" d="M0 0h190v32H0z"></path>
+                    </defs>
+                    <clipPath id="b">
+                        <use xlink:href="#a" overflow="visible"></use>
+                    </clipPath>
+                    <path d="M28.1 31.4L14 0 0 31.4h3.8l3.9-9.2h12.7l4 9.2h3.7zm-9-12.2H9l5-11.7 5.1 11.7zm31.8.8V.8h-3.4v19.8c0 5.7-2.5 8.1-7.3 8.1-4.9 0-7.3-2.6-7.3-8.1V.8h-3.4V20c0 7.9 3.4 12 10.7 12 7.1 0 10.7-3.8 10.7-12M72.5 3.9V.8H54.7v3.1h7.2v27.5h3.4V3.9h7.2zM79.7.8h-3.4v30.5h3.4V.8zm22.5 22.5c0-5.3-3.9-7.4-8.7-10-3.4-1.8-4.9-3.1-4.9-5.7 0-2.5 1.7-4.2 4.8-4.2 2.1 0 3.9.9 4.8 2.6l2.3-2.1c-1.6-2.4-3.9-3.6-7-3.6-5.1 0-8.4 3.1-8.4 7.5 0 3.8 1.7 6 7.2 8.7 5 2.5 6.3 4.4 6.3 6.9 0 3.6-2.3 5.4-5.9 5.4-2.8 0-5.3-1.4-6.3-4.1L84 26.8c1.4 3.3 4.6 5.2 8.6 5.2 6 0 9.6-3.4 9.6-8.7m20.1-19.4V.8h-17.8v3.1h7.2v27.5h3.4V3.9h7.2zm7.2-3.1h-3.4v30.5h3.4V.8zm30 28.6v-3.9c-2.6 2.1-6.4 3.3-9.8 3.3-7 0-12.7-5.2-12.7-12.7 0-7.3 5.9-12.6 13.3-12.6 3.1 0 6.7 1.2 9.3 3.3V2.9c-2.4-1.8-6-2.7-9.7-2.7-9.2 0-16.3 6.9-16.3 15.8 0 9.3 7 15.9 16.2 15.9 2.9.1 7.3-1 9.7-2.5m30.5 2L176 0l-14 31.4h3.8l3.9-9.2h12.7l4 9.2h3.6zm-9-12.2h-10.1L176 7.5l5 11.7z"
+                          clip-path="url(#b)" fill="#253d7d"></path>
+                </svg>
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="{% url 'index' %}">{{config.project_title}}</a>
-              </div>
-              <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                  <li {% if section == 'home' %} class="active" {%endif%}>
-                    <a href="{% url 'index' %}">Home</a>
-                  </li>
-                  <li {% if section == 'public_experiences' %} class="active" {%endif%}>
-                    <a href="{% url 'public_experiences' %}">Public Experiences</a>
-                  </li>
-                  <li {% if section == 'moderate_public_experiences' %} class="active" {%endif%}>
-                    <a href="{% url 'moderate_public_experiences' %}">Moderate Public Experiences</a>
-                  </li>
-                  {% if is_admin %}
-                  <li>
-                    <a href="{% url 'project-admin:home' %}">Project config</a>
-                  </li>
-                  {% endif %}
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  {% if request.user.is_authenticated %}
-                    {% if not is_admin %}
-                    <li>
-                      <a href="{% url 'upload' %}">Add Experience</a>
-                    </li>
-                    <li {% if section == 'list' %} class="active" {%endif%}>
-                      <a href="{% url 'list' %}">Your Experiences</a>
-                    </li>
-                    {% endif %}
-                  <li>
-                    <form action="{% url 'logout' %}" method="post">{% csrf_token %}<input type="submit" value="Log out" style="margin-top:6px;" class="btn btn-default"></form>
-                  </li>
-                  {% endif %}
-                </ul>
-              </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-          </nav>
-
-          {% if messages %}
-
-            {% for message in messages %}
-            <div class="alert alert-info" role="alert">
-            {{ message }}
             </div>
-            {% endfor %}
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">Sharing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Usage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Educate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-          {% endif %}
-          {% block content %}
-          {% endblock %}
+<nav class="navbar navbar-expand navbar-expand-md navbar-dark navbar-autistica-blue">
+    <div class="navbar-collapse collapse w-100 order-0 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto">"Creating better environments"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Guided <i class="fas fa-toggle-on"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        </div> <!-- /container -->
-        <footer class="footer">
-          <div class="fcontainer">
-            <p class="text-muted">
-              <a href="https://www.openhumans.org/create/">
+    {% if messages %}
+
+        {% for message in messages %}
+            <div class="alert alert-info" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+
+</div> <!-- /container -->
+<footer class="footer">
+    <div class="fcontainer">
+        <p class="text-muted">
+            <a href="https://www.openhumans.org/create/">
                 Create your own project on <i>Open Humans</i>
-              </a>
-            </p>
-          </div>
-        </footer>
-  </body>
+            </a>
+        </p>
+    </div>
+</footer>
+</body>
 </html>
