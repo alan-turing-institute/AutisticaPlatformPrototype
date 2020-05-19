@@ -34,9 +34,11 @@
           href="{% static 'css/main.css' %}">
 
 </head>
-{% include "header.html" %}
 <body>
 <div class="container-lg px-0">
+{% include "components/navbar.html" %}
+{% include "components/banner.html" %}
+
 
     {% block content %}
     {% endblock %}
