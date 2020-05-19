@@ -35,6 +35,7 @@
 
 </head>
 <body>
+<!-- all content must go inside the container -->
 <div class="container-lg px-0">
 {% include "components/navbar.html" %}
 {% include "components/banner.html" %}
@@ -43,7 +44,7 @@
     {% block content %}
     {% endblock %}
 
-</div> <!-- /container -->
 {% include "footer.html" %}
+</div> <!-- /container -->
 </body>
 </html>
