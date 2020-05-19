@@ -1,3 +1,8 @@
 .navbar-autistica-blue {
-    background-color: #1f3369 !important;
+    background-color: #DFECF9 !important;
+    color: #365389 !important;
+}
+
+.nav-link {
+    color: #203467 !important;
 }
