@@ -12,10 +12,18 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .autistica-jumbotron {
-    border-radius: 15px !important;
+    border-radius: 5px !important;
     background-color: white !important;
     border-color: #3d65b1 !important;
     border-width: 3px;
     border-style: solid;
     padding: 2rem 1rem;
+}
+
+.autistica-card {
+    border-radius: 5px !important;
+    background-color: white !important;
+    border-color: #3d65b1 !important;
+    border-width: 3px;
+    border-style: solid;
 }
