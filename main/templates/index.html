@@ -41,6 +41,15 @@
 {% include "components/banner.html" %}
 
 
+    {% if messages %}
+
+        {% for message in messages %}
+            <div class="alert alert-info" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+    {% endif %}
     {% block content %}
     {% endblock %}
 

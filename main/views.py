@@ -23,7 +23,10 @@ def index(request):
                'oh_proj_page': settings.OH_PROJ_PAGE}
     if request.user.is_authenticated:
         return redirect('overview')
-    return render(request, 'main/index.html', context=context)
+    return render(request, 'index.html', context=context)
+
+def componentGallery(request):
+    return render(request, 'gallery.html')
 
 
 def overview(request):
