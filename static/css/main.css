@@ -17,3 +17,33 @@
 .copyright {
     font-size:13px !important;
 }
+
+.banner-autistica-light-blue {
+    background-color: #DFECF9 !important;
+    color: #3d65b1 !important;
+}
+
+.nav-link {
+    color: #203467 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #1b77db !important;
+}
+
+.autistica-jumbotron {
+    border-radius: 5px !important;
+    background-color: white !important;
+    border-color: #3d65b1 !important;
+    border-width: 3px;
+    border-style: solid;
+    padding: 2rem 1rem;
+}
+
+.autistica-card {
+    border-radius: 5px !important;
+    background-color: white !important;
+    border-color: #3d65b1 !important;
+    border-width: 3px;
+    border-style: solid;
+}

@@ -35,20 +35,25 @@
 
 </head>
 <body>
-<div class="container-lg px-0">
-{% include "header.html" %}
+<!-- all content must go inside the container -->
+<div class="container-lg px-1">
+{% include "components/navbar.html" %}
+{% include "components/banner.html" %}
 
+
+    {% if messages %}
+
+        {% for message in messages %}
+            <div class="alert alert-info" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+    {% endif %}
     {% block content %}
     {% endblock %}
 
 {% include "footer.html" %}
 </div> <!-- /container -->
-{#<div>#}
-{#    <p>#}
-{#            <a href="https://www.openhumans.org/create/">#}
-{#                Create your own project on <i>Open Humans</i>#}
-{#            </a>#}
-{#    </p>#}
-{#</div>#}
 </body>
 </html>
