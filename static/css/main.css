@@ -4,20 +4,62 @@
 .navbar-autistica-grey {
     background-color: #444444 !important;
 }
-.pnospace {
-    margin:0;
-    padding:0;
-    font-size:20px;
-    line-height:40px;
+.footer-top {
+    background-color: #203467 !important;
 }
-.divnospace {
-    margin:0;
-    padding:0;
-}
-.copyright {
-    font-size:13px !important;
+.footer-bottom {
+    background-color: #454545 !important;
 }
 
+/* Computer monitor */
+
+@media screen and (min-width:1200px) {
+    .pnospace {
+        margin:0;
+        padding:15;
+        font-size:40px;
+        line-height:60px;
+    }
+    .copyrt {
+        font-size:12px;
+        font-family:Montserrat;
+        padding:16;
+        color: #C2ECF2; !important;
+    }
+}
+/* Tablet / iPad */
+
+@media screen and (min-width: 415px) and (max-width:1199px) {
+    .pnospace {
+        margin:0;
+        padding:15;
+        font-size:40px;
+        line-height:60px;
+    }
+    .copyrt {
+        font-size:12px;
+        font-family:Montserrat;
+        padding:16;
+        color: #C2ECF2; !important;
+    }
+}
+
+/* Phone - max iPhone X Max */
+
+@media screen and (max-width:414px) {
+    .pnospace {
+        margin:0;
+        padding:15;
+        font-size:40px;
+        line-height:60px;
+    }
+    .copyrt {
+        font-size:12px;
+        font-family:Montserrat;
+        padding:16;
+        color: #C2ECF2; !important;
+    }
+}
 .banner-autistica-light-blue {
     background-color: #DFECF9 !important;
     color: #3d65b1 !important;
