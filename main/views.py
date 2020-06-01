@@ -28,6 +28,9 @@ def index(request):
 def componentGallery(request):
     return render(request, 'gallery.html')
 
+def userjourney(request):
+    return render(request, 'userjourney.html')
+
 
 def overview(request):
     if request.user.is_authenticated:
