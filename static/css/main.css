@@ -1,65 +1,84 @@
 .navbar-autistica-blue {
     background-color: #1f3369 !important;
 }
+
 .navbar-autistica-grey {
     background-color: #444444 !important;
 }
+
 .footer-top {
     background-color: #203467 !important;
 }
+
 .footer-bottom {
     background-color: #454545 !important;
 }
 
-/* Computer monitor */
+/*!* Computer monitor *!*/
 
-@media screen and (min-width:1200px) {
-    .pnospace {
-        margin:0;
-        padding:15;
-        font-size:40px;
-        line-height:60px;
-    }
-    .copyrt {
-        font-size:12px;
-        font-family:Montserrat;
-        padding:16;
-        color: #C2ECF2; !important;
-    }
-}
-/* Tablet / iPad */
+/*@media screen and (min-width:1200px) {*/
+/*    .pnospace {*/
+/*        margin:0;*/
+/*        padding:15;*/
+/*        font-size:40px;*/
+/*        line-height:60px;*/
+/*    }*/
+/*    .copyrt {*/
+/*        font-size:12px;*/
+/*        font-family:Montserrat;*/
+/*        padding:16;*/
+/*        color: #C2ECF2; !important;*/
+/*    }*/
+/*}*/
+/*!* Tablet / iPad *!*/
 
-@media screen and (min-width: 415px) and (max-width:1199px) {
-    .pnospace {
-        margin:0;
-        padding:15;
-        font-size:40px;
-        line-height:60px;
-    }
-    .copyrt {
-        font-size:12px;
-        font-family:Montserrat;
-        padding:16;
-        color: #C2ECF2; !important;
-    }
-}
+/*@media screen and (min-width: 415px) and (max-width:1199px) {*/
+/*    .pnospace {*/
+/*        margin:0;*/
+/*        padding:15;*/
+/*        font-size:40px;*/
+/*        line-height:60px;*/
+/*    }*/
+/*    .copyrt {*/
+/*        font-size:12px;*/
+/*        font-family:Montserrat;*/
+/*        padding:16;*/
+/*        color: #C2ECF2; !important;*/
+/*    }*/
+/*}*/
 
 /* Phone - max iPhone X Max */
 
-@media screen and (max-width:414px) {
-    .pnospace {
-        margin:0;
-        padding:15;
-        font-size:40px;
-        line-height:60px;
-    }
-    .copyrt {
-        font-size:12px;
-        font-family:Montserrat;
-        padding:16;
-        color: #C2ECF2; !important;
-    }
+/*@media screen and (max-width:414px) {*/
+/*    .pnospace {*/
+/*        margin:0;*/
+/*        padding:15;*/
+/*        font-size:40px;*/
+/*        line-height:60px;*/
+/*    }*/
+/*    .copyrt {*/
+/*        font-size:12px;*/
+/*        font-family:Montserrat;*/
+/*        padding:16;*/
+/*        color: #C2ECF2; !important;*/
+/*    }*/
+/*}*/
+
+.pnospace {
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+    line-height: 60px;
 }
+
+.copyrt {
+    font-size: 12px;
+    font-family: Montserrat;
+    padding: 16px;
+    color: #C2ECF2;
+!important;
+}
+
 .banner-autistica-light-blue {
     background-color: #DFECF9 !important;
     color: #3d65b1 !important;
@@ -69,7 +88,7 @@
     color: #203467 !important;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     color: #1b77db !important;
 }
 
