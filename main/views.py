@@ -70,13 +70,15 @@ def circle_css_class(value):
     classmap = {
         '1': 'span_circle_green',
         '2': 'span_circle_blue',
-        '3': 'span_circle_grey'
+        '3': 'span_circle_grey',
+}
      try:
         return classmap[value]
     except:
         return 'Not found'
 
- def text_css_class(value):
+@register.filter
+def text_css_class(value):
      classmap = {
         '1': 'span_text_green',
         '2': 'span_text_blue',
