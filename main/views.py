@@ -66,15 +66,21 @@ def userjourney(request):
     return render(request, 'userjourney.html')
 
 @register.filter
-def state_css_class(value):
+def circle_css_class(value):
     classmap = {
         '1': 'span_circle_green',
         '2': 'span_circle_blue',
-        '3': 'span_circle_grey',
-        'x1': 'span_text_green',
-        'x2': 'span_text_blue',
-        'x3': 'span_text_grey',
-        'hl': 'span_hl'
+        '3': 'span_circle_grey'
+     try:
+        return classmap[value]
+    except:
+        return 'Not found'
+
+ def text_css_class(value):
+     classmap = {
+        '1': 'span_text_green',
+        '2': 'span_text_blue',
+        '3': 'span_text_grey',
 }
     try:
         return classmap[value]
