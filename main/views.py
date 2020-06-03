@@ -4,36 +4,6 @@ import datetime
 import requests
 
 from django.conf import settings
-stepperStages = [
-    {
-        "currentstate": 1,
-        "stagename": "1"
-    },
-    {
-        "currentstate": 2,
-        "stagename": "2"
-    },
-    {
-        "currentstate": 3,
-        "stagename": "3"
-    },
-    {
-        "currentstate": 11,
-        "stagename": "Login"
-    },
-    {
-        "currentstate": 12,
-        "stagename": "Define Profile"
-    },
-    {
-        "currentstate": 13,
-        "stagename": "Add Event"
-    },
-    {
-        "currentstate": 21,
-        "stagename": ""
-    }
-]
 from django.contrib.auth import logout
 from django.shortcuts import redirect, render
 from .models import PublicExperience
@@ -60,8 +30,40 @@ def componentGallery(request):
     return render(request, 'gallery.html')
 
 def userjourney(request):
+    stepperdata = {
+        "stepperStages" : [
+            {
+                "currentstate": 1,
+                "stagename": "1"
+            },
+            {
+                "currentstate": 2,
+                "stagename": "2"
+            },
+            {
+                "currentstate": 3,
+                "stagename": "3"
+            },
+            {
+                "currentstate": 11,
+                "stagename": "Login"
+            },
+            {
+                "currentstate": 12,
+                "stagename": "Define Profile"
+            },
+            {
+                "currentstate": 13,
+                "stagename": "Add Event"
+            },
+            {
+                "currentstate": 21,
+                "stagename": ""
+            }
+        ],
+    }
 
-    return render(request, 'userjourney.html')
+    return render(request, 'userjourney.html', stepperdata)
 
 
 

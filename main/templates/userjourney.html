@@ -12,16 +12,21 @@
 <body class="div_uj_parent">
 <div class="div_uj_parent">
     <div class="div_uj_arrow">&lt</div>
-    <div class="div_uj_1">1</div><div class="div_uj_login">Login</div>
+    <div class="div_uj_1">1</div><div class="div_uj_login">Logiiin</div>
     <hr class="div_hr_defprof"><div class="div_uj_2">2</div><div class="div_uj_defprof">Define Profile</div>
     <hr class="div_hr_addevent"><div class="div_uj_3">3</div><div class="div_uj_addevent">Add Event</div>
     <div class="div_uj_arrow">&gt</div>
-
+</div>
 {% load filters %}
 {% for x in stepperStages %}
+<!--   <p>Hello World3</p>-->
+{% if x.currentstate <= 3 %}
+<!--    <p>Current state: {{x.currentstate}}</p> -->
     <span class="{{x.currentstate|circle_css_class}}">{{x.stagename}}</span>
+{% endif %}
     <span style="height:1px; width:100px;background:black"></span>
- {% endfor %}
-</div>
+{% endfor %}
+
+<!--<p>Hello World12</p>-->
 </body>
 </html>
