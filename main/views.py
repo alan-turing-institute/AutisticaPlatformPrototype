@@ -11,6 +11,7 @@ from openhumans.models import OpenHumansMember
 import io
 import uuid
 
+
 logger = logging.getLogger(__name__)
 
 
@@ -29,7 +30,54 @@ def componentGallery(request):
     return render(request, 'gallery.html')
 
 def userjourney(request):
+    {
+    stepperStages:[
+        {
+            currentstate:"1",
+            stagename:"1"
+        },
+        {
+            currentstate: "2",
+            stagename: "2"
+        },
+        {
+            currentstate: "3",
+            stagename: "3"
+        },
+        {
+            currentstate: "x1",
+            stagename: "Login"
+        },
+        {
+            currentstate: "x2",
+            stagename: "Define Profile"
+        },
+        {
+            currentstate: "x3",
+            stagename: "Add Event"
+        },
+        {
+            currentstate: "hl",
+            stagename: ""
+        }
+    ]
+    }
     return render(request, 'userjourney.html')
+
+@register.filter
+def state_css_class(value):
+    classmap = {
+        '1': 'span_circle_green',
+        '2': 'span_circle_blue',
+        '3': 'span_circle_grey',
+        'x1': 'span_text_green',
+        'x2': 'span_text_blue',
+        'x3': 'span_text_grey',
+        'hl': 'span_hl'
+}
+try:
+        return classmap[value]
+
 
 
 def overview(request):
