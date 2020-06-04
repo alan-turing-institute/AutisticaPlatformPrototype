@@ -15,16 +15,27 @@
 {% load filters %}
 <form id="stepper" method="POST">{% csrf_token %}
 
-    {% for stage in stepperStages %}
-        <!--    <p>Current state: {{stage.currentstate}}</p>-->
-
-        <span
-        {% if stage.currentstate <= 3 %}
-            <span class="{{ stage.currentstate|circle_css_class }}">{{ stage.stagename }}</span>
-        {% elif stage.currentstate <= 13 %}
-            <span class="{{ stage.currentstate|text_css_class }}">{{ stage.stagename }}</span>
-        {% endif %}
-        <span style="height:1px; width:100px;background:black"></span>
+    {% for step in stepper %}
+        <div class="step">
+            {% if activeStepper == forloop.counter %}
+                <span class="stepCircle active">{{ step.id }}</span>
+                <input type="hidden" id="currentStep" name="currentStep" value="3487">
+                <input type="hidden" id="nextStep" name="nextStep" value="3487">
+            {% elif activeStepper > forloop.counter %}
+                <span class="stepCircle completed">{{ step.id }}</span>
+            {% elif activeStepper < forloop.counter %}
+                <span class="stepCircle blocked">{{ step.id }}</span>
+            {%  endif %}
+            <span class="stepLabel">{{ step.label }}</span>
+        </div>
+{#        <p>{{ activeStepper }}</p>#}
+{#        <p>{{ forloop.counter }}</p>#}
+{#        {% if stage.currentstate <= 3 %}#}
+{#            <span class="{{ stage.currentstate|circle_css_class }}">{{ stage.stagename }}</span>#}
+{#        {% elif stage.currentstate <= 13 %}#}
+{#            <span class="{{ stage.currentstate|text_css_class }}">{{ stage.stagename }}</span>#}
+{#        {% endif %}#}
+{#        <span style="height:1px; width:100px;background:black"></span>#}
     {% endfor %}
 
     <button type="submit" form="stepper" value="Submit">next stage</button>

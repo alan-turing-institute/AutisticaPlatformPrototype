@@ -26,3 +26,7 @@ def text_css_class(value):
 
     except:
         return 'Not found'
+
+
+# @register.filter
+# def active_stepper(value):

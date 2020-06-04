@@ -60,137 +60,32 @@ h1, h2, h3, h4, h5, h6 {
     border-style: solid;
 }
 
-.div_uj_parent {
-    width: 100%;
-    background-color: aliceblue !important;
- }
-.div_uj_arrow {
-    color: grey !important;
-    float: left;
-    font-size 20px !important;
-    transform: scale(1,1.5);
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 4px;
+.step {
+    display: inline-block;
+    padding: 15px;
 }
-.div_uj_1 {
 
-    float: left;
-    height 20px;
-    width 20px;
-    border-radius: 50% !important;
-    background-color: green  !important;
-    color: white !important;
-    padding: 5px 10px 5px 10px;
-    margin-top: 0;
-}
-.div_uj_login {
-    color: green !important;
-    float: left;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
-}
-.div_hr_defprof {
-    float: left;
-    border-color: blue !important;
-    border-height 1px;
+.stepCircle {
+    border-radius: 100%;
     width: 30px;
-    margin-right: 5px;
-    margin-top: 15px;   }
-.div_uj_2 {
-
-    float: left;
-    height 20px;
-    width 20px;
-    border-radius: 50% !important;
-    background-color: blue  !important;
-    color: white !important;
-    padding: 5px 10px 5px 10px;
-}
-.div_uj_defprof {
-    color: grey !important;
-    float: left;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
-}
-.div_hr_addevent {
-    float: left;
-    color: grey !important;
-    width: 30px;
-    margin-right: 5px;
-    margin-top: 15px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
 }
 
-.div_uj_3 {
-    float: left;
-    height 15px;
-    width 15px;
-    border-radius: 50% !important;
-    border-style: solid;
-    border-width: 2px;
-    border-color: grey;
-    color: grey !important;
-    padding: 3px 7px 3px 7px;
+.stepCircle.completed {
+    background-color: green;
+    color: white;
 }
-.div_uj_addevent {
-    color: grey !important;
-    float: left;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
-}
-.span_circle_green {
 
-    float: left;
-    height 20px;
-    width 20px;
-    border-radius: 50% !important;
-    background-color: green  !important;
-    color: white !important;
-    padding: 5px 10px 5px 10px;
-    margin-top: 0;
+.stepCircle.active {
+    background-color: blue;
+    color: white;
 }
-.span_text_green {
-    color: green !important;
-    float: left;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
-}
-.span_circle_blue {
 
-    float: left;
-    height 20px;
-    width 20px;
-    border-radius: 50% !important;
-    background-color: blue  !important;
-    color: white !important;
-    padding: 5px 10px 5px 10px;
-}
-.span_text_blue {
-    color: grey !important;
-    float: left;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
-}
-.span_circle_grey {
-    float: left;
-    height 15px;
-    width 15px;
-    border-radius: 50% !important;
-    border-style: solid;
-    border-width: 2px;
-    border-color: grey;
-    color: grey !important;
-    padding: 3px 7px 3px 7px;
-}
-.span_text_grey {
-    color: grey !important;
-    float: left;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-top: 5px;
+.stepCircle.blocked {
+    background-color: gray;
+    color: white;
 }

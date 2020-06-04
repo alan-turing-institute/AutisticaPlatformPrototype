@@ -11,7 +11,6 @@ from openhumans.models import OpenHumansMember
 import io
 import uuid
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -26,54 +25,40 @@ def index(request):
         return redirect('overview')
     return render(request, 'index.html', context=context)
 
+
 def componentGallery(request):
     return render(request, 'gallery.html')
 
+
 def userjourney(request):
+    # nextStep =
     stepper_data = request.POST.get("stepper_data", None)
-    if request.POST:
-        print("post")
+    print(stepper_data)
+    if stepper_data is None:
+        stepper_data = {
+            "activeStepper" : 1,
+            "stepper": [
+                {
+                    "id": 1,
+                    "label": "Login"
+                },
+                {
+                    "id": 2,
+                    "label": "Define Profile"
+                },
+                {
+                    "id": 3,
+                    "label": "Add Event"
+                }
+            ],
+        }
+    if request.method == "POST":
         return render(request, 'userjourney.html', stepper_data)
-    elif request.GET:
-        print("get")
+    elif request.method == "GET":
         return render(request, 'userjourney.html', stepper_data)
     else:
         print("error")
         return render(request, 'userjourney.html', stepper_data)
-    # stepperdata = {
-    #     "stepperStages" : [
-    #         {
-    #             "currentstate": 1,
-    #             "stagename": "1"
-    #         },
-    #         {
-    #             "currentstate": 11,
-    #             "stagename": "Login"
-    #         },
-    #         {
-    #             "currentstate": 2,
-    #             "stagename": "2"
-    #         },
-    #         {
-    #             "currentstate": 12,
-    #             "stagename": "Define Profile"
-    #         },
-    #         {
-    #             "currentstate": 3,
-    #             "stagename": "3"
-    #         },
-    #         {
-    #             "currentstate": 13,
-    #             "stagename": "Add Event"
-    #         },
-    #         {
-    #             "currentstate": 21,
-    #             "stagename": ""
-    #         }
-    #     ],
-    # }
-
-
 
 
 def overview(request):
