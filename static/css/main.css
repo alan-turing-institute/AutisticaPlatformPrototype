@@ -24,10 +24,8 @@
 
 .copyrt {
     font-size: 12px;
-    font-family: Montserrat;
     padding: 16px;
     color: #C2ECF2;
-!important;
 }
 
 .banner-autistica-light-blue {
@@ -58,34 +56,4 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #3d65b1 !important;
     border-width: 3px;
     border-style: solid;
-}
-
-.step {
-    display: inline-block;
-    padding: 15px;
-}
-
-.stepCircle {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    display: inline-block;
-    text-align: center;
-    margin: 5px;
-}
-
-.stepCircle.completed {
-    background-color: green;
-    color: white;
-}
-
-.stepCircle.active {
-    background-color: blue;
-    color: white;
-}
-
-.stepCircle.blocked {
-    background-color: grey;
-    color: white;
 }
