@@ -37,20 +37,20 @@ def userjourney(request):
                 "stagename": "1"
             },
             {
-                "currentstate": 2,
-                "stagename": "2"
-            },
-            {
-                "currentstate": 3,
-                "stagename": "3"
-            },
-            {
                 "currentstate": 11,
                 "stagename": "Login"
             },
             {
+                "currentstate": 2,
+                "stagename": "2"
+            },
+            {
                 "currentstate": 12,
                 "stagename": "Define Profile"
+            },
+            {
+                "currentstate": 3,
+                "stagename": "3"
             },
             {
                 "currentstate": 13,

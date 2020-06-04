@@ -18,11 +18,13 @@
     <div class="div_uj_arrow">&gt</div>
 </div>
 {% load filters %}
+<p>&nbsp</p>
 {% for x in stepperStages %}
-<!--   <p>Hello World3</p>-->
+<!--    <p>Current state: {{x.currentstate}}</p>-->
 {% if x.currentstate <= 3 %}
-<!--    <p>Current state: {{x.currentstate}}</p> -->
     <span class="{{x.currentstate|circle_css_class}}">{{x.stagename}}</span>
+{% elif x.currentstate <= 13 %}
+    <span class="{{x.currentstate|text_css_class}}">{{x.stagename}}</span>
 {% endif %}
     <span style="height:1px; width:100px;background:black"></span>
 {% endfor %}

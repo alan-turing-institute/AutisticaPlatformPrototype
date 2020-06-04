@@ -17,9 +17,9 @@ def circle_css_class(value):
 @register.filter
 def text_css_class(value):
     classmap = {
-        '11': 'span_text_green',
-        '12': 'span_text_blue',
-        '13': 'span_text_grey'
+        11: 'span_text_green',
+        12: 'span_text_blue',
+        13: 'span_text_grey'
 }
     try:
         return classmap[value]
