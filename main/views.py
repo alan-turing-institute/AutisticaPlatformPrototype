@@ -29,7 +29,6 @@ def index(request):
 def componentGallery(request):
     return render(request, 'gallery.html')
 
-
 def userjourney(request):
     stepper_data = request.POST.get("stepper_data", None)
     print(stepper_data)
@@ -52,8 +51,9 @@ def userjourney(request):
             ],
         }
     if request.method == "POST":
-        nextStep = request.POST.get('nextStep')
+        nextStep = int(request.POST.get('nextStep'))
         stepper_data['activeStepper'] = nextStep
+        print(stepper_data)
         return render(request, 'userjourney.html', stepper_data)
     elif request.method == "GET":
         return render(request, 'userjourney.html', stepper_data)
