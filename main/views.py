@@ -51,10 +51,12 @@ def userjourney(request):
             ],
         }
     if request.method == "POST":
-        nextStep = int(request.POST.get('nextStep'))
-        stepper_data['activeStepper'] = nextStep
-        print(stepper_data)
-        return render(request, 'userjourney.html', stepper_data)
+        if request.POST.get('nextStep') == 'end':
+            
+        else:
+            nextStep = int(request.POST.get('nextStep'))
+            stepper_data['activeStepper'] = nextStep
+            return render(request, 'userjourney.html', stepper_data)
     elif request.method == "GET":
         return render(request, 'userjourney.html', stepper_data)
     else:
