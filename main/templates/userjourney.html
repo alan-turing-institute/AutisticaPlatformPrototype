@@ -16,6 +16,7 @@
 <form id="stepper" method="POST">{% csrf_token %}
 <input type="hidden" id="currentStep" name="currentStep" value="{{ activeStepper }}">
                 <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStepper|next_stepper}}">
+        <span><</span>
     {% for step in stepper %}
         <div class="step">
             {% if activeStepper == forloop.counter %}
@@ -27,15 +28,11 @@
             {%  endif %}
             <span class="stepLabel">{{ step.label }}</span>
         </div>
-{#        <p>{{ activeStepper }}</p>#}
-{#        <p>{{ forloop.counter }}</p>#}
-{#        {% if stage.currentstate <= 3 %}#}
-{#            <span class="{{ stage.currentstate|circle_css_class }}">{{ stage.stagename }}</span>#}
-{#        {% elif stage.currentstate <= 13 %}#}
-{#            <span class="{{ stage.currentstate|text_css_class }}">{{ stage.stagename }}</span>#}
-{#        {% endif %}#}
-{#        <span style="height:1px; width:100px;background:black"></span>#}
+        {% if forloop.counter < stepper|length %}
+            <span style="height: 2px; width: 50px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
+        {% endif %}
     {% endfor %}
+        <span>></span>
 
     <button type="submit" form="stepper" value="Submit">next stage</button>
 
