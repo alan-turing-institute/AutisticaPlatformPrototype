@@ -29,23 +29,24 @@ def index(request):
 def componentGallery(request):
     return render(request, 'gallery.html')
 
+
 def userjourney(request):
     stepper_data = {
-            "stepper": [
-                {
-                    "id": 1,
-                    "label": "Login"
-                },
-                {
-                    "id": 2,
-                    "label": "Define Profile"
-                },
-                {
-                    "id": 3,
-                    "label": "Add Event"
-                }
-            ],
-        }
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Event"
+            }
+        ],
+    }
     if request.method == "POST":
         if request.POST.get('nextStep') == 'end':
             nextStep = request.POST.get('nextStep')
