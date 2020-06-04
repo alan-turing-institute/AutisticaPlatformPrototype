@@ -14,13 +14,12 @@
 
 {% load filters %}
 <form id="stepper" method="POST">{% csrf_token %}
-
+<input type="hidden" id="currentStep" name="currentStep" value="{{ activeStepper }}">
+                <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStepper|next_stepper}}">
     {% for step in stepper %}
         <div class="step">
             {% if activeStepper == forloop.counter %}
                 <span class="stepCircle active">{{ step.id }}</span>
-                <input type="hidden" id="currentStep" name="currentStep" value="3487">
-                <input type="hidden" id="nextStep" name="nextStep" value="3487">
             {% elif activeStepper > forloop.counter %}
                 <span class="stepCircle completed">{{ step.id }}</span>
             {% elif activeStepper < forloop.counter %}
