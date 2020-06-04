@@ -30,40 +30,48 @@ def componentGallery(request):
     return render(request, 'gallery.html')
 
 def userjourney(request):
-    stepperdata = {
-        "stepperStages" : [
-            {
-                "currentstate": 1,
-                "stagename": "1"
-            },
-            {
-                "currentstate": 11,
-                "stagename": "Login"
-            },
-            {
-                "currentstate": 2,
-                "stagename": "2"
-            },
-            {
-                "currentstate": 12,
-                "stagename": "Define Profile"
-            },
-            {
-                "currentstate": 3,
-                "stagename": "3"
-            },
-            {
-                "currentstate": 13,
-                "stagename": "Add Event"
-            },
-            {
-                "currentstate": 21,
-                "stagename": ""
-            }
-        ],
-    }
-
-    return render(request, 'userjourney.html', stepperdata)
+    stepper_data = request.POST.get("stepper_data", None)
+    if request.POST:
+        print("post")
+        return render(request, 'userjourney.html', stepper_data)
+    elif request.GET:
+        print("get")
+        return render(request, 'userjourney.html', stepper_data)
+    else:
+        print("error")
+        return render(request, 'userjourney.html', stepper_data)
+    # stepperdata = {
+    #     "stepperStages" : [
+    #         {
+    #             "currentstate": 1,
+    #             "stagename": "1"
+    #         },
+    #         {
+    #             "currentstate": 11,
+    #             "stagename": "Login"
+    #         },
+    #         {
+    #             "currentstate": 2,
+    #             "stagename": "2"
+    #         },
+    #         {
+    #             "currentstate": 12,
+    #             "stagename": "Define Profile"
+    #         },
+    #         {
+    #             "currentstate": 3,
+    #             "stagename": "3"
+    #         },
+    #         {
+    #             "currentstate": 13,
+    #             "stagename": "Add Event"
+    #         },
+    #         {
+    #             "currentstate": 21,
+    #             "stagename": ""
+    #         }
+    #     ],
+    # }
 
 
 

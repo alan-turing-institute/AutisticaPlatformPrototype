@@ -7,27 +7,30 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
-   <title>User Journey</title>
- </head>
-<body class="div_uj_parent">
-<div class="div_uj_parent">
-    <div class="div_uj_arrow">&lt</div>
-    <div class="div_uj_1">1</div><div class="div_uj_login">Logiiin</div>
-    <hr class="div_hr_defprof"><div class="div_uj_2">2</div><div class="div_uj_defprof">Define Profile</div>
-    <hr class="div_hr_addevent"><div class="div_uj_3">3</div><div class="div_uj_addevent">Add Event</div>
-    <div class="div_uj_arrow">&gt</div>
-</div>
+    <title>User Journey</title>
+</head>
+
+<body>
+
 {% load filters %}
-<p>&nbsp</p>
-{% for x in stepperStages %}
-<!--    <p>Current state: {{x.currentstate}}</p>-->
-{% if x.currentstate <= 3 %}
-    <span class="{{x.currentstate|circle_css_class}}">{{x.stagename}}</span>
-{% elif x.currentstate <= 13 %}
-    <span class="{{x.currentstate|text_css_class}}">{{x.stagename}}</span>
-{% endif %}
-    <span style="height:1px; width:100px;background:black"></span>
-{% endfor %}
+<form id="stepper" method="POST">{% csrf_token %}
+
+    {% for stage in stepperStages %}
+        <!--    <p>Current state: {{stage.currentstate}}</p>-->
+
+        <span
+        {% if stage.currentstate <= 3 %}
+            <span class="{{ stage.currentstate|circle_css_class }}">{{ stage.stagename }}</span>
+        {% elif stage.currentstate <= 13 %}
+            <span class="{{ stage.currentstate|text_css_class }}">{{ stage.stagename }}</span>
+        {% endif %}
+        <span style="height:1px; width:100px;background:black"></span>
+    {% endfor %}
+
+    <button type="submit" form="stepper" value="Submit">next stage</button>
+
+</form>
+
 
 <!--<p>Hello World12</p>-->
 </body>
