@@ -5,6 +5,10 @@
         display: inline-block;
         padding: 15px;
     }
+    
+    .stepLabel {
+        display: inline-block;
+    }
 
     .stepCircle {
         border-radius: 100%;
@@ -32,6 +36,16 @@
         border-width: 2px;
         border-color: grey;
 
+    .stepLabel.completed {
+        textcolor: green;
+    }
+
+    .stepLabel.active {
+        color: blue !important;
+    }
+
+    .stepLabel.blocked {
+        textcolor: grey;
     }
 </style>
 
@@ -51,14 +65,18 @@
          <div class="step">
              {% if  request.session.activeStepper == 'end' %}
                  <span class="stepCircle completed">{{ step.id }}</span>
+                 <span class="stepLabel completed">{{ step.label }}</span>
              {% elif request.session.activeStepper == forloop.counter %}
                  <span class="stepCircle active">{{ step.id }}</span>
+                 <span class="stepLabel active">{{ step.label }}</span>
              {% elif request.session.activeStepper > forloop.counter %}
                  <span class="stepCircle completed">{{ step.id }}</span>
+                 <span class="stepLabel completed">{{ step.label }}</span>
              {% elif request.session.activeStepper < forloop.counter %}
                  <span class="stepCircle blocked">{{ step.id }}</span>
+                 <span class="stepLabel blocked">{{ step.label }}</span>
              {% endif %}
-             <span class="stepLabel">{{ step.label }}</span>
+
          </div>
          {% if forloop.counter < stepper|length %}
              <span style="height: 2px; width: 35px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
