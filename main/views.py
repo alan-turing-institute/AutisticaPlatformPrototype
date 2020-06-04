@@ -48,7 +48,7 @@ def userjourney(request):
         ],
     }
     if request.method == "POST":
-        print("atcivestepper ", stepper_data['activeStepper'], " nextsetp ", request.POST.get('nextStep'))
+#        print("atcivestepper ", stepper_data['activeStepper'], " nextsetp ", request.POST.get('nextStep'))
         if request.POST.get('nextStep') == 'end':
             nextStep = request.POST.get('nextStep')
             request.session['activeStepper'] = nextStep

@@ -45,32 +45,31 @@
         <input type="hidden" id="nextStep" name="nextStep" value="{{ request.session.activeStepper|next_stepper }}">
     {% endif %}
 
-    {% if request.session.activeStepper == 'end' %}
-        <p>Finished</p>
-    {% else %}
+     <span><</span>
 
-        <span><</span>
-
-        {% for step in stepper %}
-            <div class="step">
-                {% if request.session.activeStepper == forloop.counter %}
-                    <span class="stepCircle active">{{ step.id }}</span>
-                {% elif request.session.activeStepper > forloop.counter %}
-                    <span class="stepCircle completed">{{ step.id }}</span>
-                {% elif request.session.activeStepper < forloop.counter %}
-                    <span class="stepCircle blocked">{{ step.id }}</span>
-                {% endif %}
-                <span class="stepLabel">{{ step.label }}</span>
-            </div>
-            {% if forloop.counter < stepper|length %}
-                <span style="height: 2px; width: 35px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
-            {% endif %}
-        {% endfor %}
-        <span>></span>
+   {% for step in stepper %}
+         <div class="step">
+             {% if  request.session.activeStepper == 'end' %}
+                 <span class="stepCircle completed">{{ step.id }}</span>
+             {% elif request.session.activeStepper == forloop.counter %}
+                 <span class="stepCircle active">{{ step.id }}</span>
+             {% elif request.session.activeStepper > forloop.counter %}
+                 <span class="stepCircle completed">{{ step.id }}</span>
+             {% elif request.session.activeStepper < forloop.counter %}
+                 <span class="stepCircle blocked">{{ step.id }}</span>
+             {% endif %}
+             <span class="stepLabel">{{ step.label }}</span>
+         </div>
+         {% if forloop.counter < stepper|length %}
+             <span style="height: 2px; width: 35px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
+         {% endif %}
+   {% endfor %}
+     <span>></span>
+   {% if request.session.activeStepper != 'end' %}
         {% if request.session.activeStepper|next_stepper == stepper|length|next_stepper %}
-            <button type="submit" form="stepper" value="Submit">Finish</button>
+             <button type="submit" form="stepper" value="Submit">Finish</button>
         {% else %}
             <button type="submit" form="stepper" value="Submit">Next</button>
         {% endif %}
-    {% endif %}
+   {% endif %}
 </form>
