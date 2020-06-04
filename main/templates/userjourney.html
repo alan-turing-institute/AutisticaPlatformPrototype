@@ -1,22 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    {% load static %}
-
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
-    <title>User Journey</title>
-</head>
-
-<body>
-
 {% load filters %}
+
+<style>
+    .step {
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .stepCircle {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .stepCircle.completed {
+        background-color: green;
+        color: white;
+    }
+
+    .stepCircle.active {
+        background-color: blue;
+        color: white;
+    }
+
+    .stepCircle.blocked {
+        background-color: gray;
+        color: white;
+    }
+</style>
+
 <form id="stepper" method="POST">{% csrf_token %}
-<input type="hidden" id="currentStep" name="currentStep" value="{{ activeStepper }}">
-                <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStepper|next_stepper}}">
-        <span><</span>
+    <input type="hidden" id="currentStep" name="currentStep" value="{{ activeStepper }}">
+    <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStepper|next_stepper }}">
+    <span><</span>
     {% for step in stepper %}
         <div class="step">
             {% if activeStepper == forloop.counter %}
@@ -25,20 +44,15 @@
                 <span class="stepCircle completed">{{ step.id }}</span>
             {% elif activeStepper < forloop.counter %}
                 <span class="stepCircle blocked">{{ step.id }}</span>
-            {%  endif %}
+            {% endif %}
             <span class="stepLabel">{{ step.label }}</span>
         </div>
         {% if forloop.counter < stepper|length %}
             <span style="height: 2px; width: 50px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
         {% endif %}
     {% endfor %}
-        <span>></span>
+    <span>></span>
 
     <button type="submit" form="stepper" value="Submit">next stage</button>
 
 </form>
-
-
-<!--<p>Hello World12</p>-->
-</body>
-</html>
