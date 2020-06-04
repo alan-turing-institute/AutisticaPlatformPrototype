@@ -29,27 +29,33 @@ def index(request):
 def componentGallery(request):
     return render(request, 'gallery.html')
 
+
 def userjourney(request):
-    stepper_data = request.POST.get("stepper_data", None)
-    if stepper_data is None:
-        stepper_data = {
-            "activeStepper" : 1,
-            "stepper": [
-                {
-                    "id": 1,
-                    "label": "Login"
-                },
-                {
-                    "id": 2,
-                    "label": "Define Profile"
-                },
-                {
-                    "id": 3,
-                    "label": "Add Event"
-                }
-            ],
-        }
+#   stepper_data = request.POST.get("stepper_data", None)
+#   if stepper_data is None:
+
+    stepper_data = {
+        "activeStepper": 1,
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Event"
+            }
+        ],
+    }
+
+
+
     if request.method == "POST":
+        print("atcivestepper ", stepper_data['activeStepper'], " nextsetp ", request.POST.get('nextStep'))
         if request.POST.get('nextStep') == 'end':
             print('end')
             print(stepper_data)
@@ -63,7 +69,6 @@ def userjourney(request):
     else:
         print("error")
         return render(request, 'userjourney.html', stepper_data)
-
 
 def overview(request):
     if request.user.is_authenticated:

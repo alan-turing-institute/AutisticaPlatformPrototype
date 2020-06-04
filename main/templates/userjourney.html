@@ -27,8 +27,11 @@
     }
 
     .stepCircle.blocked {
-        background-color: gray;
-        color: white;
+        color: grey;
+        border-style: solid;
+        border-width: 2px;
+        border-color: grey;
+
     }
 </style>
 
@@ -45,6 +48,7 @@
     {% else %}
 
         <span><</span>
+
         {% for step in stepper %}
             <div class="step">
                 {% if activeStepper == forloop.counter %}
