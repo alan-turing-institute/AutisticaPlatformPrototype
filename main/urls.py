@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^moderate_public_experiences/?$', views.moderate_public_experiences, name='moderate_public_experiences'),
     url(r'^upload/?$', views.upload, name='upload'),
     url(r'^list/?$', views.list_files, name='list'),
+    url(r'^userjourney/?$', views.userjourney, name='userjourney'),
     path('review_experience/<experience_id>/',
          views.review_experience,
          name='review_experience'),

@@ -8,13 +8,12 @@
 
 .footer-top {
     background-color: #203467 !important;
-    height: 101px !important;
 }
 
 .footer-bottom {
     background-color: #454545 !important;
-    height: 54px !important;
 }
+
 
 .pnospace {
     margin: 0;
@@ -26,7 +25,7 @@
 .copyrt {
     font-size: 12px;
     padding: 16px;
-    color: #C2ECF2 !important;
+    color: #C2ECF2;
 }
 
 .banner-autistica-light-blue {
