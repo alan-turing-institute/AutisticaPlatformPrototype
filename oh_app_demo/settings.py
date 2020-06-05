@@ -171,3 +171,8 @@ STATICFILES_DIRS = [
 # if ON_HEROKU:
 #     SECURE_SSL_REDIRECT = True
 #     django_heroku.settings(locals())
+
+# REMOVE IN PROD
+X_FRAME_OPTIONS = 'ALLOWALL'
+
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']

@@ -40,13 +40,13 @@
 
     <!-- This is the component gallery -->
     <!-- copy below, and uncomment to include a new component -->
-{#    <br>#}
-{#    <h3>#}
-{#        Component title #}
-{#        <small class="text-muted">Component Description</small>#}
-{#    </h3>#}
-{#    <!-- Static navbar -->#}
-{#    {% include 'path/to/html' %}#}
+    {#    <br>#}
+    {#    <h3>#}
+    {#        Component title #}
+    {#        <small class="text-muted">Component Description</small>#}
+    {#    </h3>#}
+    {#    <!-- Static navbar -->#}
+    {#    {% include 'path/to/html' %}#}
     <br>
     <h3>
         Navigation Bar
@@ -79,13 +79,19 @@
     <!-- Newsletter Cards -->
     {% include 'main/../components/newsletterCards.html' %}
 
-        <br>
+    <br>
     <h3>
         Footer
         <small class="text-muted">Component Description</small>
     </h3>
     <!-- Newsletter Cards -->
     {% include 'main/../components/footer.html' %}
+    <h3>
+        User Journey Stepped Control
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- User Journey Stepped Control -->
+    <iframe src="http://{{ request.get_host }}/userjourney" title="User Journey" width="720" frameBorder="0"></iframe>
 
 
 </div> <!-- /container -->
