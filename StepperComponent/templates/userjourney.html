@@ -57,7 +57,7 @@
         <input type="hidden" id="nextStep" name="nextStep" value="end">
 <!--        <p> last step </p> -->
     {% elif activeStep == 'end' %}
-        <input type="hidden" id="nextStep" name="nextStep" value="done">
+        <input type="hidden" id="nextStep" name="nextStep" value="end">
     {% else %}
         <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStep|next_stepper }}">
     {% endif %}

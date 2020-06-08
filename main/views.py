@@ -11,6 +11,8 @@ from openhumans.models import OpenHumansMember
 import io
 import uuid
 
+from StepperComponent import Stepper
+
 logger = logging.getLogger(__name__)
 
 
@@ -25,22 +27,8 @@ def index(request):
         return redirect('overview')
     return render(request, 'index.html', context=context)
 
-def stepper(request, stepper_data):
-    if request.method == "POST":
-        if request.POST.get('nextStep') == 'end':
-            nextStep = request.POST.get('nextStep')
-            request.session['activeStepper'] = nextStep
-        else:
-            nextStep = int(request.POST.get('nextStep'))
-            request.session['activeStepper'] = nextStep
-    elif request.method == "GET":
-        request.session['activeStepper'] = 1
-    else:
-        print("error")
-    return stepper_data
-
 def componentGallery(request):
-    step_data = {
+    test_step_data = {
         "stepper": [
             {
                 "id": 1,
@@ -56,7 +44,12 @@ def componentGallery(request):
             }
         ],
     }
-    stepper_data = stepper(request, step_data)
+    stepper_object = Stepper.Stepper(test_step_data, request)
+
+    stepper_object.update()
+
+    stepper_data = stepper_object.get_stepper_data()
+
     return render(request, 'gallery.html', stepper_data)
 
 

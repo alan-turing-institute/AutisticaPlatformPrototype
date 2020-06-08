@@ -93,7 +93,7 @@
     <!-- User Journey Stepped Control -->
     {% load userJourney %}
     <form id="stepper" method="POST">{% csrf_token %}
-        {% display_user_journey request.session.activeStepper stepper%}
+        {% display_user_journey request.session.activeStepper stepper %}
     </form>
 
 </div> <!-- /container -->

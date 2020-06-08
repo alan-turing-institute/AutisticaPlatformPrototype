@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class UserjourneyConfig(AppConfig):
-    name = 'userJourney'
+    name = 'StepperComponent'

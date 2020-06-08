@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'openhumans',
     'main.apps.Main',
-    'userJourney.apps.UserjourneyConfig'
+    'StepperComponent.apps.UserjourneyConfig'
 ]
 
 MIDDLEWARE = [
