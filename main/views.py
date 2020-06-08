@@ -11,6 +11,8 @@ from openhumans.models import OpenHumansMember
 import io
 import uuid
 
+from StepperComponent import Stepper
+
 logger = logging.getLogger(__name__)
 
 
@@ -25,9 +27,30 @@ def index(request):
         return redirect('overview')
     return render(request, 'index.html', context=context)
 
-
 def componentGallery(request):
-    return render(request, 'gallery.html')
+    test_step_data = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Event"
+            }
+        ],
+    }
+    stepper_object = Stepper.Stepper(test_step_data, request)
+
+    stepper_object.update()
+
+    stepper_data = stepper_object.get_stepper_data()
+
+    return render(request, 'gallery.html', stepper_data)
 
 
 def userjourney(request):
