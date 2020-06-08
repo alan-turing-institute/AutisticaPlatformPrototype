@@ -25,9 +25,39 @@ def index(request):
         return redirect('overview')
     return render(request, 'index.html', context=context)
 
+def stepper(request, stepper_data):
+    if request.method == "POST":
+        if request.POST.get('nextStep') == 'end':
+            nextStep = request.POST.get('nextStep')
+            request.session['activeStepper'] = nextStep
+        else:
+            nextStep = int(request.POST.get('nextStep'))
+            request.session['activeStepper'] = nextStep
+    elif request.method == "GET":
+        request.session['activeStepper'] = 1
+    else:
+        print("error")
+    return stepper_data
 
 def componentGallery(request):
-    return render(request, 'gallery.html')
+    step_data = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Event"
+            }
+        ],
+    }
+    stepper_data = stepper(request, step_data)
+    return render(request, 'gallery.html', stepper_data)
 
 
 def userjourney(request):

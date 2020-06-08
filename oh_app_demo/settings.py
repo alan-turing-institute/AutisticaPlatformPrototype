@@ -31,10 +31,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'openhumans',
-
     'main.apps.Main',
+    'userJourney.apps.UserjourneyConfig'
 ]
 
 MIDDLEWARE = [

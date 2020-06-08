@@ -1,0 +1,92 @@
+{% load filters %}
+
+<style>
+    .step {
+        display: inline-block;
+        padding: 15px;
+    }
+
+
+    .stepCircle {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .stepCircle.completed {
+        background-color: green;
+        color: white;
+    }
+
+    .stepCircle.active {
+        background-color: blue;
+        color: white;
+    }
+
+    .stepCircle.blocked {
+        width: 32px !important;
+        height: 32px !important;
+        color: grey;
+        border-style: solid;
+        border-width: 2px;
+        border-color: grey;
+    }
+
+    .stepLabel {
+        display: inline-block;
+    }
+
+    .stepLabel.completed {
+        color: green;
+    }
+
+    .stepLabel.active {
+        color: blue;
+    }
+
+    .stepLabel.blocked {
+        color: grey;
+    }
+</style>
+
+{% if activeStep|next_stepper == stepper|length|next_stepper %}
+        <input type="hidden" id="nextStep" name="nextStep" value="end">
+<!--        <p> last step </p> -->
+    {% elif activeStepper == 'end' %}
+        <input type="hidden" id="nextStep" name="nextStep" value="done">
+    {% else %}
+        <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStep|next_stepper }}">
+    {% endif %}
+
+     <span><</span>
+
+   {% for step in stepper %}
+         <div class="step">
+             {% if  activeStep == 'end' or activeStep > forloop.counter %}
+                 <span class="stepCircle completed">{{ step.id }}</span>
+                 <span class="stepLabel completed">{{ step.label }}</span>
+             {% elif activeStep == forloop.counter %}
+                 <span class="stepCircle active">{{ step.id }}</span>
+                 <span class="stepLabel active">{{ step.label }}</span>
+             {% elif activeStep < forloop.counter %}
+                 <span class="stepCircle blocked">{{ step.id }}</span>
+                 <span class="stepLabel blocked">{{ step.label }}</span>
+             {% endif %}
+
+         </div>
+         {% if forloop.counter < stepper|length %}
+             <span style="height: 2px; width: 35px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
+         {% endif %}
+   {% endfor %}
+     <span>></span>
+   {% if activeStep != 'end' %}
+        {% if activeStep|next_stepper == stepper|length|next_stepper %}
+             <button type="submit" form="stepper" value="Submit">Finish</button>
+        {% else %}
+            <button type="submit" form="stepper" value="Submit">Next</button>
+        {% endif %}
+   {% endif %}
