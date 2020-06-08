@@ -53,36 +53,6 @@ def componentGallery(request):
     return render(request, 'gallery.html', stepper_data)
 
 
-def userjourney(request):
-    stepper_data = {
-        "stepper": [
-            {
-                "id": 1,
-                "label": "Login"
-            },
-            {
-                "id": 2,
-                "label": "Define Profile"
-            },
-            {
-                "id": 3,
-                "label": "Add Event"
-            }
-        ],
-    }
-    if request.method == "POST":
-        if request.POST.get('nextStep') == 'end':
-            nextStep = request.POST.get('nextStep')
-            request.session['activeStepper'] = nextStep
-        else:
-            nextStep = int(request.POST.get('nextStep'))
-            request.session['activeStepper'] = nextStep
-    elif request.method == "GET":
-        request.session['activeStepper'] = 1
-    else:
-        print("error")
-    return render(request, 'userjourney.html', stepper_data)
-
 def overview(request):
     if request.user.is_authenticated:
         oh_member = request.user.openhumansmember
