@@ -11,11 +11,14 @@
         border-color: grey;
         padding: 20px;
         margin 20px;
-        border-radius: 5px;
+        border-radius: 5px
+        display: inline-block;
     }
     .dp-image-text {
-        font-size 24px;
+        width: 60px;
+        font-size: 24px;
         text-align: center;
+        margin-vertical: 30px;
     }
 
 </style>
@@ -25,9 +28,13 @@
 </head>
 <body>
     <p>&nbsp</p>
-    <span style="position: relative">
+    <span style="display: inline-block;">
     <span class="icon-Autistic-Person dp_images"></span>
-        <p class="dp-image-text">Person</p>
+        <div class="dp-image-text">Person</div>
+    </span>
+    <span style="display: inline-block;">
+    <span class="icon-Autistic-Person-Diverse dp_images"></span>
+        <p class="dp-image-text">Person Diverse</p>
     </span>
 </body>
 </html>
