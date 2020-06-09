@@ -52,6 +52,8 @@ def componentGallery(request):
 
     return render(request, 'gallery.html', stepper_data)
 
+def defineprofile(request):
+    return render(request, 'defineprofile.html')
 
 def overview(request):
     if request.user.is_authenticated:
