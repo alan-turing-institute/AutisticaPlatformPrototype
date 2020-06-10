@@ -12,17 +12,41 @@
         padding: 20px;
         margin-top: 20px;
         border-radius: 5px;
+        margin-left: 20px;
         display: inline-block;
+     }
+     .dp-outer-border {
+        border: solid;
+        border-width: 4px;
+        border-radius: 8px;
+        padding: 20px;
+        width: 500px;
      }
 
     .profileContainer {
         display: flex;
         flex-direction: row;
     }
-    .dpimage-head-text {
-        margin-top: 70px;
-        font-size: 40px;
+    .dp-image-head1-text {
+        margin-top: 115px;
+        font-size: 35px;
         text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .dp-image-head2-text {
+        margin-top: 115px;
+        font-size: 35px;
+        text-align: center;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .dp-image-head3-text {
+        margin-top: 115px;
+        font-size: 35px;
+        text-align: center;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .profileBlock {
         margin: 10px;
@@ -31,8 +55,8 @@
      .profileBlock > .dp-image-text {
         font-size: 24px;
         text-align: center;
-        margin-top: 30px;
-        width: 84px;
+        margin-top: 10px;
+        width: 130px;
      }
 </style>
 <head>
@@ -40,11 +64,12 @@
     <title>Define Profile</title>
 </head>
 <body>
+  <div class="dp-outer-border">
     <div class="profileContainer">
-        <div class="profileBlock">
-<!--            <div class="dpimage-head-text">
+            <div class="dp-image-head1-text">
                 Autistic
-            </div>-->
+            </div>
+        <div class="profileBlock">
             <span class="icon-Autistic-Person dp_images"></span>
             <div class="dp-image-text">Person</div>
         </div>
@@ -53,5 +78,32 @@
             <div class="dp-image-text">Person Diverse</div>
         </div>
     </div>
+    <div class="profileContainer">
+            <div class="dp-image-head2-text">
+                Caregiver
+            </div>
+        <div class="profileBlock">
+            <span class="icon-Caregiver-Autistic-Person dp_images"></span>
+            <div class="dp-image-text">Autistic Person</div>
+        </div>
+        <div class="profileBlock">
+            <span class="icon-Caregiver-Neurotypical dp_images"></span>
+            <div class="dp-image-text">Neurotypical Person</div>
+        </div>
+    </div>
+    <div class="profileContainer">
+            <div class="dp-image-head3-text">
+                Admin
+            </div>
+        <div class="profileBlock">
+            <span class="icon-Admin-Autistic-Person dp_images"></span>
+            <div class="dp-image-text">Autistic Person</div>
+        </div>
+        <div class="profileBlock">
+            <span class="icon-Admin-Neurotypical dp_images"></span>
+            <div class="dp-image-text">Neurotypical Person</div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
