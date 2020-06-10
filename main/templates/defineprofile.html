@@ -10,31 +10,48 @@
         border-width: 2px;
         border-color: grey;
         padding: 20px;
-        margin 20px;
-        border-radius: 5px
+        margin-top: 20px;
+        border-radius: 5px;
         display: inline-block;
+     }
+
+    .profileContainer {
+        display: flex;
+        flex-direction: row;
     }
-    .dp-image-text {
-        width: 60px;
+    .dpimage-head-text {
+        margin-top: 70px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .profileBlock {
+        margin: 10px;
+        width: 130px;
+     }
+     .profileBlock > .dp-image-text {
         font-size: 24px;
         text-align: center;
-        margin-vertical: 30px;
-    }
-
+        margin-top: 30px;
+        width: 84px;
+     }
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Define Profile</title>
 </head>
 <body>
-    <p>&nbsp</p>
-    <span style="display: inline-block;">
-    <span class="icon-Autistic-Person dp_images"></span>
-        <div class="dp-image-text">Person</div>
-    </span>
-    <span style="display: inline-block;">
-    <span class="icon-Autistic-Person-Diverse dp_images"></span>
-        <p class="dp-image-text">Person Diverse</p>
-    </span>
+    <div class="profileContainer">
+        <div class="profileBlock">
+<!--            <div class="dpimage-head-text">
+                Autistic
+            </div>-->
+            <span class="icon-Autistic-Person dp_images"></span>
+            <div class="dp-image-text">Person</div>
+        </div>
+        <div class="profileBlock">
+            <span class="icon-Autistic-Person-Diverse dp_images"></span>
+            <div class="dp-image-text">Person Diverse</div>
+        </div>
+    </div>
 </body>
 </html>
