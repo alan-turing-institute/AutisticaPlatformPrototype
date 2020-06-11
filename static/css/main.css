@@ -1,19 +1,57 @@
+/* variables */
+:root {
+    --autistica-blue-primary: #1f3369;
+    --autistica-blue-secondary: #3d65b1;
+    --autistica-blue-light: #DFECF9;
+    --autistica-blue-primary-font: #203467;
+    /*--autistica-blue-primary-secondary: #;*/
+}
+
+
+/*flex-box trick for content*/
+body {
+    min-height: 100vh;
+}
+
+
 .navbar-autistica-blue {
-    background-color: #1f3369 !important;
+    background-color: var(--autistica-blue-primary) !important;
 }
 
 .navbar-autistica-grey {
     background-color: #444444 !important;
 }
 
+.footer-top {
+    background-color: var(--autistica-blue-primary) !important;
+    height: 101px !important;
+}
+
+.footer-bottom {
+    background-color: #454545 !important;
+    height: 54px !important;
+}
+
+.pnospace {
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.copyrt {
+    font-size: 12px;
+    padding: 16px;
+    color: #C2ECF2 !important;
+}
 
 .banner-autistica-light-blue {
-    background-color: #DFECF9 !important;
+    background-color: var(--autistica-blue-light) !important;
     color: #3d65b1 !important;
 }
 
 .nav-link {
-    color: #203467 !important;
+    color: var(--autistica-blue-primary-font) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 .autistica-jumbotron {
     border-radius: 5px !important;
     background-color: white !important;
-    border-color: #3d65b1 !important;
+    border-color: var(--autistica-blue-secondary) !important;
     border-width: 3px;
     border-style: solid;
     padding: 2rem 1rem;

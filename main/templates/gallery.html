@@ -81,12 +81,6 @@
 
     <br>
     <h3>
-        Footer
-        <small class="text-muted">Component Description</small>
-    </h3>
-    <!-- Newsletter Cards -->
-    {% include 'main/../components/footer.html' %}
-    <h3>
         User Journey Stepped Control
         <small class="text-muted">Component Description</small>
     </h3>
@@ -95,6 +89,22 @@
     <form id="stepper" method="POST">{% csrf_token %}
         {% display_user_journey request.session.activeStepper stepper %}
     </form>
+
+    <br>
+    <h3>
+        Language Selector
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Language Selector -->
+    {% include 'main/../components/languageSelector.html' %}
+
+    <br>
+    <h3>
+        Footer
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Footer -->
+    {% include 'main/../components/footer.html' %}
 
 </div> <!-- /container -->
 </body>
