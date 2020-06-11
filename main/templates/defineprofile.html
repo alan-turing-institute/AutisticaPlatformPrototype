@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Define Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+</head>
+
 <style>
     .dp_images {
         font-size: 40px;
@@ -17,6 +27,7 @@
      .dp-outer-border {
         border: solid;
         border-width: 4px;
+         border-color: var(--autistica-blue-primary);
         border-radius: 8px;
         padding: 20px;
         width: 500px;
@@ -25,31 +36,36 @@
     .profileContainer {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
     .dp-head-text {
         margin-top: 115px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
         font-size: 35px;
         text-align: center;
         color: grey;
+        width: 155px;
     }
-    .head1 {
-        margin-left: 20px;
-        margin-right: 20px;
-     }
-    .head2 {
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-    .head3 {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
+    {#.head1 {#}
+    {#    width: ;#}
+    {#    margin-left: 20px;#}
+    {#    margin-right: 20px;#}
+    {# }#}
+    {#.head2 {#}
+    {#    margin-left: 8px;#}
+    {#    margin-right: 8px;#}
+    {#.head3 {#}
+    {#    margin-left: 25px;#}
+    {#    margin-right: 25px;#}
+
     .profileBlock {
         margin: 10px;
         width: 130px;
      }
      .profileBlock > .dp-image-text {
-        font-size: 24px;
+        font-size: 1.4rem;
         text-align: center;
         margin-top: 10px;
         width: 130px;
@@ -60,16 +76,11 @@
         background-color: #f7f7f7;
      }
 </style>
-<head>
-    <meta charset="UTF-8">
-    <title>Define Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
-</head>
+
 <body>
   <div class="dp-outer-border">
     <div class="profileContainer">
-            <div class="dp-head-text head1">
+            <div class="dp-head-text">
                 Autistic
             </div>
         <div class="profileBlock">
@@ -82,7 +93,7 @@
         </div>
     </div>
     <div class="profileContainer">
-            <div class="dp-head-text head2">
+            <div class="dp-head-text">
                 Caregiver
             </div>
         <div class="profileBlock">
@@ -95,7 +106,7 @@
         </div>
     </div>
     <div class="profileContainer">
-            <div class="dp-head-text head3">
+            <div class="dp-head-text">
                 Admin
             </div>
         <div class="profileBlock">
@@ -108,6 +119,5 @@
         </div>
     </div>
   </div>
-<P
 </body>
 </html>
