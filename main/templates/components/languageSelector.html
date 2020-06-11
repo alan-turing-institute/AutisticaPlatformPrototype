@@ -1,0 +1,38 @@
+<style>
+    .btn-autisica {
+        color: grey;
+        background-color: transparent;
+        border-color: #6c757d;
+    }
+
+    .dropdown-toggle::after {
+    {#border-color: var(--autistica-blue-light);#}
+        border-bottom-color: var(--autistica-blue-secondary);
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+        border-left-color: rgba(0, 0, 0, 0);
+        border-left-style: solid;
+        border-left-width: 7px;
+        border-right-color: rgba(0, 0, 0, 0);
+        border-right-style: solid;
+        border-right-width: 7px;
+        border-top-color: var(--autistica-blue-secondary);
+        {#border-top-color: var(--autistica-blue-secondary);#}
+        border-top-style: solid;
+        border-top-width: 7px;
+        vertical-align: 0.13em !important;
+    }
+</style>
+
+<div class="dropdown show">
+    <a class="btn btn-autisica dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+       aria-haspopup="true" aria-expanded="false">
+        {# placeholder until we get icons #}🌐 Language
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">🇬🇧 English</a>
+        <a class="dropdown-item" href="#">🇫🇷 French</a>
+        <a class="dropdown-item" href="#">🇩🇪 German</a>
+    </div>
+</div>
