@@ -86,6 +86,8 @@
     </h3>
     <!-- Newsletter Cards -->
     {% include 'main/../components/footer.html' %}
+
+    <br>
     <h3>
         User Journey Stepped Control
         <small class="text-muted">Component Description</small>
@@ -95,6 +97,14 @@
     <form id="stepper" method="POST">{% csrf_token %}
         {% display_user_journey request.session.activeStepper stepper %}
     </form>
+
+    <br>
+    <h3>
+        Newsletter Signup
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Newsletter Signup -->
+    {% include 'main/../components/newsletterSignup.html' %}
 
 </div> <!-- /container -->
 </body>
