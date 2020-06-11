@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
-<link rel="stylesheet" href="{% static "css/ico-style.css" %}"></head>
 <style>
     .dp_images {
         font-size: 40px;
         color: #1b77db;
         border: solid;
         border-width: 2px;
-        border-color: grey;
+        border-color: #cdcdcd;
         padding: 20px;
         margin-top: 20px;
         border-radius: 5px;
@@ -27,24 +26,21 @@
         display: flex;
         flex-direction: row;
     }
-    .dp-image-head1-text {
+    .dp-head-text {
         margin-top: 115px;
         font-size: 35px;
         text-align: center;
+        color: grey;
+    }
+    .head1 {
         margin-left: 20px;
         margin-right: 20px;
-    }
-    .dp-image-head2-text {
-        margin-top: 115px;
-        font-size: 35px;
-        text-align: center;
+     }
+    .head2 {
         margin-left: 8px;
         margin-right: 8px;
     }
-    .dp-image-head3-text {
-        margin-top: 115px;
-        font-size: 35px;
-        text-align: center;
+    .head3 {
         margin-left: 25px;
         margin-right: 25px;
     }
@@ -57,16 +53,23 @@
         text-align: center;
         margin-top: 10px;
         width: 130px;
+        color: grey;
+        font-family: 'Montserrat', sans-serif;
+     }
+     .dp_images:hover {
+        background-color: #f7f7f7;
      }
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Define Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
 </head>
 <body>
   <div class="dp-outer-border">
     <div class="profileContainer">
-            <div class="dp-image-head1-text">
+            <div class="dp-head-text head1">
                 Autistic
             </div>
         <div class="profileBlock">
@@ -79,7 +82,7 @@
         </div>
     </div>
     <div class="profileContainer">
-            <div class="dp-image-head2-text">
+            <div class="dp-head-text head2">
                 Caregiver
             </div>
         <div class="profileBlock">
@@ -92,11 +95,11 @@
         </div>
     </div>
     <div class="profileContainer">
-            <div class="dp-image-head3-text">
+            <div class="dp-head-text head3">
                 Admin
             </div>
         <div class="profileBlock">
-            <span class="icon-Admin-Autistic-Person dp_images"></span>
+            <span class="icon-Admin-Autistic-Person dp_images" style="font-size:25px; padding-bottom:28px; padding-top: 28px;"></span>
             <div class="dp-image-text">Autistic Person</div>
         </div>
         <div class="profileBlock">
@@ -105,5 +108,6 @@
         </div>
     </div>
   </div>
+<P
 </body>
 </html>
