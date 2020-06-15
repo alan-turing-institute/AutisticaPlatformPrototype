@@ -52,6 +52,9 @@ def componentGallery(request):
 
     return render(request, 'gallery.html', stepper_data)
 
+def userexperienceform(request):
+    return render(request, 'userexperienceform.html')
+
 def overview(request):
     if request.user.is_authenticated:
         oh_member = request.user.openhumansmember
