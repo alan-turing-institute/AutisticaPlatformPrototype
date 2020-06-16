@@ -170,8 +170,17 @@
 
     <h2>Thomas Stanley Solution v</h2>
     <div>
-    <div class="uef-top-text">What would you have wished to be different?</div>
+
+    <div class="uef-top-text" >
+        What would you have wished to be different?
+        {% block buttons %}
+        {% endblock %}
+    </div>
     <div class="uef-outer-div">
+
+
+
+
         <div>
             <table class="uef-table">
                 <col width="100px"/>
@@ -181,17 +190,8 @@
                         <span class="uef-span-what">What</span>
                     </td>
                     <td class="uef-td-input">
-                        <input placeholder="Enter name of location or postcode" style="width: 100%;">
-
-                        <!-- <textarea class="" style="width: 100%; resize: none;"></textarea> -->
-                    </td>
-                </tr>
-                <tr style="">
-                    <td class="uef-td-where">
-                        <span class="uef-span-where" >Where</span>
-                    </td>
-                    <td class="uef-td-input">
                         <textarea class="uef-td-txarea"></textarea>
+
                     </td>
                 </tr>
             </table>
