@@ -9,7 +9,7 @@
 <style>
     .uef-top-box {
         border: transparent;
-        background-color: navy;
+        background-color: #102f5c;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         height: 100px;
@@ -31,8 +31,8 @@
         width: 729px;
         height: 150px;
         border-width: 3px;
-        border-color: navy;
-        border-bottom-left-radius: 10px;
+        border-color: #102f5c;
+//        border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         margin: 0;
         padding: 0;
@@ -42,29 +42,37 @@
         flex-direction: row;
 //        justify-content: space-evenly;
     }
-    .uef-what {
-        color: orange;
+    .uef-wh {
+        color: #ffbb5d;
         width: 80px;
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 0;
+        border: solid;
+        border-right: 0;
+        border-color: #102f5c;
+        padding-left: 10px;
+        padding right: 60px;
+        padding-top: 10px;
+    }
+    .uef-what {
+        color: #ffbb5d;
+        height: 140px;
     }
     .uef-where {
-        color: cyan;
-        width: 80px;
-        font-size: 20px;
-        margin-top: 10px;
+        color: #4d75ad;
+        padding-bottom: 10px;
     }
     textarea:focus, input:focus {
         outline: none;
     }
     .uef-input {
         width: 727px;
-        border-color: navy;
+        border-color: #102f5c;
     }
     .uef-button {
         border-color: white;
         border: solid;
-        background-color: navy;
+        background-color: #102f5c;
         color: white;
         font-size: 20px;
         height: 50px;
@@ -89,22 +97,22 @@
             <div class="uef-topbox-item">
                 <button class="uef-button uef-button-templ"><u>Templates</u></button>
                 <button class="uef-button"><i class="fas fa-save"></i>&nbsp&nbsp<u>Save</u></button>
-                <button class="uef-button" type="reset"><i class="fas fa-trash"></i>&nbsp&nbsp<u>Delete</u></button>
+                <button class="uef-button"><i class="fas fa-trash"></i>&nbsp&nbsp<u>Delete</u></button>
             </div>
         </div>
     </div>
     <div class="uef-Container">
-        <div class="uef-where">Where</div>
+        <div class="uef-wh uef-where">Where</div>
         <input type="text" class="uef-input" placeholder="Enter name of location or postcode..."></input>
     </div>
     <div class="uef-Container">
-        <div class="uef-what">What</div>
+        <div class="uef-wh uef-what">What</div>
         <textarea class="uef-texta" placeholder="Your experience can be entered here..."></textarea>
     </div>
     <p>&nbsp</p>
     <div class="uef-top-box">What would you have wished to be different?</div>
     <div class="uef-Container">
-        <div class="uef-what">What</div>
+        <div class="uef-wh uef-what">What</div>
         <textarea class="uef-texta"></textarea>
     </div>
 </form>
