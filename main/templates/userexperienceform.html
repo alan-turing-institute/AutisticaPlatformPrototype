@@ -90,6 +90,54 @@
       }
 
 
+    .uef-top-text {
+        background-color: #102f5c;
+        color: white;
+        padding: 20px 10px 20px 10px;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 20px;
+    }
+    .uef-outer-div {
+        border-radius: 0px 0px 10px 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #102f5c;
+        padding-bottom: 4px;
+    }
+    .uef-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .uef-tr1 {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .uef-tr2 {
+        line-height: 55px;
+    }
+    .uef-td-wh {
+        padding-left: 10px;
+        padding-left: 10px;
+        border-right-color: #102f5c;
+        border-right-style: solid;
+        border-right-width: 3px;
+    }
+    .uef-span-what {
+        font-size: 22px;
+        color: #ffbb5d;
+    }
+    .uef-span-where {
+        font-size: 22px;
+        color: #ffbb5d;
+    }
+    .uef-td-input {
+        padding-right: 10px;
+    }
+    .uef-td-txarea {
+        width: 100%;
+        resize: none;
+    }
+
 
 </style>
 <body>
@@ -120,32 +168,30 @@
 
 
 
-
-
     <h2>Thomas Stanley Solution v</h2>
     <div>
-    <div class="" style="background-color: #102f5c; color: white; padding: 20px 10px 20px 10px;; border-radius: 10px 10px 0px 0px; font-size: 20px;">What would you have wished to be different?</div>
-    <div class="" style="border-radius: 0px 0px 10px 10px; border-width: 2px; border-style: solid; border-color: #102f5c; padding-bottom: 4px;">
+    <div class="uef-top-text">What would you have wished to be different?</div>
+    <div class="uef-outer-div">
         <div>
-            <table style="width: 100%; border-collapse: collapse;">
+            <table class="uef-table">
                 <col width="100px"/>
                 <col width="*"/>
-                <tr style="border-bottom-color: #102f5c; border-bottom-style: solid; border-bottom-width: 3px; line-height: 55px;">
-                    <td style="padding-left: 10px; padding-left: 10px;border-right-color: #102f5c;border-right-style: solid;border-right-width: 3px;">
-                        <span class="" style="font-size: 22px; color: #ffbb5d;">What</span>
+                <tr class="uef-tr1">
+                    <td class="uef-td-what">
+                        <span class="uef-span-what">What</span>
                     </td>
-                    <td style="padding-right: 10px;">
+                    <td class="uef-td-input">
                         <input placeholder="Enter name of location or postcode" style="width: 100%;">
 
                         <!-- <textarea class="" style="width: 100%; resize: none;"></textarea> -->
                     </td>
                 </tr>
-                <tr style="line-height: 55px;">
-                    <td style="padding-left: 10px; padding-left: 10px;border-right-color: #102f5c;border-right-style: solid;border-right-width: 3px;">
-                        <span class="" style="font-size: 22px; color: #ffbb5d;">Where</span>
+                <tr style="">
+                    <td class="uef-td-where">
+                        <span class="uef-span-where" >Where</span>
                     </td>
-                    <td style="padding-right: 10px;">
-                        <textarea class="" style="width: 100%; resize: none;"></textarea>
+                    <td class="uef-td-input">
+                        <textarea class="uef-td-txarea"></textarea>
                     </td>
                 </tr>
             </table>
