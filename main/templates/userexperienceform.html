@@ -78,6 +78,26 @@
         height: 50px;
         padding:0 20px 0 20px;
         border-radius: 5px;
+    }   
+
+    .uef-buttontemp{
+        border: solid;
+        background-color: #102f5c;
+        color: white;
+        font-size: 20px;
+        height: 35px;
+        padding: 0 20px 0 20px;
+        border-radius: 5px;
+        transform: translateY(-8px);
+        line-height: 35px;
+        display: inline-block;
+    }
+
+    .uef-buttontemp:hover{
+        background-color: aliceblue;
+        color: black;
+        border-color: white;
+        cursor: pointer;
     }
     .uef-button-templ {
         margin-left: 150px;
@@ -86,7 +106,6 @@
    margin-top:0;
       margin-bottom:0;
       }
-
 
 
 </style>
@@ -117,35 +136,19 @@
     </div>
 
 
-
-
-
     <h2>Thomas Stanley Solution v</h2>
-    <div>
-    <div class="" style="background-color: #102f5c; color: white; padding: 20px 10px 20px 10px;; border-radius: 10px 10px 0px 0px; font-size: 20px;">
-        What would you have wished to be different?
-        {% block buttons %}
-        {% endblock %}
-    </div>
-    <div class="" style="border-radius: 0px 0px 10px 10px; border-width: 2px; border-style: solid; border-color: #102f5c; padding-bottom: 4px;">
-        <div>
-            <table style="width: 100%; border-collapse: collapse;">
-                <col width="100px"/>
-                <col width="*"/>
-                <tr style="border-bottom-color: #102f5c; border-bottom-style: solid; border-bottom-width: 3px; line-height: 55px;">
-                    <td style="padding-left: 10px; padding-left: 10px;border-right-color: #102f5c;border-right-style: solid;border-right-width: 3px;">
-                        <span class="" style="font-size: 22px; color: #ffbb5d;">What</span>
-                    </td>
-                    <td style="padding-right: 10px;">
-                        <textarea class="" style="width: 100%; resize: none;"></textarea>
 
-                        <!-- <textarea class="" style="width: 100%; resize: none;"></textarea> -->
-                    </td>
-                </tr>
-            </table>
-        </div>      
+
+    <h3>Base Example</h3>
+    <div>
+        {% include 'userexperiencecontrolbase.html' %}
     </div>
-</div>
+
+
+    <h3>Extended base with buttons</h3>
+    <div>
+        {% include 'userexperiencecontrolbuttons.html' %}
+    </div>
 
 </form>
 </body>
