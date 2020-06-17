@@ -53,7 +53,36 @@ def componentGallery(request):
     return render(request, 'gallery.html', stepper_data)
 
 def userexperienceform(request):
-    return render(request, 'userexperienceform.html')
+    uef_data = {
+        "ueftext": [
+        {
+            "rows": [
+            {
+                "qtext": "Where",
+                "qcolour": "#4d75ad",
+                "phtext": "Enter name of location or postcode..."
+            },
+            {
+                "qtext": "What",
+                "qcolour": "#ffbb5d",
+                "phtext": "Your experience can be entered here..."
+            }
+            ],
+            "maintext": "Enter your experience",
+        },
+        {
+            "rows": [
+            {
+                 "qtext": "What",
+                 "qcolour": "#ffbb5d",
+                 "phtext": ""
+            }
+            ],
+                "maintext": "What would you have wished to be different?",
+        }
+        ],
+    }
+    return render(request, 'userexperienceform.html',uef_data)
 
 def overview(request):
     if request.user.is_authenticated:

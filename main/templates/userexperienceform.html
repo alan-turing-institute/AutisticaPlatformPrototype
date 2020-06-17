@@ -154,13 +154,8 @@
         border-right-style: solid;
         border-right-width: 3px;
     }
-    .uef-span-what {
+    .uef-span-wh {
         font-size: 22px;
-        color: #ffbb5d;
-    }
-    .uef-span-where {
-        font-size: 22px;
-        color: #ffbb5d;
     }
     .uef-td-input {
         padding-right: 10px;
@@ -198,6 +193,9 @@
         border-bottom-width: 3px; 
         line-height: 55px
     }
+    .uef-tr1-nb {
+        line-height: 55px
+    }
 
     .uef-tr2 {
         line-height: 55px;
@@ -210,24 +208,16 @@
         border-right-style: solid;
         border-right-width: 3px;
     }
-
-    .uef-span-what {
-        font-size: 22px;
-        color: #ffbb5d;
-    }
-
-    .uef-span-where {
-        font-size: 22px;
-        color: #ffbb5d;
-    }
-
-    .uef-td-input {
+     .uef-td-input {
         padding-right: 10px;
     }
 
     .uef-td-txarea {
         width: 100%;
         resize: none;
+    }
+    .uef-span-buttons {
+    float: right;
     }
 </style>
 
@@ -262,15 +252,15 @@
         <h2>Thomas Stanley Solution v</h2>
 
 
-        <h3>Base Example</h3>
+
         <div>
-            {% include 'userexperiencecontrolbase.html' %}
+            {% include 'userexperiencecontrolbuttons.html' with darr=ueftext.0 %}
         </div>
 
 
-        <h3>Extended base with buttons</h3>
+
         <div>
-            {% include 'userexperiencecontrolbuttons.html' %}
+            {% include 'userexperiencecontrolbase.html' with darr=ueftext.1 %}
         </div>
 
     </form>
