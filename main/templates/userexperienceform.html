@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>User Experience Form</title>
     <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <script src="https://kit.fontawesome.com/e8821c0857.js" crossorigin="anonymous"></script>
 </head>
+
 <style>
     .uef-top-box {
         border: transparent;
@@ -25,7 +27,8 @@
         justify-content: space-between;
 
 
-}
+    }
+
     .uef-texta {
         resize: none;
         width: 656px;
@@ -36,10 +39,12 @@
         margin: 0;
         padding: 0;
     }
+
     .uef-Container {
         display: flex;
         flex-direction: row;
     }
+
     .uef-wh {
         color: #ffbb5d;
         width: 70px;
@@ -52,25 +57,31 @@
         padding-right: 60px;
         padding-top: 10px;
     }
+
     .uef-what {
         color: #ffbb5d;
         height: 140px;
         border-bottom-left-radius: 10px;
     }
+
     .uef-where {
         color: #4d75ad;
         padding-bottom: 10px;
         border-bottom: 0;
     }
-    textarea:focus, input:focus {
+
+    textarea:focus,
+    input:focus {
         outline: none;
     }
+
     .uef-input {
         width: 652px;
         border-width: 3px;
         border-color: #102f5c;
         border-bottom: 0;
     }
+
     .uef-button {
         border-color: white;
         border: solid;
@@ -78,17 +89,38 @@
         color: white;
         font-size: 20px;
         height: 50px;
-        padding:0 20px 0 20px;
+        padding: 0 20px 0 20px;
         border-radius: 5px;
     }
+
+    .uef-buttontemp{
+        border: solid;
+        background-color: #102f5c;
+        color: white;
+        font-size: 20px;
+        height: 35px;
+        padding: 0 20px 0 20px;
+        border-radius: 5px;
+        transform: translateY(-8px);
+        line-height: 35px;
+        display: inline-block;
+    }
+
+    .uef-buttontemp:hover{
+        background-color: aliceblue;
+        color: black;
+        border-color: white;
+        cursor: pointer;
+    }
+
     .uef-button-templ {
         margin-left: 150px;
     }
-   .uef-topbox-item {
-      margin-top:0;
-      margin-bottom:0;
-      }
 
+    .uef-topbox-item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     .uef-top-text {
         background-color: #102f5c;
@@ -139,66 +171,109 @@
     }
 
 
+    .uef-top-text {
+        background-color: #102f5c;
+        color: white;
+        padding: 20px 10px 20px 10px;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 20px;
+    }
+
+    .uef-outer-div {
+        border-radius: 0px 0px 10px 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #102f5c;
+        padding-bottom: 4px;
+    }
+
+    .uef-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .uef-tr1 {
+        border-bottom-color: #102f5c; 
+        border-bottom-style: solid; 
+        border-bottom-width: 3px; 
+        line-height: 55px
+    }
+
+    .uef-tr2 {
+        line-height: 55px;
+    }
+
+    .uef-td-wh {
+        padding-left: 10px;
+        padding-left: 10px;
+        border-right-color: #102f5c;
+        border-right-style: solid;
+        border-right-width: 3px;
+    }
+
+    .uef-span-what {
+        font-size: 22px;
+        color: #ffbb5d;
+    }
+
+    .uef-span-where {
+        font-size: 22px;
+        color: #ffbb5d;
+    }
+
+    .uef-td-input {
+        padding-right: 10px;
+    }
+
+    .uef-td-txarea {
+        width: 100%;
+        resize: none;
+    }
 </style>
+
 <body>
-<form>
-    <div class="uef-Container">
-        <div class="uef-top-box"><p class="uef-topbox-item">Enter your experience</p>
-            <div class="uef-topbox-item">
-                <button class="uef-button uef-button-templ"><u>Templates</u></button>
-                <button class="uef-button"><i class="fas fa-save"></i>&nbsp&nbsp<u>Save</u></button>
-                <button class="uef-button"><i class="fas fa-trash"></i>&nbsp&nbsp<u>Delete</u></button>
+    <form>
+        <div class="uef-Container">
+            <div class="uef-top-box">
+                <p class="uef-topbox-item">Enter your experience</p>
+                <div class="uef-topbox-item">
+                    <button class="uef-button uef-button-templ"><u>Templates</u></button>
+                    <button class="uef-button"><i class="fas fa-save"></i>&nbsp&nbsp<u>Save</u></button>
+                    <button class="uef-button"><i class="fas fa-trash"></i>&nbsp&nbsp<u>Delete</u></button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="uef-Container">
-        <div class="uef-wh uef-where">Where</div>
-        <input type="text" class="uef-input" placeholder="Enter name of location or postcode..."></input>
-    </div>
-    <div class="uef-Container">
-        <div class="uef-wh uef-what">What</div>
-        <textarea class="uef-texta" placeholder="Your experience can be entered here..."></textarea>
-    </div>
-    <p>&nbsp</p>
-    <div class="uef-top-box">What would you have wished to be different?</div>
-    <div class="uef-Container">
-        <div class="uef-wh uef-what">What</div>
-        <textarea class="uef-texta"></textarea>
-    </div>
+        <div class="uef-Container">
+            <div class="uef-wh uef-where">Where</div>
+            <input type="text" class="uef-input" placeholder="Enter name of location or postcode..."></input>
+        </div>
+        <div class="uef-Container">
+            <div class="uef-wh uef-what">What</div>
+            <textarea class="uef-texta" placeholder="Your experience can be entered here..."></textarea>
+        </div>
+        <p>&nbsp</p>
+        <div class="uef-top-box">What would you have wished to be different?</div>
+        <div class="uef-Container">
+            <div class="uef-wh uef-what">What</div>
+            <textarea class="uef-texta"></textarea>
+        </div>
 
 
-
-    <h2>Thomas Stanley Solution v</h2>
-    <div>
-
-    <div class="uef-top-text" >
-        What would you have wished to be different?
-        {% block buttons %}
-        {% endblock %}
-    </div>
-    <div class="uef-outer-div">
+        <h2>Thomas Stanley Solution v</h2>
 
 
-
-
+        <h3>Base Example</h3>
         <div>
-            <table class="uef-table">
-                <col width="100px"/>
-                <col width="*"/>
-                <tr class="uef-tr1">
-                    <td class="uef-td-what">
-                        <span class="uef-span-what">What</span>
-                    </td>
-                    <td class="uef-td-input">
-                        <textarea class="uef-td-txarea"></textarea>
+            {% include 'userexperiencecontrolbase.html' %}
+        </div>
 
-                    </td>
-                </tr>
-            </table>
-        </div>      
-    </div>
-</div>
 
-</form>
+        <h3>Extended base with buttons</h3>
+        <div>
+            {% include 'userexperiencecontrolbuttons.html' %}
+        </div>
+
+    </form>
 </body>
+
 </html>
