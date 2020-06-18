@@ -60,13 +60,15 @@ def userexperienceform(request):
             {
                 "qtext": "Where",
                 "qcolour": "#4d75ad",
-                "phtext": "Enter name of location or postcode..."
+                "phtext": "Enter name of location or postcode...",
+                "input": "ip"
             },
             {
                 "qtext": "What",
                 "qcolour": "#ffbb5d",
-                "phtext": "Your experience can be entered here..."
-            }
+                "phtext": "Your experience can be entered here...",
+                "input": "ta"
+    }
             ],
             "maintext": "Enter your experience",
         },
@@ -75,8 +77,9 @@ def userexperienceform(request):
             {
                  "qtext": "What",
                  "qcolour": "#ffbb5d",
-                 "phtext": ""
-            }
+                 "phtext": "",
+                 "input": "ta"
+    }
             ],
                 "maintext": "What would you have wished to be different?",
         }

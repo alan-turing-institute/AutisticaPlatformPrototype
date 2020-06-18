@@ -28,8 +28,11 @@
                     <span class="uef-span-wh" style="color: {{gf.qcolour}};">{{gf.qtext}}</span>
                 </td>
                 <td class="uef-td-input">
+                {% if gf.input == "ta" %}
                     <textarea class="uef-td-txarea" placeholder="{{gf.phtext}}"></textarea>
-
+                {% elif gf.input == "ip" %}
+                    <input class="uef-td-ip" placeholder="{{gf.phtext}}">
+                {% endif %}
                 </td>
             </tr>
 {% endfor %}
