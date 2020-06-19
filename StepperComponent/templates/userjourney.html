@@ -69,8 +69,6 @@
     <input type="hidden" id="nextStep" name="nextStep" value="{{ activeStep|next_stepper }}">
 {% endif %}
 
-<!--    <span><</span>-->
-<span><img src="{% static "img/arrow_back.svg" %}" class="arrow-icons"></span>
 
 {% for step in stepper %}
     <div class="step">
@@ -90,8 +88,6 @@
         <span style="height: 2px; width: 35px; display: inline-block; margin-bottom: 3px; background-color:black"></span>
     {% endif %}
 {% endfor %}
-<!--     <span>></span>-->
-<span><img src="{% static "img/arrow_forward.svg" %}" class="arrow-icons"/></span>
 {% if activeStep != 'end' %}
     {% if activeStep|next_stepper == stepper|length|next_stepper %}
         <button type="submit" form="stepper" value="Submit">Finish</button>
