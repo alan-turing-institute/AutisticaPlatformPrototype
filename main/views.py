@@ -43,17 +43,6 @@ def componentGallery(request):
                 "label": "Add Event"
             }
         ],
-    }
-    stepper_object = Stepper.Stepper(test_step_data, request)
-
-    stepper_object.update()
-
-    stepper_data = stepper_object.get_stepper_data()
-
-    return render(request, 'gallery.html', stepper_data)
-
-def userexperienceform(request):
-    uef_data = {
         "ueftext": [
         {
             "rows": [
@@ -68,9 +57,9 @@ def userexperienceform(request):
                 "qcolour": "#ffbb5d",
                 "phtext": "Your experience can be entered here...",
                 "input": "ta"
-    }
+            }
             ],
-            "maintext": "Enter your experience",
+            "maintext": "Enter your experience"
         },
         {
             "rows": [
@@ -79,13 +68,20 @@ def userexperienceform(request):
                  "qcolour": "#ffbb5d",
                  "phtext": "",
                  "input": "ta"
-    }
+            }
             ],
-                "maintext": "What would you have wished to be different?",
+                "maintext": "What would you have wished to be different?"
         }
         ],
     }
-    return render(request, 'userexperienceform.html',uef_data)
+    stepper_object = Stepper.Stepper(test_step_data, request)
+
+    stepper_object.update()
+
+    stepper_data = stepper_object.get_stepper_data()
+
+
+    return render(request, 'gallery.html', stepper_data)
 
 def overview(request):
     if request.user.is_authenticated:
