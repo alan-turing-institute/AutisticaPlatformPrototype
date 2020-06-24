@@ -56,6 +56,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #1b77db !important;
+    padding: 10px;
 }
 
 .autistica-jumbotron {
@@ -73,4 +74,47 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #3d65b1 !important;
     border-width: 3px;
     border-style: solid;
+}
+
+.indexView {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.indexLeft {
+    flex-basis: 49%;
+}
+
+.indexRight {
+    flex-basis: 49%;
+}
+
+#galleryBanner {
+    display: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.indexRight {
+    display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+    #galleryBanner {
+        display: block;
+    }
+
+    .indexRight {
+        display: none;
+    }
+
+    .indexView {
+        flex-direction: column;
+    }
+
+    .indexLeft {
+        flex-basis: 100%;
+    }
 }
