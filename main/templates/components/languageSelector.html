@@ -1,3 +1,4 @@
+{%  load i18n %}
 <style>
     .btn-autisica {
         color: grey;
@@ -27,12 +28,12 @@
 <div class="dropdown show">
     <a class="btn btn-autisica dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
        aria-haspopup="true" aria-expanded="false">
-        {# placeholder until we get icons #}🌐 &nbsp;Language
+        {# placeholder until we get icons #}🌐 &nbsp;{% trans 'Langauge' %}
     </a>
 
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">🇬🇧 English</a>
-        <a class="dropdown-item" href="#">🇫🇷 French</a>
-        <a class="dropdown-item" href="#">🇩🇪 German</a>
+        <a class="dropdown-item" href="#">{% trans 'English' %}</a>
+        <a class="dropdown-item" href="#">{% trans 'French' %}</a>
+        <a class="dropdown-item" href="#">{% trans 'German' %}</a>
     </div>
 </div>
