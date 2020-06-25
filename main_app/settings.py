@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'openhumans',
-    'main.apps.Main',
+    'skeleton.apps.Main',
     'StepperComponent.apps.UserjourneyConfig'
 ]
 
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware'
 ]
 
-ROOT_URLCONF = 'oh_app_demo.urls'
+ROOT_URLCONF = 'main_app.urls'
 
 TEMPLATES = [
     {
@@ -66,7 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'oh_app_demo.wsgi.application'
+WSGI_APPLICATION = 'main_app.wsgi.application'
 
 
 # Database
@@ -143,7 +143,7 @@ LOGGING = {
             'handlers': ['console'],
             'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
         },
-        'main': {
+        'skeleton': {
             'handlers': ['console'],
             'level': 'DEBUG' if DEBUG else 'INFO',
         },
