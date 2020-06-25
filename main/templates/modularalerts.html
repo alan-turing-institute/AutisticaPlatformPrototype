@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% load static %}
+    <title>Modular Alerts</title>
+    <link href="/static/css/fa/all.min.css" rel="stylesheet">
+<style>
+    .ma_outerdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ma_button {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+        padding: 10px 40px 10px 40px;
+        margin-left: 20px;
+    }
+    .ma_text {
+        padding-top: 12px;
+        margin-right: 20px;
+    }
+    .ma_exclam {
+        color: red;
+        font-size: 55px;
+    }
+    .ma-divts {
+        position: absolute;
+        top: 380px;
+        left: 30px;
+        background-color: white;
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .ma-div-screen {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #1e3963;
+        z-index: 1;
+        opacity: 0.9;
+        display: none;
+    }
+    .ma_timeout {
+        color: blue;
+        font-size: 24px;
+    }
+    .ma_to_text {
+        color: grey;
+        text-align: left;
+        padding: 20px;
+    }
+    .ma_close_button {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: rgba(0,0,0,0);
+    }
+    .ma-div-cb {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: -15px;
+        margin-right: -5px;
+        justify-content: flex-end;
+     }
+</style>
+</head>
+<body>
+<div class="ma_outerdiv">
+    <span class="ma_text">Timeout Save Alert Test</span>
+    <span><button class="ma_button" onclick="alert()"><u>Alert</u></button></span>
+</div>
+<div class="ma-div-screen" id="showme">
+    <div class="ma-divts">
+        <div class="ma-div-cb"><button class="ma_close_button" onclick="remove_alert()">X</button></div>
+        <i class="fas fa-exclamation-triangle ma_exclam"></i>
+        <div class="ma_timeout">Timeout Save</div>
+        <div class="ma_to_text">Inactive for 10 minutes, in 2 minutes time your event will be saved as a draft</div>
+    </div>
+</div>
+{% include 'main/../components/userexperienceform.html' %}
+</body>
+<script>
+    function alert()
+    {
+        document.getElementById("showme").style.display="block"
+    }
+    function remove_alert()
+    {
+        document.getElementById("showme").style.display="none"
+    }
+</script>
+</html>
