@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-{% load static %}
-    <title>Modular Alerts</title>
-    <link href="/static/css/fa/all.min.css" rel="stylesheet">
 <style>
     .ma_outerdiv {
         display: flex;
@@ -92,8 +85,6 @@
         <div class="ma_to_text">Inactive for 10 minutes, in 2 minutes time your event will be saved as a draft</div>
     </div>
 </div>
-{% include 'main/../components/userexperienceform.html' %}
-</body>
 <script>
     function alert()
     {
@@ -104,4 +95,3 @@
         document.getElementById("showme").style.display="none"
     }
 </script>
-</html>
