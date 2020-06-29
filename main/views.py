@@ -20,12 +20,36 @@ def index(request):
     """
     Starting page for app.
     """
+
+    test_step_data = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Event"
+            }
+        ],
+    }
+    stepper_object = Stepper.Stepper(test_step_data, request)
+
+    stepper_object.update()
+
+    stepper_data = stepper_object.get_stepper_data()
+
     auth_url = OpenHumansMember.get_auth_url()
     context = {'auth_url': auth_url,
                'oh_proj_page': settings.OH_PROJ_PAGE}
     if request.user.is_authenticated:
         return redirect('overview')
-    return render(request, 'index.html', context=context)
+    # return render(request, 'index.html', context=context)
+    return render(request, 'index.html', stepper_data)
 
 def componentGallery(request):
     test_step_data = {
@@ -52,6 +76,8 @@ def componentGallery(request):
 
     return render(request, 'gallery.html', stepper_data)
 
+def userexperienceform(request):
+    return render(request, 'userexperienceform.html')
 
 def overview(request):
     if request.user.is_authenticated:

@@ -3,6 +3,7 @@ Django settings for oh_app_demo project.
 """
 
 import os
+from django.utils.translation import ugettext_lazy
 
 # import django_heroku
 
@@ -44,6 +45,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'oh_app_demo.urls'
@@ -97,7 +99,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 
-LANGUAGE_CODE = 'en-us'
+# Default language
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -106,6 +109,18 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# Language/translation configurations
+
+LANGUAGES = (
+    ('en', ugettext_lazy('English')),
+    ('fr', ugettext_lazy('French')),
+)
+
+# Tell Django where the project's translation files should be.
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 
 # Static files (CSS, JavaScript, Images)
