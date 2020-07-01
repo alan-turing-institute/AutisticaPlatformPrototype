@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'openhumans',
-    'main.apps.Main',
+    'skeleton.apps.Main',
     'StepperComponent.apps.UserjourneyConfig'
 ]
 
@@ -143,7 +143,7 @@ LOGGING = {
             'handlers': ['console'],
             'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
         },
-        'main': {
+        'skeleton': {
             'handlers': ['console'],
             'level': 'DEBUG' if DEBUG else 'INFO',
         },
