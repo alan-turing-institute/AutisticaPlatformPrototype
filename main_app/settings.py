@@ -102,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Default language
 LANGUAGE_CODE = 'en'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/London'
 
 USE_I18N = True
 
