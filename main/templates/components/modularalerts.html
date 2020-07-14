@@ -1,9 +1,16 @@
 <style>
-    .ma_exclam {
+    .ma_alert {
         color: red;
         font-size: 55px;
     }
-
+    .ma_warning {
+        color: khaki;
+        font-size: 55px;
+    }
+    .ma_info {
+        color: blue;
+        font-size: 55px;
+    }
     .ma-divts {
         position: absolute;
         top: 50%;
@@ -88,10 +95,24 @@
 </div>
 <script>
     function showModularAlert(ma_title, ma_text, ma_icon) {
+        switch (ma_icon)
+        {
+            case 1:
+                ma_icon_class= "fas fa-exclamation-triangle ma_alert"
+                break
+            case 2:
+                ma_icon_class= "fas fa-exclamation-triangle ma_warning"
+                break
+            case 3:
+                ma_icon_class= "fas fa-info ma_info"
+                break
+            default:
+                ma_icon_class= "fas fa-exclamation-triangle ma_warning"
+        }
         document.getElementById("alert").style.display = "block"
         document.getElementById("maid_title").innerHTML = ma_title
         document.getElementById("maid_text").innerHTML = ma_text
-        document.getElementById("maid_icon").className = ma_icon
+        document.getElementById("maid_icon").className = ma_icon_class
 
 
       /*   
