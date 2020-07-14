@@ -22,6 +22,10 @@ msgstr ""
 msgid "Tagline"
 msgstr "Créer des environnements accessibles"
 
+#: main/templates/components/alt_banner.html:4
+msgid "TaglineAlt"
+msgstr "Qu'auriez-vous souhaité être différent"
+
 #: main/templates/components/languageSelector.html:31
 msgid "Langauge"
 msgstr "La Langue"
