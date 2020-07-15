@@ -4,6 +4,7 @@ Django settings for oh_app_demo project.
 
 import os
 from django.utils.translation import ugettext_lazy
+from dotenv import load_dotenv
 
 # import django_heroku
 
@@ -18,7 +19,7 @@ ON_HEROKU = os.getenv('ON_HEROKU', 'false').lower() == 'true'
 SECRET_KEY = os.getenv('SECRET_KEY', 'whopsthereshouldbeone')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True ##if os.getenv('DEBUG', '').lower() == 'true' else False
+DEBUG = True # if os.getenv('DEBUG', '').lower() == 'true' else False
 
 ALLOWED_HOSTS = ["*"]
 
