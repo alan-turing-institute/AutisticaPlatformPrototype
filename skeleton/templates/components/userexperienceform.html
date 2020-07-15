@@ -206,9 +206,22 @@
                 <span class="sgs-sp-userdata">Date: {% now "d-m-Y H:m" %}</span>
             </div>
             <div class="sgs-div-inner">
-                 <span>&nbsp</span>
-                 <span><button class="sgs-submit-button">Submit</button></span>
-                <span><button class="sgs-views-button">Views</button></span>
+                 <span>&nbsp;</span>
+                <audio id="submitSound" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+                 <span><button class="sgs-submit-button" type="button" onclick="submitButton(this.form)">Submit</button></span>
+                <span><button class="sgs-views-button" type="button" onclick="views()">Views</button></span>
             </div>
         </div>
     </form>
+
+<script>
+    function submitButton(form) {
+        audioObject = document.getElementById('submitSound')
+        audioObject.play()
+        audioObject.addEventListener("ended", function(){
+             audioObject.currentTime = 0;
+             console.log("ended");
+             form.submit()
+        });
+    }
+</script>

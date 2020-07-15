@@ -1,3 +1,4 @@
+{% load i18n %}
 <style>
 
     .card-footer {
@@ -12,25 +13,24 @@
 
 <div class="card autistica-card" style="width: 40rem;">
     <div class="card-body">
-        <h4 class="card-title">Newsletter</h4>
-        <h6 class="card-subtitle mb-2 text-muted" style="width: 20rem;">I am interested in receiving further information about the
-            project</h6>
+        <h4 class="card-title">{%  trans 'Newsletter' %}</h4>
+        <h6 class="card-subtitle mb-2 text-muted" style="width: 20rem;"> {%  trans 'NewsletterSubtitle' %}</h6>
         <form>
             <div class="form-row align-items-center">
                 <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInput">Name</label>
-                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                    <label class="sr-only" for="inlineFormInput"> {% trans 'Name' %}</label>
+                    <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="{% trans 'Name Placeholder' %}">
                 </div>
                 <div class="col-4">
 
                 </div>
                 <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                    <button type="submit" class="btn btn-primary mb-2">{% trans 'Subscribe' %}</button>
                 </div>
             </div>
         </form>
         <div class="card-footer text-success">
-            {# placeholder until we get icons #} ✅  &nbsp; &nbsp; Thanks, you've been added to our list.
+            {# placeholder until we get icons #} ✅  &nbsp; &nbsp; {% trans 'NewsletterSuccess' %}
         </div>
     </div>
 </div>
