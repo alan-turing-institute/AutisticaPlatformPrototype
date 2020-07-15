@@ -122,7 +122,7 @@ def logout_user(request):
     """
     Logout user
     """
-    if request.method == 'POST':
+    if request.method == 'GET':
         logout(request)
     return redirect('index')
 

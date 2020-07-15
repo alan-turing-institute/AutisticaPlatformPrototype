@@ -51,18 +51,10 @@
         {% include "components/navbar.html" %}
         {% include "components/banner.html" %}
 
-
-        {% if messages %}
-
-            {% for message in messages %}
-                <div class="alert alert-info" role="alert">
-                    {{ message }}
-                </div>
-            {% endfor %}
-
-        {% endif %}
-        {% block content %}
-        {% endblock %}
+        <a class="btn btn-primary btn-lg"
+            href="{{ auth_url }}">
+              Get started / Login
+          </a>
 
         {% include "components/footer.html" %}
     </div>
