@@ -169,35 +169,39 @@ def upload(request):
     else:
         if request.user.is_authenticated:
             context = {"ueftext": [
-            {
-                "rows": [
-                    {
-                        "qtext": "Where",
-                        "qcolour": "#4d75ad",
-                        "phtext": "Enter name of location or postcode...",
-                        "input": "ip"
-                    },
-                    {
-                        "qtext": "What",
-                        "qcolour": "#ffbb5d",
-                        "phtext": "Your experience can be entered here...",
-                        "input": "ta"
-                    }
-                ],
-                "maintext": "Enter your experience"
-            },
-            {
-                "rows": [
-                    {
-                        "qtext": "What",
-                        "qcolour": "#ffbb5d",
-                        "phtext": "",
-                        "input": "ta"
-                    }
-                ],
-                "maintext": "What would you have wished to be different?"
-            }
-        ]}
+                {
+                    "rows": [
+                        {
+                            "qtext": "Where",
+                            "qcolour": "#4d75ad",
+                            "phtext": "Enter name of location or postcode...",
+                            "input": "ip"
+                        },
+                        {
+                            "qtext": "What",
+                            "qcolour": "#ffbb5d",
+                            "phtext": "Your experience can be entered here...",
+                            "input": "ta"
+                        }
+                    ],
+                    "maintext": "Enter your experience"
+                },
+                {
+                    "rows": [
+                        {
+                            "qtext": "What",
+                            "qcolour": "#ffbb5d",
+                            "phtext": "",
+                            "input": "ta"
+                        }
+                    ],
+                    "maintext": "What would you have wished to be different?"
+                }
+            ]}
+            oh_member = request.user.openhumansmember
+            context = {**context, **{'oh_id': oh_member.oh_id,
+                                     'oh_member': oh_member,
+                                     'oh_proj_page': settings.OH_PROJ_PAGE}}
             return render(request, 'upload.html', context=context)
     return redirect('index')
 
