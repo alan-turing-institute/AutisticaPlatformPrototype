@@ -56,7 +56,7 @@ ROOT_URLCONF = 'main_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'skeleton/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -160,7 +160,7 @@ LOGGING = {
 # Configure these with .env/environment variables
 
 # After log in, send users to the overview page.
-LOGIN_REDIRECT_URL = 'overview'
+LOGIN_REDIRECT_URL = '/'
 
 # Project's page on Open Humans
 OH_PROJ_PAGE = os.getenv(

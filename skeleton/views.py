@@ -45,12 +45,15 @@ def index(request):
     auth_url = OpenHumansMember.get_auth_url()
     context = {'auth_url': auth_url,
                'oh_proj_page': settings.OH_PROJ_PAGE,
-               'stepper' : stepper_data}
+               'stepper': stepper_data}
     if request.user.is_authenticated:
-        return redirect('overview')
-    print(context)
+        oh_member = request.user.openhumansmember
+        context = {**context, **{'oh_id': oh_member.oh_id,
+                                 'oh_member': oh_member,
+                                 'oh_proj_page': settings.OH_PROJ_PAGE}}
+
     return render(request, 'index.html', context=context)
-    # return render(request, 'index.html', stepper_data)
+
 
 def componentGallery(request):
     extra_context = {
@@ -69,34 +72,34 @@ def componentGallery(request):
             }
         ],
         "ueftext": [
-        {
-            "rows": [
             {
-                "qtext": "Where",
-                "qcolour": "#4d75ad",
-                "phtext": "Enter name of location or postcode...",
-                "input": "ip"
+                "rows": [
+                    {
+                        "qtext": "Where",
+                        "qcolour": "#4d75ad",
+                        "phtext": "Enter name of location or postcode...",
+                        "input": "ip"
+                    },
+                    {
+                        "qtext": "What",
+                        "qcolour": "#ffbb5d",
+                        "phtext": "Your experience can be entered here...",
+                        "input": "ta"
+                    }
+                ],
+                "maintext": "Enter your experience"
             },
             {
-                "qtext": "What",
-                "qcolour": "#ffbb5d",
-                "phtext": "Your experience can be entered here...",
-                "input": "ta"
-            }
-            ],
-            "maintext": "Enter your experience"
-        },
-        {
-            "rows": [
-            {
-                 "qtext": "What",
-                 "qcolour": "#ffbb5d",
-                 "phtext": "",
-                 "input": "ta"
-            }
-            ],
+                "rows": [
+                    {
+                        "qtext": "What",
+                        "qcolour": "#ffbb5d",
+                        "phtext": "",
+                        "input": "ta"
+                    }
+                ],
                 "maintext": "What would you have wished to be different?"
-        }
+            }
         ],
     }
     stepper_object = Stepper.Stepper(extra_context.get("stepper"), request)
@@ -104,9 +107,10 @@ def componentGallery(request):
     stepper_object.update()
 
     stepper_data = stepper_object.get_stepper_data()
-    context = {'stepper' : stepper_data}
+    context = {'stepper': stepper_data}
 
-    return render(request, 'gallery.html', context = context)
+    return render(request, 'gallery.html', context=context)
+
 
 def overview(request):
     if request.user.is_authenticated:
@@ -164,7 +168,7 @@ def upload(request):
         return redirect('index')
     else:
         if request.user.is_authenticated:
-            return render(request, 'main/upload.html')
+            return render(request, 'upload.html')
     return redirect('index')
 
 
@@ -180,7 +184,7 @@ def list_public_experiences(request):
     experiences = PublicExperience.objects.filter(approved='approved')
     return render(
         request,
-        'main/public_experiences.html',
+        'public_experiences.html',
         context={'experiences': experiences})
 
 
