@@ -20,10 +20,9 @@ class oh_helper:
             with urllib.request.urlopen(file_url) as url:
                 data = json.loads(url.read().decode())
             if data is not None:
-                # handle json
-
-
+                return data
             else:
                 # django error here ideally
                 print("error")
+                return None
 
