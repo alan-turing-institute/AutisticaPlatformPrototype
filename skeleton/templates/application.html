@@ -36,17 +36,12 @@
 </head>
 <body>
 <!-- all content must go inside the container -->
-<nav id="galleryBanner" class="navbar navbar-expand navbar-expand-md banner-autistica-light-blue">
-    <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="/gallery">Click here to view the component Gallery</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-    </div>
-</nav>
-{% block content %}
-    <p> This block content will be replaced. </p>
-{% endblock %}
+<div class="container-lg px-0">
+    {% include "components/navbar.html" %}
+    {% include "components/banner.html" %}
+    {% block content %}
+        <p> This block content will be replaced. </p>
+    {% endblock %}
+</div>
 </body>
 </html>

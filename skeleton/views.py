@@ -168,14 +168,44 @@ def upload(request):
         return redirect('index')
     else:
         if request.user.is_authenticated:
-            return render(request, 'upload.html')
+            context = {"ueftext": [
+            {
+                "rows": [
+                    {
+                        "qtext": "Where",
+                        "qcolour": "#4d75ad",
+                        "phtext": "Enter name of location or postcode...",
+                        "input": "ip"
+                    },
+                    {
+                        "qtext": "What",
+                        "qcolour": "#ffbb5d",
+                        "phtext": "Your experience can be entered here...",
+                        "input": "ta"
+                    }
+                ],
+                "maintext": "Enter your experience"
+            },
+            {
+                "rows": [
+                    {
+                        "qtext": "What",
+                        "qcolour": "#ffbb5d",
+                        "phtext": "",
+                        "input": "ta"
+                    }
+                ],
+                "maintext": "What would you have wished to be different?"
+            }
+        ]}
+            return render(request, 'upload.html', context=context)
     return redirect('index')
 
 
 def list_files(request):
     if request.user.is_authenticated:
         context = {'files': request.user.openhumansmember.list_files()}
-        return render(request, 'main/list.html',
+        return render(request, 'old/list.html',
                       context=context)
     return redirect('index')
 
@@ -192,7 +222,7 @@ def moderate_public_experiences(request):
     experiences = PublicExperience.objects.filter(approved='not reviewed')
     return render(
         request,
-        'main/moderate_public_experiences.html',
+        'old/moderate_public_experiences.html',
         context={'experiences': experiences})
 
 
