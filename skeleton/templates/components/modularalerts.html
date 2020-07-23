@@ -1,30 +1,16 @@
 <style>
-    .ma_outerdiv {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .ma_button {
-        background-color: red;
-        color: white;
-        border: none;
-        border-radius: 7px;
-        font-size: 20px;
-        padding: 10px 40px 10px 40px;
-        margin-left: 20px;
-    }
-
-    .ma_text {
-        padding-top: 12px;
-        margin-right: 20px;
-    }
-
-    .ma_exclam {
+    .ma_alert {
         color: red;
         font-size: 55px;
     }
-
+    .ma_warning {
+        color: khaki;
+        font-size: 55px;
+    }
+    .ma_info {
+        color: blue;
+        font-size: 55px;
+    }
     .ma-divts {
         position: absolute;
         top: 50%;
@@ -48,9 +34,8 @@
         top: 0;
         left: 0;
         position: fixed;
-        background-color: #1e3963;
+        background-color: #1e3963cf;
         z-index: 1;
-        opacity: 0.9;
         display: none;
     }
 
@@ -66,41 +51,79 @@
     }
 
     .ma_close_button {
-        height: 30px;
-        width: 30px;
-        font-size: 20px;
-        border: none;
-        background-color: rgba(0, 0, 0, 0);
+     /* height: 30px; */
+    /* width: 30px; */
+    font-size: 24px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    /* padding-top: 5px; */
+    /* padding-right: 5px; */
+    padding: 5px 9px 5px 9px;
+    border-radius: 7px;
+    margin: 2px;
+    line-height: 30px;
+    display: inline-block;
+    }
+    .ma_close_button:hover {
+        cursor: pointer;
+        background-color: #f71919b3;
     }
 
     .ma-div-cb {
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin-top: -5px;
-        margin-right: -5px;
-        justify-content: flex-end;
+    /* flex-direction: row; */
+    width: 100%;
+    margin-top: -5px;
+    margin-right: -5px;
+    justify-content: flex-end;
+    transform: translate(-4px, 6px);
+    line-height: 24px;
     }
 </style>
 </head>
 <body>
-<div class="ma_outerdiv">
-    <span class="ma_text">Timeout Save Alert Test</span>
-    <span><button class="ma_button" onclick="showModularAlert()"><u>Alert</u></button></span>
-</div>
+
 <div class="ma-div-screen" id="alert">
     <div class="ma-divts">
         <div class="ma-div-cb">
-            <button class="ma_close_button" onclick="hideModularAlert()">X</button>
+            <span class="ma_close_button" onclick="hideModularAlert()"><i class="fas fa-times"></i></span>
         </div>
-        <i class="fas fa-exclamation-triangle ma_exclam"></i>
-        <div class="ma_timeout">Timeout Save</div>
-        <div class="ma_to_text">Inactive for 10 minutes, in 2 minutes time your event will be saved as a draft</div>
+        <i id="maid_icon"></i>
+        <div class="ma_timeout" id="maid_title"></div>
+        <div class="ma_to_text" id="maid_text"></div>
     </div>
 </div>
 <script>
-    function showModularAlert() {
+    function showModularAlert(ma_title, ma_text, ma_icon) {
+        switch (ma_icon)
+        {
+            case 1:
+                ma_icon_class= "fas fa-exclamation-triangle ma_alert"
+                break
+            case 2:
+                ma_icon_class= "fas fa-exclamation-triangle ma_warning"
+                break
+            case 3:
+                ma_icon_class= "fas fa-info ma_info"
+                break
+            default:
+                ma_icon_class= "fas fa-exclamation-triangle ma_warning"
+        }
         document.getElementById("alert").style.display = "block"
+        document.getElementById("maid_title").innerHTML = ma_title
+        document.getElementById("maid_text").innerHTML = ma_text
+        document.getElementById("maid_icon").className = ma_icon_class
+
+
+      /*   
+      
+      https://www.w3schools.com/js/js_switch.asp
+
+        1 = alert
+        2 = warning
+        3 = information
+        
+        ma_icon = alert, warning, information */
     }
 
     function hideModularAlert() {
