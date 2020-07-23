@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 load_dotenv(os.path.join(BASE_DIR, '.env'))
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Customization for Heroku-specific settings
 ON_HEROKU = os.getenv('ON_HEROKU', 'false').lower() == 'true'
@@ -80,6 +81,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+SESSION_ENGINE= 'django.contrib.sessions.backends.cached_db'
 
 
 # Password validation
