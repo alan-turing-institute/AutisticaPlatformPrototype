@@ -1,0 +1,183 @@
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{ config.project_title |default:"My Open Humans Project" }}</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="/static/css/fa/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+<!--    <script src="https://kit.fontawesome.com/e8821c0857.js" crossorigin="anonymous"></script>-->
+
+    <link rel="icon" type="image/png"
+          href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'css/main.css' %}">
+
+</head>
+
+<body>
+<a name=""top"></a>
+<div class="container-lg px-1">
+
+    <!-- This is the component gallery -->
+    <!-- copy below, and uncomment to include a new component -->
+    {#    <br>#}
+    {#    <h3>#}
+    {#        Component title #}
+    {#        <small class="text-muted">Component Description</small>#}
+    {#    </h3>#}
+    {#    <!-- Static navbar -->#}
+    {#    {% include 'path/to/html' %}#}
+
+    <br>
+    <h3>
+        Navigation Bar
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Static navbar -->
+    {% include 'main/../components/navbar.html' %}
+
+    <br>
+    <h3>
+        Secondary banner
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Secondary Banner -->
+    {% include 'main/../components/banner.html' %}
+
+    <h3>
+        Secondary banner Alt
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Secondary Banner -->
+    {% include 'main/../components/alt_banner.html' %}
+
+    <br>
+    <h3>
+        Jumbotron
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Jumbotron -->
+    {% include 'main/../components/jumbotron.html' %}
+
+    <br>
+    <h3>
+        Newsletter Cards
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Newsletter Cards -->
+    {% include 'main/../components/newsletterCards.html' %}
+
+    <br>
+    <h3>
+        User Journey Stepped Control
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- User Journey Stepped Control -->
+    {% load userJourney %}
+    <form id="stepper" method="POST">{% csrf_token %}
+        {% display_user_journey request.session.activeStepper stepper %}
+    </form>
+
+    <br>
+    <h3>
+        Newsletter Signup
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Newsletter Signup -->
+    {% include 'main/../components/newsletterSignup.html' %}
+
+    <br>
+    <h3>
+        Language Selector
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Language Selector -->
+    {% include 'main/../components/languageSelector.html' %}
+
+    <br>
+    <h3>
+       Defined Profile
+       <small class="text-muted">Component Description</small>
+   </h3>
+   <!-- Define profile -->
+   {% include 'main/../components/defineprofile.html' %}
+
+   <br>
+    <h3>
+       User Experience Form
+       <small class="text-muted">Component Description</small>
+   </h3>
+   <!-- User experience form -->
+   {% include 'main/../components/userexperienceform.html' %}
+
+
+   <style>
+    .ma_outerdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ma_button {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+        padding: 10px 40px 10px 40px;
+        margin-left: 20px;
+    }
+
+    .ma_text {
+        padding-top: 12px;
+        margin-right: 20px;
+    }
+    </style>
+   <br>
+    <h3>
+       Modular Alert
+       <small class="text-muted">Component Description</small>
+   </h3>
+   <div class="ma_outerdiv">
+        <span class="ma_text">Timeout Save Alert Test</span>
+        <span><button class="ma_button" onclick="showModularAlert('Timeout Save', 'Inactive for 10 minutes, in 2 minutes time your event will be saved as a draft', 1)"><u>Alert</u></button></span>
+   </div>
+   <!-- Modular alerts -->
+   {% include 'main/../components/modularalerts.html' %}
+
+   <br>
+   <h3>
+        Footer
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Footer -->
+    {% include 'main/../components/footer.html' %}
+
+</div> <!-- /container -->
+</body>
+</html>

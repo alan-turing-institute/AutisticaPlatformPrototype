@@ -1,0 +1,122 @@
+/* variables */
+:root {
+    --autistica-blue-primary: #1f3369;
+    --autistica-blue-secondary: #3d65b1;
+    --autistica-blue-light: #DFECF9;
+    --autistica-blue-primary-font: #203467;
+    /*--autistica-blue-primary-secondary: #;*/
+}
+
+
+/*flex-box trick for content*/
+body {
+    min-height: 100vh;
+}
+
+
+.navbar-autistica-blue {
+    background-color: var(--autistica-blue-primary) !important;
+}
+
+.navbar-autistica-grey {
+    background-color: #444444 !important;
+}
+
+.footer-top {
+    background-color: var(--autistica-blue-primary) !important;
+    height: 101px !important;
+}
+
+.footer-bottom {
+    background-color: #454545 !important;
+    height: 54px !important;
+}
+
+.pnospace {
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.copyrt {
+    font-size: 12px;
+    padding: 16px;
+    color: #C2ECF2 !important;
+}
+
+.banner-autistica-light-blue {
+    background-color: var(--autistica-blue-light) !important;
+    color: #3d65b1 !important;
+}
+
+.nav-link {
+    color: var(--autistica-blue-primary-font) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1b77db !important;
+    padding: 10px;
+}
+
+.autistica-jumbotron {
+    border-radius: 5px !important;
+    background-color: white !important;
+    border-color: var(--autistica-blue-secondary) !important;
+    border-width: 3px;
+    border-style: solid;
+    padding: 2rem 1rem;
+}
+
+.autistica-card {
+    border-radius: 5px !important;
+    background-color: white !important;
+    border-color: #3d65b1 !important;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.indexView {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.indexLeft {
+    flex-basis: 49%;
+}
+
+.indexRight {
+    flex-basis: 49%;
+}
+
+#galleryBanner {
+    display: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.indexRight {
+    display: block;
+    border-left: 3px solid gray;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #galleryBanner {
+        display: block;
+    }
+
+    .indexRight {
+        display: none;
+    }
+
+    .indexView {
+        flex-direction: column;
+    }
+
+    .indexLeft {
+        flex-basis: 100%;
+    }
+}
