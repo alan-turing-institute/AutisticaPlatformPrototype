@@ -1,0 +1,132 @@
+<style>
+    .ma_alert {
+        color: red;
+        font-size: 55px;
+    }
+    .ma_warning {
+        color: khaki;
+        font-size: 55px;
+    }
+    .ma_info {
+        color: blue;
+        font-size: 55px;
+    }
+    .ma-divts {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -125px;
+        background-color: white;
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .ma-div-screen {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: #1e3963cf;
+        z-index: 1;
+        display: none;
+    }
+
+    .ma_timeout {
+        color: blue;
+        font-size: 24px;
+    }
+
+    .ma_to_text {
+        color: grey;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .ma_close_button {
+     /* height: 30px; */
+    /* width: 30px; */
+    font-size: 24px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    /* padding-top: 5px; */
+    /* padding-right: 5px; */
+    padding: 5px 9px 5px 9px;
+    border-radius: 7px;
+    margin: 2px;
+    line-height: 30px;
+    display: inline-block;
+    }
+    .ma_close_button:hover {
+        cursor: pointer;
+        background-color: #f71919b3;
+    }
+
+    .ma-div-cb {
+        display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    margin-top: -5px;
+    margin-right: -5px;
+    justify-content: flex-end;
+    transform: translate(-4px, 6px);
+    line-height: 24px;
+    }
+</style>
+</head>
+<body>
+
+<div class="ma-div-screen" id="alert">
+    <div class="ma-divts">
+        <div class="ma-div-cb">
+            <span class="ma_close_button" onclick="hideModularAlert()"><i class="fas fa-times"></i></span>
+        </div>
+        <i id="maid_icon"></i>
+        <div class="ma_timeout" id="maid_title"></div>
+        <div class="ma_to_text" id="maid_text"></div>
+    </div>
+</div>
+<script>
+    function showModularAlert(ma_title, ma_text, ma_icon) {
+        switch (ma_icon)
+        {
+            case 1:
+                ma_icon_class= "fas fa-exclamation-triangle ma_alert"
+                break
+            case 2:
+                ma_icon_class= "fas fa-exclamation-triangle ma_warning"
+                break
+            case 3:
+                ma_icon_class= "fas fa-info ma_info"
+                break
+            default:
+                ma_icon_class= "fas fa-exclamation-triangle ma_warning"
+        }
+        document.getElementById("alert").style.display = "block"
+        document.getElementById("maid_title").innerHTML = ma_title
+        document.getElementById("maid_text").innerHTML = ma_text
+        document.getElementById("maid_icon").className = ma_icon_class
+
+
+      /*   
+      
+      https://www.w3schools.com/js/js_switch.asp
+
+        1 = alert
+        2 = warning
+        3 = information
+        
+        ma_icon = alert, warning, information */
+    }
+
+    function hideModularAlert() {
+        document.getElementById("alert").style.display = "none"
+    }
+</script>

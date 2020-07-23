@@ -1,0 +1,227 @@
+
+<style>
+
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    .uef-buttontemp{
+        border: solid;
+        background-color: #102f5c;
+        color: white;
+        font-size: 20px;
+        height: 35px;
+        padding: 0 20px 0 20px;
+        border-radius: 5px;
+        transform: translateY(-8px);
+        line-height: 35px;
+        display: inline-block;
+    }
+
+    .uef-buttontemp:hover{
+        background-color: aliceblue;
+        color: black;
+        border-color: white;
+        cursor: pointer;
+    }
+
+    .uef-outer-div {
+        border-radius: 0px 0px 10px 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #102f5c;
+        padding-bottom: 4px;
+    }
+    .uef-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .uef-tr1 {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .uef-tr2 {
+        line-height: 55px;
+    }
+    .uef-td-wh {
+        padding-left: 10px;
+        padding-left: 10px;
+        border-right-color: #102f5c;
+        border-right-style: solid;
+        border-right-width: 3px;
+    }
+    .uef-span-wh {
+        font-size: 22px;
+    }
+    .uef-td-input {
+        padding-right: 10px;
+    }
+    .uef-td-txarea {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        border: none;
+    }
+
+
+    .uef-top-box {
+        background-color: #102f5c;
+        padding: 20px 10px 20px 10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .uef-top-text {
+        color: white;
+        font-size: 20px;
+    }
+
+    .uef-outer-div {
+        border-radius: 0px 0px 10px 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #102f5c;
+        padding-bottom: 4px;
+    }
+
+    .uef-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .uef-tr1 {
+        border-bottom-color: #102f5c; 
+        border-bottom-style: solid; 
+        border-bottom-width: 3px; 
+        line-height: 55px
+    }
+    .uef-tr1-nb {
+        line-height: 55px
+    }
+
+    .uef-tr2 {
+        line-height: 55px;
+    }
+
+    .uef-td-wh {
+        padding-left: 10px;
+        padding-left: 10px;
+        border-right-color: #102f5c;
+        border-right-style: solid;
+        border-right-width: 3px;
+    }
+     .uef-td-ip {
+        width: 100%;
+        border: none;
+    }
+
+    .uef-td-txarea {
+        width: 100%;
+        resize: none;
+    }
+    .uef-span-buttons {
+    float: right;
+    }
+
+    .sgs-form {
+        background-color: #f5f7f8;
+    }
+    .sgs-sp-text {
+        color: #6e7071;
+        line-height: 40px;
+        width: 200px;
+    }
+    .sgs-sp-userdata {
+        color: #353535;
+        border: solid;
+        background-color: white;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #d2d4d5;
+        padding: 10px;
+        width: 230px;
+    }
+    .sgs-submit-button {
+        color: #f5f7f8;
+        background-color: #ff815b;
+        font-size: 24px;
+        padding: 10px 40px 10px 40px;
+        border-radius: 5px;
+        border: none;
+     }
+    .sgs-views-button {
+        color: #ff815b;
+        font-size: 24px;
+        padding: 8px 38px 8px 38px;
+        border-radius: 5px;
+        border-width: 2px;
+        border-color: #ff815b;
+    }
+    .sgs-h3 {
+        color: #0077b2;
+        font-size: 24px;
+    }
+    .sgs-div-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px 0 10px;
+        margin-top: 10px;
+    }
+    .sgs-div-inner:last-of-type {
+        margin-top: 50px;
+        padding: 0 150px 0 150px;
+    }
+    .sgs-checkb {
+        width: 32px;
+        height: 32px;
+    }
+ </style>
+
+<body>
+    <form>
+
+        <div>
+            {% include 'main/../components/userexperiencecontrolbuttons.html' with darr=ueftext.0 %}
+        </div>
+
+
+
+        <div>
+            {% include 'main/../components/userexperiencecontrolbase.html' with darr=ueftext.1 %}
+        </div>
+
+    </form>
+    <form class="sgs-form">
+        <h3 class="sgs-h3">Sharing Settings</h3>
+        <div>
+            <div class="sgs-div-inner">
+                <span class="sgs-sp-text">Can be used for Research</span>
+                    <span><input type="checkbox" class="sgs-checkb"></span>
+                    <span class="sgs-sp-userdata">Experience ID: 0118092019</span>
+            </div>
+            <div class="sgs-div-inner">
+                <span class="sgs-sp-text">Is viewable by others</span>
+                <span><input type="checkbox" class="sgs-checkb"></span>
+                <span class="sgs-sp-userdata">Date: {% now "d-m-Y H:m" %}</span>
+            </div>
+            <div class="sgs-div-inner">
+                 <span>&nbsp;</span>
+                <audio id="submitSound" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+                 <span><button class="sgs-submit-button" type="button" onclick="submitButton(this.form)">Submit</button></span>
+                <span><button class="sgs-views-button" type="button" onclick="views()">Views</button></span>
+            </div>
+        </div>
+    </form>
+
+<script>
+    function submitButton(form) {
+        audioObject = document.getElementById('submitSound')
+        audioObject.play()
+        audioObject.addEventListener("ended", function(){
+             audioObject.currentTime = 0;
+             console.log("ended");
+             form.submit()
+        });
+    }
+</script>

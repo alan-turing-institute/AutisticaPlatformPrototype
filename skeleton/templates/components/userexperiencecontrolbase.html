@@ -1,0 +1,42 @@
+<div class="uef-top-box">
+    <table style="width: 100%;">
+        {% block buttonscolumnssize %}
+
+        {% endblock %}
+        <tr>
+            <td class="uef-top-text">
+                {{darr.maintext}}
+            </td>
+            {% block buttons %}
+            {% endblock %}
+        </tr>
+    </table>
+</div>
+
+<div class="uef-outer-div">
+    <div>
+        <table class="uef-table">
+            <col width="100px" />
+            <col width="*" />
+{% for gf in darr.rows %}
+    {% if forloop.counter < darr.rows|length %}
+            <tr class="uef-tr1">
+    {% else %}
+            <tr class="uef-tr1-nb">
+    {% endif %}
+                <td class="uef-td-wh uef-td-what" >
+                    <span class="uef-span-wh" style="color: {{gf.qcolour}};">{{gf.qtext}}</span>
+                </td>
+                <td class="uef-td-input">
+                {% if gf.input == "ta" %}
+                    <textarea class="uef-td-txarea" placeholder="{{gf.phtext}}"></textarea>
+                {% elif gf.input == "ip" %}
+                    <input class="uef-td-ip" placeholder="{{gf.phtext}}">
+                {% endif %}
+                </td>
+            </tr>
+{% endfor %}
+        </table>
+    </div>
+</div>
+<p>&nbsp</p>
