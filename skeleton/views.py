@@ -51,6 +51,27 @@ def index(request):
     # return render(request, 'index.html', context=context)
     return render(request, 'index.html', stepper_data)
 
+def experienceviewercontrol(request):
+    experience_data = {
+        user_exp: [
+            {
+                "id": "32097868",
+                "datetime": "Sept 18, 2019, 10:31 a.m.",
+                user_txt: [
+                    {
+                        "question": "Event",
+                        "text": "The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate."
+                    },
+                    {
+                        "question": "What would you have liked to be different?",
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    }
+    return render(request, 'experienceviewercontrol.html', experience_data)
+
 def componentGallery(request):
     test_step_data = {
         "stepper": [
