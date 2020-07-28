@@ -5,26 +5,36 @@
     <title>Experience Viewer Control</title>
 <style>
     .evc-id {
-    display: block;
-    padding: 1em 550px 1em 1em;
-    background-color: #bbb;
-    margin-top: 2em;
+        display: block;
+        padding: 1em 550px 1em 1em;
+        background-color: #bbb;
+        margin-top: 2em;
     }
     .evc-question {
-    color: blue;
-    margin: 2em 0 0 1em;
+        color: blue;
+        margin: 2em 0 0 1em;
     }
     .evc-text {
-    color:  grey;
-    margin: 1em 0 0 1em;
-    width: 50%;
+        color:  grey;
+        margin: 1em 0 0 1em;
+        width: 50%;
+    }
+    .evc-cbid {
+        display:flex;
+        flex-direction: row;
+    }
+    .evc-cb {
+        margin: 3em 1em 0 0;
     }
 </style>
 </head>
 <body>
 {% for item in user_exp %}
     <div>
+        <div class="evc-cbid">
+        <span class="evc-cb"><input type="checkbox"></span>
         <span class="evc-id">ID: {{item.id}} - {{item.datetime}}</span>
+        </div>
         {% for unit in item.user_txt %}
             <p class="evc-question">{{unit.question}}</p>
             <p class="evc-text">{{unit.text}}</p>
