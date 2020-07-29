@@ -151,6 +151,22 @@ def componentGallery(request):
 
     return render(request, 'gallery.html', stepper_data)
 
+def moderationofnewexperiences(request):
+    MONE_data_struct = {
+        "MONE_data": [
+        {
+            "UID": "0000001",
+            "EID": "32097868",
+            "date": "18/09/19",
+            "Event_What": "The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate, it was a rubbish experience.",
+            "Location_Where": "NW1 2HS",
+            "LikeToBeDifferent": "I would have liked the air conditioning to less loud to aid my concentration",
+            "Summary": "Loud Air Conditioning"
+        }
+        ]
+    }
+    return render(request, "moderationofnewexperiences.html", MONE_data_struct)
+
 def overview(request):
     if request.user.is_authenticated:
         oh_member = request.user.openhumansmember

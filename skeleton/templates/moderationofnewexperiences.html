@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Moderation of New Experiences</title>
+    <link href="/static/css/fa/all.min.css" rel="stylesheet">
+<style>
+    td, th {
+        border: 1px solid grey;
+    }
+    td {
+        color: grey;
+    }
+    thead {
+        color: white;
+        background-color: navy;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    .mone-tick {
+        color: green;
+    }
+       </style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Event ID</th>
+            <th>Date</th>
+            <th>Event(What)
+            <th>Location (Where)</th>
+            <th>Liked to be Different</th>
+            <th>Summary</th>
+            <th colspan="2">Moderation</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for trow in MONE_data %}
+        <tr>
+            <td>{{trow.UID}}</td>
+            <td>{{trow.EID}}</td>
+            <td>{{trow.date}}</td>
+            <td>{{trow.Event_What}}</td>
+            <td>{{trow.Location_Where}}</td>
+            <td>{{trow.LikeToBeDifferent}}</td>
+            <td>{{trow.Summary}}</td>
+            <td><span class="fas fa-check mone-tick"></span></td>
+            <td></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
