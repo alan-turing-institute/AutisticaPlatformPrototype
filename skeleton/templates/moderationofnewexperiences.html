@@ -22,12 +22,32 @@
     .mone-tick {
         color: green;
     }
+    .mone-cross {
+        color: red;
+    }
+    .mone-mod {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70px;
+    }
+    .mone-butsub {
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+        border-color: orange;
+    }
+    .mone-cb {
+        border: none;
+        background-color: white;
+    }
        </style>
 </head>
 <body>
 <table>
     <thead>
         <tr>
+            <th class="mone-cb"></th>
             <th>User ID</th>
             <th>Event ID</th>
             <th>Date</th>
@@ -41,6 +61,7 @@
     <tbody>
         {% for trow in MONE_data %}
         <tr>
+            <td class="mone-cb"><input type="checkbox"></td>
             <td>{{trow.UID}}</td>
             <td>{{trow.EID}}</td>
             <td>{{trow.date}}</td>
@@ -48,8 +69,20 @@
             <td>{{trow.Location_Where}}</td>
             <td>{{trow.LikeToBeDifferent}}</td>
             <td>{{trow.Summary}}</td>
-            <td><span class="fas fa-check mone-tick"></span></td>
-            <td></td>
+            <td>
+                <div class="mone-mod">
+                    <span class="fas fa-check mone-tick"><input type="radio" name="{{trow.EID}}"></span>
+                    <span><a href="#">Respond</a></span>
+                    <span><button type="button" class="mone-butsub">Submit</button></span>
+                </div>
+            </td>
+            <td>
+                <div class="mone-mod">
+                    <span class="fas fa-times mone-cross"><input type="radio" name="{{trow.EID}}"></span>
+                    <span> <a href="#">Respond</a></span>
+                    <span>&nbsp</span>
+                </div>
+            </td>
         </tr>
         {% endfor %}
     </tbody>
