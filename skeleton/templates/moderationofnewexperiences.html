@@ -21,9 +21,11 @@
     }
     .mone-tick {
         color: green;
+        padding: 4px 0 0 2em;
     }
     .mone-cross {
         color: red;
+        padding: 4px 0 0 2em;
     }
     .mone-mod {
         display: flex;
@@ -41,7 +43,16 @@
         border: none;
         background-color: white;
     }
-       </style>
+    .mone-resp {
+        padding: 0 1em 0 1em;
+    }
+    .mone-respbb {
+        padding-bottom: 1em;
+    }
+    .mone-bs {
+        padding: 8px 0 1em 1em;
+    }
+</style>
 </head>
 <body>
 <table>
@@ -72,15 +83,15 @@
             <td>
                 <div class="mone-mod">
                     <span class="fas fa-check mone-tick"><input type="radio" name="{{trow.EID}}"></span>
-                    <span><a href="#">Respond</a></span>
-                    <span><button type="button" class="mone-butsub">Submit</button></span>
+                    <span class="mone-resp"><a href="#">Respond</a></span>
+                    <span class="mone-bs"><button type="button" class="mone-butsub">Submit</button></span>
                 </div>
             </td>
             <td>
                 <div class="mone-mod">
                     <span class="fas fa-times mone-cross"><input type="radio" name="{{trow.EID}}"></span>
-                    <span> <a href="#">Respond</a></span>
-                    <span>&nbsp</span>
+                    <span class="mone-resp mone-respbb"> <a href="#">Respond</a></spanclass>
+                    <span class="mone-nbs">&nbsp</span>
                 </div>
             </td>
         </tr>
