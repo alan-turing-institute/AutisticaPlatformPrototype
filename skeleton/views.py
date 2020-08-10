@@ -140,6 +140,35 @@ def componentGallery(request):
                     }
                 ]
             }
+        ],
+        "MONE_data": [
+            {
+                "UID": "0000001",
+                "EID": "32097868",
+                "date": "18/09/19",
+                "Event_What": "The air conditioning in the room where I was having a meeting was really loud and I found it really heard to concentrate, it was a rubbish experience.",
+                "Location_Where": "NW1 2HS",
+                "LikeToBeDifferent": "I would have liked the air conditioning to less loud to aid my concentration",
+                "Summary": "Loud Air Conditioning"
+            },
+            {
+                "UID": "0000002",
+                "EID": "32097867",
+                "date": "17/09/19",
+                "Event_What": "The tube is too loud.",
+                "Location_Where": "NW1 8NH",
+                "LikeToBeDifferent": "would have liked the tube to be less loud",
+                "Summary": "Loud Tube"
+            },
+            {
+                "UID": "0000003",
+                "EID": "32097866",
+                "date": "17/09/19",
+                "Event_What": "I'm at a conference today and I found the people not using the microphone really difficult - it makes it harder to concentrate on what they were saying. I was much more distracted.",
+                "Location_Where": "SE15 5DQ",
+                "LikeToBeDifferent": "For people in conferences to use a microphone. To aid my concentration and reduce my distraction.",
+                "Summary": "None use of microphone in conference"
+            }
         ]
     }
     stepper_object = Stepper.Stepper(request)
@@ -157,39 +186,6 @@ def componentGallery(request):
 
     return render(request, 'gallery.html', context=context)
 
-def moderationofnewexperiences(request):
-    MONE_data_struct = {
-        "MONE_data": [
-        {
-            "UID": "0000001",
-            "EID": "32097868",
-            "date": "18/09/19",
-            "Event_What": "The air conditioning in the room where I was having a meeting was really loud and I found it really heard to concentrate, it was a rubbish experience.",
-            "Location_Where": "NW1 2HS",
-            "LikeToBeDifferent": "I would have liked the air conditioning to less loud to aid my concentration",
-            "Summary": "Loud Air Conditioning"
-        },
-        {
-            "UID": "0000002",
-            "EID": "32097867",
-            "date": "17/09/19",
-            "Event_What": "The tube is too loud.",
-            "Location_Where": "NW1 8NH",
-            "LikeToBeDifferent": "would have liked the tube to be less loud",
-            "Summary": "Loud Tube"
-        },
-        {
-            "UID": "0000003",
-            "EID": "32097866",
-            "date": "17/09/19",
-            "Event_What": "I'm at a conference today and I found the people not using the microphone really difficult - it makes it harder to concentrate on what they were saying. I was much more distracted.",
-            "Location_Where": "SE15 5DQ",
-            "LikeToBeDifferent": "For people in conferences to use a microphone. To aid my concentration and reduce my distraction.",
-            "Summary": "None use of microphone in conference"
-            }
-        ]
-    }
-    return render(request, "moderationofnewexperiences.html", MONE_data_struct)
 
 def overview(request):
     if request.user.is_authenticated:
