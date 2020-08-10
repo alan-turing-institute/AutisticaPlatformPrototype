@@ -1,6 +1,5 @@
 class Stepper:
-    def __init__(self, stepper_data=None, request=None):
-        self.stepper_data = stepper_data
+    def __init__(self, request=None):
         self.request = request
 
     def get_stepper_data(self):

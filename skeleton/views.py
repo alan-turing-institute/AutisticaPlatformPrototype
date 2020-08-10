@@ -52,7 +52,7 @@ def index(request):
     return render(request, 'index.html', stepper_data)
 
 def componentGallery(request):
-    test_step_data = {
+    context = {
         "stepper": [
             {
                 "id": 1,
@@ -142,14 +142,20 @@ def componentGallery(request):
             }
         ]
     }
-    stepper_object = Stepper.Stepper(test_step_data, request)
+    stepper_object = Stepper.Stepper(request)
 
     stepper_object.update()
 
-    stepper_data = stepper_object.get_stepper_data()
+    auth_url = OpenHumansMember.get_auth_url()
+    context = {**context, **{'auth_url': auth_url,
+               'oh_proj_page': settings.OH_PROJ_PAGE}}
+    if request.user.is_authenticated:
+        oh_member = request.user.openhumansmember
+        context = {**context, **{'oh_id': oh_member.oh_id,
+                                 'oh_member': oh_member,
+                                 'oh_proj_page': settings.OH_PROJ_PAGE}}
 
-
-    return render(request, 'gallery.html', stepper_data)
+    return render(request, 'gallery.html', context=context)
 
 def moderationofnewexperiences(request):
     MONE_data_struct = {
