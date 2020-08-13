@@ -6,7 +6,7 @@ You need to have Docker installed on your machine.
 
 From the repo root, run the following commands:
 
-```
+```bash
 cd build
 docker-compose up
 ```
