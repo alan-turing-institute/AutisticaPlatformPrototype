@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Community Approval Mechanism</title>
+    <link href="/static/css/fa/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+<style>
+    .cam-views {
+        font-size: 60px;
+    }
+    .cam-cam {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .cam-odiv {
+        display: flex;
+        flex-direction: row;
+    }
+    .cam-boticons {
+        margin-top: 60px;
+    }
+    .cam-ico {
+        font-size: 25px;
+    }
+    .cam-ico-space {
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    .cam-cam-text {
+        color: #0070d1;
+    }
+    .cam-mod {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .cam-tick {
+        font-size: 36px;
+    }
+    .cam-cross {
+        font-size: 36px;
+        margin-left: 70px;
+    }
+    .cam-app-bl {
+        border-radius: 5px;
+        border-type: solid;
+    }
+     </style>
+</head>
+<body>
+    <div class="cam-odiv">
+        <i class="icon-views cam-views"></i>
+        <div class="cam-cam">
+            <span class="cam-cam-text">Community: Approval Mechanism</span>
+            <span>List view of submitted events for approval</span>
+            <div class="cam-boticons">
+                <i class="icon-folder-whole cam-ico"></i><span>&nbsp Templates</span>
+                <i class="icon-edit cam-ico-space"></i><span>&nbsp Edit</span>
+                <i class="icon-delete cam-ico-space"></i><span>&nbsp Delete</span>
+                <i class="icon-help cam-ico-space"></i><span>&nbsp Help</span>
+            </div>
+        </div>
+        <div class="cam-mod">
+            <span>Moderations</span>
+            <div>
+                <i class="icon-check cam-tick"></i><i class="icon-close cam-cross"></i>
+            </div>
+            <span class="cam-app-bl"> 1 Approved &nbsp &nbsp &nbsp 2 Blocked</spanclass>
+        </div>
+    </div>
+</body>
+</html>
