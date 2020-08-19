@@ -6,6 +6,8 @@
     <title>Community Approval Mechanism</title>
     <link href="/static/css/fa/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+          rel="stylesheet">
 <style>
     span {
         color: grey;
@@ -30,15 +32,23 @@
     }
     .cam-ico {
         font-size: 25px;
+        color: grey;
     }
     .cam-ico-space {
         font-size: 25px;
         margin-left: 50px;
+        color: grey;
+    }
+    .cam-ico:hover, .cam-ico-space:hover {
+        color: #0070d1;
     }
     .cam-cam-text {
         color: #0070d1;
-        font-size: 18px;
+        font-size: 22px;
         margin-bottom: 10px;
+    }
+    .cam-other-text {
+        font-family: 'Montserrat', sans-serif;
     }
     .cam-mod {
         display: flex;
@@ -47,9 +57,11 @@
     }
     .cam-tick {
         font-size: 36px;
+        color: green;
       }
     .cam-cross {
         font-size: 36px;
+        color: red;
         margin-left: 70px;
     }
     .cam-app-bl {
@@ -73,7 +85,7 @@
         <i class="icon-views cam-views"></i>
         <div class="cam-cam">
             <span class="cam-cam-text">Community: Approval Mechanism</span>
-            <span>List view of submitted events for approval</span>
+            <span class="cam-other-text">List view of submitted events for approval</span>
             <div class="cam-boticons">
                 <i class="icon-folder-whole cam-ico"></i><span>&nbsp Templates</span>
                 <i class="icon-edit cam-ico-space"></i><span>&nbsp Edit</span>
