@@ -7,6 +7,9 @@
     <link href="/static/css/fa/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
 <style>
+    span {
+        color: grey;
+    }
     .cam-views {
         font-size: 60px;
     }
@@ -18,6 +21,9 @@
     .cam-odiv {
         display: flex;
         flex-direction: row;
+        background-color: #f7f7f7;
+        padding: 20px;
+        width: 800px;
     }
     .cam-boticons {
         margin-top: 60px;
@@ -31,6 +37,8 @@
     }
     .cam-cam-text {
         color: #0070d1;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .cam-mod {
         display: flex;
@@ -39,14 +47,24 @@
     }
     .cam-tick {
         font-size: 36px;
-    }
+      }
     .cam-cross {
         font-size: 36px;
         margin-left: 70px;
     }
     .cam-app-bl {
         border-radius: 5px;
-        border-type: solid;
+        border-style: solid;
+        border-color: grey;
+        padding: 8px;
+        border-width: 1px;
+    }
+    .cam-input {
+        margin-top: 15px;
+        padding: 8px;
+        border-color: grey;
+        border-width: 1px;
+        color: grey;
     }
      </style>
 </head>
@@ -68,7 +86,8 @@
             <div>
                 <i class="icon-check cam-tick"></i><i class="icon-close cam-cross"></i>
             </div>
-            <span class="cam-app-bl"> 1 Approved &nbsp &nbsp &nbsp 2 Blocked</spanclass>
+            <span class="cam-app-bl"> 1 Approved &nbsp &nbsp &nbsp 2 Blocked</span>
+            <input placeholder="Search" class="cam-input">
         </div>
     </div>
 </body>
