@@ -297,9 +297,6 @@ def overview(request):
         return render(request, 'main/overview.html', context=context)
     return redirect('index')
 
-def communityapprovalmechanism(request):
-    return render(request, 'communityapprovalmechanism.html')
-
 def logout_user(request):
     """
     Logout user

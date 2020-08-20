@@ -6,7 +6,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^gallery/?$', views.componentGallery, name='gallery'),
     url(r'^logout/?$', views.logout_user, name='logout'),
-    url(r'^communityapprovalmechanism/?$', views.communityapprovalmechanism, name='cam'),
     url(r'^overview/?$', views.overview, name='overview'),
     url(r'^public_experiences/?$', views.list_public_experiences, name='public_experiences'),
     url(r'^moderate_public_experiences/?$', views.moderate_public_experiences, name='moderate_public_experiences'),
