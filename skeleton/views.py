@@ -297,6 +297,9 @@ def overview(request):
         return render(request, 'main/overview.html', context=context)
     return redirect('index')
 
+def pictorialexperienceeditor(request):
+    return render(request, 'pictorialexperienceeditor.html')
+
 def logout_user(request):
     """
     Logout user

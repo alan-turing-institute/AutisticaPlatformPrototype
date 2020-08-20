@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Pi</title>
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+<style>
+    .peed-outerdiv {
+        display: flex;
+        flex-direction: row;
+    }
+    .peed-div-home {
+        display: flex;
+        flex-direction: column;
+    }
+    .peed-icon-home {
+        font-size: 65px;
+    }
+    .peed-text-home {
+        padding-left: 10px;
+    }
+    .peed-icon-clear {
+        font-size: 40px;
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div class="peed-outerdiv">
+        <div class="peed-div-home">
+            <i class="icon-home peed-icon-home"></i>
+            <span class="peed-text-home">Home</span>
+        </div>
+        <div class="peed-clear">
+            <span class="peed-span-clear"><i class="icon-clear peed-icon-clear"></i></span>
+
+        </div>
+    </div>
+</body>
+</html>
