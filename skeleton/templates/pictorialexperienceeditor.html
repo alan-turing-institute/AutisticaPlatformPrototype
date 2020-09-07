@@ -20,9 +20,58 @@
     .peed-text-home {
         padding-left: 10px;
     }
+    .peed-clear {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
     .peed-icon-clear {
         font-size: 40px;
         color: red;
+    }
+    .peed-span-clear {
+        padding-top: 25px;
+        border-style: solid;
+        border-radius: 7px;
+        border-color: #0070d1;
+        margin-top: 20px;
+    }
+    .peed-ta {
+        width: 350px;
+        border-style: none;
+    }
+    .peed-exp-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .peed-exp-text {
+        color: #0070d1;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .peed-clear-text {
+        color: grey;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .peed-play {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 15px;
+    }
+
+    .peed-play-icon {
+        font-size: 40px;
+    }
+    .peed-play-ispan {
+        padding-bottom: 14px;
+    }
+    .peed-play-text {
+        color: grey;
+        font-size: 18px;
+        padding-bottom: 10px;
     }
 </style>
 </head>
@@ -33,8 +82,15 @@
             <span class="peed-text-home">Home</span>
         </div>
         <div class="peed-clear">
-            <span class="peed-span-clear"><i class="icon-clear peed-icon-clear"></i></span>
-
+            <span class="peed-span-clear"><textarea class="peed-ta"></textarea><i class="icon-clear peed-icon-clear"></i></span>
+            <div class="peed-exp-div">
+                <span class="peed-exp-text">1. Enter your experiences</span>
+                <span class="peed-clear-text">Clear</span>
+            </div>
+        </div>
+        <div class="peed-play">
+            <span class="peed-play-ispan"><i class="icon-play_arrow peed-play-icon"></i></span>
+            <span class="peed-play-text">Play</span>
         </div>
     </div>
 </body>
