@@ -29,8 +29,8 @@
         font-size: 40px;
         color: red;
     }
-    .peed-span-clear {
-        padding-top: 25px;
+    .peed-span-ta {
+        padding: 10px 0 10px 0;
         border-style: solid;
         border-radius: 7px;
         border-color: #0070d1;
@@ -39,6 +39,7 @@
     .peed-ta {
         width: 350px;
         border-style: none;
+        outline: none;
     }
     .peed-exp-div {
         display: flex;
@@ -66,12 +67,12 @@
         font-size: 40px;
     }
     .peed-play-ispan {
-        padding-bottom: 14px;
+        padding-bottom: 24px;
     }
     .peed-play-text {
         color: grey;
         font-size: 18px;
-        padding-bottom: 10px;
+        padding-bottom: 11px;
     }
 </style>
 </head>
@@ -82,7 +83,7 @@
             <span class="peed-text-home">Home</span>
         </div>
         <div class="peed-clear">
-            <span class="peed-span-clear"><textarea class="peed-ta"></textarea><i class="icon-clear peed-icon-clear"></i></span>
+            <span class="peed-span-ta"><textarea class="peed-ta"></textarea><i class="icon-clear peed-icon-clear"></i></span>
             <div class="peed-exp-div">
                 <span class="peed-exp-text">1. Enter your experiences</span>
                 <span class="peed-clear-text">Clear</span>
@@ -91,6 +92,10 @@
         <div class="peed-play">
             <span class="peed-play-ispan"><i class="icon-play_arrow peed-play-icon"></i></span>
             <span class="peed-play-text">Play</span>
+        </div>
+        <div class="peed-play">
+            <span class="peed-play-ispan"><i class="icon-share peed-play-icon"></i></span>
+            <span class="peed-play-text">Share</span>
         </div>
     </div>
 </body>
