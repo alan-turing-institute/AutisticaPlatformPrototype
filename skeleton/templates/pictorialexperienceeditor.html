@@ -38,11 +38,13 @@
         border-radius: 7px;
         border-color: #0070d1;
         margin-top: 20px;
+        display: inline-block;
+        position: relative;
     }
-    .peed-ta {
-        width: 350px;
-        border-style: none;
-        outline: none;
+    .peed-span-clear {
+        position: absolute;
+        right: 0px;
+}
     }
     .peed-exp-div {
         display: flex;
@@ -119,7 +121,11 @@
             <span class="peed-text-home">Home</span>
         </div>
         <div class="peed-clear">
-            <span class="peed-span-ta"><textarea class="peed-ta"></textarea><i class="icon-clear peed-icon-clear"></i></span>
+            <span class="peed-span-ta">
+                <span class="peed-span-clear">
+                    <i class="icon-clear peed-icon-clear"></i>
+                </span>
+            </span>
             <div class="peed-exp-div">
                 <span class="peed-exp-text">1. Enter your experiences</span>
                 <span class="peed-clear-text">Clear</span>
