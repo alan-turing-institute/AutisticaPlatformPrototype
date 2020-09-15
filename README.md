@@ -45,5 +45,5 @@ docker exec -it <CONTAINER_ID> pipenv run python manage.py makemigrations
 docker exec -it <CONTAINER_ID> pipenv run python manage.py migrate
 ```
 
-These commands will create or update     the relevant files on the host file system, so you can use
+These commands will create or update the relevant files on the host file system, so you can use
 git as you normally would.
