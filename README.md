@@ -17,7 +17,8 @@ docker-compose -f docker-compose-localdev.yml up
 
 This will serve the application at http://localhost:8000/.
 
-Data files for the PostgreSQL database are stored on the host file system in the folder `localdev-data`
+Data files for the PostgreSQL database are stored on the host file system in the 
+folder `localdev-data`.
 
 To install a new dependency run the following command:
 
