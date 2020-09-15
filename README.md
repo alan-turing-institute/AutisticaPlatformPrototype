@@ -9,7 +9,7 @@ application commands directly, run them using `pipenv <COMMAND>`.
 
 E.g. `python manage.py runserver` is bad (python will complain that dependencies
 are not installed). `pipenv run python manage.py runserver` is good
-(`pipenv` is aware of the dependencies, so will serve the application correctly).
+(`pipenv` is aware of the dependencies, and will serve the application correctly).
 
 ### Docker
 
@@ -18,7 +18,7 @@ environment from the rest of your machine.
 
 The following command spins up containers to host the application and database.
 This uses the application files on your host machine, rather than baking them into the image.
-So if you update files in your IDE, the container will serve the updated file.
+So if you update files in your IDE on the host machine, the container will serve the updated file.
 
 From the repo root, run the following command:
 
@@ -44,3 +44,6 @@ docker exec -it <CONTAINER_ID> pipenv run python manage.py makemigrations
 # run migrations
 docker exec -it <CONTAINER_ID> pipenv run python manage.py migrate
 ```
+
+These commands will create the relevant files on the host file system, so you can use
+git as you normally would.
