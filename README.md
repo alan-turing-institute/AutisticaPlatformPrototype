@@ -9,7 +9,7 @@ The following command spins up a docker containers to host the application and d
 This uses the application files on your host machine, rather than baking them into the container.
 So if you update files in your IDE, the container will serve the updated file.
 
-From the repo root, run the following commands:
+From the repo root, run the following command:
 
 ```bash
 docker-compose -f docker-compose-localdev.yml up
