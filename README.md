@@ -16,6 +16,9 @@ are not installed). `pipenv run python manage.py runserver` is good
 You can develop the application using docker containers, to isolate your development
 environment from the rest of your machine.
 
+If you don't want to use docker, you'll have to set environment variables for the
+database in `settings.py`.
+
 The following command spins up containers for the application and database.
 This uses the application files on your host machine, rather than baking them into the image.
 So if you update files in your IDE on the host machine, the container will serve the updated file.
@@ -27,9 +30,6 @@ docker-compose -f docker-compose-localdev.yml up
 ```
 
 This will serve the application at http://localhost:8000/.
-
-Data files for the PostgreSQL database are stored on the host file system in the 
-folder `localdev-data`.
 
 To run commands against the container, use `docker exec -it <CONTAINER_ID> <COMMAND>`.
 Examples are:

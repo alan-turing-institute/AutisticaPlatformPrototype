@@ -9,13 +9,18 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     volumes:
-    - ./localdev-data:/var/lib/postgresql/data
+    - dbdata:/var/lib/postgresql/data
     restart: unless-stopped
 
   web:
     build:
       context: .
       dockerfile: Dockerfile-localdev
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
     command:
       sh -c "python -m pip install --upgrade pip
       && pip install -r requirements.txt
@@ -30,3 +35,6 @@ services:
       - db
     tty: true
     restart: unless-stopped
+
+volumes:
+  dbdata:
