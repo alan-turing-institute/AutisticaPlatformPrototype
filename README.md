@@ -26,7 +26,7 @@ So if you update files in your IDE on the host machine, the container will serve
 From the repo root, run the following command:
 
 ```bash
-docker-compose -f docker-compose-localdev.yml up
+docker-compose up
 ```
 
 This will serve the application at http://localhost:8000/.

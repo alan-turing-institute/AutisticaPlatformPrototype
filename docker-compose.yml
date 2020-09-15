@@ -8,6 +8,8 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    volumes:
+    - dbdata:/var/lib/postgresql/data
     restart: unless-stopped
 
   web:
@@ -19,11 +21,19 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     command:
-      sh -c "pipenv run python manage.py migrate
+      sh -c "python -m pip install --upgrade pip
+      && pip install -r requirements.txt
+      && pipenv install
+      && pipenv run python manage.py migrate
       && pipenv run python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/code
     ports:
       - "8000:8000"
     depends_on:
       - db
     tty: true
     restart: unless-stopped
+
+volumes:
+  dbdata:
