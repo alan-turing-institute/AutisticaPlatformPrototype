@@ -20,8 +20,16 @@ This will serve the application at http://localhost:8000/.
 Data files for the PostgreSQL database are stored on the host file system in the 
 folder `localdev-data`.
 
-To install a new dependency run the following command:
+To run commands against the container, use `docker exec -it <CONTAINER_ID> <COMMAND>`.
+Examples are:
 
 ```bash
+# install a new dependency
 docker exec -it <CONTAINER_ID> pipenv install <DEPENDENCY_NAME>
+
+# make migrations
+docker exec -it <CONTAINER_ID> pipenv run python manage.py makemigrations
+
+# run migrations
+docker exec -it <CONTAINER_ID> pipenv run python manage.py migrate
 ```
