@@ -5,8 +5,8 @@
 You can develop the application using docker containers, to isolate your development
 environment from the rest of your machine.
 
-The following command spins up a docker containers to host the application and database.
-This uses the application files on your host machine, rather than baking them into the container.
+The following command spins up containers to host the application and database.
+This uses the application files on your host machine, rather than baking them into the image.
 So if you update files in your IDE, the container will serve the updated file.
 
 From the repo root, run the following command:
