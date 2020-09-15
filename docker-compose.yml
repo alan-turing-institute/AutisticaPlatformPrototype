@@ -12,8 +12,8 @@ services:
     build:
       context: .
     command: sh -c "pipenv run python manage.py migrate && pipenv run python manage.py runserver 0.0.0.0:8000"
-#    volumes:
-#      - .:/code
+    volumes:
+      - .:/code
     ports:
       - "8000:8000"
     depends_on:
