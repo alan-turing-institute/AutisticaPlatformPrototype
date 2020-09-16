@@ -73,6 +73,8 @@ WSGI_APPLICATION = 'main_app.wsgi.application'
 
 # Database
 
+print('xxx', os.environ.get('POSTGRES_HOST'))
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -84,7 +86,7 @@ DATABASES = {
     }
 }
 
-SESSION_ENGINE= 'django.contrib.sessions.backends.cached_db'
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 
 
 # Password validation
