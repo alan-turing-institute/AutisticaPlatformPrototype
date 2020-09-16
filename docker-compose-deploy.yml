@@ -2,26 +2,38 @@ version: "3"
 
 services:
 
-  db:
+  db_deploy:
     image: postgres
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    networks:
+      - backend_deploy
+    volumes:
+      - dbdata_deploy:/var/lib/postgresql/data
     restart: unless-stopped
 
-  web:
+  web_deploy:
     build:
       context: .
       dockerfile: Dockerfile-deploy
     environment:
-      - POSTGRES_HOST=db
+      - POSTGRES_HOST=db_deploy
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    networks:
+      - backend_deploy
     ports:
       - "8000:8000"
     depends_on:
-      - db
+      - db_deploy
     tty: true
     restart: unless-stopped
+
+networks:
+  backend_deploy:
+
+volumes:
+  dbdata_deploy:
