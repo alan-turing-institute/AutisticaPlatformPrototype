@@ -5,9 +5,7 @@ services:
   db:
     image: postgres
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - DATABASE_PASSWORD=postgres
     networks:
       - backend
     volumes:
@@ -18,10 +16,8 @@ services:
     build:
       context: .
     environment:
-      - POSTGRES_HOST=db
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - DATABASE_HOST=db
+      - DATABASE_PASSWORD=postgres
     command: sh -c "./install-dependencies.sh && ./start.sh"
     networks:
       - backend
