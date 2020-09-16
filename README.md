@@ -23,9 +23,13 @@ The following command spins up containers for the application and database.
 This uses the application files on your host machine, rather than baking them into the image.
 So if you update files in your IDE on the host machine, the container will serve the updated file.
 
-From the repo root, run the following command:
+From the repo root, run the following commands:
 
 ```bash
+# the following command only needs to be run once, when you clone the git repo
+chmod +x install-dependencies.sh
+
+# run this command to spin up the containers
 docker-compose up
 ```
 

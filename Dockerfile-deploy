@@ -10,6 +10,5 @@ RUN mkdir /code
 WORKDIR /code
 COPY . .
 
-RUN python -m pip install --upgrade pip
-RUN pip install -r requirements.txt
-RUN pipenv install
+RUN ./install-dependencies.sh
+ENTRYPOINT ["/code/start.sh"]
