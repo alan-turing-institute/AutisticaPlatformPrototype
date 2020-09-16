@@ -78,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': 'autistica-prototype.chp9gcrsdt8c.eu-west-2.rds.amazonaws.com',
         'PORT': 5432,
-        'NAME': 'autistica-prototype',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'amazingpassword',
     }
