@@ -26,8 +26,9 @@ So if you update files in your IDE on the host machine, the container will serve
 From the repo root, run the following commands:
 
 ```bash
-# the following command only needs to be run once, when you clone the git repo
+# the following commands only need to be run once, when you clone the git repo
 chmod +x install-dependencies.sh
+chmod +x start.sh
 
 # run this command to spin up the containers
 docker-compose up
