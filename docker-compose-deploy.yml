@@ -4,8 +4,6 @@ services:
 
   db_deploy:
     image: postgres
-    environment:
-      - DATABASE_PASSWORD=postgres
     networks:
       - backend_deploy
     volumes:
@@ -17,8 +15,7 @@ services:
       context: .
       dockerfile: Dockerfile-deploy
     environment:
-      - DATABASE_HOST=db_deploy
-      - DATABASE_PASSWORD=postgres
+      - DATABASE={"host":"db", "password":"postgres"}
     networks:
       - backend_deploy
     ports:

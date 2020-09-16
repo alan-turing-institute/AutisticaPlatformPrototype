@@ -4,6 +4,7 @@ Django settings for oh_app_demo project.
 
 import os
 from django.utils.translation import ugettext_lazy
+import json
 
 # import django_heroku
 
@@ -73,16 +74,15 @@ WSGI_APPLICATION = 'main_app.wsgi.application'
 
 # Database
 
-print('xxx', os.environ.get('POSTGRES_HOST'))
-
+db = json.loads(os.environ.get('DATABASE'))
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.environ.get('DATABASE_HOST'),
-        'PORT': os.environ.get('DATABASE_PORT', 5432),
-        'NAME': os.environ.get('DATABASE_NAME', 'postgres'),
-        'USER': os.environ.get('DATABASE_USER', 'postgres'),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+        'HOST': db.get('host'),
+        'PORT': db.get('port', 5432),
+        'NAME': db.get('name', 'postgres'),
+        'USER': db.get('username', 'postgres'),
+        'PASSWORD': db.get('password'),
     }
 }
 
