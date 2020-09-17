@@ -19,7 +19,7 @@ services:
     networks:
       - backend_deploy
     ports:
-      - "8000:8000"
+      - "8000:80"
     depends_on:
       - db_deploy
     tty: true
