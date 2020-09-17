@@ -75,9 +75,7 @@ WSGI_APPLICATION = 'main_app.wsgi.application'
 # Database
 
 db_env = os.environ.get('DATABASE')
-print('xxx1', db_env)
 db = json.loads(db_env)
-print('xxx2', db)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
