@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^gallery/?$', views.componentGallery, name='gallery'),
+    url(r'experienceviewercontrol/?$', views.experienceviewercontrol, name='experienceviewercontrol'),
     url(r'^logout/?$', views.logout_user, name='logout'),
     url(r'^overview/?$', views.overview, name='overview'),
     url(r'^public_experiences/?$', views.list_public_experiences, name='public_experiences'),
