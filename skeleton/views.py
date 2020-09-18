@@ -258,7 +258,7 @@ def upload(request):
 def list_files(request):
     if request.user.is_authenticated:
         context = {'files': request.user.openhumansmember.list_files()}
-        return render(request, '../old/list.html',
+        return render(request, 'list.html',
                       context=context)
     return redirect('index')
 
