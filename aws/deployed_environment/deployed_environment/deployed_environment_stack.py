@@ -46,10 +46,10 @@ class DeployedEnvironmentStack(core.Stack):
             desired_count=1,  # Default is 1
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
                 image=ecs.ContainerImage.from_registry(
-                    f"{self.account}.dkr.ecr.{self.region}.amazonaws.com/autistica-prototype:Latest"),
+                    f"{self.account}.dkr.ecr.{self.region}.amazonaws.com/autistica-prototype"),
                     # "amazon/amazon-ecs-sample"),
                 environment={
-                    "DATABASE": ecs.Secret.from_secrets_manager(db.secret)
+                    "DATABASE": ecs.Secret.from_secrets_manager(db.secret).arn
                 }
             ),
             memory_limit_mib=512,  # Default is 512
