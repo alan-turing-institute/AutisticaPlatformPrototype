@@ -1,6 +1,7 @@
 from aws_cdk import (core,
                      aws_ec2 as ec2,
                      aws_rds as rds,
+                     aws_ecr as ecr,
                      aws_iam as iam,
                      aws_ecs as ecs,
                      aws_ecs_patterns as ecs_patterns)
@@ -41,16 +42,15 @@ class DeployedEnvironmentStack(core.Stack):
         cluster = ecs.Cluster(self, create_name("cluster"), vpc=vpc)
         ecs_patterns.ApplicationLoadBalancedFargateService(
             self, create_name("service"),
-            cluster=cluster,  # Required
-            cpu=256,  # Default is 256
-            desired_count=1,  # Default is 1
+            cluster=cluster,
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
-                image=ecs.ContainerImage.from_registry(
-                    f"{self.account}.dkr.ecr.{self.region}.amazonaws.com/autistica-prototype"),
-                    # "amazon/amazon-ecs-sample"),
+                image=ecs.ContainerImage.from_ecr_repository(
+                    ecr.Repository.from_repository_name(
+                        self,
+                        create_name("ecr-repo"),
+                        "autistica-prototype")),
                 environment={
                     "DATABASE": ecs.Secret.from_secrets_manager(db.secret).arn
                 }
             ),
-            memory_limit_mib=512,  # Default is 512
-            public_load_balancer=True)  # Default is False
+            public_load_balancer=True)
