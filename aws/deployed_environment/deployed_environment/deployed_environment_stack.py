@@ -15,8 +15,10 @@ class DeployedEnvironmentStack(core.Stack):
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
 
+        # create vpc
         vpc = ec2.Vpc(self, create_name("vpc"))
 
+        # create database
         db_name = create_name("database")
         db = rds.DatabaseInstance(
             self,
@@ -31,20 +33,24 @@ class DeployedEnvironmentStack(core.Stack):
             vpc=vpc,
             vpc_subnets=ec2.SubnetSelection(subnet_type=ec2.SubnetType.PRIVATE))
 
+        # assign permissions for ecs to access db credentials
         role = iam.Role.from_role_arn(self, "role", f"arn:aws:iam::{self.account}:role/ecsTaskExecutionRole")
         db.secret.grant_read(role)
 
+        # create ecs components
         cluster = ecs.Cluster(self, create_name("cluster"), vpc=vpc)
         ecs_patterns.ApplicationLoadBalancedFargateService(
             self, create_name("service"),
             cluster=cluster,  # Required
-            cpu=128,  # Default is 256
+            cpu=256,  # Default is 256
             desired_count=1,  # Default is 1
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
                 image=ecs.ContainerImage.from_registry(
                     f"{self.account}.dkr.ecr.{self.region}.amazonaws.com/autistica-prototype:Latest"),
+                    # "amazon/amazon-ecs-sample"),
                 environment={
-                    "DATABASE": db.secret.secret_arn
-                }),
+                    "DATABASE": ecs.Secret.from_secrets_manager(db.secret)
+                }
+            ),
             memory_limit_mib=512,  # Default is 512
             public_load_balancer=True)  # Default is False
