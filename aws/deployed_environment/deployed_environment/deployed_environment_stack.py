@@ -34,13 +34,9 @@ class DeployedEnvironmentStack(core.Stack):
             vpc=vpc,
             vpc_subnets=ec2.SubnetSelection(subnet_type=ec2.SubnetType.PRIVATE))
 
-        # assign permissions for ecs to access db credentials
-        role = iam.Role.from_role_arn(self, "role", f"arn:aws:iam::{self.account}:role/ecsTaskExecutionRole")
-        db.secret.grant_read(role)
-
         # create ecs components
         cluster = ecs.Cluster(self, create_name("cluster"), vpc=vpc)
-        ecs_patterns.ApplicationLoadBalancedFargateService(
+        service = ecs_patterns.ApplicationLoadBalancedFargateService(
             self, create_name("service"),
             cluster=cluster,
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
@@ -54,3 +50,7 @@ class DeployedEnvironmentStack(core.Stack):
                 }
             ),
             public_load_balancer=True)
+
+        # assign permissions for ecs to access db credentials
+        # role = iam.Role.from_role_arn(self, "role", f"arn:aws:iam::{self.account}:role/ecsTaskExecutionRole")
+        db.secret.grant_read(service.task_definition.execution_role)
