@@ -7,13 +7,15 @@ from aws_cdk import (core,
 
 
 def create_name(suffix: str) -> str:
-    return "ap-" + suffix
+    return "autistica-prototype-" + suffix
 
 
 class DeployedEnvironmentStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
+
+        ecr_repo = ecr.Repository(self, create_name("ecr_repo"))
 
         # create vpc
         vpc = ec2.Vpc(self, create_name("vpc"))
@@ -42,10 +44,12 @@ class DeployedEnvironmentStack(core.Stack):
             cluster=cluster,
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
                 image=ecs.ContainerImage.from_ecr_repository(
-                    ecr.Repository.from_repository_name(
-                        self,
-                        create_name("ecr-repo"),
-                        "autistica-prototype")),
+                    ecr_repo
+                    # ecr.Repository.from_repository_name(
+                    #     self,
+                    #     create_name("ecr-repo"),
+                    #     "autistica-prototype")
+                    ),
                 secrets={
                     "DATABASE": ecs.Secret.from_secrets_manager(db.secret)
                 }
