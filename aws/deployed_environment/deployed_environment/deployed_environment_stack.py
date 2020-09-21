@@ -20,6 +20,7 @@ class DeployedEnvironmentStack(core.Stack):
 
         # create database
         db_name = create_name("database")
+        db_port = 5432
         db = rds.DatabaseInstance(
             self,
             db_name,
@@ -31,6 +32,7 @@ class DeployedEnvironmentStack(core.Stack):
             master_username="postgres",
             deletion_protection=False,
             vpc=vpc,
+            port=db_port,
             vpc_subnets=ec2.SubnetSelection(subnet_type=ec2.SubnetType.PRIVATE))
 
         # create ecs components
@@ -44,14 +46,13 @@ class DeployedEnvironmentStack(core.Stack):
                         self,
                         create_name("ecr-repo"),
                         "autistica-prototype")),
-                environment={
-                    "DATABASE": ecs.Secret.from_secrets_manager(db.secret).arn
+                secrets={
+                    "DATABASE": ecs.Secret.from_secrets_manager(db.secret)
                 }
             ),
             public_load_balancer=True)
 
         # assign permissions for ecs to access db
-        db.secret.grant_read(service_construct.task_definition.execution_role)
         db.connections.security_groups[0].add_ingress_rule(
-            service_construct.service.connections.security_groups[0],
-            ec2.Port.tcp(5432))
+            service_construct.service.connections.security_groups[0], ec2.Port.tcp(db_port))
+        db.secret.grant_read(service_construct.task_definition.execution_role)
