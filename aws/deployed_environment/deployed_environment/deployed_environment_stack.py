@@ -2,7 +2,6 @@ from aws_cdk import (core,
                      aws_ec2 as ec2,
                      aws_rds as rds,
                      aws_ecr as ecr,
-                     aws_iam as iam,
                      aws_ecs as ecs,
                      aws_ecs_patterns as ecs_patterns)
 
@@ -53,7 +52,6 @@ class DeployedEnvironmentStack(core.Stack):
 
         # assign permissions for ecs to access db
         db.secret.grant_read(service_construct.task_definition.execution_role)
-        # db.connections.security_groups.append(service_construct.service.connections.security_groups)
         db.connections.security_groups[0].add_ingress_rule(
             service_construct.service.connections.security_groups[0],
             ec2.Port.tcp(5432))
