@@ -36,7 +36,7 @@ class DeployedEnvironmentStack(core.Stack):
 
         # create ecs components
         cluster = ecs.Cluster(self, create_name("cluster"), vpc=vpc)
-        service = ecs_patterns.ApplicationLoadBalancedFargateService(
+        service_construct = ecs_patterns.ApplicationLoadBalancedFargateService(
             self, create_name("service"),
             cluster=cluster,
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
@@ -51,6 +51,9 @@ class DeployedEnvironmentStack(core.Stack):
             ),
             public_load_balancer=True)
 
-        # assign permissions for ecs to access db credentials
-        # role = iam.Role.from_role_arn(self, "role", f"arn:aws:iam::{self.account}:role/ecsTaskExecutionRole")
-        db.secret.grant_read(service.task_definition.execution_role)
+        # assign permissions for ecs to access db
+        db.secret.grant_read(service_construct.task_definition.execution_role)
+        # db.connections.security_groups.append(service_construct.service.connections.security_groups)
+        db.connections.security_groups[0].add_ingress_rule(
+            service_construct.service.connections.security_groups[0],
+            ec2.Port.tcp(5432))
