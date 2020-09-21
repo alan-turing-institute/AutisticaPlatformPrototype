@@ -298,7 +298,21 @@ def overview(request):
     return redirect('index')
 
 def pictorialexperienceeditor(request):
-    return render(request, 'pictorialexperienceeditor.html')
+    context={
+        "peed_ele": [
+            {
+                "text": "I",
+                "icon": "icon-Autistic-Person"
+            }
+        ],
+        "peed_fld": [
+            {
+                "number": "2.",
+                "title": "Sensory"
+            }
+        ]
+    }
+    return render(request, 'pictorialexperienceeditor.html',context=context)
 
 def logout_user(request):
     """

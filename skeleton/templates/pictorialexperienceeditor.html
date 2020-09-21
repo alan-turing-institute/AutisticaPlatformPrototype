@@ -112,6 +112,48 @@
         font-size: 27px;
         color: #0070d1;
     }
+    .peed1-outerdiv {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 0 40px;
+    }
+    .peed1-span-item {
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 10px;
+        width: 100px;
+        height: 70px;
+        border-color: #0070d1;
+        margin-right: 40px;
+    }
+    .peed1-span-itext {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .peed1-span-iicon {
+        text-align: center;
+    }
+    .peed1-icon {
+        font-size: 40px;
+    }
+    .peed1-span-folder {
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 10px;
+        width: 100px;
+        height: 70px;
+        border-color: #0070d1;
+    }
+    .peed1-span-fnumber {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .peed1-span-ftitle {
+        padding-top: 10px;
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -140,6 +182,18 @@
             <span class="peed-play-text">Share</span>
         </div>
     </div>
+
+    <div class="peed1-outerdiv">
+        <span class="peed1-span-item">
+            <span class="peed1-span-itext">{{peed_ele.0.text}}</span>
+            <span class="peed1-span-iicon"><i class="{{peed_ele.0.icon}} peed1-icon"></i></span>
+        </span>
+        <span class="peed1-span-folder">
+            <span class="peed1-span-fnumber">{{peed_fld.0.number}}</span>
+            <span class="peed1-span-ftitle">{{peed_fld.0.title}}</span>
+        </span>
+    </div>
+
     <div class="peed2-outerdiv">
         <div class="peed2-div-item">
             <span class="peed2-span-icon"><i class="icon-profile peed2-icon"></i></span>
