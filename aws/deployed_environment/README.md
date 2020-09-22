@@ -1,58 +1,105 @@
+# Deploying the application
 
-# Welcome to your CDK Python project!
+## Pre-requisites
 
-This is a blank project for Python development with CDK.
+Hopefully the following steps will be automated in a future version.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+### AWS
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the .env
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+Create the deployment pipeline using the following steps:
 
-To manually create a virtualenv on MacOS and Linux:
-
-```
-$ python3 -m venv .env
-```
-
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
-
-```
-$ source .env/bin/activate
-```
-
-If you are a Windows platform, you would activate the virtualenv like this:
+- Navigate to ECR
+- Create a repository called `autistica-prototype`
+- Navigate to CodePipeline
+- Create a pipeline called `autistica-prototype`
+- Keep **New service role** selected. Click **Next**
+- In **Add source stage**, set up connection to GitHub repo. Click **Next**
+- In **Add build stage**, select **AWS CodeBuild** and click **Create project**. This opens a new window for CodeBuild
+- In the new window (**Create build project**), fill in details
+- In the **Environment** section, keep **New service role** selected, and make a note of the **Role name**
+- In the **Environment** section, expand **Additional configuration**
+- Add the following environment variables:
 
 ```
-% .env\Scripts\activate.bat
+AWS_DEFAULT_REGION=<region>
+AWS_ACCOUNT_ID=<account-id>
+IMAGE_TAG=latest
+IMAGE_REPO_NAME=autistica-prototype
 ```
 
-Once the virtualenv is activated, you can install the required dependencies.
+- Click **Continue to CodePipeline**
+- This will close the **Create build project** window, and should take you back to the **Add build stage** window
+(if it doesn't take you back, navigate back to the previous window yourself)
+- Back in the **Add build stage** window, click **Next** 
+- In **Add deploy stage**, click **Skip deploy stage**. A popup will ask if you want to do this - click **Skip**
+- In **Review**, click **Create pipeline**
+- Navigate to IAM
+- Find the service role you made a note of when setting up the CodeBuild project
+- Create a new inline policy with the following settings:
 
+```json
+{
+    "Statement": [
+        {
+            "Action": [
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:CompleteLayerUpload",
+                "ecr:GetAuthorizationToken",
+                "ecr:InitiateLayerUpload",
+                "ecr:PutImage",
+                "ecr:UploadLayerPart"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ],
+    "Version": "2012-10-17"
+}
 ```
-$ pip install -r requirements.txt
+
+Now, whenever someone pushes to the GitHub branch specified in the setup, the build will run, create a new Docker
+image, and push that image to ECR.
+
+### Local machine
+
+Set up your machine so you can create the runtime stack using the following steps:
+
+- Install python
+- Install AWS CLI
+- Install AWS CDK
+- Ensure the CLI is using the account / credentials you want
+
+
+## Create the runtime stack from your local machine
+
+For the following to work, there **must** be at least one docker image in the ECR repo. So if the build hasn't run,
+trigger it manually.
+
+From the repo root, run the following commands:
+
+```bash
+cd aws/deployed_environment
+. ./.env/bin/activate
+pip install -r requirements.txt
+cdk deploy
 ```
 
-At this point you can now synthesize the CloudFormation template for this code.
+You now have a runtime environment using the a Docker image of the latest version of the code. The publicly-accessible
+URL is printed in the terminal. Note that it may take a minute for the container to spin-up, but otherwise you should
+be good to go.
 
-```
-$ cdk synth
-```
 
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
+## Deploying a newer version
 
-## Useful commands
+The build pipeline does not include an auto-deploy step. This has to be done manually. To deploy a newer version
+of the code, do the following:
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
-
-Enjoy!
+- Push your code to GitHub
+- The build will automatically trigger. Wait for the build to complete and push a new Docker image to ECR
+- Navigate to ECS
+- Find the cluster, and under **Services**, click the service
+- Click **Update**
+- Select **Force new deployment**
+- Click **Skip**
+- Click **Go**
+- Wait for the new task to spin up
