@@ -86,21 +86,22 @@ cdk deploy
 ```
 
 You now have a runtime environment using the a Docker image of the latest version of the code. The publicly-accessible
-URL is printed in the terminal. Note that it may take a minute for the container to spin-up, but otherwise you should
-be good to go.
+URL is printed in the terminal, and will be something along the lines of
+http://deplo-autis-AA2EHG3N73H0-1776356449.eu-west-2.elb.amazonaws.com. Note that it may take a minute for the 
+container to spin-up, but otherwise you should be good to go.
 
 
-## Deploying a newer version
+## Deploying a new version
 
-The build pipeline does not include an auto-deploy step. This has to be done manually. To deploy a newer version
-of the code, do the following:
+The build pipeline does not include an auto-deploy step. This has to be done manually. To deploy a new version
+of the app, do the following:
 
-- Push your code to GitHub
+- Push the code to GitHub
 - The build will automatically trigger. Wait for the build to complete and push a new Docker image to ECR
 - Navigate to ECS
 - Find the cluster, and under **Services**, click the service
-- Click **Update**
+- On the service page, click **Update**
 - Select **Force new deployment**
-- Click **Skip**
-- Click **Go**
+- Click **Skip to review**
+- Click **Update Service**
 - Wait for the new task to spin up
