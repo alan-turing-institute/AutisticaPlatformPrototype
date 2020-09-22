@@ -27,6 +27,7 @@ IMAGE_TAG=latest
 IMAGE_REPO_NAME=autistica-prototype
 ```
 
+- Under **Buildspec** keep **Use a buildspec file** selected. This uses the build steps defined in `./buildspec.yml`
 - Click **Continue to CodePipeline**
 - This will close the **Create build project** window, and should take you back to the **Add build stage** window
 (if it doesn't take you back, navigate back to the previous window yourself)
