@@ -299,11 +299,107 @@ def overview(request):
 
 def pictorialexperienceeditor(request):
     context={
-        "peed_ele": [
+        "peed_ele_row": [
             {
-                "text": "I",
-                "icon": "icon-Autistic-Person"
-            }
+                "peed_ele_col" : [
+                    {
+                        "text": "I",
+                        "icon": "icon-Autistic-Person"
+                    },
+                    {
+                        "text": "Audio Desc",
+                        "icon": "icon-audio-description"
+                    },
+                    {
+                        "text": "Account",
+                        "icon": "icon-account_circle"
+                    },
+                    {
+                        "text": "Add box",
+                        "icon": "icon-add_box"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "Add",
+                        "icon": "icon-add"
+                    },
+                    {
+                        "text": "Apps",
+                        "icon": "icon-apps-24px"
+                    },
+                    {
+                        "text": "Bar Chart",
+                        "icon": "icon-bar_chart"
+                    },
+                    {
+                        "text": "Camera",
+                        "icon": "icon-camera_alt"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "Tick",
+                        "icon": "icon-check-circle-together"
+                    },
+                    {
+                        "text": "Cross",
+                        "icon": "icon-close"
+                    },
+                    {
+                        "text": "Smile",
+                        "icon": "icon-comment-alt-smile"
+                    },
+                    {
+                        "text": "Compass",
+                        "icon": "icon-compass"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "CSP",
+                        "icon": "icon-csp-lblue"
+                    },
+                    {
+                        "text": "Database",
+                        "icon": "icon-database-solid"
+                    },
+                    {
+                        "text": "Email",
+                        "icon": "icon-email"
+                    },
+                    {
+                        "text": "Fast Food",
+                        "icon": "icon-fastfood"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "Image",
+                        "icon": "icon-image"
+                    },
+                    {
+                        "text": "School",
+                        "icon": "icon-school"
+                    },
+                    {
+                        "text": "Language",
+                        "icon": "icon-language"
+                    },
+                    {
+                        "text": "No",
+                        "icon": "icon-no"
+                    }
+                ]
+            },
         ],
         "peed_fld": [
             {

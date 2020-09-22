@@ -113,9 +113,10 @@
         color: #0070d1;
     }
     .peed1-outerdiv {
-        display: flex;
-        flex-direction: row;
+        background-color: #fcfcfc;
         margin: 20px 0 0 40px;
+        padding: 10px 0 10px 50px;
+        width: 600px;
     }
     .peed1-span-item {
         display: flex;
@@ -125,7 +126,7 @@
         width: 100px;
         height: 70px;
         border-color: #0070d1;
-        margin-right: 40px;
+        margin: 0 10px 10px 0;
     }
     .peed1-span-itext {
         text-align: center;
@@ -184,14 +185,20 @@
     </div>
 
     <div class="peed1-outerdiv">
-        <span class="peed1-span-item">
-            <span class="peed1-span-itext">{{peed_ele.0.text}}</span>
-            <span class="peed1-span-iicon"><i class="{{peed_ele.0.icon}} peed1-icon"></i></span>
-        </span>
-        <span class="peed1-span-folder">
-            <span class="peed1-span-fnumber">{{peed_fld.0.number}}</span>
-            <span class="peed1-span-ftitle">{{peed_fld.0.title}}</span>
-        </span>
+        <table>
+            {% for rw in peed_ele_row %}
+            <tr>
+                {% for cl in rw.peed_ele_col %}
+                <td>
+                    <span class="peed1-span-item">
+                        <span class="peed1-span-itext">{{cl.text}}</span>
+                        <span class="peed1-span-iicon"><i class="{{cl.icon}} peed1-icon"></i></span>
+                    </span>
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
     </div>
 
     <div class="peed2-outerdiv">
