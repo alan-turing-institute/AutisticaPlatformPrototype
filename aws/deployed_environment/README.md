@@ -8,6 +8,8 @@ Hopefully the following steps will be automated in a future version.
 
 Create the deployment pipeline using the following steps:
 
+- Sign in to the correct account
+- Select the region you want to deploy to
 - Navigate to ECR
 - Create a repository called `autistica-prototype`
 - Navigate to CodePipeline
