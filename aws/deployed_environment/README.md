@@ -40,7 +40,7 @@ IMAGE_REPO_NAME=autistica-prototype
 - In **Review**, click **Create pipeline**
 - Navigate to IAM
 - Find the service role you made a note of when setting up the CodeBuild project
-- Create a new inline policy with the following settings:
+- Create a new inline policy with the following settings. You can name the policy something like `ecr-write`
 
 ```json
 {
