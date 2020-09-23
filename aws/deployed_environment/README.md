@@ -26,7 +26,7 @@ Create the deployment pipeline using the following steps:
 
 ```
 AWS_DEFAULT_REGION=<region>
-AWS_ACCOUNT_ID=<account-id>
+AWS_ACCOUNT_ID=<account_id>
 IMAGE_TAG=latest
 IMAGE_REPO_NAME=autistica-prototype
 ```
@@ -86,7 +86,7 @@ From the repo root, run the following commands:
 cd aws/deployed_environment
 . ./.env/bin/activate
 pip install -r requirements.txt
-cdk deploy
+cdk deploy --profile <aws_config_and_credentials_profile_name>
 ```
 
 You now have a runtime environment using the a Docker image of the latest version of the code. The publicly-accessible
