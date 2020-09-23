@@ -19,6 +19,8 @@ Create the deployment pipeline using the following steps:
 - In **Add build stage**, select **AWS CodeBuild** and click **Create project**. This opens a new window for CodeBuild
 - In the new window (**Create build project**), fill in details
 - In the **Environment** section, keep **New service role** selected, and make a note of the **Role name**
+(you need to enter a **Project name** first before the **Role name** appears)
+- In the **Environment** section, select the checkbox under **Privileged**
 - In the **Environment** section, expand **Additional configuration**
 - Add the following environment variables:
 
