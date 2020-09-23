@@ -1,8 +1,6 @@
-# Autistica Platform Prototype
+# Web app development environment
 
-## Development environment
-
-### pipenv
+## pipenv
 
 Application dependencies are managed using `pipenv`. So rather than running 
 application commands directly, run them using `pipenv <COMMAND>`.
@@ -11,7 +9,7 @@ E.g. `python manage.py runserver` is bad (python will complain that dependencies
 are not installed). `pipenv run python manage.py runserver` is good
 (`pipenv` is aware of the dependencies, and will serve the application correctly).
 
-### Docker
+## Docker
 
 You can develop the application using docker containers, to isolate your development
 environment from the rest of your machine.
@@ -26,6 +24,8 @@ So if you update files in your IDE on the host machine, the container will serve
 From the repo root, run the following commands:
 
 ```bash
+cd web_app
+
 # the following commands only need to be run once, when you clone the git repo
 chmod +x install-dependencies.sh
 chmod +x start.sh
