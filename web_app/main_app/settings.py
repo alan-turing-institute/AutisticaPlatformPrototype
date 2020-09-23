@@ -4,6 +4,7 @@ Django settings for oh_app_demo project.
 
 import os
 from django.utils.translation import ugettext_lazy
+import json
 
 # import django_heroku
 
@@ -73,14 +74,20 @@ WSGI_APPLICATION = 'main_app.wsgi.application'
 
 # Database
 
+db_env = os.environ.get('DATABASE')
+db = json.loads(db_env)
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': db.get('host'),
+        'PORT': db.get('port', 5432),
+        'NAME': db.get('name', 'postgres'),
+        'USER': db.get('username', 'postgres'),
+        'PASSWORD': db.get('password'),
     }
 }
 
-SESSION_ENGINE= 'django.contrib.sessions.backends.cached_db'
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 
 
 # Password validation

@@ -1,14 +1,7 @@
 # Autistica Platform Prototype
 
-## Get app running on local machine
+The folder [web_app](./web_app) contains the web application, which is the main part of the project
 
-You need to have Docker installed on your machine.
+The folder [aws](./aws) contains build-related work
 
-From the repo root, run the following commands:
-
-```bash
-cd build
-docker-compose up
-```
-
-This will spin up the containers and serve the application at http://localhost:8000/.
+Have a look in each for respective READMEs

@@ -6,7 +6,7 @@ name = "pypi"
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
 
 [packages]
 django = "*"
@@ -16,3 +16,4 @@ gunicorn = "*"
 vcrpy = "*"
 requests-mock = "*"
 coverage = "*"
+psycopg2-binary = "*"

@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      - backend
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+    environment:
+      - DATABASE={"host":"db", "password":"postgres"}
+    command: sh -c "./install-dependencies.sh && ./start.sh"
+    networks:
+      - backend
+    volumes:
+      - .:/code
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    tty: true
+    restart: unless-stopped
+
+networks:
+  backend:
+
+volumes:
+  dbdata:
