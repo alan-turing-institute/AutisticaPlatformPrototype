@@ -1,13 +1,30 @@
-<div class="card autistica-card" style="width: 20rem;">
+<style>
+  mark {
+    background-color: #00f5eb;
+  }
+  .hiw-heading {
+    border-style: solid;
+  }
+  .hiw-body {
+    display: flex;
+    flex-direction: row;
+  }
+</style>
+<div class="card autistica-card" style="width: 40rem;">
   <div class="card-body">
-    <h4 class="card-title">How it works</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Login to upload to our experiences</h6>
-    <p class="card-text">
-      <ol>
-        <li>Log into Open Humans OH</li>
-        <li> Authorise project</li>
-        <li>Upload your experiences</li>
-  </ol>
-    </p>
+    <h4 class="card-title hiw-heading"><mark>How it works</mark> <i class="icon-how_it_works"></i></h4>
+    <div class="hiw-body">
+      <div>
+        <h6 class="card-subtitle mb-2 text-muted"><mark>First Login to Open Humans to upload our experiences. The platform uses OH for the storing of data, the platform tool collects</mark></h6>
+        <p class="card-text">
+          <ul>
+            <li><mark>Login</mark></li>
+            <li><mark>Add your experience</mark></li>
+            <li><mark>Share your experiences</mark></li>
+          </ul>
+        </p>
+      </div>
+      <img src="/static/img/you-and-your-data.png">
+    </div>
   </div>
 </div>
