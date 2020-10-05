@@ -19,7 +19,29 @@
         border-radius: 5px;
     }
     .dp-question-text {
-    top-margin: 20px;
+        margin: 12px 0 12px 0;
+    }
+    .dp-submit {
+        border-style: solid;
+        border-color: #ff815b;
+        color: white;
+        background-color: #ff815b;
+        border-radius: 5px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    .dp-yesnotext {
+        font-size: 11px;
+        margin-right: 20px;
+    }
+    div.dp-questions > input:checked +img{
+        background: url(http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+        background-repeat: no-repeat;
+        background-position:center center;
+        background-size:30px 30px;
+    }
+    input[type="radio"] {
+        appearance: checkbox;
     }
 </style>
 <div>
@@ -31,12 +53,13 @@
         <span>Profile</span>
         <p>Please answer the questions below to define your profile:</p>
         <div class="dp-questions">
-            <div>Are you autistic?</div>
-            <input type="checkbox"><span>&nbsp;&nbsp;YES&nbsp;&nbsp;</span><input type="checkbox"><span>&nbsp;&nbsp;NO&nbsp;&nbsp;</span>
+            <div class="dp-question-text">Are you autistic?</div>
+            <input type="radio" name="q1"><img /><span class="dp-yesnotext">&nbsp;&nbsp;YES&nbsp;&nbsp;</span><input type="radio" name="q1"><span class="dp-yesnotext">&nbsp;&nbsp;NO&nbsp;&nbsp;</span>
             <div class="dp-question-text">Are you the carer of an autistic person?</div>
-            <input type="checkbox"><span>&nbsp;&nbsp;YES&nbsp;&nbsp;</span><input type="checkbox"><span>&nbsp;&nbsp;NO&nbsp;&nbsp;</span>
-            <div>Do you have any other neurodivergences?</div>
-            <input type="checkbox"><span>&nbsp;&nbsp;YES&nbsp;&nbsp;</span><input type="checkbox"><span>&nbsp;&nbsp;NO&nbsp;&nbsp;</span>
+            <input type="radio" name="q2"><span class="dp-yesnotext">&nbsp;&nbsp;YES&nbsp;&nbsp;</span><input type="radio" name="q2"><span class="dp-yesnotext">&nbsp;&nbsp;NO&nbsp;&nbsp;</span>
+            <div class="dp-question-text">Do you have any other neurodivergences?</div>
+            <input type="radio" name="q3"><span class="dp-yesnotext">&nbsp;&nbsp;YES&nbsp;&nbsp;</span><input type="radio" name="q3"><span class="dp-yesnotext">&nbsp;&nbsp;NO&nbsp;&nbsp;</span>
+            <div class="dp-submit">Submit</div>
         </div>
 
     </div>
