@@ -287,6 +287,11 @@ def componentGallery(request):
 
     return render(request, 'gallery.html', context=context)
 
+def home(request):
+    return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
 
 def overview(request):
     if request.user.is_authenticated:
