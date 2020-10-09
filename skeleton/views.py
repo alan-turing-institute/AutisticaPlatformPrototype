@@ -286,12 +286,68 @@ def componentGallery(request):
                                  'oh_proj_page': settings.OH_PROJ_PAGE}}
 
     return render(request, 'gallery.html', context=context)
+def share(request):
+    context = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Experience"
+            }
+        ],
+    }
+    stepper_object = Stepper.Stepper(request)
+
+    stepper_object.update()
+    return render(request, 'share.html', context=context)
+
+def view(request):
+    context = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Experience"
+            },
+            {
+                "id": 4,
+                "label": "View Experience"
+            }
+        ],
+    }
+    stepper_object = Stepper.Stepper(request)
+
+    stepper_object.update()
+    return render(request, 'view.html', context=context)
 
 def home(request):
     return render(request, 'home.html')
 
 def about(request):
     return render(request, 'about.html')
+
+def mydata(request):
+    return render(request, 'mydata.html')
+
+def settings(request):
+    return render(request, 'settings.html')
+
+def login(request):
+    return render(request, 'login.html')
 
 def overview(request):
     if request.user.is_authenticated:

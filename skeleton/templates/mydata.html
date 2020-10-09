@@ -41,20 +41,18 @@
 </head>
 
 <body>
-    <a name=""top"></a>
-    <div class="container-lg px-1">
-    <h1 style="color: grey !important;text-align: center;">Share</h1>
+<a name=""top"></a>
+<div class="container-lg px-1">
+<h1 style="color: grey !important;text-align: center;">MyData</h1>
 
     <!-- Static navbar -->
     {% include 'main/../components/navbar.html' %}
 
-    {% load userJourney %}
-    <form id="stepper" method="POST">{% csrf_token %}
-        {% display_user_journey request.session.activeStepper stepper %}
-    </form>
+    <!-- Secondary Banner -->
+    {% include 'main/../components/banner.html' %}
 
-    <a href="/home"><i class="icon-home"></i></a><span>&nbsp;&nbsp;Share&nbsp;&nbsp;</span><i class="icon-label-24px"></i>
-    <span>&nbsp;Where users can enter their experiences</span>
+ <a href="/home"><i class="icon-home"></i></a><span>&nbsp;&nbsp;MyData&nbsp;&nbsp;</span><i class="icon-label-24px"></i>
+ <span>&nbsp;Where users can see their own submissions</span>
     <!-- Footer -->
     {% include 'main/../components/footer.html' %}
 
