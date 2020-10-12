@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+<style>
+    .ui-outerdiv {
+        border-style: solid;
+        border-width: 2px;
+        width: 600px;
+        height: 450px;
+    }
+    .ui-topdiv {
+        border-style: solid;
+        border-width: 2px;
+        width: 600px;
+        height: 90px;
+    }
+    .ui-toptext {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .ui-icon-close {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-size: 30px;
+    }
+    .ui-upload {
+        display: flex;
+        flex-direction: row;
+    }
+    .ui-upload-dashed-border {
+        margin: 40px 0 0 60px;
+        border-style: dashed;
+        width: 350px;
+        height: 230px;
+    }
+    .ui-icon-upload {
+        font-size: 60px;
+     }
+    .ui-div-icon-upload {
+        margin: 70px 0 0 145px;
+    }
+}
+</style>
+</head>
+<body>
+ <div class="ui-outerdiv">
+     <div class="ui-topdiv">
+         <i class="icon-close ui-icon-close"></i>
+         <div class="ui-toptext">Upload Media (Photo or Sound)</div>
+     </div>
+     <div class="ui-upload">
+        <div>
+            <div class="ui-upload-dashed-border">
+                <div class="ui-div-icon-upload">
+                    <i class="icon-upload ui-icon-upload"></i>
+                </div>
+            </div>
+        </div>
+     </div>
+ </div>
+</body>
+</html>
