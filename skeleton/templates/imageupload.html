@@ -9,18 +9,19 @@
     .ui-outerdiv {
         border-style: solid;
         border-width: 2px;
-        width: 600px;
+        width: 685px;
         height: 450px;
     }
     .ui-topdiv {
         border-style: solid;
         border-width: 2px;
-        width: 600px;
+        width: 685px;
         height: 90px;
     }
     .ui-toptext {
         font-size: 20px;
         margin-left: 30px;
+        color: #0070d1;
     }
     .ui-icon-close {
         display: flex;
@@ -34,16 +35,38 @@
         flex-direction: row;
     }
     .ui-upload-dashed-border {
-        margin: 40px 0 0 60px;
+        margin: 40px 0 0 150px;
         border-style: dashed;
+        border-radius: 5px;
+        border-color: #0070d1;
         width: 350px;
-        height: 230px;
+        height: 185px;
     }
     .ui-icon-upload {
         font-size: 60px;
      }
     .ui-div-icon-upload {
-        margin: 70px 0 0 145px;
+        margin: 40px 0 0 145px;
+    }
+    .ui-ddutext {
+        text-align: center;
+        line-height: 25px;
+        margin-top: 30px;
+    }
+    .ui-file-ext {
+        font-size: 12px;
+    }
+    .ui-icon-attach {
+        font-size: 20px;
+    }
+    .ui-file-details {
+        margin: 20px 0 0 155px;
+    }
+    .ui-filename {
+        font-size: 12px;
+    }
+    .ui-icon-cfu {
+        margin-left: 230px;
     }
 }
 </style>
@@ -60,6 +83,15 @@
                 <div class="ui-div-icon-upload">
                     <i class="icon-upload ui-icon-upload"></i>
                 </div>
+                <div class="ui-ddutext">
+                    Drag & Drop Upload<br>
+                    File Types: <span class="ui-file-ext">&nbsp;&nbsp;&nbsp;.jpg .png .mpg .wav</span>
+                </div>
+            </div>
+            <div class="ui-file-details">
+                <i class="icon-attachment ui-icon-attach"></i>
+                <span class="ui-filename">&nbsp;&nbsp;&nbsp;busy-tube.png</span>
+                <i class="icon-close ui-icon-cfu"></i>
             </div>
         </div>
      </div>
