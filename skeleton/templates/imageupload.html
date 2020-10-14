@@ -29,6 +29,7 @@
         margin-top: 5px;
         margin-right: 5px;
         font-size: 30px;
+        color: black;
     }
     .ui-upload {
         display: flex;
@@ -67,6 +68,23 @@
     }
     .ui-icon-cfu {
         margin-left: 230px;
+        font-size: 23px;
+        color: black;
+    }
+    .ui-hr {
+        width: 250px;
+        height: 8px;
+        margin-left: 180px;
+        color: #0070d1;
+        background-color: #0070d1;
+    }
+    .ui-progress {
+        margin-left: 180px;
+    }
+    .ui-image {
+        width: 90px;
+        margin: 40px 0 0 20px;
+        border-style: dashed;
     }
 }
 </style>
@@ -93,7 +111,10 @@
                 <span class="ui-filename">&nbsp;&nbsp;&nbsp;busy-tube.png</span>
                 <i class="icon-close ui-icon-cfu"></i>
             </div>
+            <hr class="ui-hr">
+            <span class="ui-progress">100% uploaded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 minutes left</span>
         </div>
+         <div><img src="static/img/busy-tube.png" class="ui-image"></div>
      </div>
  </div>
 </body>
