@@ -6,15 +6,26 @@
     <title>Image Upload</title>
     <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
 <style>
+    .ui-master-div {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     .ui-outerdiv {
         border-style: solid;
         border-width: 2px;
+        border-radius: 5px;
         width: 685px;
         height: 450px;
-    }
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+   }
     .ui-topdiv {
-        border-style: solid;
-        border-width: 2px;
+        border-bottom: 2px solid;
         width: 685px;
         height: 90px;
     }
@@ -81,18 +92,42 @@
     .ui-progress {
         margin-left: 180px;
     }
+    .ui-image-div {
+        margin: 40px 0 0 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     .ui-image {
         width: 90px;
-        margin: 40px 0 0 20px;
         border-style: dashed;
+        border-radius: 5px;
+    }
+    .ui-image-tickbox {
+         position: absolute;
+         top: 40px;
+         left: 40px;
+         color: green;
     }
 }
 </style>
+<script>
+    function showImageUpload() {
+        document.getElementById("upload").style.display = "block"
+    }
+        function hideImageUpload() {
+        document.getElementById("upload").style.display = "none"
+    }
+</script>
 </head>
 <body>
- <div class="ui-outerdiv">
+<div class="ui-master-div">
+<div>
+    <button onclick="showImageUpload()">Upload</button>
+</div>
+<div class="ui-outerdiv" id="upload">
      <div class="ui-topdiv">
-         <i class="icon-close ui-icon-close"></i>
+         <i class="icon-close ui-icon-close" onclick="hideImageUpload()"></i>
          <div class="ui-toptext">Upload Media (Photo or Sound)</div>
      </div>
      <div class="ui-upload">
@@ -114,8 +149,13 @@
             <hr class="ui-hr">
             <span class="ui-progress">100% uploaded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 minutes left</span>
         </div>
-         <div><img src="static/img/busy-tube.png" class="ui-image"></div>
+         <div>
+             <div class="ui-image-div">
+                 <img src="static/img/busy-tube.png" class="ui-image">
+                 <i class="icon-check_circle ui-image-tickbox"></i>
+         </div>
      </div>
- </div>
+</div>
+</div>
 </body>
 </html>
