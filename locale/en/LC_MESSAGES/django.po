@@ -17,14 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Language: en_GB\n"
+"X-Source-Language: C\n"
 
 #: main/templates/components/banner.html:4
 msgid "Tagline"
-msgstr "Creating accessible environments"
+msgstr "building a better world for autistic people"
 
 #: main/templates/components/alt_banner.html:4
 msgid "TaglineAlt"
-msgstr "What would you have wished to be different"
+msgstr "creating accessible environments"
 
 #: main/templates/components/languageSelector.html:31
 msgid "Langauge"
@@ -311,15 +313,15 @@ msgstr ""
 #: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1239
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1243
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1247
@@ -338,8 +340,8 @@ msgstr ""
 #: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1536
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1539
@@ -1092,9 +1094,9 @@ msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/views/csrf.py:120
 msgid ""
-"If you have configured your browser to disable “Referer” headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for “same-"
-"origin” requests."
+"If you have configured your browser to disable “Referer” headers, please "
+"re-enable them, at least for this site, or for HTTPS connections, or for "
+"“same-origin” requests."
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/views/csrf.py:124
@@ -1102,8 +1104,8 @@ msgid ""
 "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
 "including the “Referrer-Policy: no-referrer” header, please remove them. The "
 "CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" …> for links to third-party sites."
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/views/csrf.py:132
@@ -1154,8 +1156,8 @@ msgstr ""
 #: venv/lib/python3.7/site-packages/django/views/generic/dates.py:591
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.7/site-packages/django/views/generic/dates.py:625
@@ -1204,8 +1206,9 @@ msgstr ""
 #, python-format
 msgid ""
 "View\n"
-"            <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/"
-"\" target=\"_blank\" rel=\"noopener\">release\n"
+"            <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release\n"
 "                notes</a> for Django %(version)s"
 msgstr ""
 
@@ -1217,8 +1220,9 @@ msgstr ""
 #, python-format
 msgid ""
 "You are seeing this page because\n"
-"        <a href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/"
-"#debug\" target=\"_blank\" rel=\"noopener\">DEBUG=True</a>\n"
+"        <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a>\n"
 "        is in your settings file and you have not configured any URLs."
 msgstr ""
 

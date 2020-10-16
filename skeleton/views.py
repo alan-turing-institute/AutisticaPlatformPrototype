@@ -289,7 +289,68 @@ def componentGallery(request):
                                  'oh_proj_page': settings.OH_PROJ_PAGE}}
 
     return render(request, 'gallery.html', context=context)
+def share(request):
+    context = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Experience"
+            }
+        ],
+    }
+    stepper_object = Stepper.Stepper(request)
 
+    stepper_object.update()
+    return render(request, 'share.html', context=context)
+
+def view(request):
+    context = {
+        "stepper": [
+            {
+                "id": 1,
+                "label": "Login"
+            },
+            {
+                "id": 2,
+                "label": "Define Profile"
+            },
+            {
+                "id": 3,
+                "label": "Add Experience"
+            },
+            {
+                "id": 4,
+                "label": "View Experience"
+            }
+        ],
+    }
+    stepper_object = Stepper.Stepper(request)
+
+    stepper_object.update()
+    return render(request, 'view.html', context=context)
+
+def home(request):
+    return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def mydata(request):
+    return render(request, 'mydata.html')
+
+def settings(request):
+    return render(request, 'settings.html')
+
+def login(request):
+    return render(request, 'login.html')
 
 def overview(request):
     if request.user.is_authenticated:
@@ -299,6 +360,210 @@ def overview(request):
                    'oh_proj_page': settings.OH_PROJ_PAGE}
         return render(request, 'main/overview.html', context=context)
     return redirect('index')
+
+def pictorialexperienceeditor(request):
+    context = {
+        "peed_ele_row": [
+            {
+                "peed_ele_col" : [
+                    {
+                        "text": "I",
+                        "icon": "icon-Autistic-Person"
+                    },
+                    {
+                        "text": "Audio Desc",
+                        "icon": "icon-audio-description"
+                    },
+                    {
+                        "text": "Account",
+                        "icon": "icon-account_circle"
+                    },
+                    {
+                        "text": "Add box",
+                        "icon": "icon-add_box"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "Add",
+                        "icon": "icon-add"
+                    },
+                    {
+                        "text": "Apps",
+                        "icon": "icon-apps-24px"
+                    },
+                    {
+                        "text": "Bar Chart",
+                        "icon": "icon-bar_chart"
+                    },
+                    {
+                        "text": "Camera",
+                        "icon": "icon-camera_alt"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "Tick",
+                        "icon": "icon-check-circle-together"
+                    },
+                    {
+                        "text": "Cross",
+                        "icon": "icon-close"
+                    },
+                    {
+                        "text": "Smile",
+                        "icon": "icon-comment-alt-smile"
+                    },
+                    {
+                        "text": "Compass",
+                        "icon": "icon-compass"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "CSP",
+                        "icon": "icon-csp-lblue"
+                    },
+                    {
+                        "text": "Database",
+                        "icon": "icon-database-solid"
+                    },
+                    {
+                        "text": "Email",
+                        "icon": "icon-email"
+                    },
+                    {
+                        "text": "Fast Food",
+                        "icon": "icon-fastfood"
+                    }
+                ]
+            },
+            {
+                "peed_ele_col": [
+                    {
+                        "text": "Image",
+                        "icon": "icon-image"
+                    },
+                    {
+                        "text": "School",
+                        "icon": "icon-school"
+                    },
+                    {
+                        "text": "Language",
+                        "icon": "icon-language"
+                    },
+                    {
+                        "text": "No",
+                        "icon": "icon-no"
+                    }
+                ]
+            },
+        ],
+        "peed_fld": [
+            {
+                "number": "2.",
+                "title": "Sensory"
+            }
+        ],
+        "peed_ele_master": [
+                    {
+                        "text": "I",
+                        "icon": "icon-Autistic-Person"
+                    },
+                    {
+                        "text": "Audio Desc",
+                        "icon": "icon-audio-description"
+                    },
+                    {
+                        "text": "Account",
+                        "icon": "icon-account_circle"
+                    },
+                    {
+                        "text": "Add box",
+                        "icon": "icon-add_box"
+                    },
+                    {
+                        "text": "Add",
+                        "icon": "icon-add"
+                    },
+                    {
+                        "text": "Apps",
+                        "icon": "icon-apps-24px"
+                    },
+                    {
+                        "text": "Bar Chart",
+                        "icon": "icon-bar_chart"
+                    },
+                    {
+                        "text": "Camera",
+                        "icon": "icon-camera_alt"
+                    },
+                    {
+                        "text": "Tick",
+                        "icon": "icon-check-circle-together"
+                    },
+                    {
+                        "text": "Cross",
+                        "icon": "icon-close"
+                    },
+                    {
+                        "text": "Smile",
+                        "icon": "icon-comment-alt-smile"
+                    },
+                    {
+                        "text": "Compass",
+                        "icon": "icon-compass"
+                    },
+                    {
+                        "text": "CSP",
+                        "icon": "icon-csp-lblue"
+                    },
+                    {
+                        "text": "Database",
+                        "icon": "icon-database-solid"
+                    },
+                    {
+                        "text": "Email",
+                        "icon": "icon-email"
+                    },
+                    {
+                        "text": "Fast Food",
+                        "icon": "icon-fastfood"
+                    },
+                    {
+                        "text": "Image",
+                        "icon": "icon-image"
+                    },
+                    {
+                        "text": "School",
+                        "icon": "icon-school"
+                    },
+                    {
+                        "text": "Language",
+                        "icon": "icon-language"
+                    },
+                    {
+                        "text": "No",
+                        "icon": "icon-no"
+                    }
+        ],
+
+    }
+    row = 1
+    col = 1
+    for item in peed_ele_master:
+        peed_ele_row.row.peed_ele_col.col.text = item.text
+        peed_ele_row.row.peed_ele_col.col.icon = item.icon
+        row = row + 1
+        col = col + 1
+
+    return render(request, 'pictorialexperienceeditor.html',context=context)
 
 def logout_user(request):
     """
