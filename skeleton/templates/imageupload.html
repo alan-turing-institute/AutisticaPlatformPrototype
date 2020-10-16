@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+<style>
+    .ui-master-div {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .ui-outerdiv {
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        width: 685px;
+        height: 450px;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+   }
+    .ui-topdiv {
+        border-bottom: 2px solid;
+        width: 685px;
+        height: 90px;
+    }
+    .ui-toptext {
+        font-size: 20px;
+        margin-left: 30px;
+        color: #0070d1;
+    }
+    .ui-icon-close {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-size: 30px;
+        color: black;
+    }
+    .ui-upload {
+        display: flex;
+        flex-direction: row;
+    }
+    .ui-upload-dashed-border {
+        margin: 40px 0 0 150px;
+        border-style: dashed;
+        border-radius: 5px;
+        border-color: #0070d1;
+        width: 350px;
+        height: 185px;
+    }
+    .ui-icon-upload {
+        font-size: 60px;
+     }
+    .ui-div-icon-upload {
+        margin: 40px 0 0 145px;
+    }
+    .ui-ddutext {
+        text-align: center;
+        line-height: 25px;
+        margin-top: 30px;
+    }
+    .ui-file-ext {
+        font-size: 12px;
+    }
+    .ui-icon-attach {
+        font-size: 20px;
+    }
+    .ui-file-details {
+        margin: 20px 0 0 155px;
+    }
+    .ui-filename {
+        font-size: 12px;
+    }
+    .ui-icon-cfu {
+        margin-left: 230px;
+        font-size: 23px;
+        color: black;
+    }
+    .ui-hr {
+        width: 250px;
+        height: 8px;
+        margin-left: 180px;
+        color: #0070d1;
+        background-color: #0070d1;
+    }
+    .ui-progress {
+        margin-left: 180px;
+    }
+    .ui-image-div {
+        margin: 40px 0 0 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .ui-image {
+        width: 90px;
+        border-style: dashed;
+        border-radius: 5px;
+    }
+    .ui-image-tickbox {
+         position: absolute;
+         top: 40px;
+         left: 40px;
+         color: green;
+    }
+}
+</style>
+<script>
+    function showImageUpload() {
+        document.getElementById("upload").style.display = "block"
+    }
+        function hideImageUpload() {
+        document.getElementById("upload").style.display = "none"
+    }
+</script>
+</head>
+<body>
+<div class="ui-master-div">
+<div>
+    <button onclick="showImageUpload()">Upload</button>
+</div>
+<div class="ui-outerdiv" id="upload">
+     <div class="ui-topdiv">
+         <i class="icon-close ui-icon-close" onclick="hideImageUpload()"></i>
+         <div class="ui-toptext">Upload Media (Photo or Sound)</div>
+     </div>
+     <div class="ui-upload">
+        <div>
+            <div class="ui-upload-dashed-border">
+                <div class="ui-div-icon-upload">
+                    <i class="icon-upload ui-icon-upload"></i>
+                </div>
+                <div class="ui-ddutext">
+                    Drag & Drop Upload<br>
+                    File Types: <span class="ui-file-ext">&nbsp;&nbsp;&nbsp;.jpg .png .mpg .wav</span>
+                </div>
+            </div>
+            <div class="ui-file-details">
+                <i class="icon-attachment ui-icon-attach"></i>
+                <span class="ui-filename">&nbsp;&nbsp;&nbsp;busy-tube.png</span>
+                <i class="icon-close ui-icon-cfu"></i>
+            </div>
+            <hr class="ui-hr">
+            <span class="ui-progress">100% uploaded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 minutes left</span>
+        </div>
+         <div>
+             <div class="ui-image-div">
+                 <img src="static/img/busy-tube.png" class="ui-image">
+                 <i class="icon-check_circle ui-image-tickbox"></i>
+         </div>
+     </div>
+</div>
+</div>
+</body>
+</html>

@@ -152,6 +152,9 @@ def index(request):
     # return render(request, 'index.html', context=context)
     return render(request, 'index.html', context=context)
 
+def imageupload(request):
+    return render(request, 'imageupload.html')
+
 def componentGallery(request):
     context = {
         "stepper": [
