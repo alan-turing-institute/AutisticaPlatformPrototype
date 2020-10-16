@@ -5,6 +5,13 @@ from . import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^gallery/?$', views.componentGallery, name='gallery'),
+    url(r'^home/?$', views.home, name='home'),
+    url(r'^about/?$', views.about, name='about'),
+    url(r'^share/?$', views.share, name='share'),
+    url(r'^view/?$', views.view, name='view'),
+    url(r'^mydata/?$', views.mydata, name='mydata'),
+    url(r'^settings/?$', views.settings, name='settings'),
+    url(r'^login/?$', views.login, name='login'),
     url(r'^logout/?$', views.logout_user, name='logout'),
     url(r'^pictorialexperienceeditor/?$', views.pictorialexperienceeditor, name='peed'),
     url(r'^overview/?$', views.overview, name='overview'),
