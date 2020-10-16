@@ -298,7 +298,7 @@ def overview(request):
     return redirect('index')
 
 def pictorialexperienceeditor(request):
-    context={
+    context = {
         "peed_ele_row": [
             {
                 "peed_ele_col" : [
@@ -406,8 +406,99 @@ def pictorialexperienceeditor(request):
                 "number": "2.",
                 "title": "Sensory"
             }
-        ]
+        ],
+        "peed_ele_master": [
+                    {
+                        "text": "I",
+                        "icon": "icon-Autistic-Person"
+                    },
+                    {
+                        "text": "Audio Desc",
+                        "icon": "icon-audio-description"
+                    },
+                    {
+                        "text": "Account",
+                        "icon": "icon-account_circle"
+                    },
+                    {
+                        "text": "Add box",
+                        "icon": "icon-add_box"
+                    },
+                    {
+                        "text": "Add",
+                        "icon": "icon-add"
+                    },
+                    {
+                        "text": "Apps",
+                        "icon": "icon-apps-24px"
+                    },
+                    {
+                        "text": "Bar Chart",
+                        "icon": "icon-bar_chart"
+                    },
+                    {
+                        "text": "Camera",
+                        "icon": "icon-camera_alt"
+                    },
+                    {
+                        "text": "Tick",
+                        "icon": "icon-check-circle-together"
+                    },
+                    {
+                        "text": "Cross",
+                        "icon": "icon-close"
+                    },
+                    {
+                        "text": "Smile",
+                        "icon": "icon-comment-alt-smile"
+                    },
+                    {
+                        "text": "Compass",
+                        "icon": "icon-compass"
+                    },
+                    {
+                        "text": "CSP",
+                        "icon": "icon-csp-lblue"
+                    },
+                    {
+                        "text": "Database",
+                        "icon": "icon-database-solid"
+                    },
+                    {
+                        "text": "Email",
+                        "icon": "icon-email"
+                    },
+                    {
+                        "text": "Fast Food",
+                        "icon": "icon-fastfood"
+                    },
+                    {
+                        "text": "Image",
+                        "icon": "icon-image"
+                    },
+                    {
+                        "text": "School",
+                        "icon": "icon-school"
+                    },
+                    {
+                        "text": "Language",
+                        "icon": "icon-language"
+                    },
+                    {
+                        "text": "No",
+                        "icon": "icon-no"
+                    }
+        ],
+
     }
+    row = 1
+    col = 1
+    for item in peed_ele_master:
+        peed_ele_row.row.peed_ele_col.col.text = item.text
+        peed_ele_row.row.peed_ele_col.col.icon = item.icon
+        row = row + 1
+        col = col + 1
+
     return render(request, 'pictorialexperienceeditor.html',context=context)
 
 def logout_user(request):
