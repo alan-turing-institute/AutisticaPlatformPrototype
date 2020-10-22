@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Pi</title>
+    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+<style>
+    .peed-outerdiv {
+        display: flex;
+        flex-direction: row;
+        background-color: #fcfcfc;
+        width: 620px;
+        margin-left: 30px;
+    }
+    .peed-div-home {
+        display: flex;
+        flex-direction: column;
+    }
+    .peed-icon-home {
+        font-size: 65px;
+    }
+    .peed-text-home {
+        padding-left: 10px;
+    }
+    .peed-clear {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .peed-icon-clear {
+        font-size: 40px;
+        color: red;
+    }
+    .peed-span-ta {
+        padding: 10px 0 10px 0;
+        border-style: solid;
+        border-radius: 7px;
+        border-color: #0070d1;
+        margin-top: 20px;
+        display: inline-block;
+        position: relative;
+    }
+    .peed-span-clear {
+        position: absolute;
+        right: 0px;
+}
+    }
+    .peed-exp-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .peed-exp-text {
+        color: #0070d1;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .peed-clear-text {
+        color: grey;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .peed-play {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 15px;
+    }
+
+    .peed-play-icon {
+        font-size: 40px;
+    }
+    .peed-play-ispan {
+        padding-bottom: 24px;
+    }
+    .peed-play-text {
+        color: grey;
+        font-size: 18px;
+        padding-bottom: 11px;
+    }
+    .peed2-outerdiv {
+        display: flex;
+        flex-direction: row;
+        background-color: #f0f0f0;
+        width: 670px;
+        margin: 50px 0 0 30px;
+        padding: 10px 0 10px 50px;
+    }
+    .peed2-div-item {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+    }
+    .peed2-span-icon {
+        border-style: solid;
+        border-radius: 15px;
+        border-color: #0070d1;
+        padding: 5px 40px 5px 40px;
+    }
+    .peed2-icon {
+        font-size: 40px;
+    }
+    .peed2-span-text {
+        color: grey;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .peed2-span-cards {
+        padding: 10px 0 0 40px;
+        font-size: 27px;
+        color: #0070d1;
+    }
+    .peed1-outerdiv {
+        background-color: #fcfcfc;
+        margin: 20px 0 0 40px;
+        padding: 10px 0 10px 50px;
+        width: 600px;
+    }
+    .peed1-span-item {
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 10px;
+        width: 100px;
+        height: 70px;
+        border-color: #0070d1;
+        margin: 0 10px 10px 0;
+    }
+    .peed1-span-itext {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .peed1-span-iicon {
+        text-align: center;
+    }
+    .peed1-icon {
+        font-size: 40px;
+    }
+    .peed1-span-folder {
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 10px;
+        width: 100px;
+        height: 70px;
+        border-color: #0070d1;
+    }
+    .peed1-span-fnumber {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .peed1-span-ftitle {
+        padding-top: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="peed-outerdiv">
+        <div class="peed-div-home">
+            <i class="icon-home peed-icon-home"></i>
+            <span class="peed-text-home">Home</span>
+        </div>
+        <div class="peed-clear">
+            <span class="peed-span-ta">
+                <span class="peed-span-clear">
+                    <i class="icon-clear peed-icon-clear"></i>
+                </span>
+            </span>
+            <div class="peed-exp-div">
+                <span class="peed-exp-text">1. Enter your experiences</span>
+                <span class="peed-clear-text">Clear</span>
+            </div>
+        </div>
+        <div class="peed-play">
+            <span class="peed-play-ispan"><i class="icon-play_arrow peed-play-icon"></i></span>
+            <span class="peed-play-text">Play</span>
+        </div>
+        <div class="peed-play">
+            <span class="peed-play-ispan"><i class="icon-share peed-play-icon"></i></span>
+            <span class="peed-play-text">Share</span>
+        </div>
+    </div>
+
+    <div class="peed1-outerdiv">
+        <table>
+            {% for rw in peed_ele_row %}
+            <tr>
+                {% for cl in rw.peed_ele_col %}
+                <td>
+                    <span class="peed1-span-item">
+                        <span class="peed1-span-itext">{{cl.text}}</span>
+                        <span class="peed1-span-iicon"><i class="{{cl.icon}} peed1-icon"></i></span>
+                    </span>
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="peed2-outerdiv">
+        <div class="peed2-div-item">
+            <span class="peed2-span-icon"><i class="icon-profile peed2-icon"></i></span>
+            <span class="peed2-span-text">About Me</span>
+        </div>
+        <div class="peed2-div-item">
+            <span class="peed2-span-icon"><i class="icon-help peed2-icon"></i></span>
+            <span class="peed2-span-text">Help</span>
+        </div>
+        <div class="peed2-div-item">
+            <span class="peed2-span-icon"><i class="icon-edit peed2-icon"></i></span>
+            <span class="peed2-span-text">Edit</span>
+        </div>
+        <div class="peed2-div-item">
+            <span class="peed2-span-icon"><i class="icon-settings peed2-icon"></i></span>
+            <span class="peed2-span-text">Settings</span>
+        </div>
+        <span class="peed2-span-cards">Cards</span>
+    </div>
+</body>
+</html>

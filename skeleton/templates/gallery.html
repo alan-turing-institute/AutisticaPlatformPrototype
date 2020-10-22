@@ -13,7 +13,8 @@
     <link href="/static/css/fa/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="{% static "css/ico-style.css" %}">
+    <!--<link rel="stylesheet" href="{% static "css/ico-style.css" %}">-->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
@@ -172,7 +173,31 @@
 
    <br>
    <h3>
-        Footer
+        Experience Viewer Control
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Experience Viewer Control -->
+    {% include 'main/../components/experienceviewercontrol.html' %}
+
+   <br>
+      <h3>
+        Community Approval Mechanism
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Moderation of New Experiences -->
+    {% include 'main/../components/communityapprovalmechanism.html' %}
+
+   <br>
+      <h3>
+        Moderation of New Experiences
+        <small class="text-muted">Component Description</small>
+    </h3>
+    <!-- Moderation of New Experiences -->
+    {% include 'main/../components/moderationofnewexperiences.html' %}
+
+   <br>
+   <h3>
+       Footer
         <small class="text-muted">Component Description</small>
     </h3>
     <!-- Footer -->

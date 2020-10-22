@@ -14,7 +14,6 @@
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
-  color: #1b77db;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -28,62 +27,62 @@
 
 .icon-Autistic-Person:before {
   content: "\e900";
-
+/*  color: #1b77db;*/
 }
 .icon-Autistic-Person-Diverse:before {
   content: "\e901";
-  
+  color: #1b77db;
 }
 .icon-Caregiver-Autistic-Person:before {
   content: "\e902";
-  
+  color: #1b77db;
 }
 .icon-Caregiver-Neurotypical:before {
   content: "\e903";
-  
+  color: #1b77db;
 }
 .icon-audio-description:before {
   content: "\e904";
-  
+  color: #1b77db;
 }
 .icon-Admin-Autistic-Person:before {
   content: "\e905";
-  
+  color: #1b77db;
 }
 .icon-Admin-Neurotypical:before {
   content: "\e906";
-  
+  color: #1b77db;
 }
 .icon-account_circle:before {
   content: "\e907";
-  
+  color: #1b77db;
 }
 .icon-add_a_photo:before {
   content: "\e908";
-  
+  color: #1b77db;
 }
 .icon-add_alert:before {
   content: "\e909";
-  
+  color: #1b77db;
 }
 .icon-add_box:before {
   content: "\e90a";
-  
+  color: #1b77db;
 }
 .icon-add_circle:before {
   content: "\e90b";
-  
+  color: #1b77db;
 }
 .icon-add_photo_alternate:before {
   content: "\e90c";
-  
+  color: #1b77db;
 }
 .icon-add:before {
   content: "\e90d";
 }
 .icon-apps-24px:before {
   content: "\e90e";
-  
+  color: #1b77db;
 }
 .icon-arrow_back:before {
   content: "\e90f";
@@ -93,31 +92,31 @@
 }
 .icon-attachment:before {
   content: "\e911";
-  
+  color: #1b77db;
 }
 .icon-bar_chart:before {
   content: "\e912";
-  
+  color: #1b77db;
 }
 .icon-block:before {
   content: "\e913";
-  
+  color: #e91224;
 }
 .icon-brightness_2:before {
   content: "\e914";
-  
+  color: #1b77db;
 }
 .icon-brush:before {
   content: "\e915";
-  
+  color: #36c;
 }
 .icon-bubble_chart:before {
   content: "\e916";
-  
+  color: #1b77db;
 }
 .icon-camera_alt:before {
   content: "\e917";
-  
+  color: #1b77db;
 }
 .icon-check_box_outline_blank:before {
   content: "\e918";
@@ -127,248 +126,248 @@
 }
 .icon-check_circle:before {
   content: "\e91a";
-  
+  color: #34a835;
 }
 .icon-check-circle-together:before {
   content: "\e91b";
-  
+  color: #34a835;
 }
 .icon-check:before {
   content: "\e91c";
-  
+  color: #34a835;
 }
 .icon-chevron_left:before {
   content: "\e91d";
-  
+  color: #1f3369;
 }
 .icon-chevron_right:before {
   content: "\e91e";
-  
+  color: #1f3369;
 }
 .icon-city:before {
   content: "\e91f";
-  
+  color: #1f3369;
 }
 .icon-clear:before {
   content: "\e920";
-  
+  color: #f00;
 }
 .icon-close:before {
   content: "\e921";
 }
 .icon-cloud_upload:before {
   content: "\e922";
-  
+  color: #1b77db;
 }
 .icon-colorize:before {
   content: "\e923";
 }
 .icon-comment-alt-smile:before {
   content: "\e924";
-  
+  color: #1f3369;
 }
 .icon-comment:before {
   content: "\e925";
-  
+  color: #1b77db;
 }
 .icon-compass:before {
   content: "\e926";
 }
 .icon-config:before {
   content: "\e927";
-  
+  color: #1b77db;
 }
 .icon-control_point:before {
   content: "\e928";
-  
+  color: #1b77db;
 }
 .icon-copyright:before {
   content: "\e929";
-  
+  color: #1b77db;
 }
 .icon-create:before {
   content: "\e92a";
-  
+  color: #1b77db;
 }
 .icon-csp-lblue:before {
   content: "\e92b";
-  
+  color: #1b77db;
 }
 .icon-dark-theme:before {
   content: "\e92c";
-  
+  color: #1b77db;
 }
 .icon-dashboard:before {
   content: "\e92d";
-  
+  color: #1b77db;
 }
 .icon-database-solid:before {
   content: "\e92e";
-  
+  color: #1b77db;
 }
 .icon-delete_forever:before {
   content: "\e92f";
-  
+  color: #1b77db;
 }
 .icon-delete:before {
   content: "\e930";
-  
+  color: #1b77db;
 }
 .icon-edit_attributes:before {
   content: "\e931";
-  
+  color: #1b77db;
 }
 .icon-edit:before {
   content: "\e932";
-  
+  color: #1b77db;
 }
 .icon-email:before {
   content: "\e933";
-  
+  color: #1b77db;
 }
 .icon-error:before {
   content: "\e934";
-  
+  color: #1b77db;
 }
 .icon-expand_more:before {
   content: "\e935";
-  
+  color: #1b77db;
 }
 .icon-expand:before {
   content: "\e936";
-  
+  color: #1b77db;
 }
 .icon-explore:before {
   content: "\e937";
-  
+  color: #1b77db;
 }
 .icon-fastfood:before {
   content: "\e938";
-  
+  color: #1b77db;
 }
 .icon-filter_list:before {
   content: "\e939";
-  
+  color: #1b77db;
 }
 .icon-folder-whole:before {
   content: "\e93a";
-  
+  color: #1b77db;
 }
 .icon-folder:before {
   content: "\e93b";
-  
+  color: #1b77db;
 }
 .icon-format_list:before {
   content: "\e93c";
-  
+  color: #1b77db;
 }
 .icon-format_size:before {
   content: "\e93d";
-  
+  color: #1b77db;
 }
 .icon-forum:before {
   content: "\e93e";
-  
+  color: #1b77db;
 }
 .icon-from-device:before {
   content: "\e93f";
-  
+  color: #1b77db;
 }
 .icon-get-involved:before {
   content: "\e940";
-  
+  color: #1b77db;
 }
 .icon-gps_fixed:before {
   content: "\e941";
-  
+  color: #1b77db;
 }
 .icon-help:before {
   content: "\e942";
-  
+  color: #1b77db;
 }
 .icon-home:before {
   content: "\e943";
-  
+  color: #1b77db;
 }
 .icon-how-it-works:before {
   content: "\e944";
-  
+  color: #1b77db;
 }
 .icon-image_search:before {
   content: "\e945";
-  
+  color: #1b77db;
 }
 .icon-image:before {
   content: "\e946";
-  
+  color: #1b77db;
 }
 .icon-import_export:before {
   content: "\e947";
-  
+  color: #1b77db;
 }
 .icon-info:before {
   content: "\e948";
-  
+  color: #1b77db;
 }
 .icon-insert_chart:before {
   content: "\e949";
-  
+  color: #1b77db;
 }
 .icon-insert_photo:before {
   content: "\e94a";
-  
+  color: #1b77db;
 }
 .icon-keyboard_arrow_left:before {
   content: "\e94b";
-  
+  color: #1f3369;
 }
 .icon-keyboard_arrow_right:before {
   content: "\e94c";
-  
+  color: #1f3369;
 }
 .icon-keyboard_voice:before {
   content: "\e94d";
-  
+  color: #1b77db;
 }
 .icon-language:before {
   content: "\e94e";
-  
+  color: #1b77db;
 }
 .icon-light-theme:before {
   content: "\e94f";
-  
+  color: #1b77db;
 }
 .icon-live_help:before {
   content: "\e950";
-  
+  color: #1b77db;
 }
 .icon-location_on:before {
   content: "\e951";
-  
+  color: #1b77db;
 }
 .icon-location_searching:before {
   content: "\e952";
-  
+  color: #1b77db;
 }
 .icon-map-marker-sad:before {
   content: "\e953";
-  
+  color: #1b77db;
 }
 .icon-map-marker-smile:before {
   content: "\e954";
-  
+  color: #1b77db;
 }
 .icon-menu:before {
   content: "\e955";
 }
 .icon-mic .path1:before {
   content: "\e956";
-  
+  color: rgb(255, 255, 255);
 }
 .icon-mic .path2:before {
   content: "\e957";
   margin-left: -1em;
-  
+  color: rgb(27, 119, 219);
 }
 .icon-more_horiz:before {
   content: "\e958";
@@ -393,58 +392,58 @@
 }
 .icon-no:before {
   content: "\e95f";
-  
+  color: #e91224;
 }
 .icon-notification_important:before {
   content: "\e960";
-  
+  color: #1b77db;
 }
 .icon-notifications:before {
   content: "\e961";
-  
+  color: #1b77db;
 }
 .icon-options_white:before {
   content: "\e962";
-  
+  color: #1b77db;
 }
 .icon-photo_album:before {
   content: "\e963";
-  
+  color: #1b77db;
 }
 .icon-photo_library:before {
   content: "\e964";
-  
+  color: #1b77db;
 }
 .icon-photo:before {
   content: "\e965";
-  
+  color: #1b77db;
 }
 .icon-pie_chart:before {
   content: "\e966";
-  
+  color: #1b77db;
 }
 .icon-place:before {
   content: "\e967";
 }
 .icon-play_arrow:before {
   content: "\e968";
-  
+  color: #1b77db;
 }
 .icon-plus:before {
   content: "\e969";
-  
+  color: #1b77db;
 }
 .icon-policy:before {
   content: "\e96a";
-  
+  color: #1b77db;
 }
 .icon-profile:before {
   content: "\e96b";
-  
+  color: #1b77db;
 }
 .icon-publish:before {
   content: "\e96c";
-  
+  color: #1b77db;
 }
 .icon-radio_button_checked:before {
   content: "\e96d";
@@ -454,26 +453,26 @@
 }
 .icon-record_voice_over:before {
   content: "\e96f";
-  
+  color: #1b77db;
 }
 .icon-remove:before {
   content: "\e970";
-  
+  color: #1f3369;
 }
 .icon-reorder:before {
   content: "\e971";
-  
+  color: #1f3369;
 }
 .icon-reply:before {
   content: "\e972";
-  
+  color: #1b77db;
 }
 .icon-save:before {
   content: "\e973";
 }
 .icon-scatter_plot:before {
   content: "\e974";
-  
+  color: #1b77db;
 }
 .icon-school:before {
   content: "\e975";
@@ -522,7 +521,7 @@
 }
 .icon-security:before {
   content: "\e984";
-  
+  color: #1b77db;
 }
 .icon-sensor_door:before {
   content: "\e985";
@@ -532,55 +531,55 @@
 }
 .icon-settings_applications:before {
   content: "\e987";
-  
+  color: #1b77db;
 }
 .icon-settings_system_daydream:before {
   content: "\e988";
-  
+  color: #1b77db;
 }
 .icon-settings_voice:before {
   content: "\e989";
-  
+  color: #1b77db;
 }
 .icon-settings:before {
   content: "\e98a";
-  
+  color: #1b77db;
 }
 .icon-share:before {
   content: "\e98b";
-  
+  color: #1b77db;
 }
 .icon-show_chart:before {
   content: "\e98c";
-  
+  color: #1b77db;
 }
 .icon-sort:before {
   content: "\e98d";
-  
+  color: #1b77db;
 }
 .icon-spa:before {
   content: "\e98e";
-  
+  color: #1b77db;
 }
 .icon-storage:before {
   content: "\e98f";
-  
+  color: #1b77db;
 }
 .icon-subject:before {
   content: "\e990";
-  
+  color: #1b77db;
 }
 .icon-table_chart:before {
   content: "\e991";
-  
+  color: #1b77db;
 }
 .icon-table_list:before {
   content: "\e992";
-  
+  color: #1b77db;
 }
 .icon-tag:before {
   content: "\e993";
-  
+  color: #1b77db;
 }
 .icon-thermometer-empty:before {
   content: "\e994";
@@ -599,68 +598,68 @@
 }
 .icon-thumb_down:before {
   content: "\e999";
-  
+  color: #1b77db;
 }
 .icon-thumb_up:before {
   content: "\e99a";
-  
+  color: #1b77db;
 }
 .icon-toggle_off:before {
   content: "\e99b";
-  
+  color: #1b77db;
 }
 .icon-toggle_on:before {
   content: "\e99c";
-  
+  color: #1b77db;
 }
 .icon-tune:before {
   content: "\e99d";
-  
+  color: #1b77db;
 }
 .icon-UK:before {
   content: "\e99e";
-  
+  color: #1b77db;
 }
 .icon-unsubscribe:before {
   content: "\e99f";
-  
+  color: #1b77db;
 }
 .icon-upload:before {
   content: "\e9a0";
-  
+  color: #1b77db;
 }
 .icon-verified_user:before {
   content: "\e9a1";
-  
+  color: #1b77db;
 }
 .icon-view_list:before {
   content: "\e9a2";
-  
+  color: #1b77db;
 }
 .icon-view_module:before {
   content: "\e9a3";
-  
+  color: #1b77db;
 }
 .icon-views:before {
   content: "\e9a4";
-  
+  color: #1b77db;
 }
 .icon-Voice_Recognition:before {
   content: "\e9a5";
-  
+  color: #1b77db;
 }
 .icon-wb_sunny:before {
   content: "\e9a6";
-  
+  color: #1b77db;
 }
 .icon-wifi_off:before {
   content: "\e9a7";
 }
 .icon-yes:before {
   content: "\e9a8";
-  
+  color: #393;
 }
 .icon-zoom_out_map:before {
   content: "\e9a9";
-  
+  color: #1b77db;
 }

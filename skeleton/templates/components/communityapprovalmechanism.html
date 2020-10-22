@@ -1,0 +1,92 @@
+<style>
+    span {
+        color: grey;
+    }
+    .cam-views {
+        font-size: 60px;
+    }
+    .cam-cam {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .cam-odiv {
+        display: flex;
+        flex-direction: row;
+        background-color: #f7f7f7;
+        padding: 20px;
+        width: 900px;
+    }
+    .cam-boticons {
+        margin-top: 60px;
+    }
+    .cam-ico {
+        font-size: 25px;
+        color: grey;
+    }
+    .cam-ico-space {
+        font-size: 25px;
+        margin-left: 50px;
+        color: grey;
+    }
+    .cam-ico:hover, .cam-ico-space:hover {
+        color: #0070d1;
+    }
+    .cam-cam-text {
+        color: #0070d1;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .cam-other-text {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .cam-mod {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .cam-tick {
+        font-size: 36px;
+        color: green;
+      }
+    .cam-cross {
+        font-size: 36px;
+        color: red;
+        margin-left: 70px;
+    }
+    .cam-app-bl {
+        border-radius: 5px;
+        border-style: solid;
+        border-color: grey;
+        padding: 8px;
+        border-width: 1px;
+    }
+    .cam-input {
+        margin-top: 15px;
+        padding: 8px;
+        border-color: grey;
+        border-width: 1px;
+        color: grey;
+    }
+</style>
+    <div class="cam-odiv">
+        <i class="icon-views cam-views"></i>
+        <div class="cam-cam">
+            <span class="cam-cam-text">Community: Approval Mechanism</span>
+            <span class="cam-other-text">List view of submitted events for approval</span>
+            <div class="cam-boticons">
+                <i class="icon-folder-whole cam-ico"></i><span>&nbsp Templates</span>
+                <i class="icon-edit cam-ico-space"></i><span>&nbsp Edit</span>
+                <i class="icon-delete cam-ico-space"></i><span>&nbsp Delete</span>
+                <i class="icon-help cam-ico-space"></i><span>&nbsp Help</span>
+            </div>
+        </div>
+        <div class="cam-mod">
+            <span>Moderations</span>
+            <div>
+                <i class="icon-check cam-tick"></i><i class="icon-close cam-cross"></i>
+            </div>
+            <span class="cam-app-bl"> 1 Approved &nbsp &nbsp &nbsp 2 Blocked</span>
+            <input placeholder="Search" class="cam-input">
+        </div>
+    </div>
