@@ -346,7 +346,7 @@ def about(request):
 def mydata(request):
     return render(request, 'mydata.html')
 
-def settings(request):
+def accessibility_settings(request):
     return render(request, 'settings.html')
 
 def login(request):
