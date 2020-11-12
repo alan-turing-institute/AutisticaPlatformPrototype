@@ -172,34 +172,34 @@ def componentGallery(request):
             }
         ],
         "ueftext": [
-        {
-            "rows": [
             {
-                "qtext": "Where",
-                "qcolour": "#4d75ad",
-                "phtext": "Enter name of location or postcode...",
-                "input": "ip"
+                "rows": [
+                    {
+                        "qtext": "Where",
+                        "qcolour": "#4d75ad",
+                        "phtext": "Enter name of location or postcode...",
+                        "input": "ip"
+                    },
+                    {
+                        "qtext": "What",
+                        "qcolour": "#ffbb5d",
+                        "phtext": "Your experience can be entered here...",
+                        "input": "ta"
+                    }
+                ],
+                "maintext": "Enter your experience"
             },
             {
-                "qtext": "What",
-                "qcolour": "#ffbb5d",
-                "phtext": "Your experience can be entered here...",
-                "input": "ta"
-            }
-            ],
-            "maintext": "Enter your experience"
-        },
-        {
-            "rows": [
-            {
-                 "qtext": "What",
-                 "qcolour": "#ffbb5d",
-                 "phtext": "",
-                 "input": "ta"
-            }
-            ],
+                "rows": [
+                    {
+                        "qtext": "What",
+                        "qcolour": "#ffbb5d",
+                        "phtext": "",
+                        "input": "ta"
+                    }
+                ],
                 "maintext": "What would you have wished to be different?"
-        }
+            }
         ],
         "user_exp": [
             {
@@ -346,7 +346,7 @@ def about(request):
 def mydata(request):
     return render(request, 'mydata.html')
 
-def settings(request):
+def accessibility_settings(request):
     return render(request, 'settings.html')
 
 def login(request):
@@ -358,7 +358,7 @@ def overview(request):
         context = {'oh_id': oh_member.oh_id,
                    'oh_member': oh_member,
                    'oh_proj_page': settings.OH_PROJ_PAGE}
-        return render(request, 'main/overview.html', context=context)
+        return render(request, 'overview.html', context=context)
     return redirect('index')
 
 def pictorialexperienceeditor(request):
@@ -569,7 +569,7 @@ def logout_user(request):
     """
     Logout user
     """
-    if request.method == 'POST':
+    if request.method == 'GET':
         logout(request)
     return redirect('index')
 
@@ -611,14 +611,48 @@ def upload(request):
         return redirect('index')
     else:
         if request.user.is_authenticated:
-            return render(request, 'main/upload.html')
+            context = {"ueftext": [
+                {
+                    "rows": [
+                        {
+                            "qtext": "Where",
+                            "qcolour": "#4d75ad",
+                            "phtext": "Enter name of location or postcode...",
+                            "input": "ip"
+                        },
+                        {
+                            "qtext": "What",
+                            "qcolour": "#ffbb5d",
+                            "phtext": "Your experience can be entered here...",
+                            "input": "ta"
+                        }
+                    ],
+                    "maintext": "Enter your experience"
+                },
+                {
+                    "rows": [
+                        {
+                            "qtext": "What",
+                            "qcolour": "#ffbb5d",
+                            "phtext": "",
+                            "input": "ta"
+                        }
+                    ],
+                    "maintext": "What would you have wished to be different?"
+                }
+            ]}
+            oh_member = request.user.openhumansmember
+            context = {**context, **{'oh_id': oh_member.oh_id,
+                                     'oh_member': oh_member,
+                                     'oh_proj_page': settings.OH_PROJ_PAGE}}
+            return render(request, 'upload.html', context=context)
     return redirect('index')
 
 
 def list_files(request):
     if request.user.is_authenticated:
         context = {'files': request.user.openhumansmember.list_files()}
-        return render(request, 'main/list.html',
+        return render(request, 'list.html',
                       context=context)
     return redirect('index')
 
@@ -627,7 +661,7 @@ def list_public_experiences(request):
     experiences = PublicExperience.objects.filter(approved='approved')
     return render(
         request,
-        'main/public_experiences.html',
+        'public_experiences.html',
         context={'experiences': experiences})
 
 
@@ -635,7 +669,7 @@ def moderate_public_experiences(request):
     experiences = PublicExperience.objects.filter(approved='not reviewed')
     return render(
         request,
-        'main/moderate_public_experiences.html',
+        'old/moderate_public_experiences.html',
         context={'experiences': experiences})
 
 

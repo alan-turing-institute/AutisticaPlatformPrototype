@@ -1,4 +1,4 @@
-{% extends 'main/application.html' %}
+{% extends 'old/application.html' %}
 
 {% block content %}
     <h1>File List</h1>
@@ -16,6 +16,8 @@
             {{experience.difference_text}}
           </div>
         </div>
+
+        <p><a href="{%url 'review_experience' experience.experience_id %}" class="btn btn-success">Approve</a></p>
 
         {% endfor %}
 
