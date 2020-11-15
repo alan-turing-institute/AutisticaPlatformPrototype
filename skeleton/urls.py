@@ -36,7 +36,3 @@ urlpatterns = [
          views.make_research,
          name='make_research'),
 ]
-
-urlpatterns += [
-    path('openhumans/', include('openhumans.urls')),
-]
