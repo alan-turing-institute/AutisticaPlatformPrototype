@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -35,4 +35,8 @@ urlpatterns = [
     path('make_research/<oh_file_id>/<file_uuid>/',
          views.make_research,
          name='make_research'),
+]
+
+urlpatterns += [
+    path('openhumans/', include('openhumans.urls')),
 ]
