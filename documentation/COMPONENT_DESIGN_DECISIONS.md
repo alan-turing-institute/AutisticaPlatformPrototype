@@ -4,7 +4,7 @@ This document is based on content of the  CSP Style Guide
 https://1a5zsg.axshare.com/home.html & Restyled Components
 
 
-
+././images/sg-1-introduction.png
 
 https://va2y2z.axshare.com including Design Decision Content.
 
