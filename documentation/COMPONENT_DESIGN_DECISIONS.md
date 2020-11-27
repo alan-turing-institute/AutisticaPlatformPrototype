@@ -106,7 +106,7 @@ Series of dated wireframe links to project components:
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-7-research.png)
 
-Series of research links to given project components:
+**Series of research links to given project components:**
 
 [alerts-research](https://4nhf3w.axshare.com/#g=1&p=8-alerts-research)<br/>
 [dashboard-notification-research-1](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research1)<br/>
@@ -133,31 +133,25 @@ Series of research links to given project components:
 
 Coded Prototype alongside restyled components to the new style guide and the addition of design decisions as drop downs within column as image.
 
+Review of design decisions linked to restyled wireframe components. 
 
-Review of design decisions  
+**Core Page Componentsr**
 
-Restyled Wireframe Components 
-
-
-
-Header
+**Header**
 
 Responsive full length white strip across the top of the page with the logo.
 
 Each component has a clear single focus, the placement of the components (logo and navigational page links) is clean and simple.
 
 
-Logo
+**Logo**
 
 The logo is Autistica Positive logo version 134 X 79 px which sits flush on the sub-header section.
 
 
-
-Navigation Bar
-
+**Navigation Bar**
 
 The navigation is clear and links to the platforms main sections, represented as menu links. This is consistent from one web page to another. Clearly separated to aid screen readers and general accessibility.
-
 
 Clear way-finding indicates where the user is on each page using this clear, simple navigation.
 
@@ -167,7 +161,7 @@ The navigation links are larger than standard websites at 22px and use the font 
 
 The Contrast Ratio is 4.69:1 using webaim.org  contrast checker for the mint green text, foreground with the white background colour. WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). The Ratio passes the contrast ratio.
 
-Sub-Header
+**Sub-Header**
 
 The top, light mint green  #E8F6F4 strip is  a container for the platforms strap line which can be interchangeable based on page template messaging. With a height of 56px.
 
@@ -183,22 +177,22 @@ To the right of this is the page tagline which is aligned to the right which pro
 
 The Contrast Ratio is 15.18:1 using webaim.org  contrast checker for the dark grey text #1D1D1D, foreground with the light grey background colour #E8F6F4.
 
-Footer
+**Footer**
 
-Sub Footer
+**Sub Footer**
 
 Full page width strip, the dark green (#00444F) strip has a height of 102px. This could be expanded to combine contact info and links to other key information about the platform.
 
-Bottom Footer
+**Bottom Footer**
 
 Full page width strip, the dark grey (#1D1D1D) strip has a height 54px along the bottom and contains a centred copyright notice in Acumin Pro 14px light blue colour (#DDF9FF).
 
 
-Landing Page Components 
+**Landing Page Components**
 
-Header X
+**Header** 
 
-Sub Header (Page Navigation, Return to home, breadcrumb and page tag)
+**Sub Header (Page Navigation, Return to home, breadcrumb and page tag)**
 
 The top, light mint green  #E8F6F4 strip is  a container for the platforms strap line which can be interchangeable based on page template messaging. With a height of 56px.
 
@@ -214,47 +208,43 @@ To the right of this is the page tagline which is aligned to the right which pro
 
 The Contrast Ratio is 15.18:1 using webaim.org  contrast checker for the dark grey text #1D1D1D, foreground with the light grey background colour #E8F6F4.
 
-Sub Header 1 (Strap Line Area)
+
+**Sub Header 1 (Strap Line Area)**
 
 The top, light mint green #E8F6F4 strip is  a container for the platforms strap line which can be interchangeable based on page template messaging. With a height of 56px.
 
 The strap line uses the font Dolly Pro  dark grey #1D1D1D at 36px. Dolly Pro is the second typefaces the site uses. The platform is restricted to the use of only two fonts, Dolly Pro & Acumin Pro.
 
 
-Call To Action
-
+**Call To Action**
 
 The layout focuses on initial CTA, login to begin which has a descriptive title.
 
 The button also has a border green highlight to it. The button is 397 X 62px. It has 6px rounded corners and is green (#00A590). The title uses Acumin Pro, Bold 24px in white.
 
-Aims
+**Aims**
 
 All of the main section titles on the page are Acumin Pro, Bold 24px Simple sentences and grey bullet points (#666666) 10px X 10px have been used to present the platforms aims.  One sentence is presented on one line to aid clarity for the community.  The sentences use 22px base font Acumin Pro, Light 22px in a dark grey (#666666).
 
 Green (#2DFC30) highlighting applied to content sections and given content as recent feedback from the community.
 
 
-Steppers
-
+**Steppers**
 
 Indicates on each page user function page, defines where the user is using Way finding techniques.
 
 
-Newsletter
-
+**Newsletter**
 
 Uses main section title Acumin Pro, Bold 24px. Provides simple instructions for the user. Enter your email address. With a start CTA Subscribe button to the right as standard CTA.
 
-
-How it works 
+**How it works** 
 
 This component is an example of an open accordion. 
 
 Uses main section title Acumin Pro, Bold 24px. Provides simple instructions for the user. A solid icon is also using Mint Green #00A590 / 36 W/H px. A animated drop down arrow icon is also shown which is the same colour and has the same dimensions, which is reversed depending when the accordion is open or closed.
 
 A Green (#2DFC30) highlight is applied to the content in this sections from recent feedback from the community to highlight text. 
-
 
 Simple sentences are used, with, grey bullet points (#666666) 10px X 10px underneath have been used to present how the platform works.  One sentence is presented on one line to aid clarity for the community.  The sentences use 22px base font Acumin Pro, Light 20px in a dark grey (#666666).
 
@@ -263,9 +253,7 @@ Green (#2DFC30) highlighting applied to content sections and given content as re
 A image of the process is shown to the right of this content box.
 
 
-
-Language Selector
-
+**Language Selector**
 
 Research indicates that a commonly recognised icon globe (Ikea etc) can be used as a suitable icon for changing the country language selector.
 
@@ -276,7 +264,7 @@ The full language name has been used to represent given languages.
 A perimeter border has been added to the component which outlines the icons and text. Making this component appear like a button increases apprehension. All buttons in the UI should look like buttons other wise they lose perceived affordance.
 
 
-Profile
+**Profile**
 
 This is the first page the user sees after they are logged in using the Open Human login process.
 
@@ -293,7 +281,7 @@ The Profile set of questions enable the user to set there profile based on a ser
 This platform especially the Profile page has been Co-designed with the autistic community and their families. This page was developed from user experience feedback gathered to date
 
 
-Landing Page
+**Landing Page**
 
 
 This is the main content area in the centre of the page that contains the unique content of a given webpage. This varies from page to page based on its function.
@@ -302,7 +290,7 @@ The page provides simple instructions for the user in the page introduction, des
 
 Presents a series of steps.
 
-Content Boxes / Accordions
+**Content Boxes / Accordions**
 
 The layout is consistent, the content boxes and the accordions help to break down the content into small blocks of digestible information, with a focus on hierarchy - CTA (login to begin) - Followed by a series of accordions.
 
@@ -311,7 +299,7 @@ How it Works is in a open status, followed by Configure & Get Involved.
 The accordions and content boxes are clearly framed with a mint green border to them. This helps to provide a single point of focus for the user.
 
 
-Experience (Share)
+**Experience (Share)**
 
 Headings are used as a navigational aids on the functions.
 
@@ -343,17 +331,18 @@ During the process of adding experience, if inactive an alert message will  be p
 
 The help feature is also provided to nudge the user at given intervals as required and to provide further instruction as required.
 
-User Interface
+
+**User Interface**
 
 Define the purpose of a User Interface - Core Sections
 UI is the “face” of the project and plays a vital part for its success, it defines the user experience. Good user experience can make people like the tool, while inadequate user experience can make people dislike and abandon the tool despite its benefits.
 
-User Interface Research:
+**User Interface Research:**
 
 Autistica Main Website User Interface Component Research
 Open Humans & Molehill Mountain User Interface Component Research
-
 Open Humans User Interface Component Research
+
 To create an account the user has to first access the home page of the Open Humans platform then create an open humans login. Given this user journey it is  important to create some subtle component relationship between the platforms - home page and open humans login - this has been achieved through the use of a Call To Action, font Montserrat, and use of a similar neutral grey background colour which is easy on the eye and calming.
 
 These elements help create a visual connection between this interaction, adds clarity and creates a more seamless interaction for the user.
@@ -372,13 +361,11 @@ Core UI Accessibility findings defined from researched sources in appendices
 
 UI Design Recommendations for People with Autism Spectrum Disorder - Linked to Full WCAG 1.0 Checklist
 
-https://www.w3.org/WAI/intro/wcag10docs.php
-
-https://www.w3.org/TR/WAI-WEBCONTENT/full-checklist.html
-
+[WAI Intro](https://www.w3.org/WAI/intro/wcag10docs.php)
+[WAI Web Content](https://www.w3.org/TR/WAI-WEBCONTENT/full-checklist.html)
 
 
-Accessibility / Menu
+**Accessibility / Menu**
 
 The accessibility features will aid and increase autistic peoples participation in the research. The simply design has helped to reduce sensory overload and allowed the platform be inclusive for all. The platform supports the capturing of experiences of autistic people and others.
 
@@ -389,9 +376,7 @@ It is clear that the one-size-fits-all-approach will not work for the community 
 We are building a new online tool to help improve environments for autistic people. Clear embedding of digital accessibility in the project, whilst  adhering to the Web Content Accessibility Guidelines (WCAG) 2.1 AA standard, published by (W3C).
 
 Sources, Mind Map, UI Design Refs, Open Book UI Case Study, Visual Supports, Visual Symbols, Event Cards
-
 Colours - Visual: Colour Coding, Colour Schemes, Contrast Analyser
-
 Accessibility - Designing for Autism - Mind Map
 
 The platform enables a user to open a set of page with an autism friendly interface. The interface has been built using simple colours, platforms content is written in plain English, using simple sentences and bullet points. The build has used simple consistent layouts. The design (clean, white space, steppers etc) enables the users to be able to drill down on initial selections which need actions. The reduced busyness of the interface has also enabled this process.
@@ -401,11 +386,9 @@ The wire framing and prototyping focus is for a laptop device. However wireframe
 UK Department of Health methodology for the preparation of documents for people with learning disabilities & Application UI Design Rules
 
 UI Design Recommendations for People with Autism Spectrum Disorder ASD Paper
-
 UI design recommendations follow the guidelines set forth by the World Wide Web Consortium (W3C) through the Web Accessibility Initiative (WAI) to improve web access to people with disabilities by means of the concept of “inclusive design”. These recommendations aim to improve accessibility (which develops the efficacy of the tool) and usability (which increases its efficiency) and establish the ideal interaction and interdependence between the different components of the web development (i.e. content, web browser, assistive technology, user, developer, authoring tools and evaluation tools).
 
-The findings described in this paper enable us define the following requirements for UI for people with ASD:
-
+**The findings described in this paper enable us define the following requirements for UI for people with ASD:**
 Avoid deep hierarchies
 Reduce memory load
 Avoid multiple focuses of attention
@@ -416,16 +399,15 @@ Avoid having too much content on the same page
 Offer image, audio and video alternatives to text content
 UI Design Recommendations for People with ASD adapted from Government Digital Services
 
-Presentation
-Do:
+**Presentation**
+**Do:**
 Use contrast between font and background.
 Use soft, mild colours
 Make sure text box is clearly separated from the rest
 Present text in a single column
 
-Navigation & Page Loading
-
-Do:
+**Navigation & Page Loading**
+**Do:**
 Strive for simple, clear navigation.
 Indicate on each page clearly where the user is.
 Support navigation with mouse or keyboard.
@@ -434,7 +416,7 @@ Pages should load fast.
 Use visual indicators for time-consuming actions.
 Have a Help button.
 
-Colour Blindness Thinking (Linked to Access Menu)
+**Colour Blindness Thinking (Linked to Access Menu)**
 
 Never rely on colour alone to convey functional meaning
 Outline tabs with a border
@@ -446,7 +428,7 @@ Unique Styles for different link states - style links to stand out from the text
 
 Use of spacing to create clearer relationships between main heading and sub heading.
 
-Alerts
+**Alerts**
 
 To indicate the level of severity
 Use of alert messaging with text prefixes and icons
@@ -454,36 +436,36 @@ Use of size, colour and iconography
 High attention alert
 https://4nhf3w.axshare.com/#g=1&p=8-alerts-research
 
-List View
+**List View**
 
 The experience is presented in a list view.
 The experiences has a ID number, the Date is also shown.
 The experience input presents the location, experience and different and is structured as individual experiences.
 
-Experience  Viewer
+**Experience  Viewer**
 
 These experiences can be viewed, allowing the user to toggle easily between public and private experiences and two presentation views list / table. The clear option is provided for the user to share, “Are you sure you want this made public?” check box.
 
 The language used is literal and clear as possible.  With a minimal use of metaphor being used on this page and through-out the platform.
 
-Access Icon
+**Access Icon**
 
 The platform allows for customisation via the accessibility menu (standing person with outstretched arms)  the access icon is titled, Access the icon is 48px X 48px in dark grey #1D1D1D.
 
 The accessibility menu panel capitalises on multi-sensory uses (screen reader etc) as does the functionality of the experience page (media upload and non-verbal)
 
-Footer 
+**Footer** 
 
-Sub Footer
+**Sub Footer**
 
 Full page width strip, the dark green (#00444F) strip has a height of 102px. This could be expanded to combine contact info and links to other key information about the platform.
 
-Bottom Footer
+**Bottom Footer**
 
 Full page width strip, the dark grey (#1D1D1D) strip has a height 54px along the bottom and contains a centred copyright notice in Acumin Pro 14px light blue colour (#DDF9FF).
 
 
-Return to the top icon
+**Return to the top icon**
 
 The use of an arrow to indicate the user can return to the top of the page.
 
