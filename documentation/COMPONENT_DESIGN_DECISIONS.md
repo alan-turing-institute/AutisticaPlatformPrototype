@@ -108,20 +108,20 @@ Series of dated wireframe links to project components:
 
 Series of research links to given project components:
 
-[alerts-research](https://4nhf3w.axshare.com/#g=1&p=8-alerts-research)
-[dashboard-notification-research-1](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research1)
-[dashboard-notification-research-2](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research2)
-[upload-research](https://4nhf3w.axshare.com/#g=1&p=3-upload-research)
-[steppers-research](https://4nhf3w.axshare.com/#g=1&p=3-steppers-research)
-[toggle-research](https://4nhf3w.axshare.com/#g=1&p=3-toggle-research)
-[viewable-results-research](https://4nhf3w.axshare.com/#g=1&p=3-viewable-results-research)
-[back-to-top-research](https://4nhf3w.axshare.com/#g=1&p=3-back-to-top-research)
-[speech-to-text-research](https://4nhf3w.axshare.com/#g=1&p=3-speech-to-text-research)
-[accessibility-other-research](https://4nhf3w.axshare.com/#g=1&p=3-accessibility-other-research)
-[language-selector-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-language-selector-research)
-[newsletter-lang-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-newsletter-lang-research)
-[screen-reader-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-screen-reader-research)
-[help-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-help-research)
-[dark-theme-research](https://4nhf3w.axshare.com/#g=1&p=0-home-dark-theme-research)
-[tfl-research](https://4nhf3w.axshare.com/#g=1&p=12-tfl-research)
+[alerts-research](https://4nhf3w.axshare.com/#g=1&p=8-alerts-research)<br/>
+[dashboard-notification-research-1](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research1)<br/>
+[dashboard-notification-research-2](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research2)<br/>
+[upload-research](https://4nhf3w.axshare.com/#g=1&p=3-upload-research)<br/>
+[steppers-research](https://4nhf3w.axshare.com/#g=1&p=3-steppers-research)<br/>
+[toggle-research](https://4nhf3w.axshare.com/#g=1&p=3-toggle-research)<br/>
+[viewable-results-research](https://4nhf3w.axshare.com/#g=1&p=3-viewable-results-research)<br/>
+[back-to-top-research](https://4nhf3w.axshare.com/#g=1&p=3-back-to-top-research)<br/>
+[speech-to-text-research](https://4nhf3w.axshare.com/#g=1&p=3-speech-to-text-research)<br/>
+[accessibility-other-research](https://4nhf3w.axshare.com/#g=1&p=3-accessibility-other-research)<br/>
+[language-selector-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-language-selector-research)<br/>
+[newsletter-lang-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-newsletter-lang-research)<br/>
+[screen-reader-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-screen-reader-research)<br/>
+[help-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-help-research)<br/>
+[dark-theme-research](https://4nhf3w.axshare.com/#g=1&p=0-home-dark-theme-research)<br/>
+[tfl-research](https://4nhf3w.axshare.com/#g=1&p=12-tfl-research)<br/>
 
