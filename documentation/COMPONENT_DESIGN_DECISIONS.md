@@ -53,5 +53,5 @@ Using these colours consistently across all devices helps build recognition and 
 
 Dolly Pro Regular for headlines  / Acumin Pro Bold for sub-headings / Acumin Pro Light is used for body text. 
 
-These typefaces can be licensed from https://fonts.adobe.com/
+These typefaces can be licensed from <a href="https://fonts.adobe.com/" target="_blank">https://fonts.adobe.com/</a> 
 
