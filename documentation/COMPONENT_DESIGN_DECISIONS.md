@@ -101,3 +101,27 @@ Series of dated wireframe links to project components:
 **5.Early Wireframes June 2020**
 [VIEW](https://r0f7cs.axshare.com/)
 [DOWNLOAD](https://github.com/alan-turing-institute/AutisticaCitizenScience/blob/master/platform-designs/wireframes/5-EARLY-WIREFRAMES.rp)
+
+**Research**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-7-research.png)
+
+Series of research links to given project components:
+
+[alerts-research](https://4nhf3w.axshare.com/#g=1&p=8-alerts-research)
+[dashboard-notification-research-1](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research1)
+[dashboard-notification-research-2](https://4nhf3w.axshare.com/#g=1&p=4-dashboard-notification-research2)
+[upload-research](https://4nhf3w.axshare.com/#g=1&p=3-upload-research)
+[steppers-research](https://4nhf3w.axshare.com/#g=1&p=3-steppers-research)
+[toggle-research](https://4nhf3w.axshare.com/#g=1&p=3-toggle-research)
+[viewable-results-research](https://4nhf3w.axshare.com/#g=1&p=3-viewable-results-research)
+[back-to-top-research](https://4nhf3w.axshare.com/#g=1&p=3-back-to-top-research)
+[speech-to-text-research](https://4nhf3w.axshare.com/#g=1&p=3-speech-to-text-research)
+[accessibility-other-research](https://4nhf3w.axshare.com/#g=1&p=3-accessibility-other-research)
+[language-selector-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-language-selector-research)
+[newsletter-lang-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-newsletter-lang-research)
+[screen-reader-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-screen-reader-research)
+[help-research](https://4nhf3w.axshare.com/#g=1&p=0-home-light-help-research)
+[dark-theme-research](https://4nhf3w.axshare.com/#g=1&p=0-home-dark-theme-research)
+[tfl-research](https://4nhf3w.axshare.com/#g=1&p=12-tfl-research)
+
