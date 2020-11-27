@@ -1,4 +1,4 @@
-Component Design Decisions
+**Component Design Decisions**
 
 This document is based on content from 
 
@@ -43,9 +43,9 @@ Positive logo version 134px X 78px / 81px X 42px logo at 600px and below.
 
 * [Download](https://github.com/alan-turing-institute/AutisticaCitizenScience/blob/master/platform-designs/wireframes/logo.svg)
 
+**Colours**
 
-Colours
-
+![alt text] (https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-3-colour.png)
 
 Using these colours consistently across all devices helps build recognition and coherence between components.
 
