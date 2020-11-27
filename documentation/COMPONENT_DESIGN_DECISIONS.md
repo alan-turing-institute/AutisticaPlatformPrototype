@@ -39,8 +39,6 @@ A 60% discount to nonprofits for the software can be requested by a contacting s
 
 Positive logo version 134px X 78px / 81px X 42px logo at 600px and below.
 
-![alt text](https://d1icd6shlvmxi6.cloudfront.net/gsc/1A5ZSG/92/2b/00/922b0010f8d8458695ac31130497d647/images/home/u4.svg?token=6187d165d5d52a35b85a9859aaefb7dc07e97181ee826a4beee979f30b279a3e)
-
 * [Download](https://github.com/alan-turing-institute/AutisticaCitizenScience/blob/master/platform-designs/wireframes/logo.svg)
 
 **Colours**
@@ -49,5 +47,11 @@ Positive logo version 134px X 78px / 81px X 42px logo at 600px and below.
 
 Using these colours consistently across all devices helps build recognition and coherence between components.
 
-Colours Image 
+**Typography**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-4-typography.png)
+
+Dolly Pro Regular for headlines  / Acumin Pro Bold for sub-headings / Acumin Pro Light is used for body text. 
+
+These typefaces can be licensed from https://fonts.adobe.com/
 
