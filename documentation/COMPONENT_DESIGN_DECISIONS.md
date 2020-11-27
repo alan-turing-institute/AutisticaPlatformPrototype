@@ -2,11 +2,11 @@ Component Design Decisions
 
 This document is based on content from 
 
-* [CSP Style Guide](https://1a5zsg.axshare.com)
+* [CSP Style Guide Wireframe](https://1a5zsg.axshare.com)
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-1-introduction.png)
 
-* [Restyled Components](https://va2y2z.axshare.com) including Design Decision Content
+* [Restyled Components Wireframe](https://va2y2z.axshare.com) including Design Decision Content
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/1_comp.png)
 
