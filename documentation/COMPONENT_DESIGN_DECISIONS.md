@@ -58,9 +58,8 @@ These typefaces can be licensed from [https://fonts.adobe.com/](https://fonts.ad
 **Icons**
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-5-icons.png)
-The project icon set has been built as a bespoke set using icomoon.
 
-[https://icomoon.io/](https://icomoon.io/)
+The project icon set has been built as a bespoke set using icomoon.[https://icomoon.io/](https://icomoon.io/)
 
 [Download Icon Set](https://github.com/alan-turing-institute/AutisticaCitizenScience/blob/master/platform-designs/wireframes/icomoon-final.zip)
 
@@ -76,7 +75,7 @@ Series of dated wireframe links to project components:
 [DOWNLOAD](https://github.com/alan-turing-institute/AutisticaCitizenScience/blob/master/platform-designs/wireframes/0-NAVIGATION.rp)
 
 **1. Final Prototype**
-[VIEW] (https://yc4dy8.axshare.com/)
+[VIEW](https://yc4dy8.axshare.com/)
 [DOWNLOAD](https://github.com/alan-turing-institute/AutisticaCitizenScience/blob/master/platform-designs/wireframes/1-PROTOTYPE.rp)
 
 **2. Community Presentation 26082020**
