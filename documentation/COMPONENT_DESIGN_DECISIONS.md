@@ -1,12 +1,16 @@
 Component Design Decisions
 
-This document is based on content of the  CSP Style Guide
-https://1a5zsg.axshare.com/home.html & Restyled Components
+This document is based on content from 
 
+* [CSP Style Guide](https://1a5zsg.axshare.com)
 
-././images/sg-1-introduction.png
+* [Restyled Components](https://va2y2z.axshare.com)
 
-https://va2y2z.axshare.com including Design Decision Content.
+including Design Decision Content.
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-1-introduction.png)
+ 
+
 
 This content has been presented in this .md file for the community. 
 
