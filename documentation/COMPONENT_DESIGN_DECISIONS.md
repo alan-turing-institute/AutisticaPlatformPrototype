@@ -1,1 +1,1 @@
-Component Design Decisions
+Component Design Decision
