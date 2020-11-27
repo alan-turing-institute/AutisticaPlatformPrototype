@@ -471,3 +471,4 @@ The use of an arrow to indicate the user can return to the top of the page.
 
 This button takes the form of a coloured circle and has a arrow up icon combined with the action title back to top (ref TKMaxx etc)
 
+**Restyled Extended Style Guide** sgext 1-12 insert images
