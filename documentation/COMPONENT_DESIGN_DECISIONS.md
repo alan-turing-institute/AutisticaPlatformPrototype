@@ -51,6 +51,6 @@ Using these colours consistently across all devices helps build recognition and 
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-4-typography.png)
 
-Dolly Pro Regular for headlines  / Acumin Pro Bold for sub-headings / Acumin Pro Light is used for body text. 
+Dolly Pro Regular for headlines  / Acumin Pro Bold for sub-headings / Acumin Pro Light is used for body text
 
 These typefaces can be licensed from [https://fonts.adobe.com/](https://fonts.adobe.com/)
