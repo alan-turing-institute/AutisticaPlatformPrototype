@@ -135,7 +135,9 @@ Coded Prototype alongside restyled components to the new style guide and the add
 
 Review of design decisions linked to restyled wireframe components. 
 
-**Core Page Componentsr**
+**Core Page Components**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/2_core.png)
 
 **Header**
 
@@ -149,6 +151,8 @@ Each component has a clear single focus, the placement of the components (logo a
 The logo is Autistica Positive logo version 134 X 79 px which sits flush on the sub-header section.
 
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/3_nav.png)
+
 **Navigation Bar**
 
 The navigation is clear and links to the platforms main sections, represented as menu links. This is consistent from one web page to another. Clearly separated to aid screen readers and general accessibility.
@@ -160,6 +164,14 @@ The platforms navigation is presented here and is aligned to the right. The navi
 The navigation links are larger than standard websites at 22px and use the font Acumin Pro using the colour #00A590. The platform links are equally spread out, spacing at 52px for the displayed view 1200px. The font Acumin Pro has been chosen as a good example of a rounded sans serif font, which has enough space between letters is suitable from an accessibility perspective.
 
 The Contrast Ratio is 4.69:1 using webaim.org  contrast checker for the mint green text, foreground with the white background colour. WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). The Ratio passes the contrast ratio.
+
+
+**Sub-Headers**
+
+**Sub-Header 1**![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/4_sub_header_1.png)
+
+**Sub-Header 2**![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/5_sub_header_2.png)
+
 
 **Sub-Header**
 
@@ -179,6 +191,9 @@ The Contrast Ratio is 15.18:1 using webaim.org  contrast checker for the dark gr
 
 **Footer**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/22_footer.png)
+
+
 **Sub Footer**
 
 Full page width strip, the dark green (#00444F) strip has a height of 102px. This could be expanded to combine contact info and links to other key information about the platform.
@@ -189,6 +204,8 @@ Full page width strip, the dark grey (#1D1D1D) strip has a height 54px along the
 
 
 **Landing Page Components**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/2_core.png)
 
 **Header** 
 
@@ -211,6 +228,8 @@ The Contrast Ratio is 15.18:1 using webaim.org  contrast checker for the dark gr
 
 **Sub Header 1 (Strap Line Area)**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/5_sub_header_2.png)
+
 The top, light mint green #E8F6F4 strip is  a container for the platforms strap line which can be interchangeable based on page template messaging. With a height of 56px.
 
 The strap line uses the font Dolly Pro  dark grey #1D1D1D at 36px. Dolly Pro is the second typefaces the site uses. The platform is restricted to the use of only two fonts, Dolly Pro & Acumin Pro.
@@ -218,11 +237,15 @@ The strap line uses the font Dolly Pro  dark grey #1D1D1D at 36px. Dolly Pro is 
 
 **Call To Action**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/17_upload_CTA.png)
+
 The layout focuses on initial CTA, login to begin which has a descriptive title.
 
 The button also has a border green highlight to it. The button is 397 X 62px. It has 6px rounded corners and is green (#00A590). The title uses Acumin Pro, Bold 24px in white.
 
 **Aims**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/7_aims.png)
 
 All of the main section titles on the page are Acumin Pro, Bold 24px Simple sentences and grey bullet points (#666666) 10px X 10px have been used to present the platforms aims.  One sentence is presented on one line to aid clarity for the community.  The sentences use 22px base font Acumin Pro, Light 22px in a dark grey (#666666).
 
@@ -231,14 +254,20 @@ Green (#2DFC30) highlighting applied to content sections and given content as re
 
 **Steppers**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/10_stepper.png)
+
 Indicates on each page user function page, defines where the user is using Way finding techniques.
 
 
 **Newsletter**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/11_newsletter.png)
+
 Uses main section title Acumin Pro, Bold 24px. Provides simple instructions for the user. Enter your email address. With a start CTA Subscribe button to the right as standard CTA.
 
 **How it works** 
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/9_how_it_works.png)
 
 This component is an example of an open accordion. 
 
@@ -255,6 +284,8 @@ A image of the process is shown to the right of this content box.
 
 **Language Selector**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/12_lang_selector.png)
+
 Research indicates that a commonly recognised icon globe (Ikea etc) can be used as a suitable icon for changing the country language selector.
 
 The use of a clear radio button allows the user to make a clear single selection of a given language.
@@ -265,6 +296,8 @@ A perimeter border has been added to the component which outlines the icons and 
 
 
 **Profile**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/13_profile.png)
 
 This is the first page the user sees after they are logged in using the Open Human login process.
 
@@ -283,7 +316,6 @@ This platform especially the Profile page has been Co-designed with the autistic
 
 **Landing Page**
 
-
 This is the main content area in the centre of the page that contains the unique content of a given webpage. This varies from page to page based on its function.
 
 The page provides simple instructions for the user in the page introduction, descriptions.
@@ -291,6 +323,8 @@ The page provides simple instructions for the user in the page introduction, des
 Presents a series of steps.
 
 **Content Boxes / Accordions**
+
+![alt text] (https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/18_accordian.png)
 
 The layout is consistent, the content boxes and the accordions help to break down the content into small blocks of digestible information, with a focus on hierarchy - CTA (login to begin) - Followed by a series of accordions.
 
@@ -300,6 +334,8 @@ The accordions and content boxes are clearly framed with a mint green border to 
 
 
 **Experience (Share)**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/14_share.png)
 
 Headings are used as a navigational aids on the functions.
 
@@ -367,6 +403,9 @@ UI Design Recommendations for People with Autism Spectrum Disorder - Linked to F
 
 **Accessibility / Menu**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/20_access_panel_1.png)
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/21_access_panel_2.png)
+
 The accessibility features will aid and increase autistic peoples participation in the research. The simply design has helped to reduce sensory overload and allowed the platform be inclusive for all. The platform supports the capturing of experiences of autistic people and others.
 
 The importance of designing for autistic people using methods of customisability is evident. The accessibility menu uses a suitable, interface  where the colour, font size, medium of communication (auditory, visual, textual) can be chosen and altered to the users requirements.
@@ -430,6 +469,8 @@ Use of spacing to create clearer relationships between main heading and sub head
 
 **Alerts**
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/15_alert.png)
+
 To indicate the level of severity
 Use of alert messaging with text prefixes and icons
 Use of size, colour and iconography
@@ -437,6 +478,8 @@ High attention alert
 https://4nhf3w.axshare.com/#g=1&p=8-alerts-research
 
 **List View**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/16_list_view.png)
 
 The experience is presented in a list view.
 The experiences has a ID number, the Date is also shown.
@@ -448,13 +491,22 @@ These experiences can be viewed, allowing the user to toggle easily between publ
 
 The language used is literal and clear as possible.  With a minimal use of metaphor being used on this page and through-out the platform.
 
+
 **Access Icon**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/19_access_logo.png)
+
 
 The platform allows for customisation via the accessibility menu (standing person with outstretched arms)  the access icon is titled, Access the icon is 48px X 48px in dark grey #1D1D1D.
 
 The accessibility menu panel capitalises on multi-sensory uses (screen reader etc) as does the functionality of the experience page (media upload and non-verbal)
 
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/19_access_logo.png)
+
+
 **Footer** 
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/22_footer.png)
 
 **Sub Footer**
 
@@ -471,4 +523,4 @@ The use of an arrow to indicate the user can return to the top of the page.
 
 This button takes the form of a coloured circle and has a arrow up icon combined with the action title back to top (ref TKMaxx etc)
 
-**Restyled Extended Style Guide** sgext 1-12 insert images
+**Link to code build out**
