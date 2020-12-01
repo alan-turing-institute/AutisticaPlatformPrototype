@@ -125,6 +125,41 @@ Series of dated wireframe links to project components:
 [dark-theme-research](https://4nhf3w.axshare.com/#g=1&p=0-home-dark-theme-research)<br/>
 [tfl-research](https://4nhf3w.axshare.com/#g=1&p=12-tfl-research)<br/>
 
+**Extended Style Guide**
+
+This extended style guide was provided to the development team, who implemented the updated style guide.
+
+**Colours Extended**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_2.png)
+
+**Icons 1 Extended**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_3.png)
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_4.png)
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_6.png)
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_7.png)
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_8.png)
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_9.png)
+
+**Page Layouts Extended**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
+Primary
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_12.png)
+Secondary with Footer
+
+**Mobile Navigation**
+
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_5.png)
+
+
+
 
 ** [Restyled Components Wireframe](https://va2y2z.axshare.com) including Design Decision Content**
 
