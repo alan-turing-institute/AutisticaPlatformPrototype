@@ -536,9 +536,6 @@ The platform allows for customisation via the accessibility menu (standing perso
 
 The accessibility menu panel capitalises on multi-sensory uses (screen reader etc) as does the functionality of the experience page (media upload and non-verbal)
 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/19_access_logo.png)
-
-
 **Footer** 
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/22_footer.png)
