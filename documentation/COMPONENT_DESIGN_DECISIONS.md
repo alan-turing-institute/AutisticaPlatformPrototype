@@ -58,7 +58,8 @@ Image:
 
 **.css**
 
-The Cascading Style Sheet .css is also separated in the same way for each component and can be found in the related prototype folder. (ref Paul Update with link when pushed to main repo). https://github.com/pgc007/AutisticaPlatformPrototype/tree/paul-MFT/static/css
+The Cascading Style Sheet .css is also separated in the same way for each component and can be found in the related prototype folder. (ref Paul Update with link when pushed to main repo). </br>
+https://github.com/pgc007/AutisticaPlatformPrototype/tree/paul-MFT/static/css
 
 The .css for these components is accessed via</br>  
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/static/css
