@@ -273,6 +273,7 @@ The Contrast Ratio is 4.69:1 using webaim.org  contrast checker for the mint gre
 
 **Sub-Header 1**![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/4_sub_header_1.png)
 </br>
+</br>
 **Sub-Header 2**![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/5_sub_header_2.png)
 </br>
 
