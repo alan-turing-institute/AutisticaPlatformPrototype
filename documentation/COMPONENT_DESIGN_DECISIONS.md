@@ -80,7 +80,6 @@ Review of the code structure shows components elements are clearly labelled and
 related .css styles are suitability named. The .css can be altered to alter the style of the given components within this style sheet.
 
 
-
 **CSP Style Guide Introduction**
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-1-introduction.png)
@@ -215,7 +214,7 @@ This extended style guide was provided to the development team, who implemented 
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_9.png)
 
-**Page Layouts Extended**
+**Page Layouts Extended**</br>
 Primary</br>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
 </br>
