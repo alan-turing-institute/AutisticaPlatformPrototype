@@ -426,6 +426,7 @@ The page provides simple instructions for the user in the page introduction, des
 Presents a series of steps.
 
 **Content Boxes / Accordions**
+</br>
 
 ![alt text] (https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/18_accordian.png)
 
