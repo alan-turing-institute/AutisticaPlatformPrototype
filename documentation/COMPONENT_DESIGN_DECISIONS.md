@@ -10,7 +10,7 @@ This document is based on content from
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/1_comp.png)
 
-This content has been presented in this .md file for the community. The style guide, restyled componets and design decisions is combined with the linkage to the Prototype Code, which is shown first.
+This content has been presented in this .md file for the community. The style guide, restyled components and design decisions is combined with the linkage to the Prototype Code, which is shown first.
 
 **Linkage between Wireframes Components & Prototype Code (html/css)**
 
@@ -48,10 +48,6 @@ This image shows the individual Components. Each component has been developed as
 
 **Navigation Bar Component Example**
 
-Reference Navigation Bar Component Example
-Image:
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-2-temp-com-navbar-html.png)
-
 Reference Navigation Bar Component - navbar.html
 Image: 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-2-temp-com-navbar-html.png)
@@ -63,7 +59,7 @@ Image:
 
 **.css**
 
-The Cascading Style Sheet .css is also separated in the same way for each component and can be found in the related prototype folder. (ref Paul Update with link). 
+The Cascading Style Sheet .css is also separated in the same way for each component and can be found in the related prototype folder. (ref Paul Update with link when pushed to main repo). https://github.com/pgc007/AutisticaPlatformPrototype/tree/paul-MFT/static/css
 
 The .css for these components is accessed via  
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/static/css
