@@ -229,10 +229,9 @@ Secondary with Footer</br>
 
 
 
-** [Restyled Components Wireframe](https://va2y2z.axshare.com) including Design Decision Content**
+**[Restyled Components Wireframe](https://va2y2z.axshare.com) including Design Decision Content**
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/1_comp.png)
-
 
 Coded Prototype alongside restyled components to the new style guide and the addition of design decisions as drop downs within column as image.
 
