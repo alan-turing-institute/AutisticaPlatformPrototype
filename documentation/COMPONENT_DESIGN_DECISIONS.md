@@ -20,7 +20,7 @@ The platform prototype code (templates .html & .css) for the project can be acce
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/skeleton
 
 Skeleton Folder Image:
-![alt text] (https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-5-skeleton.png)
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-5-skeleton.png)
 
 This folder shows the templates 
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/skeleton/templates
