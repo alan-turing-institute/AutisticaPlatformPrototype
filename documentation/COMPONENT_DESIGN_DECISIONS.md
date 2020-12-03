@@ -26,7 +26,7 @@ This folder shows the templates
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/skeleton/templates
 Which holds the main and the components .html files. 
 
-**Main Folder **
+**Main Folder**
 
 Image: Overview of .html files location  - Main Templates
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-0-templates-main.png)
