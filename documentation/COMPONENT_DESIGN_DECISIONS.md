@@ -216,13 +216,12 @@ This extended style guide was provided to the development team, who implemented 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_9.png)
 
 **Page Layouts Extended**
-
-Primary
+Primary</br>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
-
-Secondary with Footer
+</br>
+Secondary with Footer</br>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_12.png)
-
+</br>
 
 **Mobile Navigation**
 
