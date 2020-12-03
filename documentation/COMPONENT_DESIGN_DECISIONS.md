@@ -218,8 +218,9 @@ This extended style guide was provided to the development team, who implemented 
 
 **Page Layouts Extended**
 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
 </b>Primary</b>
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
+
 </b>Secondary with Footer</b>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_12.png)
 
