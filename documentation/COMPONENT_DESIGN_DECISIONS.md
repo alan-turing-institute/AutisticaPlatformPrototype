@@ -228,14 +228,6 @@ Secondary with Footer</br>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_5.png)
 
 
-**[Restyled Components Wireframe](https://va2y2z.axshare.com) including Design Decision Content**
-
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/1_comp.png)
-
-Coded Prototype alongside restyled components to the new style guide and the addition of design decisions as drop downs within column as image.
-
-Review of design decisions linked to restyled wireframe components. 
-
 **Core Page Components**
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/2_core.png)
