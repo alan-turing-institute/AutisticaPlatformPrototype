@@ -103,7 +103,6 @@ A 60% discount to nonprofits for the software can be requested by a contacting s
 
 **Logo**
 
-
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sg-2-logo.png)
 
 Positive logo version 134px X 78px / 81px X 42px logo at 600px and below.
@@ -218,10 +217,10 @@ This extended style guide was provided to the development team, who implemented 
 
 **Page Layouts Extended**
 
-</b>Primary</b>
+Primary
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
 
-</b>Secondary with Footer</b>
+Secondary with Footer
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_12.png)
 
 
