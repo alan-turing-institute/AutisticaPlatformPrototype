@@ -214,7 +214,8 @@ This extended style guide was provided to the development team, who implemented 
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_9.png)
 
-**Page Layouts Extended**</br>
+**Page Layouts Extended**
+</br>
 Primary</br>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_10.png)
 </br>
@@ -266,7 +267,8 @@ The navigation links are larger than standard websites at 22px and use the font 
 The Contrast Ratio is 4.69:1 using webaim.org  contrast checker for the mint green text, foreground with the white background colour. WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders). The Ratio passes the contrast ratio.
 
 
-**Sub-Headers**</br>
+**Sub-Headers**
+</br>
 
 **Sub-Header 1**![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/4_sub_header_1.png)
 </br>
