@@ -227,8 +227,6 @@ Secondary with Footer</br>
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/sgext_5.png)
 
 
-
-
 **[Restyled Components Wireframe](https://va2y2z.axshare.com) including Design Decision Content**
 
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/1_comp.png)
@@ -428,7 +426,7 @@ Presents a series of steps.
 **Content Boxes / Accordions**
 </br>
 
-![alt text] (https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/18_accordian.png)
+![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/18_accordian.png)
 
 The layout is consistent, the content boxes and the accordions help to break down the content into small blocks of digestible information, with a focus on hierarchy - CTA (login to begin) - Followed by a series of accordions.
 
@@ -616,7 +614,6 @@ Full page width strip, the dark green (#00444F) strip has a height of 102px. Thi
 **Bottom Footer**
 
 Full page width strip, the dark grey (#1D1D1D) strip has a height 54px along the bottom and contains a centred copyright notice in Acumin Pro 14px light blue colour (#DDF9FF).
-
 
 **Return to the top icon**
 
