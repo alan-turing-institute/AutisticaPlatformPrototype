@@ -67,11 +67,9 @@ Tables are presented for each component which, indicates the name of the given c
  
 
 
-**Name & Description | .html & Location  | .css Classes & Location** 
+Name & Description | .html & Location  | .css Classes & Location
 ------------ | ------------- | ------------- 
 Content Cell 1 | Content Cell 2 | Content Cell 3 
-Content Column 1 | Content Column 2 | Content Column 3
-
 
 **CSP Style Guide Introduction**
 
