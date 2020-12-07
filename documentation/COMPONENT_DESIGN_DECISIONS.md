@@ -18,43 +18,28 @@ The platform prototype code (templates .html & .css) for the project can be acce
 
 **Skeleton Folder** 
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/skeleton
-
 Skeleton Folder Image:
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-5-skeleton.png)
 
 This folder shows the templates 
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/skeleton/templates
 Which holds the main and the components .html files. 
 
 **Main Folder**
-
 Image: Overview of .html files location  - Main Templates
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-0-templates-main.png)
-
 **Component Folder**
 
 The Component Folder is also shown</br>
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/skeleton/templates/components
 
 Image of Components: 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-0-templates-components-main.png)
-
 Overview of .html files location - Components
-Image: 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-1-templates-components.png)
 
 This image shows the individual Components. Each component has been developed as its own Hyper Text Mark Up Language .html file. as the components folder shows. 
 
 **Navigation Bar Component Example**
 
 Reference Navigation Bar Component - navbar.html
-Image: 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-2-temp-com-navbar-html.png)
-
 Related .css to navbar.html from main.css
-Image:
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-6-navbar-style.png)
-
 
 **.css**
 
@@ -63,9 +48,8 @@ https://github.com/pgc007/AutisticaPlatformPrototype/tree/paul-MFT/static/css
 
 The .css for these components is accessed via</br>  
 https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/static/css
-
 .CSS Location 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-3-static-css.png)
+
 
 **Main.css Reference** 
 
@@ -74,10 +58,26 @@ Image:
 ![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-4-main-css.png)
 
 Example Reference to Navigation Bar Component Related .css - navbar.html / main.css - Styling
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-6-navbar-style.png)
 
-Review of the code structure shows components elements are clearly labelled and 
-related .css styles are suitability named. The .css can be altered to alter the style of the given components within this style sheet.
+Review of the code structure shows components elements are clearly labelled and related .css styles are suitability named. The .css can be altered to alter the style of the given components within this style sheet.
+
+**Additon of Location Tables** 
+
+Tables are presented for each component which, indicates the name of the given component, and its description, its location is defined as a link to the .html file, related to the .css classes to the given component and there location 
+
+1. Components Name & Description 
+2. .html Location of Component
+3. .css Classes Related to Component
+ 
+
+
+**Name & Description | .html & Location  | .css Classes & Location** 
+
+------------ | ------------- | ------------- 
+
+Content Cell 1 | Content Cell 2 | Content Cell 3 
+
+Content Column 1 | Content Column 2 | Content Column 3
 
 
 **CSP Style Guide Introduction**
