@@ -52,11 +52,7 @@ https://github.com/alan-turing-institute/AutisticaPlatformPrototype/tree/master/
 
 
 **Main.css Reference** 
-
 Overview of .css files - main.css 
-Image: 
-![alt text](https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/images/cl-4-main-css.png)
-
 Example Reference to Navigation Bar Component Related .css - navbar.html / main.css - Styling
 
 Review of the code structure shows components elements are clearly labelled and related .css styles are suitability named. The .css can be altered to alter the style of the given components within this style sheet.
@@ -72,11 +68,8 @@ Tables are presented for each component which, indicates the name of the given c
 
 
 **Name & Description | .html & Location  | .css Classes & Location** 
-
 ------------ | ------------- | ------------- 
-
 Content Cell 1 | Content Cell 2 | Content Cell 3 
-
 Content Column 1 | Content Column 2 | Content Column 3
 
 
