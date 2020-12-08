@@ -69,7 +69,7 @@ Tables are presented for each component which, indicates the name of the given c
 
 Name & Description | .html & Location  | .css Classes & Location
 ------------ | ------------- | ------------- 
-Content Cell 1 | Content Cell 2 | Content Cell 3 
+Content Cell 1 | Content Cell 2 | [Class Location](/../../static/css/components.css#L2-L23)
 
 **CSP Style Guide Introduction**
 
