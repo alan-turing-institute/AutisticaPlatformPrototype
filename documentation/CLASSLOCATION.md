@@ -4,7 +4,6 @@ Classes Locations Related to Components
 http://0.0.0.0:8000/homepage
 ------
 `nav class="navbar navbar-expand-lg navbar-light" ion`
-```nav class="navbar navbar-expand-lg navbar-light" ion```
 
 Header / Static Navbar
 ------
