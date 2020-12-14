@@ -227,32 +227,33 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss\*
 http://localhost:8000/static/css/style.css:13
 onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)\*
 
+
 **sliding-panel and other related classes page styles**
-.ap-outerdiv and others related to .ap- styles, related classes page style
-<script>function show_hideExpandingPanel(panelID, panel_arrow)…. 
+\*.ap-outerdiv and others related to .ap- styles, related classes page style
+<script>function show_hideExpandingPanel(panelID, panel_arrow)….\* 
 
 
 **Accessibility Panel**
-<div class="ap-outerdiv"
+\*<div class="ap-outerdiv"\*
 http://localhost:8000/gallery:814
 
-<div class="ap-langsel"
+\*<div class="ap-langsel"\*
 http://localhost:8000/gallery:820
 
-<div class="ap-language"
+\*<div class="ap-language"\*
 http://localhost:8000/gallery:823
 
 
 **Accessibility Menu**
 
-<i class="icon-screen-reader ap-icon-na"
+\*<i class="icon-screen-reader ap-icon-na"\*
 http://localhost:8000/static/css/style.css:13
 
-<div class="sliding-panel left sliding-panel-open-left" id=“accessibilitypannel etc
+\*<div class="sliding-panel left sliding-panel-open-left" id=“accessibilitypannel etc\*
 http://localhost:8000/gallery:785 + 
 
 **Navigation Adjustment**
-<div class="ap-navadjust-outerdiv" (three section accordions)
+\*<div class="ap-navadjust-outerdiv" (three section accordions)\*
 http://localhost:8000/gallery:837
 
 <div class=“ap-div-nai”
