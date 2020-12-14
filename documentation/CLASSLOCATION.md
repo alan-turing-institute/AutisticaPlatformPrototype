@@ -13,7 +13,9 @@ Header / Static Navbar
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 </br>
 </br>
-**Inner Light Grey Container**</br>
+**Inner Light Grey Container**
+<br>
+</br>
 `div class="d-flex`</br> 
 *external cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 </br>
