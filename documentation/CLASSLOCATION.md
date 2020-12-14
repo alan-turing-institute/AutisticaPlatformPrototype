@@ -7,7 +7,7 @@ http://0.0.0.0:8000/homepage
 
 Header / Static Navbar
 ------
-**Outer Light Grey Container)**
+**Outer Light Grey Container)**</br>
 `nav class="navbar navbar-expand-lg navbar-light" ion`
 `nav class="bg-light"`  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
