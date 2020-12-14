@@ -93,13 +93,13 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss
 /../../static/css/main.css#L55-L62
 
 **h3 / mark Large Aims title (Container Title)**  
-**ul and li for stated aims with addition of marker for <mark> for green highlighted text styling the list li elements have the addition of a styled bullet point**
+**ul and li for stated aims with addition of marker for mark for green highlighted text styling the list li elements have the addition of a styled bullet point**
 
 **3 Columns How it works / Configure / Get Involved**
 
 div class=“card-deck” (section container for 3 columns)
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
-
+<br>
 div class="card autistica-card my-3”  ( styling of individual containers, boarder, size and margins)
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
@@ -113,8 +113,8 @@ h4 class="card-title hiw-heading" (container header)
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 index style
 
-**<mark>How it works</mark> (Green Highlight to column title)
-index style**
+**mark How it works</mark> (Green Highlight to column title)**
+**index style**
 i class="icon-how_it_works"
 i class="icon-expand_more hiw-right-icon"
 
@@ -127,13 +127,12 @@ index style
 index style
 <p class="card-text”> 
 
-**(paragraph spacing between top introduction paragraph and list)
-ul and li (styled bullet pointed listed green highlighted)**
+**(paragraph spacing between top introduction paragraph and list)**
+**ul and li (styled bullet pointed listed green highlighted)**
 
 **Columns 2 & 3** 
 div class="card autistica-card my-3" (inner and outer container stying)
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
-/../../static/css/main.css#L64-L70
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 
 div style="padding: 20px;" (container inner style)
@@ -153,23 +152,17 @@ div style="margin: 50px 0 0 50%;" (centred button CTA)
 index style
 
 **Footer** 
-footer class="footer" (top and bottom footer styling)
+**footer class="footer" (top and bottom footer styling)**
 
 p class="footer-top pnospace" (space for top footer)
-
 class="footer-bottom text-center" (container for bottom footer)
-
 p class="copyrt" (styling for copyright text)
 index style
 
 **http://0.0.0.0:8000/gallery**
-
 **Component Showcase**
-
 **Panel Components > Secondary Banner & Secondary Banner Alt**
-
 **Jumbotron - Aims**
-
 **Card**
 <div class="card-body"
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
@@ -183,35 +176,31 @@ http://localhost:8000/gallery  page internal, style
 
 
 **Expanding Panel - Accordion drop down**
-
 <div class="ap-navadjust-outerdiv"
 page internal, style
 
 <div class="ap-navadjust-expand"
 page internal, style
 
-
 **Animated Panel Components** 
-Modular Alert
-modularalerts.html
+**Modular Alert**
+**modularalerts.html**
 
 <button class="ma_button"
 page internal, style
 
 **Modular Background**
-
 class="ma-div-screen"
 id="modularAlert"
 
 **Modular Container**
-
 <div class="ma-divts"
 page internal, style
 
 <i class="fas fa-times" 
 http://localhost:8000/static/css/fa/all.min.css
 
-class fas fa-exclamation-triangle ma_alert"
+<class fas fa-exclamation-triangle ma_alert"
 http://localhost:8000/static/css/fa/all.min.css
 page internal, style
 
@@ -231,13 +220,13 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss
 
 **Accessibility Panel** 
 
-Icon which opens animated panel from the right side 
+**Icon which opens animated panel from the right side** 
 
 <i class="icon-access"
 http://localhost:8000/static/css/style.css:13
 onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)
 
-.sliding-panel and other related classes page styles
+**sliding-panel and other related classes page styles**
 .ap-outerdiv and others related to .ap- styles, related classes page style
 <script>function show_hideExpandingPanel(panelID, panel_arrow)…. 
 
@@ -270,7 +259,6 @@ http://localhost:8000/gallery:894
 
 
 **Colour Adjustment** 
-
 <div class="ap-navadjust-outerdiv" (three section accordions)
 http://localhost:8000/gallery:837
 
@@ -326,15 +314,13 @@ http://localhost:8000/gallery:983
 http://localhost:8000/gallery:990
 
 **(Saturation & Brightness)**
-
 <div class="ap-hslcolorpicker"
 http://localhost:8000/gallery:1005
 
 <input type="range" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317 - 325
 
-<script>
-var hslSlider, var saturationSlider, var brightnessSlider
+<script var hslSlider, var saturationSlider, var brightnessSlider
 <i class=“icon-reset-colour ap-icon-rc
 http://localhost:8000/gallery:1039
 
@@ -364,11 +350,11 @@ http://localhost:8000/gallery:1115
 http://localhost:8000/static/css/style.css:13
 
 **(- & + Contrast Slider)**
-<script>
-var Slider
+<script var Slider
 
 **(Content Adjustment)** 
-/ ../accessibilitypanel.html' with PanelID="accessibilitypannel" Direction="left"
+**accessibilitypanel.html** 
+with PanelID="accessibilitypannel" Direction="left"
 
 <div class="ap-navadjust-outerdiv"
 http://localhost:8000/gallery:837
@@ -421,18 +407,14 @@ http://localhost:8000/gallery:1328
 http://localhost:8000/gallery:1350
 
 **(Low Luminance 2)**
-
 <div class="ap-hcl-title"
 http://localhost:8000/gallery:1354
 
 **(Magnifier)**
-
 <div class="ap-mag-box"
 http://localhost:8000/gallery:1363
 
-
 **(Close Function)**
-
 <i class="icon-close sp-icon-close"
 onclick="citizenSciencePlatform_slidingpanelfunctions.ClosePanel('accessibilitypannel')"
 http://localhost:8000/static/css/style.css:13
@@ -440,18 +422,14 @@ http://localhost:8000/gallery:808
 
 **Navigation Components**
 Header as inserted home page 
-
 Navigation as inserted home page 
-
 Footer Top & Bottom as inserted home page 
-
 Newsletter Cards as inserted home page and newsletterCards.html
 
 **User Journey Stepped Control**
-
-{% load userJourney %}
+% load userJourney %
 <form id="stepper” method="POST"
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 
 <div class="step"
 http://localhost:8000/gallery:1824
@@ -499,7 +477,6 @@ http://localhost:8000/gallery:1946
 
 
 **Language Selector**
-
 <div class="dropdown"
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
@@ -526,26 +503,26 @@ http://localhost:8000/gallery:2064
 < div class="dp-question-text"
 http://localhost:8000/gallery:2070
 
-**(label title, duplicated three times for profile questions)**
+**Label title, duplicated three times for profile questions**
 class="dp-yesnotext"
 http://localhost:8000/gallery:2082
 
-**input** 
+**Input** 
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
-**(Submit Button)**
+**Submit Button**
 <div class="dp-submit"
 http://localhost:8000/gallery:2073
 
 
 **User Experience Form** 
-
 **Where (location)**
 <div class="uef-top-box"
 http://localhost:8000/gallery:2247
 
 Fixes
-td.uef-top-text {     border: none;
+td.uef-top-text {
+    border: none;
 }
 
 uef-td-input {
@@ -553,39 +530,33 @@ uef-td-input {
 }
 
 td, th {
-border: none;
+    border: none;
 }
-
 http://localhost:8000/gallery:2750
 
 .uef-outer-div {
-border-radius: 0px 0px 10px 10px;
-border-width: 2px;
-border-style: solid;
-border-color: var(--autistica-mint-green);
-padding-bottom: 0px;
+    border-radius: 0px 0px 10px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--autistica-mint-green);
+    padding-bottom: 0px;
 }
-
 http://localhost:8000/gallery:2257
 
-
 .uef-td-ip {
-
-width: 100%;
-border: none;
-border-radius: 0px 0px 5px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 0px 0px 5px 0px;
 }
-
 http://localhost:8000/gallery:2295
 
 uef-td-txarea {
-width: 100%;
-height: 100%;
-resize: none;
-border: none;
-border-radius: 0px 0px 5px 0px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    border-radius: 0px 0px 5px 0px;
 }
-
 http://localhost:8000/gallery:2241
 
 
@@ -600,7 +571,7 @@ http://localhost:8000/gallery:2300
 <span class="uef-buttontemp"><u>Templates</u></span>
 http://localhost:8000/gallery:2189
 
-<span class="uef-buttontemp"><i class="fas fa-save"></i>&nbsp;&nbsp;<u>Save</u></span>
+<span class="uef-buttontemp"><i class="fas fa-save"></i><u>Save</u></span>
 http://localhost:8000/gallery:2189
 
 <i class="fas fa-save"
@@ -632,7 +603,6 @@ http://localhost:8000/gallery:2239
 
 
 **Different**
-
 <div class="uef-top-box"
 http://localhost:8000/gallery:2247
 
@@ -656,7 +626,6 @@ http://localhost:8000/gallery:2236
            
 
 **Sharing Setting Part of Experience Page**
-
 <form class="sgs-form"
 http://localhost:8000/gallery:2458
 
@@ -676,7 +645,6 @@ http://localhost:8000/gallery:2497:2508
 http://localhost:8000/gallery:2466
 
 **Is Viewable by Others**
-
 <div class="sgs-div-inner"
 http://localhost:8000/gallery:2497
 
@@ -727,16 +695,14 @@ http://localhost:8000/gallery:2564
 **communityapprovalmechanism.html**
 
 Fix 
-
-.cam-views {     font-size: 60px; (alter from 60px to larger 48px)
+.cam-views {
+    font-size: 60px; (alter from 60px to larger 48px)
 }
-
-
 within styles for components (alter icon size to standard size 32px)
 
 .cam-ico {
- font-size: 32px;
- color: grey;
+    font-size: 32px;
+    color: grey;
 }
 
 within styles for components (altered blue mouse over to mint green)
@@ -792,14 +758,13 @@ http://localhost:8000/gallery:2684
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2689
 
-
 **Icon Tick / Approved**
 <i class="icon-close cam-cross"></i>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2693
 
 **Moderation Box (Approved / Blocked Titles)**      
-<span class="cam-app-bl"> 1 Approved &nbsp; &nbsp; &nbsp; 2 Blocked</span>
+<span class="cam-app-bl"> 1 Approved / 2 Blocked</span>
 http://localhost:8000/gallery:2693
 
 **Search Input**
@@ -809,14 +774,12 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:325/317
 
 
 Fix 
-
 (make header titles green)
 
 .cam-cam-text {
-
-color: var(--autistica-mint-green);
-font-size: 22px;
-margin-bottom: 10px;
+    color: var(--autistica-mint-green);
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 **Moderation of New Experiences 
@@ -824,31 +787,31 @@ moderationofnewexperiences.html**
 
 Fix: Table Header Color (From navy blue to mint green)
 
-http://localhost:8000/gallery:2916
 thead {
 color: white;
 background-color: var(--autistica-mint-green);
 }
+http://localhost:8000/gallery:2916
 
 Replace orange submit button with green 
 http://localhost:8000/gallery:2936
 
 mone-butsub {
-background-color: orange;
-color: white;
-border-radius: 5px;
-border-color: orange;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border-color: orange;
 }
 
 .mone-butsub {
-background-color: #008279;
-color: white;
-border-radius: 5px;
-border-color: #008279;
+    background-color: #008279;
+    color: white;
+    border-radius: 5px;
+    border-color: #008279;
 }
 
-<table>
-<thead>
+<table
+<thead
 http://localhost:8000/gallery:2916
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266
 
@@ -861,10 +824,8 @@ http://localhost:8000/gallery:2943
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 
 
-**Inputs** <td>  
-
+**Inputs**
 **Moderation** 
-
 <div class="mone-mod">
 http://localhost:8000/gallery:2931/2771
 
@@ -902,13 +863,10 @@ http://localhost:8000/gallery:2947
 http://localhost:8000/gallery:2950
 
 <span class="mone-nbs">&nbsp;</span>
-               
-<span>
 http://localhost:8000/gallery:2642
 
 
 **User ID 2 as above*
-
 <div class="mone-mod">
 http://localhost:8000/gallery:2931
 
@@ -916,12 +874,11 @@ http://localhost:8000/gallery:2931
 **Documentation Viewer**
 **Documentation viewer Styles within page**
 **documentationviewer.html**
-
 **Fix Alter Table Header Column from navy to mint green** 
 
 thead {
-color: white;
-background-color: #008279;
+    color: white;
+    background-color: #008279;
 }
 
 <thead> Column Headers
@@ -933,12 +890,11 @@ background-color: #008279;
 **pictorialexperienceeditor.html Styles within page**
 
 Fix Header Top Replace Blue with Mint Green
-
 element.style {
-background-color: #008279;
-padding-top: 30px;
-cursor: pointer;
-transform: translate3d(274px, 304px, 0px);
+    background-color: #008279;
+    padding-top: 30px;
+    cursor: pointer;
+    transform: translate3d(274px, 304px, 0px);
 }
 
 **Header / Home  Styles within page**
@@ -948,7 +904,6 @@ transform: translate3d(274px, 304px, 0px);
 
 
 **Enter your experience Input Tab**
-
 <table style=“width: 100%”
 http://localhost:8000/gallery:2919
 
@@ -999,8 +954,8 @@ http://localhost:8000/gallery:3109
 
 
 **Home Section Titles** 
-<tr>
-<td>
+<tr
+<td
 <div class="peed-text-home"
 http://localhost:8000/gallery:3047
 
@@ -1008,7 +963,6 @@ http://localhost:8000/gallery:3047
 <div class="peed-exp-div"
 <span class="peed-exp-text"
 http://localhost:8000/gallery:3088
-
 
 <span class="peed-clear-text"
 http://localhost:8000/gallery:3094
@@ -1027,7 +981,7 @@ http://localhost:8000/gallery:3172
 <table>
 
 **4 Columns** 
-<tr>
+<tr
 <span class="peed1-span-item card-button"
 http://localhost:8000/gallery:3178
 
@@ -1038,17 +992,13 @@ http://localhost:8000/gallery:3195
 http://localhost:8000/gallery:3202
 
 <i class="icon-Autistic-Person peed1-icon" id="iicon-Autistic-Person"
-
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:3206
 http://localhost:8000/static/css/style.css:13
 
 **Same structure for the five lines of four boxes**
-
 **Bottom Card Settings** 
-
 **Container** 
-
 dic class="peed2-outerdiv"
 http://localhost:8000/gallery:3123
 
@@ -1071,65 +1021,62 @@ http://localhost:8000/gallery:3157
 1. Enter your experiences alter text colour to Mint Green 
 
 .peed-exp-text {
-color: #008279;
-font-size: 20px;
-margin-top: 20px;
+    color: #008279;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 **alter border on input enter experience box to mint green** 
 gallery:3064
 .peed-span-ta {
-border-style: solid;
-border-radius: 7px;
-border-color: #008279; X
-margin-top: 12px;
-display: inline-block;
-position: relative;
-height: 44px;
-width: 100%;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #008279; X
+    margin-top: 12px;
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    width: 100%;
 }
 
 gallery:3178
 
 .peed1-span-item {
-display: flex;
-flex-direction: column;
-border-style: solid;
-border-radius: 10px;
-width: 100px;
-height: 70px;
-border-color: #008279;
-margin: 0 10px 10px 0;
-border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 10px;
+    width   : 100px;
+    height: 70px;
+    border-color: #008279;
+    margin: 0 10px 10px 0;
+    border-width: 2px;
 }
 
 altered boarder on bottom menu to mint green 
 
 gallery:3139
 .peed2-span-icon {
-border-style: solid;
-border-radius: 12px;
-border-color: #008279;
-padding: 7px 30px 7px 30px;
-display: inline-block;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #008279;
+    padding: 7px 30px 7px 30px;
+    display: inline-block;
 }
 
 altered colour of cards title to mint green 
 gallery:3164
 .peed2-span-cards {
-font-size: 27px;
-color: #008279;
-display: inline-block;
-line-height: 55px;
-margin: 0px 15px 0px 20px;
+    font-size: 27px;
+    color: #008279;
+    display: inline-block;
+    line-height: 55px;
+    margin: 0px 15px 0px 20px;
 }
 
 altered size of icons to standard 32px
 gallery:3153
 
 .peed2-icon {
-font-size: 32px;
+    font-size: 32px;
 }
-
-
-
