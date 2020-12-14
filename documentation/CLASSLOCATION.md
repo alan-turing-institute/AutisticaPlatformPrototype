@@ -1,9 +1,7 @@
 Classes Locations Related to Components 
 ======
-<hr />
-
 http://0.0.0.0:8000/homepage
-------
+
 Header / Static Navbar
 ------
 **Outer Light Grey Container**
@@ -12,7 +10,7 @@ Header / Static Navbar
 `nav class="navbar navbar-expand-lg navbar-light" ion`</br>
 `nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
-<br />
+<hr />
 </br>
 </br>
 **Inner Light Grey Container**
