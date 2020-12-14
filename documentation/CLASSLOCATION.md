@@ -427,7 +427,7 @@ Footer Top & Bottom as inserted home page
 Newsletter Cards as inserted home page and newsletterCards.html
 
 **User Journey Stepped Control**
-% load userJourney %
+load userJourney
 <form id="stepper” method="POST"
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 
@@ -451,7 +451,7 @@ https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 <h6 class="card-subtitle mb-2 text-muted"
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
-<form> 
+form 
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 <div class="col-auto"
@@ -460,7 +460,7 @@ https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 
 **Name Input** 
-<label class="sr-only" for="inlineFormInput"
+label class="sr-only" for="inlineFormInput"
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="John Doe">
@@ -500,7 +500,7 @@ http://localhost:8000/gallery:2058
 <div class="dp-questions"
 http://localhost:8000/gallery:2064
 
-< div class="dp-question-text"
+<div class="dp-question-text"
 http://localhost:8000/gallery:2070
 
 **Label title, duplicated three times for profile questions**
@@ -559,7 +559,6 @@ uef-td-txarea {
 }
 http://localhost:8000/gallery:2241
 
-
 <div class="uef-top-box"
 http://localhost:8000/gallery:2247
 
@@ -586,16 +585,16 @@ http://localhost:8000/static/css/fa/all.min.css:5
 <div class="uef-outer-div"
 <table class="uef-table"
 
-<tbody
-<tr class="uef-tr1-nb"
+tbody
+tr class="uef-tr1-nb"
 http://localhost:8000/gallery:2276
 
 **(what)**
-<td class="uef-td-wh uef-td-what"
+td class="uef-td-wh uef-td-what"
 http://localhost:8000/gallery:2284
 
 **(input)**
-<td class="uef-td-input"
+td class="uef-td-input"
 http://localhost:8000/gallery:2236
 
 <textarea class="uef-td-txarea" placeholder="Your experience can be entered here..."></textarea>
@@ -606,22 +605,22 @@ http://localhost:8000/gallery:2239
 <div class="uef-top-box"
 http://localhost:8000/gallery:2247
 
-<td class="uef-top-text"
+td class="uef-top-text"
 http://localhost:8000/gallery:2252
 
 <div class="uef-outer-div"
 http://localhost:8000/gallery:2257
 
-<table class="uef-table"
+table class="uef-table"
 http://localhost:8000/gallery:2265
 
-<tr class="uef-tr1-nb">
+tr class="uef-tr1-nb">
 http://localhost:8000/gallery:2276
 
-<td class="uef-td-wh uef-td-what">
+td class="uef-td-wh uef-td-what">
 http://localhost:8000/gallery:2284
 
-<td class="uef-td-input">
+td class="uef-td-input">
 http://localhost:8000/gallery:2236                
            
 
@@ -810,17 +809,17 @@ mone-butsub {
     border-color: #008279;
 }
 
-<table
-<thead
+table
+thead
 http://localhost:8000/gallery:2916
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266
 
 **Checkbox**
-<td class="mone-cb">
+td class="mone-cb">
 http://localhost:8000/gallery:2943
 
 **Checkbox Input**
-<input type="checkbox"></td>
+input type="checkbox"></td>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 
 
@@ -833,7 +832,7 @@ http://localhost:8000/gallery:2931/2771
 <span class="fas fa-check mone-tick">
 http://localhost:8000/gallery:2923
 
-<input type="radio" name="32097868">
+input type="radio" name="32097868">
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 
 **Respond Link**
@@ -904,7 +903,7 @@ element.style {
 
 
 **Enter your experience Input Tab**
-<table style=“width: 100%”
+table style=“width: 100%”
 http://localhost:8000/gallery:2919
 
 <span class="peed-div-home icon-button"
@@ -954,8 +953,8 @@ http://localhost:8000/gallery:3109
 
 
 **Home Section Titles** 
-<tr
-<td
+tr
+td
 <div class="peed-text-home"
 http://localhost:8000/gallery:3047
 
@@ -981,7 +980,7 @@ http://localhost:8000/gallery:3172
 <table>
 
 **4 Columns** 
-<tr
+tr
 <span class="peed1-span-item card-button"
 http://localhost:8000/gallery:3178
 
