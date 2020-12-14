@@ -1,6 +1,16 @@
 # Classes Locations Related to Components<h1> tag
 **Classes Locations Related to Components**
 
+`<addr>` nav class="navbar navbar-expand-lg navbar-light" ion
+
+`<nav class="navbar navbar-expand-lg navbar-light" ion>`
+
+`nav class="navbar navbar-expand-lg navbar-light" ion`.
+
+```nav class="navbar navbar-expand-lg navbar-light" ion
+```
+
+
 **http://0.0.0.0:8000/homepage**
 
 **Header / Static Navbar**
