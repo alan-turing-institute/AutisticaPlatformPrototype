@@ -7,7 +7,7 @@ Header / Static Navbar
 **Outer Light Grey Container**
 <br>
 </br>
-`nav class="navbar navbar-expand-lg navbar-light" ion`</br>
+`nav class="navbar navbar-expand-lg navbar-light`</br>
 `nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 #
@@ -25,9 +25,8 @@ Header / Static Navbar
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 #
-<br>
-</br>
 **Logo Container & Logo**
+<br>
 </br>
 `a class="navbar-brand d-none d-lg-inline-block`
 <br>
@@ -40,6 +39,8 @@ Header / Static Navbar
 <br>
 </br>
 `a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
+<br>
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
@@ -47,33 +48,42 @@ Header / Static Navbar
 **Spacer to Align Nav Bar Links to The Right On Full Page View**
 </br>
 `div class="w-100 text-right`
+<br>
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss*
-</br>
+#
 **Toggle Hidden Nav Hamburger**
-`button class="navbar-toggler` 
+`button class="navbar-toggler`
+<br>
+</br>` 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
-</br>
+#
 **Align to Right Navigation Titles**
-`div classs=“collapse navbar-collapse flex-grow-1 text-right`  
+`div classs=“collapse navbar-collapse flex-grow-1 text-right`
+<br>
+</br>` 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss*
-</br>
+#
 **Unordered List Container for li list / Nav Titles** 
 `ul class="navbar-nav ml-auto flex-nowrap`
+<br>
+</br>` 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss
-</br>
-**Nav Items Defined As List Items)**
+#
+**Nav Items Defined As List Items**
 `li class="nav-item`
-`class nav-link m-2 menu-item` 
+`class nav-link m-2 menu-item`
+<br>
+</br>`
 */../../static/css/main.css#L42-L44*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
-</br>
-</br>
+#
 Strap Line / Secondary Banner Sub Header 2
 ------
 **Container For Secondary Banner, Light Mint Green)**
@@ -84,56 +94,78 @@ Strap Line / Secondary Banner Sub Header 2
 </br>
 **Div Nav Container**
 `div class="mx-auto order-0`
+<br>
+</br>`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_grid-framework.scss*
-</br>
+#
 **Strap Line Message**
 `a class="navbar-brand mx-auto`
+<br>
+</br>`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
-</br>
+#
 **(nav toggle hamburger responsive)**
-`button class="navbar-toggler` 
+`button class="navbar-toggler`
+<br>
+</br>`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*  
-</br>
-</br>
+#
 Secondary Banner
 ------
 **Sub Header 1** 
-Home Icon
-`i class="icon-home` 
-Current Spans As Home & Page Tag Line
+<br>
+**Home Icon**
+<br>
+</br>`
+`i class="icon-home`
+<br>
+</br>`
+**Current Spans As Home & Page Tag Line**
 `i class="icon-label-24px`
-</br>
-</br>
+#
 
 Aims
 ------
 **Added to aim container - Outer Margin**
 `div style="margin:15px`
 **Aims Container with mint green boarder**
-`div class="jumbotron autistica-jumbotron`
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss*
-*/../../static/css/main.css#L55-L62*
-</br>
-**h3 / mark Large Aims title (Container Title)**  
-**ul and li for stated aims with addition of marker for mark for green highlighted text styling the list li elements have the addition of a styled bullet point**
-
-**3 Columns How it works / Configure / Get Involved**
-
-div class=“card-deck” (section container for 3 columns)
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
+`div class="jumbotron autistica-jumbotron
 <br>
-div class="card autistica-card my-3”  ( styling of individual containers, boarder, size and margins)
+</br>`
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss*<br>
+*/../../static/css/main.css#L55-L62*
+#
+**h3 / mark Large Aims title (Container Title)**<br>  
+**ul and li for stated aims with addition of marker for mark for green highlighted text styling the list li elements have the addition of a styled bullet point**
+<br>
+**3 Columns How it works / Configure / Get Involved**
+<br>
+`div class=“card-deck”` <br>
+(section container for 3 columns)
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss*
+#
+**Styling of individual containers, boarder, size and margins**
+<br>
+`div class="card autistica-card my-3”`
+<br>
+</br>`
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss*
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
+#
+
+**Body Container**
+`class="card-body”`
+<br>
+</br>`
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
-https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
-
-
-**(body container)**
-class="card-body” 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
-
-h4 class="card-title hiw-heading" (container header)
+#
+**Container Header**
+<br>
+`h4 class="card-title hiw-heading"`
+<br>
+</br>`
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 index style
 
