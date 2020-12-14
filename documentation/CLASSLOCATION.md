@@ -17,7 +17,7 @@ Header / Static Navbar
 `div class="d-flex`
 <br>
 </br> 
-*external cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 <br>
 </br>
 `div class=“flex-grow-1`
