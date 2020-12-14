@@ -65,11 +65,9 @@ Tables are presented for each component which, indicates the name of the given c
 2. .html Location of Component
 3. .css Classes Related to Component
  
+**The locations of the .html components and related .css are defined in this .md file**
+https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/documentation/CLASSLOCATION.md
 
-
-Name & Description | .html & Location  | .css Classes & Location
------------- | ------------- | ------------- 
-Content Cell 1 | Content Cell 2 | [Class Location](/../../static/css/main.css#L2-L23)
 
 **CSP Style Guide Introduction**
 
