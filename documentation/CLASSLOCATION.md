@@ -44,39 +44,47 @@ Header / Static Navbar
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
-</br>
 **Spacer to Align Nav Bar Links to The Right On Full Page View**
+<br>
 </br>
 `div class="w-100 text-right`
 <br>
 </br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss*
 #
 **Toggle Hidden Nav Hamburger**
+<br>
+</br>
 `button class="navbar-toggler`
 <br>
 </br>` 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 #
 **Align to Right Navigation Titles**
+<br>
+</br>
 `div classs=“collapse navbar-collapse flex-grow-1 text-right`
 <br>
 </br>` 
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
-*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*<br>
+*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss*
 #
-**Unordered List Container for li list / Nav Titles** 
+**Unordered List Container for li list / Nav Titles**
+<br>
+</br>
 `ul class="navbar-nav ml-auto flex-nowrap`
 <br>
 </br>` 
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss
 #
 **Nav Items Defined As List Items**
-`li class="nav-item`
+<br>
+</br>
+`li class="nav-item`<br>
 `class nav-link m-2 menu-item`
 <br>
 </br>`
