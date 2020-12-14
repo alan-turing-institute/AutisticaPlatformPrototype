@@ -11,8 +11,6 @@ Header / Static Navbar
 `nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 #
-<br>
-</br>
 **Inner Light Grey Container**
 <br>
 `div class="d-flex`
@@ -23,7 +21,6 @@ Header / Static Navbar
 `div class=“flex-grow-1`</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 #
-</br>
 </br>
 **Logo Container & Logo**
 </br>
