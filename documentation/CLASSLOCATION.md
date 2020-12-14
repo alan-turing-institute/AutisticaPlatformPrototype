@@ -1,25 +1,16 @@
-Classes Locations Related to Components 
+**Classes Locations Related to Components**
 
-Ref css Lines method 
+**http://0.0.0.0:8000/homepage**
 
-https://github.com/git/git/blob/master/README#L18-L20
-
-https://github.com/pgc007/AutisticaPlatformPrototype/blob/paul-MFT/static/css/components.css#L2-L23
-
-/../../static/css/components.css#L2-L23
-
-http://0.0.0.0:8000/ home page
-
-Header / Static Navbar
+**Header / Static Navbar**
 (outer light grey container)
-
 nav class="navbar navbar-expand-lg navbar-light" 
 external url  https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 
 nav class="bg-light" 
 external url https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss
 
-(inner light grey container)
+**(inner light grey container)**
 div class="d-flex 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss
 
@@ -31,98 +22,90 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss
 
-(logo container & logo resize)
+**(logo container & logo resize)**
 a class="navbar-brand-two mx-auto d-lg-none d-inline-block" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 
-(Spacer to align nav bar links to the right on full page view)
+**(Spacer to align nav bar links to the right on full page view)**
 div class="w-100 text-right" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss
 
-(toggle hidden nav hamburger)
+**(toggle hidden nav hamburger)**
 button class="navbar-toggler" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 
-(align to right navigation titles)
+**(align to right navigation titles)**
 div classs=“collapse navbar-collapse flex-grow-1 text-right” 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss
 
-(unordered list container for li list (nav titles) 
+**(unordered list container for li list (nav titles)** 
 ul class="navbar-nav ml-auto flex-nowrap” 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss
 
-( nav items defined as list items)
+**(nav items defined as list items)**
 li class="nav-item" 
-
 class nav-link m-2 menu-item 
 /../../static/css/main.css#L42-L44
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 
-Strap Line / Secondary Banner Sub Header 2 
 
-(container for secondary banner, light mint green)
+**Strap Line / Secondary Banner Sub Header 2** 
+
+**(container for secondary banner, light mint green)**
 nav class="navbar navbar-expand navbar-expand-md banner-autistica-light-blue" 
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
-/../../static/css/main.css#L37-L40
 
-(div nav container)
+**(div nav container)**
 div class="mx-auto order-0" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_grid-framework.scss
 
-(Strap Line Message)
+**(Strap Line Message)**
 a class="navbar-brand mx-auto" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 
-(nav toggle hamburger responsive)
+**(nav toggle hamburger responsive)**
 button class="navbar-toggler" 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss  
 
-(secondary banner)
-Sub Header 1 
-
+**(secondary banner)**
+**Sub Header 1** 
 i class="icon-home" (home icon)
 current spans as Home & Page Tag Line
 i class="icon-label-24px (page tag icon)
 
-Aims 
+**Aims** 
 
 div style="margin:15px" (added to aim container) (Aims Containers outer margin)
 div class="jumbotron autistica-jumbotron" (Aims Container with mint green boarder)
-
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss
 /../../static/css/main.css#L55-L62
 
+**h3 / mark Large Aims title (Container Title)**  
+**ul and li for stated aims with addition of marker for <mark> for green highlighted text styling the list li elements have the addition of a styled bullet point**
 
-h3 / mark Large Aims title (Container Title)  
-ul and li for stated aims with addition of marker for <mark> for green highlighted text styling the list li elements have the addition of a styled bullet point
-
-
-3 Columns How it works / Configure / Get Involved
+**3 Columns How it works / Configure / Get Involved**
 
 div class=“card-deck” (section container for 3 columns)
-
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 
 div class="card autistica-card my-3”  ( styling of individual containers, boarder, size and margins)
-
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
-/../../static/css/main.css#L64-L70
 https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss
 
 
-(body container)
+**(body container)**
 class="card-body” 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 
@@ -130,27 +113,24 @@ h4 class="card-title hiw-heading" (container header)
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 index style
 
-<mark>How it works</mark> (Green Highlight to column title)
-index style
-
+**<mark>How it works</mark> (Green Highlight to column title)
+index style**
 i class="icon-how_it_works"
 i class="icon-expand_more hiw-right-icon"
 
-(column section body content)
+**(column section body content)**
 div class="hiw-body"   
 index style
 
-(top introduction)
+**(top introduction)**
 <mark> 
 index style
 <p class="card-text”> 
 
-(paragraph spacing between top introduction paragraph and list)
-ul and li (styled bullet pointed listed green highlighted)
+**(paragraph spacing between top introduction paragraph and list)
+ul and li (styled bullet pointed listed green highlighted)**
 
-
-Columns 2 & 3 
-
+**Columns 2 & 3** 
 div class="card autistica-card my-3" (inner and outer container stying)
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 /../../static/css/main.css#L64-L70
@@ -162,21 +142,17 @@ div style="margin-bottom: 20px;" (header title margin)
 div class="cfg-outerdiv" (linked content container)
 index style
 
-div with links to content
+**div with links to content**
 <a hrefs style> 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss
 
 
-CTA Login 
-
+**CTA Login** 
 div style="margin: 50px 0 0 50%;" (centred button CTA)
-
 < a hef href="https://www.openhumans.org/account/login/" class="hm-ohlogin"
 index style
 
-
-Footer 
-
+**Footer** 
 footer class="footer" (top and bottom footer styling)
 
 p class="footer-top pnospace" (space for top footer)
@@ -184,19 +160,17 @@ p class="footer-top pnospace" (space for top footer)
 class="footer-bottom text-center" (container for bottom footer)
 
 p class="copyrt" (styling for copyright text)
-
 index style
 
-http://0.0.0.0:8000/gallery
+**http://0.0.0.0:8000/gallery**
 
+**Component Showcase**
 
-Component Showcase
-Panel Components > Secondary Banner & Secondary Banner Alt
+**Panel Components > Secondary Banner & Secondary Banner Alt**
 
-Jumbotron - Aims
+**Jumbotron - Aims**
 
-Card
-
+**Card**
 <div class="card-body"
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
 
@@ -208,35 +182,31 @@ http://localhost:8000/gallery page internal, style
 http://localhost:8000/gallery  page internal, style 
 
 
-Expanding Panel - Accordion drop down
+**Expanding Panel - Accordion drop down**
 
 <div class="ap-navadjust-outerdiv"
-
 page internal, style
 
 <div class="ap-navadjust-expand"
 page internal, style
 
 
-
-Animated Panel Components 
-
+**Animated Panel Components** 
 Modular Alert
 modularalerts.html
 
 <button class="ma_button"
 page internal, style
 
-Modular Background
+**Modular Background**
 
 class="ma-div-screen"
 id="modularAlert"
 
-Modular Container
+**Modular Container**
 
 <div class="ma-divts"
 page internal, style
-
 
 <i class="fas fa-times" 
 http://localhost:8000/static/css/fa/all.min.css
@@ -245,22 +215,21 @@ class fas fa-exclamation-triangle ma_alert"
 http://localhost:8000/static/css/fa/all.min.css
 page internal, style
 
-< div class="ma_timeout"
+<div class="ma_timeout"
 page internal, style
 
-< div class="ma_to_text"
+<div class="ma_to_text"
 page internal, style
 
-Image Upload
-
-< div class ui-master-div 
+**Image Upload**
+<div class ui-master-div 
 page internal, style
 
-< button onclick="showImageUpload()
+<button onclick="showImageUpload()
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss
 
 
-Accessibility Panel 
+**Accessibility Panel** 
 
 Icon which opens animated panel from the right side 
 
@@ -269,14 +238,11 @@ http://localhost:8000/static/css/style.css:13
 onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)
 
 .sliding-panel and other related classes page styles
-
 .ap-outerdiv and others related to .ap- styles, related classes page style
-
 <script>function show_hideExpandingPanel(panelID, panel_arrow)…. 
 
 
-Accessibility Panel
-
+**Accessibility Panel**
 <div class="ap-outerdiv"
 http://localhost:8000/gallery:814
 
@@ -287,8 +253,7 @@ http://localhost:8000/gallery:820
 http://localhost:8000/gallery:823
 
 
-
-Accessibility Menu
+**Accessibility Menu**
 
 <i class="icon-screen-reader ap-icon-na"
 http://localhost:8000/static/css/style.css:13
@@ -296,7 +261,7 @@ http://localhost:8000/static/css/style.css:13
 <div class="sliding-panel left sliding-panel-open-left" id=“accessibilitypannel etc
 http://localhost:8000/gallery:785 + 
 
-Navigation Adjustment
+**Navigation Adjustment**
 <div class="ap-navadjust-outerdiv" (three section accordions)
 http://localhost:8000/gallery:837
 
@@ -304,33 +269,27 @@ http://localhost:8000/gallery:837
 http://localhost:8000/gallery:894
 
 
-
-Colour Adjustment 
+**Colour Adjustment** 
 
 <div class="ap-navadjust-outerdiv" (three section accordions)
 http://localhost:8000/gallery:837
 
 <i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>
-
 http://localhost:8000/static/css/style.css
 
-
-< div class="ap-navadjust-expand" id="coladjust"
+<div class="ap-navadjust-expand" id="coladjust"
 http://localhost:8000/gallery:850
-
 
 <div class="ap-div-cc"
 http://localhost:8000/gallery:932
 
-< div class="ap-icon-col"
+<div class="ap-icon-col"
 http://localhost:8000/gallery:936
 
 <i class="icon-opacity-24px"
 http://localhost:8000/static/css/style.css:13
 
-
 <div class="ap-cc-text"
-
 http://localhost:8000/gallery:940
 
 <div class="ap-div-col"
@@ -366,20 +325,17 @@ http://localhost:8000/gallery:983
 <div class="ap-tab-other"
 http://localhost:8000/gallery:990
 
-(Saturation & Brightness)
+**(Saturation & Brightness)**
 
 <div class="ap-hslcolorpicker"
 http://localhost:8000/gallery:1005
 
 <input type="range" 
-
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317 - 325
 
 <script>
 var hslSlider, var saturationSlider, var brightnessSlider
-
 <i class=“icon-reset-colour ap-icon-rc
-
 http://localhost:8000/gallery:1039
 
 <div class="ap-bpcpp"
@@ -388,7 +344,7 @@ http://localhost:8000/gallery:1043
 <div ap-col-circles
 http://localhost:8000/gallery:1047
 
-(Container for three Contrast containers)
+**(Container for three Contrast containers)**
 <div class="ap-div-contrast"
 http://localhost:8000/gallery:1085
 
@@ -407,12 +363,11 @@ http://localhost:8000/gallery:1115
 <i class="icon-add_circle-24px
 http://localhost:8000/static/css/style.css:13
 
-(- & + Contrast Slider)
+**(- & + Contrast Slider)**
 <script>
 var Slider
 
-(Content Adjustment) 
-
+**(Content Adjustment)** 
 / ../accessibilitypanel.html' with PanelID="accessibilitypannel" Direction="left"
 
 <div class="ap-navadjust-outerdiv"
@@ -440,7 +395,7 @@ http://localhost:8000/gallery:1320
 http://localhost:8000/static/css/style.css:13
 
 
-(3 High Contrasts 1&2 / Low Luminance Text)
+**(3 High Contrasts 1&2 / Low Luminance Text)**
 <div class ap-lum-outerdiv
 http://localhost:8000/gallery:1323
 
@@ -459,72 +414,56 @@ http://localhost:8000/static/css/style.css:13
 <div class="ap-navadjust-expand"
 http://localhost:8000/gallery:850
 
-
 <div class="ap-hcl"
 http://localhost:8000/gallery:1328
 
 <div class="ap-hc4-desc"
 http://localhost:8000/gallery:1350
 
-(Low Luminance 2)
+**(Low Luminance 2)**
 
 <div class="ap-hcl-title"
 http://localhost:8000/gallery:1354
 
-(Magnifier)
+**(Magnifier)**
 
 <div class="ap-mag-box"
 http://localhost:8000/gallery:1363
 
 
-(Close Function)
+**(Close Function)**
 
 <i class="icon-close sp-icon-close"
 onclick="citizenSciencePlatform_slidingpanelfunctions.ClosePanel('accessibilitypannel')"
-
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:808
 
-Navigation Components
+**Navigation Components**
+Header as inserted home page 
 
-Header 
-Insert !?
+Navigation as inserted home page 
 
-Navigation 
-Insert !?
+Footer Top & Bottom as inserted home page 
 
-Footer 
-Top & Bottom 
-Insert !?
+Newsletter Cards as inserted home page and newsletterCards.html
 
-
-Newsletter Cards 
-newsletterCards.html
-Insert !?
-
-
-User Journey Stepped Control
-
-
+**User Journey Stepped Control**
 
 {% load userJourney %}
-
-
 <form id="stepper” method="POST"
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <div class="step"
 http://localhost:8000/gallery:1824
 
-(Next Button)
+**(Next Button)**
 <button type="submit" form="stepper" value="Submit"Next</button
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 
-
-Newsletter Signup 
-(Newsletter Subscribe)
-newsletterSignup.html
+**Newsletter Signup** 
+**(Newsletter Subscribe)**
+**newsletterSignup.html**
 <div class="card-body"
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -542,12 +481,11 @@ https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 
-Name Input 
+**Name Input** 
 <label class="sr-only" for="inlineFormInput"
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="John Doe">
-
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 
@@ -560,13 +498,12 @@ https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 http://localhost:8000/gallery:1946
 
 
-Language Selector
+**Language Selector**
 
 <div class="dropdown"
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
 <a class=btn btn-autisica dropdown-toggle
-
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 http://localhost:8000/gallery:1997
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
@@ -577,47 +514,39 @@ https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 <a class="dropdown-item"
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
-Defined Profile
-
-(outer container)
+**Defined Profile**
+**(outer container)**
 <div class="dp-outerdiv"
 http://localhost:8000/gallery:2058
 
-(inner container)
+**(inner container)**
 <div class="dp-questions"
 http://localhost:8000/gallery:2064
 
 < div class="dp-question-text"
 http://localhost:8000/gallery:2070
 
-(label title, duplicated three times for profile questions)
+**(label title, duplicated three times for profile questions)**
 class="dp-yesnotext"
-
 http://localhost:8000/gallery:2082
 
-input 
+**input** 
 https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
 
-
-(Submit Button)
-
+**(Submit Button)**
 <div class="dp-submit"
 http://localhost:8000/gallery:2073
 
 
-User Experience Form 
+**User Experience Form** 
 
-
-Where (location)
+**Where (location)**
 <div class="uef-top-box"
 http://localhost:8000/gallery:2247
 
 Fixes
-
-
 td.uef-top-text {     border: none;
 }
-
 
 uef-td-input {
     padding-right: 0px;
@@ -626,6 +555,7 @@ uef-td-input {
 td, th {
 border: none;
 }
+
 http://localhost:8000/gallery:2750
 
 .uef-outer-div {
@@ -689,11 +619,11 @@ http://localhost:8000/static/css/fa/all.min.css:5
 <tr class="uef-tr1-nb"
 http://localhost:8000/gallery:2276
 
-(what)
+**(what)**
 <td class="uef-td-wh uef-td-what"
 http://localhost:8000/gallery:2284
 
-(input)
+**(input)**
 <td class="uef-td-input"
 http://localhost:8000/gallery:2236
 
@@ -701,14 +631,12 @@ http://localhost:8000/gallery:2236
 http://localhost:8000/gallery:2239
 
 
-Different
+**Different**
 
 <div class="uef-top-box"
 http://localhost:8000/gallery:2247
 
-
 <td class="uef-top-text"
-
 http://localhost:8000/gallery:2252
 
 <div class="uef-outer-div"
@@ -720,7 +648,6 @@ http://localhost:8000/gallery:2265
 <tr class="uef-tr1-nb">
 http://localhost:8000/gallery:2276
 
-    
 <td class="uef-td-wh uef-td-what">
 http://localhost:8000/gallery:2284
 
@@ -728,10 +655,9 @@ http://localhost:8000/gallery:2284
 http://localhost:8000/gallery:2236                
            
 
-Sharing Setting Part of Experience Page
+**Sharing Setting Part of Experience Page**
 
 <form class="sgs-form"
-
 http://localhost:8000/gallery:2458
 
 <h3 class="sgs-h3"
@@ -740,16 +666,16 @@ http://localhost:8000/gallery:2493
 <div class=sgs-div-inner
 http://localhost:8000/gallery:2497
 
-Checkbox - Can be used for research
+**Checkbox - Can be used for research**
 <input type="checkbox" class="sgs-checkb">
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 http://localhost:8000/gallery:2497:2508
 
-Experience ID 
+**Experience ID** 
 <span class="sgs-sp-userdata">Experience ID: 0118092019</span>
 http://localhost:8000/gallery:2466
 
-Is Viewable by Others
+**Is Viewable by Others**
 
 <div class="sgs-div-inner"
 http://localhost:8000/gallery:2497
@@ -761,33 +687,28 @@ http://localhost:8000/gallery:2461
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 http://localhost:8000/gallery:2497:2508
 
-Date
+**Date**
 <span class="sgs-sp-userdata">Date: 10-12-2020 16:12</span>
 http://localhost:8000/gallery:2497:2466
 
-Submit Button 
-
+**Submit Button** 
 <div class="sgs-div-inner">
 http://localhost:8000/gallery:2497:2504
  
-(Audio Sound Added to Button Submit ref soundjay.com)
-          
+**(Audio Sound Added to Button Submit ref soundjay.com)**
 <audio id="submitSound" src="http://www.soundjay.com/button/beep-07.wav"></audio>
-
 <span class="sgs-submit-button" onclick="submitButton(this.form)">Submit</span>
 http://localhost:8000/gallery:2476
 
-View Experiences as Button  
+**View Experiences as Button**  
 
 <span class="sgs-views-button" onclick="views()">Views</span>
 http://localhost:8000/gallery:2484
           
 
-Experience Viewer Control 
-
+**Experience Viewer Control** 
 <div class="evc-cbid">
 http://localhost:8000/gallery:2569
-
 
 <span class="evc-cb"><input type="checkbox"></span>
 http://localhost:8000/gallery:2573
@@ -800,12 +721,10 @@ http://localhost:8000/gallery:2560
 
 <p class="evc-text">The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate.</p>
 http://localhost:8000/gallery:2564
-    
+   
 
-
-Community Approval Mechanism
-communityapprovalmechanism.html
-
+**Community Approval Mechanism**
+**communityapprovalmechanism.html**
 
 Fix 
 
@@ -826,73 +745,67 @@ within styles for components (altered blue mouse over to mint green)
         color: #008279;
     }
 
-
-
 <div class="cam-odiv">
 http://localhost:8000/gallery:2653
-
 
 <i class="icon-views cam-views"></i>
 http://localhost:8000/static/css/style.css:13
 
-
 <div class="cam-cam">
 http://localhost:8000/gallery:2648
 
-Component Title
+**Component Title**
 <span class="cam-cam-text">Community: Approval Mechanism</span>
 
-Descriptive Title
+**Descriptive Title**
 <span class="cam-other-text">List view of submitted events for approval</span>
 
 <div class="cam-boticons">
 http://localhost:8000/gallery:2660
 
-Icon & Color Application
+**Icon & Color Application**
 <i class="icon-folder-whole cam-ico"></i><span>&nbsp; Templates</span>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2663
 
-Icon & Color Application
+**Icon & Color Application**
 <i class="icon-edit cam-ico-space"></i><span>&nbsp; Edit</span>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2689
 
-Icon & Color Application
+**Icon & Color Application**
 <i class="icon-delete cam-ico-space"></i><span>&nbsp; Delete</span>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2693
 
-Icon & Color Application
+**Icon & Color Application**
 <i class="icon-help cam-ico-space"></i><span>&nbsp; Help</span>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2667
 
-Moderation Container        
+**Moderation Container**        
 <div class="cam-mod">
 http://localhost:8000/gallery:2684
 
-Icon Tick / Approved
+**Icon Tick / Approved**
 <i class="icon-check cam-tick"></i>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2689
 
 
-Icon Tick / Approved
+**Icon Tick / Approved**
 <i class="icon-close cam-cross"></i>
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:2693
 
-Moderation Box (Approved / Blocked Titles)      
+**Moderation Box (Approved / Blocked Titles)**      
 <span class="cam-app-bl"> 1 Approved &nbsp; &nbsp; &nbsp; 2 Blocked</span>
 http://localhost:8000/gallery:2693
 
-Search Input
+**Search Input**
 <input placeholder="Search" class="cam-input">
 http://localhost:8000/gallery:2705  
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:325/317
-
-
 
 
 Fix 
@@ -906,23 +819,18 @@ font-size: 22px;
 margin-bottom: 10px;
 }
 
+**Moderation of New Experiences 
+moderationofnewexperiences.html**
 
-Moderation of New Experiences 
-moderationofnewexperiences.html
-
-
-Fix Table Header Color (From navy blue to mint green)
+Fix: Table Header Color (From navy blue to mint green)
 
 http://localhost:8000/gallery:2916
 thead {
-
 color: white;
 background-color: var(--autistica-mint-green);
 }
 
 Replace orange submit button with green 
-
-
 http://localhost:8000/gallery:2936
 
 mone-butsub {
@@ -939,42 +847,39 @@ border-radius: 5px;
 border-color: #008279;
 }
 
-
-
-
-
 <table>
 <thead>
 http://localhost:8000/gallery:2916
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266
 
-Checkbox
+**Checkbox**
 <td class="mone-cb">
 http://localhost:8000/gallery:2943
 
-Checkbox Input
+**Checkbox Input**
 <input type="checkbox"></td>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 
-<td> Inputs  
 
-Moderation 
+**Inputs** <td>  
+
+**Moderation** 
 
 <div class="mone-mod">
 http://localhost:8000/gallery:2931/2771
 
-Tick & Check box
+**Tick & Check box**
 <span class="fas fa-check mone-tick">
 http://localhost:8000/gallery:2923
 
 <input type="radio" name="32097868">
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 
-Respond Link
+**Respond Link**
 <span class="mone-resp"><a href="#">Respond</a></span>
 http://localhost:8000/gallery:2947
 
-Respond Link
+**Respond Link**
 <span class="mone-bs">
 http://localhost:8000/gallery:2953
 
@@ -982,7 +887,8 @@ http://localhost:8000/gallery:2953
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358
 http://localhost:8000/gallery:2937
 
-Moderation No / Respond 
+
+**Moderation No / Respond** 
 
 <div class="mone-mod">
 http://localhost:8000/gallery:2931
@@ -1000,35 +906,33 @@ http://localhost:8000/gallery:2950
 <span>
 http://localhost:8000/gallery:2642
 
-User ID 2 as above
+
+**User ID 2 as above*
+
 <div class="mone-mod">
 http://localhost:8000/gallery:2931
 
 
-Documentation Viewer
+**Documentation Viewer**
+**Documentation viewer Styles within page**
+**documentationviewer.html**
 
-<!-- Documentation viewer Styles within page—>
-: documentationviewer.html
-
-
-Fix Alter Table Header Column from navy to mint green 
+**Fix Alter Table Header Column from navy to mint green** 
 
 thead {
 color: white;
 background-color: #008279;
 }
 
-
 <thead> Column Headers
 <th class="mone-cb">
 <ths> (Content)
 
 
-Pictorial Experience Editor 
+**Pictorial Experience Editor** 
+**pictorialexperienceeditor.html Styles within page**
 
-pictorialexperienceeditor.html Styles within page
-
-Header Top Replace Blue with Mint Green
+Fix Header Top Replace Blue with Mint Green
 
 element.style {
 background-color: #008279;
@@ -1037,14 +941,13 @@ cursor: pointer;
 transform: translate3d(274px, 304px, 0px);
 }
 
-
-Header / Home  Styles within page
+**Header / Home  Styles within page**
 
 <span class="peed-div-home icon-button">
-   
- <i class="icon-home peed-icon-home icon-button">
+<i class="icon-home peed-icon-home icon-button">
 
-Enter your experience Input Tab
+
+**Enter your experience Input Tab**
 
 <table style=“width: 100%”
 http://localhost:8000/gallery:2919
@@ -1067,11 +970,11 @@ http://localhost:8000/gallery:3064
 <span class="peed-span-clear"
 http://localhost:8000/gallery:3075
 
-Clear Red Icon
+**Clear Red Icon**
 <i class="icon-clear peed-icon-clear icon-button"
 http://localhost:8000/gallery:3059
 
-Play 
+**Play** 
 <span class="peed-play icon-button"
 http://localhost:8000/gallery:3101
 http://localhost:8000/static/css/style.css:13
@@ -1083,7 +986,7 @@ http://localhost:8000/gallery:3113
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:3109
 
-Share 
+**Share** 
 <span class="peed-play"
 http://localhost:8000/gallery:3101
 
@@ -1094,17 +997,15 @@ http://localhost:8000/gallery:3113
 http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:3109
 
-Home Section Titles 
 
+**Home Section Titles** 
 <tr>
 <td>
 <div class="peed-text-home"
 http://localhost:8000/gallery:3047
 
-Enter your experiences / Clear 
-
+**Enter your experiences / Clear** 
 <div class="peed-exp-div"
-
 <span class="peed-exp-text"
 http://localhost:8000/gallery:3088
 
@@ -1112,21 +1013,20 @@ http://localhost:8000/gallery:3088
 <span class="peed-clear-text"
 http://localhost:8000/gallery:3094
 
-Play 
-
+**Play** 
 <div class="peed-play-text"
 http://localhost:8000/gallery:3117
 
-Share 
+**Share** 
 <div class="peed-play-text"
 http://localhost:8000/gallery:3117
 
-Center Content 
-
+**Center Content** 
 class="peed1-outerdiv"
 http://localhost:8000/gallery:3172
 <table>
-4 Columns 
+
+**4 Columns** 
 <tr>
 <span class="peed1-span-item card-button"
 http://localhost:8000/gallery:3178
@@ -1143,12 +1043,11 @@ http://localhost:8000/static/css/style.css:13
 http://localhost:8000/gallery:3206
 http://localhost:8000/static/css/style.css:13
 
-Same structure for the five lines of four boxes
+**Same structure for the five lines of four boxes**
 
-Bottom Card Settings 
+**Bottom Card Settings** 
 
-
-Container 
+**Container** 
 
 dic class="peed2-outerdiv"
 http://localhost:8000/gallery:3123
@@ -1159,15 +1058,15 @@ http://localhost:8000/gallery:3132
 <span class="peed2-span-icon card-button"
 http://localhost:8000/gallery:3139
 
-About Me Icon
+**About Me Icon**
 <i class="icon-profile peed2-icon”
 http://localhost:8000/gallery:3153
 
-About Me Title
+**About Me Title**
 <div class="peed2-span-text"
 http://localhost:8000/gallery:3157
 
-Fixes 
+**Fixes** 
 
 1. Enter your experiences alter text colour to Mint Green 
 
@@ -1177,8 +1076,7 @@ font-size: 20px;
 margin-top: 20px;
 }
 
-
-alter border on input enter experience box to mint green 
+**alter border on input enter experience box to mint green** 
 gallery:3064
 .peed-span-ta {
 border-style: solid;
@@ -1235,6 +1133,3 @@ font-size: 32px;
 
 
 
-
-
- 
