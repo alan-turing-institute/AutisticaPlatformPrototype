@@ -9,9 +9,9 @@ Header / Static Navbar
 </br>
 `nav class="navbar navbar-expand-lg navbar-light`</br>
 `nav class="bg-light"`</br>  
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:19*
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:225*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:19*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:225*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:7*
 
 #
