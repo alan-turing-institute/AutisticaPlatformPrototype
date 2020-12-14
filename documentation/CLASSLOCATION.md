@@ -214,17 +214,18 @@ page internal, style
 <div class ui-master-div 
 page internal, style
 
+\*
 <button onclick="showImageUpload()
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss\*
 
 
 **Accessibility Panel** 
 
 **Icon which opens animated panel from the right side** 
 
-<i class="icon-access"
+\*<i class="icon-access"
 http://localhost:8000/static/css/style.css:13
-onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)
+onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)\*
 
 **sliding-panel and other related classes page styles**
 .ap-outerdiv and others related to .ap- styles, related classes page style
