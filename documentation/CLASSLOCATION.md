@@ -46,7 +46,7 @@ Header / Static Navbar
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*<br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing:62.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing:62.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing:12.scss*
 #
 **Spacer to Align Nav Bar Links to The Right On Full Page View**
@@ -151,9 +151,9 @@ Secondary Banner
 **Current Spans As Home & Page Tag Line**
 <br>
 </br>`
-`i class="icon-label-24px`element.style
+`i class="icon-label-24px`
+element.style
 #
-
 Aims
 ------
 **Added to aim container - Outer Margin**
@@ -194,8 +194,8 @@ Aims
 `div class="card autistica-card my-3”`
 <br>
 </br>`
-*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:161*
-*http://localhost:8000/static/css/main.css:64*
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:161*<br>
+*http://localhost:8000/static/css/main.css:64*<br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:22*
 #
 
@@ -222,6 +222,8 @@ Aims
 `<mark>How it works</mark>`
 **index style**
 `i class="icon-how_it_works"`
+<br>
+</br>
 `i class="icon-expand_more hiw-right-icon"`
 <br>
 </br>`
@@ -242,6 +244,10 @@ Aims
 <br>
 </br>
 `<p class="card-text”>`
+<br>
+</br>
+*//localhost/inspector-stylesheet*
+#
 
 **(paragraph spacing between top introduction paragraph and list)**
 **ul and li styled bullet pointed listed green highlighted)**
@@ -253,106 +259,231 @@ Inner & Outer Container Styling
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:161*<br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:22*
-
+#
 **Container Inner Style**
 <br>
 </br>
-`div style="padding: 20px;"`  
-
+`div style="padding: 20px;"`
+<br>
+</br>
+element.style
+#
 **Header Title Margin**
 <br>
 </br>
 `div style="margin-bottom: 20px;"`  
-
-`div class="cfg-outerdiv" (linked content container)
-index style
-
+<br>
+</br>
+*element.style* 
+#
+**Linked Content Container**
+`div class="cfg-outerdiv"` 
+<br>
+</br>
+*http://localhost:8000/(index):302*
+#
 **div with links to content**
-<a hrefs style> 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss
-
+`<a hrefs style>`
+<br>
+</br>
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
+#
 
 **CTA Login** 
-div style="margin: 50px 0 0 50%;" (centred button CTA)
+<br>
+</br>
+**Centred Button CTA**
+<br>
+</br
+`div style="margin: 50px 0 0 50%;"`  
+element.style
+
 < a hef href="https://www.openhumans.org/account/login/" class="hm-ohlogin"
-index style
+http://localhost:8000/(index)57
+
+**Fix**
+
+`.hm-ohlogin {
+    border-radius: 5px;
+    background-color: #ff815c; X alter color to mint green
+    padding: 10px 20px 10px 20px;
+    color: var(--autistica-white);
+}`
+
+`.hm-ohlogin {
+    border-radius: 5px;
+    background-color: var(--autistica-mint-green) !important
+    padding: 10px 20px 10px 20px;
+    color: var(--autistica-white);
+}`
+#
 
 **Footer** 
-**footer class="footer" (top and bottom footer styling)**
+**Top & Bottom Footer Styling**
 
-p class="footer-top pnospace" (space for top footer)
-class="footer-bottom text-center" (container for bottom footer)
-p class="copyrt" (styling for copyright text)
-index style
+`Footer class="footer"`
+<br>
+</br>
+*External cdn: https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:36*
+#
+**Space For Top Footer**
+`p class="footer-top pnospace"`
+<br>
+</br>
+*http://localhost:8000/(index):372*
+#
 
-**http://0.0.0.0:8000/gallery**
-**Component Showcase**
-**Panel Components > Secondary Banner & Secondary Banner Alt**
-**Jumbotron - Aims**
+**Container For Bottom Footer**
+<br>
+</br>
+`class="footer-bottom text-center"`
+<br>
+</br>
+*http://localhost:8000/(index):367*<br>
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss:24*
+#
+**Styling For Copyright Text**
+`p class="copyrt"`
+*http://localhost:8000/(index):379*<br>
+#
+
+
+
+http://0.0.0.0:8000/gallery
+------
+Component Showcas
+------
+**Panel Components > Secondary Banner & Secondary Banner Alt as Home Page**
+<br>
+**Jumbotron - Aims As Home Page**
+
 **Card**
-<div class="card-body"
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
+<br>
+</br>
+`<div class="card-body"`
+<br>
+</br>
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:38
+#
 
-<h4 class="card-title hiw-heading"
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss
-http://localhost:8000/gallery page internal, style 
+**Card Title**
+<br>
+</br>
+`<h4 class="card-title hiw-heading"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:47*
+*http://localhost:8000/gallery:1773*
+#
 
-<div class="hiw-body"
-http://localhost:8000/gallery  page internal, style 
+**Page Internal, Style** 
+`<div class="hiw-body"`
+*http://localhost:8000/gallery:1777*
+#
 
 
 **Expanding Panel - Accordion drop down**
-<div class="ap-navadjust-outerdiv"
-page internal, style
+<br>
+</br>
+Page Internal, Style
+<br>
+</br>
+`<div class="ap-navadjust-outerdiv"`
+*http://localhost:8000/gallery:837*
+#
 
-<div class="ap-navadjust-expand"
-page internal, style
+`<div class="ap-navadjust-expand"`
+<br>
+</br>
+*http://localhost:8000/gallery:850*
+#
 
-**Animated Panel Components** 
-**Modular Alert**
-**modularalerts.html**
-
-<button class="ma_button"
-page internal, style
+**Animated Panel Components**<br> 
+**Modular Alert**<br> 
+**modularalerts.html**<br> 
+<br>
+</br>
+`<button class="ma_button"`
+<br>
+</br>
+*http://localhost:8000/gallery:296*
+#
 
 **Modular Background**
-class="ma-div-screen"
-id="modularAlert"
+<br>
+</br>
+`class="ma-div-screen"`
+`id="modularAlert"`
+<br>
+</br>
+*http://localhost:8000/gallery:324*
+#
 
 **Modular Container**
-<div class="ma-divts"
-page internal, style
+<br>
+</br>
+`<div class="ma-divts"`
+<br>
+</br>
+*http://localhost:8000/gallery:335*
+#
 
-<i class="fas fa-times" 
+`<i class="fas fa-times"`
+<br>
+</br>
 http://localhost:8000/static/css/fa/all.min.css
-
-<class fas fa-exclamation-triangle ma_alert"
+#
+`<class fas fa-exclamation-triangle ma_alert"`
+<br>
+</br>
 http://localhost:8000/static/css/fa/all.min.css
-page internal, style
-
-<div class="ma_timeout"
-page internal, style
-
-<div class="ma_to_text"
-page internal, style
+#
+<br>
+</br>
+`<div class="ma_timeout"`
+<br>
+</br>
+*http://localhost:8000/gallery:339*
+#
+<br>
+</br>
+`<div class="ma_to_text"`
+<br>
+</br>
+*http://localhost:8000/gallery:404*
+#
 
 **Image Upload**
-<div class ui-master-div 
-page internal, style
-
-\*
-<button onclick="showImageUpload()
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss\*
-
+<br>
+</br>
+`<div class ui-master-div` 
+<br>
+</br>
+#
+**Image Uplod**
+<br>
+</br>
+`<button onclick="showImageUpload()`
+<br>
+</br>
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
+#
 
 **Accessibility Panel** 
-
+<br>
+</br>
 **Icon which opens animated panel from the right side** 
+<br>
+</br>
+`<i class="icon-access"`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+#
 
-\*<i class="icon-access"
-http://localhost:8000/static/css/style.css:13
-onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)\*
+**Accessibility Panel**
 
+`onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)`
 
 **sliding-panel and other related classes page styles**
 \*.ap-outerdiv and others related to .ap- styles, related classes page style
