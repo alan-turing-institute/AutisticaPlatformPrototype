@@ -21,21 +21,27 @@ Header / Static Navbar
 `div class=“flex-grow-1`</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 #
+<br>
 </br>
 **Logo Container & Logo**
 </br>
 `a class="navbar-brand d-none d-lg-inline-block`
+<br>
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 #
+**Logo Container & Logo Resize**
+<br>
 </br>
-**Logo Container & Logo Resize**</br>
 `a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
+#
 </br>
-**Spacer to Align Nav Bar Links to The Right On Full Page View**</br>
+**Spacer to Align Nav Bar Links to The Right On Full Page View**
+</br>
 `div class="w-100 text-right`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss*
