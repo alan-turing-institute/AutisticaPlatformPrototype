@@ -3,7 +3,6 @@ Classes Locations Related to Components
 
 http://0.0.0.0:8000/homepage
 ------
-
 Header / Static Navbar
 ------
 **Outer Light Grey Container**</br>
