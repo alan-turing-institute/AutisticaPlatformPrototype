@@ -230,7 +230,7 @@ onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypa
 
 **sliding-panel and other related classes page styles**
 \*.ap-outerdiv and others related to .ap- styles, related classes page style
-<script>function show_hideExpandingPanel(panelID, panel_arrow)….\* 
+script function show_hideExpandingPanel(panelID, panel_arrow)….\* 
 
 
 **Accessibility Panel**
@@ -256,12 +256,12 @@ http://localhost:8000/gallery:785 +
 \*<div class="ap-navadjust-outerdiv" (three section accordions)\*
 http://localhost:8000/gallery:837
 
-<div class=“ap-div-nai”
+\*<div class=“ap-div-nai”\*
 http://localhost:8000/gallery:894
 
 
 **Colour Adjustment** 
-<div class="ap-navadjust-outerdiv" (three section accordions)
+\*<div class="ap-navadjust-outerdiv"\* (three section accordions)
 http://localhost:8000/gallery:837
 
 <i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>
