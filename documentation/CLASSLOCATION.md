@@ -1082,7 +1082,6 @@ gallery:3164
 
 altered size of icons to standard 32px
 gallery:3153
-
 \*.peed2-icon {
     font-size: 32px;
 }\*
