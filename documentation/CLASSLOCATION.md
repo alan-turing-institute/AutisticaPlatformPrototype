@@ -881,9 +881,9 @@ thead {
     background-color: #008279;
 }
 
-<thead> Column Headers
-<th class="mone-cb">
-<ths> (Content)
+<thead Column Headers
+<thclass="mone-cb">
+<ths>(Content)
 
 
 **Pictorial Experience Editor** 
