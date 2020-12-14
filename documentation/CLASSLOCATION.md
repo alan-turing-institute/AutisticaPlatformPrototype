@@ -1,23 +1,13 @@
-# Classes Locations Related to Components 
-
-# H1 H1
-
-# H2 H2
-
-Alt-H1
+Classes Locations Related to Components 
 ======
 
-Alt-H2
+http://0.0.0.0:8000/homepage
 ------
 
 
 `<nav class="navbar navbar-expand-lg navbar-light" ion>`
 
 ```nav class="navbar navbar-expand-lg navbar-light" ion```
-
-# http://0.0.0.0:8000/homepage<h2>
-    
-**http://0.0.0.0:8000/homepage**
 
 **Header / Static Navbar**
 (outer light grey container)
