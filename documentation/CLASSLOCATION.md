@@ -2,8 +2,6 @@
 
 `<nav class="navbar navbar-expand-lg navbar-light" ion>`
 
-`nav class="navbar navbar-expand-lg navbar-light" ion`.
-
 ```nav class="navbar navbar-expand-lg navbar-light" ion```
 
 # http://0.0.0.0:8000/homepage<h2>
