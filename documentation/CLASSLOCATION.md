@@ -6,8 +6,13 @@ http://0.0.0.0:8000/homepage
 
 ___
 
+*** 
+
+--- 
+
 #
 
+<hr>
 
 Header / Static Navbar
 ------
