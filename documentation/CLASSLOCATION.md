@@ -4,9 +4,7 @@
 
 **Header / Static Navbar**
 (outer light grey container)
-nav class="navbar navbar-expand-lg navbar-light" 
-external url  https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
-
+nav class="navbar navbar-expand-lg navbar-light" ion
 nav class="bg-light" 
 external url https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss
 
@@ -264,91 +262,91 @@ http://localhost:8000/gallery:894
 \*<div class="ap-navadjust-outerdiv"\* (three section accordions)
 http://localhost:8000/gallery:837
 
-<i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>
+\*<i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>\*
 http://localhost:8000/static/css/style.css
 
-<div class="ap-navadjust-expand" id="coladjust"
+\*<div class="ap-navadjust-expand" id="coladjust"\*
 http://localhost:8000/gallery:850
 
-<div class="ap-div-cc"
+\*<div class="ap-div-cc""\*
 http://localhost:8000/gallery:932
 
-<div class="ap-icon-col"
+\*<div class="ap-icon-col""\*
 http://localhost:8000/gallery:936
 
-<i class="icon-opacity-24px"
+\*<i class="icon-opacity-24px""\*
 http://localhost:8000/static/css/style.css:13
 
-<div class="ap-cc-text"
+\*<div class="ap-cc-text""\*
 http://localhost:8000/gallery:940
 
-<div class="ap-div-col"
+\*<div class="ap-div-col""\*
 http://localhost:8000/gallery:943
 
-<div class="ap-box-cc"
+\*<div class="ap-box-cc""\*
 http://localhost:8000/gallery:948
 
-<div class="ap-icon-col-big"
+\*<div class="ap-icon-col-big""\*
 http://localhost:8000/gallery:955
 
-<i class="icon-opacity-24px"
+\*<i class="icon-opacity-24px""\*
 http://localhost:8000/static/css/style.css:13
 
-<div class="ap-box-cc-text"
+\*<div class="ap-box-cc-text""\*
 http://localhost:8000/gallery:959
 
-<div class="ap-div-sc"
+\*<div class="ap-div-sc""\*
 http://localhost:8000/gallery:972
 
-<div class="ap-sc-circle"
+\*<div class="ap-sc-circle""\*
 http://localhost:8000/gallery:963
 
-<div class="ap-sc-text"
+\*<div class="ap-sc-text""\*
 http://localhost:8000/gallery:975
 
-<div class="ap-div-tabs"
+\*<div class="ap-div-tabs"\*
 http://localhost:8000/gallery:978
 
-<div class="ap-tab-bground"
+\*<div class="ap-tab-bground"\*
 http://localhost:8000/gallery:983
 
-<div class="ap-tab-other"
+\*<div class="ap-tab-other"\*
 http://localhost:8000/gallery:990
 
 **(Saturation & Brightness)**
-<div class="ap-hslcolorpicker"
+\*<div class="ap-hslcolorpicker"\*
 http://localhost:8000/gallery:1005
 
-<input type="range" 
+\*<input type="range"\* 
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317 - 325
 
-<script var hslSlider, var saturationSlider, var brightnessSlider
-<i class=“icon-reset-colour ap-icon-rc
+\*script var hslSlider, var saturationSlider, var brightnessSlider\*
+\*<i class=“icon-reset-colour ap-icon-rc\*
 http://localhost:8000/gallery:1039
 
-<div class="ap-bpcpp"
+\*<div class="ap-bpcpp"\*
 http://localhost:8000/gallery:1043
 
-<div ap-col-circles
+\*<div ap-col-circles\*
 http://localhost:8000/gallery:1047
 
 **(Container for three Contrast containers)**
-<div class="ap-div-contrast"
+\*<div class="ap-div-contrast"\*
 http://localhost:8000/gallery:1085
 
-<div class="ap-contrast-box"
+\*<div class="ap-contrast-box"\*
 http://localhost:8000/gallery:1089
 
-<div class="ap-icon-contrast
+\*<div class="ap-icon-contrast\*
 http://localhost:8000/gallery:1097
 
-<div class="ap-bottom-slider"
+\*<div class="ap-bottom-slider"\*
 http://localhost:8000/gallery:1101
 
-<div class="ap-bottom-slider-left"
+\*<div class="ap-bottom-slider-left"\*
 http://localhost:8000/gallery:1115
 
-<i class="icon-add_circle-24px
+\*<i class="icon-add_circle-24px\*
 http://localhost:8000/static/css/style.css:13
 
 **(- & + Contrast Slider)**
