@@ -1,7 +1,6 @@
 Classes Locations Related to Components 
 ======
 http://0.0.0.0:8000/homepage
-___
 
 Header / Static Navbar
 ------
@@ -17,12 +16,15 @@ ___
 **Inner Light Grey Container**
 <br>
 </br>
-`div class="d-flex`</br> 
+`div class="d-flex`
+<br>
+</br> 
 *external cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 </br>
 `div class=“flex-grow-1`</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 <hr>
+___
 </br>
 </br>
 **Logo Container & Logo**</br>
