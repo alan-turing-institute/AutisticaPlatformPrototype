@@ -31,8 +31,8 @@ Header / Static Navbar
 `a class="navbar-brand d-none d-lg-inline-block`
 <br>
 </br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 #
 **Logo Container & Logo Resize**
@@ -41,7 +41,7 @@ Header / Static Navbar
 `a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
 <br>
 </br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
 </br>
