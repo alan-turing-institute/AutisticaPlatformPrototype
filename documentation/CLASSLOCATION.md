@@ -3,29 +3,28 @@ Classes Locations Related to Components
 
 http://0.0.0.0:8000/homepage
 ------
-
-
-`<nav class="navbar navbar-expand-lg navbar-light" ion>`
-
+`nav class="navbar navbar-expand-lg navbar-light" ion`
 ```nav class="navbar navbar-expand-lg navbar-light" ion```
 
-**Header / Static Navbar**
-(outer light grey container)
-nav class="navbar navbar-expand-lg navbar-light" ion
-nav class="bg-light" 
-external url https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss
+Header / Static Navbar
+------
+**Outer Light Grey Container)**
+`nav class="navbar navbar-expand-lg navbar-light" ion`
+`nav class="bg-light"`  
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 
-**(inner light grey container)**
+**Inner Light Grey Container)**
 div class="d-flex 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss
+*external cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 
-div class=“flex-grow-1 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss
+`div class=“flex-grow-1`
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 
-a class="navbar-brand d-none d-lg-inline-block" (logo container & logo)
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss
-https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss
-https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss
+**Logo Container & Logo**
+`a class="navbar-brand d-none d-lg-inline-block"` 
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 
 **(logo container & logo resize)**
 a class="navbar-brand-two mx-auto d-lg-none d-inline-block" 
