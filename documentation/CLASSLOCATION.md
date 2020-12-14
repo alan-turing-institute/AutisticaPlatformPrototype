@@ -1,6 +1,4 @@
-# Classes Locations Related to Components<h1> tag
-
-`<addr>` nav class="navbar navbar-expand-lg navbar-light" ion`
+# Classes Locations Related to Components<h1> 
 
 `<nav class="navbar navbar-expand-lg navbar-light" ion>`
 
@@ -8,7 +6,7 @@
 
 ```nav class="navbar navbar-expand-lg navbar-light" ion```
 
-# http://0.0.0.0:8000/homepag<h2> tag
+# http://0.0.0.0:8000/homepage<h2>
     
 **http://0.0.0.0:8000/homepage**
 
