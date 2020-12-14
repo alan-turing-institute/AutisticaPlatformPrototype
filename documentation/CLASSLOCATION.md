@@ -21,6 +21,7 @@ Header / Static Navbar
 </br>
 `div class=“flex-grow-1`</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
+<hr />
 </br>
 </br>
 **Logo Container & Logo**</br>
@@ -28,6 +29,7 @@ Header / Static Navbar
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
+------
 </br>
 **Logo Container & Logo Resize**</br>
 `a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
