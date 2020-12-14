@@ -11,6 +11,7 @@ Header / Static Navbar
 `nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 ___
+------
 </br>
 </br>
 **Inner Light Grey Container**
