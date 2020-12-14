@@ -56,7 +56,7 @@ Header / Static Navbar
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss:7*<br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scs:23s*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scs:23*
 #
 **Toggle Hidden Nav Hamburger**
 <br>
