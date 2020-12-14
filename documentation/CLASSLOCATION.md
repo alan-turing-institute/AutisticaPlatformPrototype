@@ -1,11 +1,9 @@
 Classes Locations Related to Components 
 ======
-\n
 
 <br />
 
-<hr />***
-
+<hr />
 
 http://0.0.0.0:8000/homepage
 ------
