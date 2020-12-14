@@ -58,7 +58,7 @@ Header / Static Navbar
 </br>
 `button class="navbar-toggler`
 <br>
-</br>` 
+</br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 #
 **Align to Right Navigation Titles**
@@ -95,26 +95,34 @@ Header / Static Navbar
 Strap Line / Secondary Banner Sub Header 2
 ------
 **Container For Secondary Banner, Light Mint Green)**
+<br>
+</br>`
 `nav class="navbar navbar-expand navbar-expand-md banner-autistica-light-blue` 
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*<br>
+*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
-*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
-</br>
+#
 **Div Nav Container**
+<br>
+</br>
 `div class="mx-auto order-0`
 <br>
 </br>`
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_grid-framework.scss*
 #
 **Strap Line Message**
+<br>
+</br>
 `a class="navbar-brand mx-auto`
 <br>
 </br>`
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
-**(nav toggle hamburger responsive)**
+**Nav Toggle Hamburger Responsive**
+<br>
+</br>
 `button class="navbar-toggler`
 <br>
 </br>`
@@ -124,6 +132,7 @@ Secondary Banner
 ------
 **Sub Header 1** 
 <br>
+</br>
 **Home Icon**
 <br>
 </br>`
@@ -137,9 +146,13 @@ Secondary Banner
 Aims
 ------
 **Added to aim container - Outer Margin**
+<br>
+</br>
 `div style="margin:15px`
+<br>
+</br>
 **Aims Container with mint green boarder**
-`div class="jumbotron autistica-jumbotron
+`div class="jumbotron autistica-jumbotron`
 <br>
 </br>`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss*<br>
@@ -150,8 +163,11 @@ Aims
 <br>
 **3 Columns How it works / Configure / Get Involved**
 <br>
-`div class=“card-deck”` <br>
-(section container for 3 columns)
+`div class=“card-deck”` 
+<br>
+</br>
+
+**Section Container For 3 Columns**
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss*
 #
 **Styling of individual containers, boarder, size and margins**
