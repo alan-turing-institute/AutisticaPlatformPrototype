@@ -6,17 +6,17 @@ http://0.0.0.0:8000/homepage
 
 Header / Static Navbar
 ------
-**Outer Light Grey Container)**</br>
-`nav class="navbar navbar-expand-lg navbar-light" ion`
-`nav class="bg-light"`  
+**Outer Light Grey Container**</br>
+`nav class="navbar navbar-expand-lg navbar-light" ion`</br>
+`nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 </br>
 </br>
 **Inner Light Grey Container**</br>
-`div class="d-flex` 
+`div class="d-flex`</br> 
 *external cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 </br>
-`div class=“flex-grow-1`
+`div class=“flex-grow-1`</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
 </br>
 </br>
