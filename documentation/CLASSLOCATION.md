@@ -1,6 +1,13 @@
+<hr style="border:2px solid blue"> </hr>
+
 Classes Locations Related to Components 
 ======
 http://0.0.0.0:8000/homepage
+
+___
+
+#
+
 
 Header / Static Navbar
 ------
