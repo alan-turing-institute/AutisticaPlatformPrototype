@@ -350,7 +350,7 @@ http://localhost:8000/gallery:1115
 http://localhost:8000/static/css/style.css:13
 
 **(- & + Contrast Slider)**
-<script var Slider
+script var Slider
 
 **(Content Adjustment)** 
 **accessibilitypanel.html** 
@@ -650,7 +650,7 @@ http://localhost:8000/gallery:2497
 <span class="sgs-sp-text">Is viewable by others</span>
 http://localhost:8000/gallery:2461
 
-<input type="checkbox" class="sgs-checkb">
+input type="checkbox" class="sgs-checkb">
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 http://localhost:8000/gallery:2497:2508
 
