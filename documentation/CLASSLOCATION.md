@@ -11,11 +11,10 @@ Header / Static Navbar
 `nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*
 #
-</br>
+<br>
 </br>
 **Inner Light Grey Container**
 <br>
-</br>
 `div class="d-flex`
 <br>
 </br> 
@@ -23,16 +22,16 @@ Header / Static Navbar
 </br>
 `div class=“flex-grow-1`</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss*
-<hr>
-___
+#
 </br>
 </br>
-**Logo Container & Logo**</br>
+**Logo Container & Logo**
+</br>
 `a class="navbar-brand d-none d-lg-inline-block`
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss*
-------
+#
 </br>
 **Logo Container & Logo Resize**</br>
 `a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
