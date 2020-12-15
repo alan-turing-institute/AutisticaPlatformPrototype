@@ -2,6 +2,8 @@ Classes Locations Related to Components
 ======
 http://0.0.0.0:8000/homepage
 ------
+Boostrapcdn's styles relate to https://getbootstrap.com/docs/4.5/components/
+------
 Header / Static Navbar
 ------
 **Outer Light Grey Container**
