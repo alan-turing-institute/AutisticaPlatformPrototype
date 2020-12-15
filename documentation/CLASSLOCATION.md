@@ -73,8 +73,8 @@ Header / Static Navbar
 <br>
 </br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:110*<br>
-*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:21*<br>
-*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss:23*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:21*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss:23*
 #
 **Unordered List Container for li list / Nav Titles**
 <br>
@@ -82,9 +82,9 @@ Header / Static Navbar
 `ul class="navbar-nav ml-auto flex-nowrap`
 <br>
 </br> 
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:72<br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70<br>
-*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:17
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:72*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:17*
 #
 **Nav Items Defined As List Items**
 <br>
@@ -97,11 +97,10 @@ Header / Static Navbar
 </br>
 */../../static/css/main.css#L42-L44*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:79*<br>
-*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
 Strap Line / Secondary Banner Sub Header 2
 ------
-<br>
 **Container For Secondary Banner, Light Mint Green**
 <br>
 </br>
