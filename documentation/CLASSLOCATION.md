@@ -820,7 +820,7 @@ http://localhost:8000/gallery:1115
 *http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-**(3 High Contrasts 1&2 / Low Luminance Text)**
+**3 High Contrasts 1&2 / Low Luminance Text**
 <br>
 </br>
 `<div class ap-lum-outerdiv`
@@ -829,7 +829,7 @@ http://localhost:8000/gallery:1115
 *http://localhost:8000/gallery:1323*
 <br>
 </br>
-`<div class="ap-hcl"\*
+`<div class="ap-hcl"`
 <br>
 </br>
 *http://localhost:8000/gallery:1328*
