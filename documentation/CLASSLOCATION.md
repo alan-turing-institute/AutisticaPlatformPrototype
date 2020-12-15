@@ -99,11 +99,9 @@ Header / Static Navbar
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:79*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
-
 Strap Line / Secondary Banner Sub Header 2
 ------
 <br>
-</br>
 **Container For Secondary Banner, Light Mint Green**
 <br>
 </br>
@@ -111,7 +109,7 @@ Strap Line / Secondary Banner Sub Header 2
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:19*<br>
-*External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:170*<br>
+*External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:170*<br>
 *http://localhost:8000/static/css/main.css:37*
 #
 **Div Nav Container**
@@ -253,7 +251,6 @@ Aims
 </br>
 *http://localhost:8000/(index)264*
 #
-
 **Top Introduction**
 `<mark>`
 <br>
@@ -266,14 +263,12 @@ Aims
 </br>
 *//localhost/inspector-stylesheet*
 #
-
 **(paragraph spacing between top introduction paragraph and list)**
 **ul and li styled bullet pointed listed green highlighted)**
-
 **Columns 2 & 3** 
 <br>
 </br>
-Inner & Outer Container Styling
+**Inner & Outer Container Styling**
 <br>
 </br>
 `div class="card autistica-card my-3"` 
@@ -290,7 +285,6 @@ Inner & Outer Container Styling
 </br>
 *element.style*
 #
-
 **Header Title Margin**
 <br>
 </br>
@@ -299,7 +293,6 @@ Inner & Outer Container Styling
 </br>
 *element.style* 
 #
-
 **Linked Content Container**
 <br>
 </br>
@@ -308,7 +301,6 @@ Inner & Outer Container Styling
 </br>
 *http://localhost:8000/(index):302*
 #
-
 **div with links to content**
 <br>
 </br>
@@ -317,7 +309,6 @@ Inner & Outer Container Styling
 </br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
 #
-
 **CTA Login & Centred Button CTA** 
 <br>
 </br
@@ -387,12 +378,12 @@ http://localhost:8000/(index)57
 
 http://0.0.0.0:8000/gallery
 ------
-Component Showcas
+Component Showcase
 ------
 **Panel Components > Secondary Banner & Secondary Banner Alt as Home Page**
 <br>
 **Jumbotron - Aims As Home Page**
-
+<br>
 **Card**
 <br>
 </br>
@@ -420,8 +411,6 @@ Component Showcas
 </br>
 *http://localhost:8000/gallery:1777*
 #
-
-
 **Expanding Panel - Accordion drop down**
 <br>
 </br>
@@ -460,7 +449,6 @@ Component Showcas
 </br>
 *http://localhost:8000/gallery:324*
 #
-
 **Modular Container**
 <br>
 </br>
@@ -472,12 +460,12 @@ Component Showcas
 `<i class="fas fa-times"`
 <br>
 </br>
-http://localhost:8000/static/css/fa/all.min.css
+*http://localhost:8000/static/css/fa/all.min.css*
 <br>
 `<class fas fa-exclamation-triangle ma_alert"`
 <br>
 </br>
-http://localhost:8000/static/css/fa/all.min.css
+*http://localhost:8000/static/css/fa/all.min.css*
 <br>
 `<div class="ma_timeout"`
 <br>
@@ -498,14 +486,15 @@ http://localhost:8000/static/css/fa/all.min.css
 `<div class ui-master-div` 
 <br>
 </br>
+https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
 #
-**Image Uplod**
+**Image Upload**
 <br>
 </br>
 `<button onclick="showImageUpload()`
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
 #
 
 **Accessibility Panel** 
@@ -521,112 +510,181 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
 #
 
 **Accessibility Panel**
-
+<br>
+</br>
 `onclick="citizenSciencePlatform_slidingpanelfunctions.OpenPanel('accessibilitypannel’)`
-
+<br>
+</br>
 **sliding-panel and other related classes page styles**
 \*.ap-outerdiv and others related to .ap- styles, related classes page style
 script function show_hideExpandingPanel(panelID, panel_arrow)….\* 
-
+#
 
 **Accessibility Panel**
-\*<div class="ap-outerdiv"\*
-http://localhost:8000/gallery:814
-
-\*<div class="ap-langsel"\*
-http://localhost:8000/gallery:820
-
-\*<div class="ap-language"\*
-http://localhost:8000/gallery:823
-
+<br>
+</br>
+`<div class="ap-outerdiv"`
+<br>
+</br>
+*http://localhost:8000/gallery:814*
+<br>
+`<div class="ap-langsel"`
+*http://localhost:8000/gallery:820*
+<br>
+`<div class="ap-language"`
+*http://localhost:8000/gallery:823*
+#
 
 **Accessibility Menu**
-
-\*<i class="icon-screen-reader ap-icon-na"\*
-http://localhost:8000/static/css/style.css:13
-
-\*<div class="sliding-panel left sliding-panel-open-left" id=“accessibilitypannel etc\*
-http://localhost:8000/gallery:785 + 
+<br>
+`<i class="icon-screen-reader ap-icon-na"`
+*http://localhost:8000/static/css/style.css:13*
+<br>
+`<div class="sliding-panel left sliding-panel-open-left" id=“accessibilitypannel etc`
+*http://localhost:8000/gallery:785* 
+#
 
 **Navigation Adjustment**
-\*<div class="ap-navadjust-outerdiv" (three section accordions)\*
-http://localhost:8000/gallery:837
-
-\*<div class=“ap-div-nai”\*
-http://localhost:8000/gallery:894
-
+<br>
+</br>
+`div class="ap-navadjust-outerdiv" (three section accordions)`
+*http://localhost:8000/gallery:837*
+<br>
+`<div class=“ap-div-nai”`
+*http://localhost:8000/gallery:894*
+#
 
 **Colour Adjustment** 
-\*<div class="ap-navadjust-outerdiv"\* (three section accordions)
-http://localhost:8000/gallery:837
-
-\*<i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>\*
-http://localhost:8000/static/css/style.css
-
-\*<div class="ap-navadjust-expand" id="coladjust"\*
-http://localhost:8000/gallery:850
-
-\*<div class="ap-div-cc""\*
-http://localhost:8000/gallery:932
-
-\*<div class="ap-icon-col""\*
-http://localhost:8000/gallery:936
-
-\*<i class="icon-opacity-24px""\*
-http://localhost:8000/static/css/style.css:13
-
-\*<div class="ap-cc-text""\*
-http://localhost:8000/gallery:940
-
-\*<div class="ap-div-col""\*
-http://localhost:8000/gallery:943
-
-\*<div class="ap-box-cc""\*
-http://localhost:8000/gallery:948
-
-\*<div class="ap-icon-col-big""\*
-http://localhost:8000/gallery:955
-
-\*<i class="icon-opacity-24px""\*
-http://localhost:8000/static/css/style.css:13
-
-\*<div class="ap-box-cc-text""\*
-http://localhost:8000/gallery:959
-
-\*<div class="ap-div-sc""\*
-http://localhost:8000/gallery:972
-
-\*<div class="ap-sc-circle""\*
-http://localhost:8000/gallery:963
-
-\*<div class="ap-sc-text""\*
-http://localhost:8000/gallery:975
-
-\*<div class="ap-div-tabs"\*
-http://localhost:8000/gallery:978
-
-\*<div class="ap-tab-bground"\*
-http://localhost:8000/gallery:983
-
-\*<div class="ap-tab-other"\*
-http://localhost:8000/gallery:990
+<br>
+**Three Section Accordions**
+<br>
+</br>
+`<div class="ap-navadjust-outerdiv"` 
+<br>
+</br>
+*http://localhost:8000/gallery:837*
+<br>
+`<i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css*
+<br>
+`<div class="ap-navadjust-expand" id="coladjust"`
+<br>
+</br>
+*http://localhost:8000/gallery:850*
+<br>
+`<div class="ap-div-cc"`
+<br>
+</br>
+*http://localhost:8000/gallery:932*
+<br>
+`<div class="ap-icon-col"`
+<br>
+</br>
+*http://localhost:8000/gallery:936*
+<br>
+`<div class="ap-icon-col"`
+<br>
+`<i class="icon-opacity-24px"`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+`<div class="ap-cc-text"`
+<br>
+</br>
+*http://localhost:8000/gallery:940*
+<br>
+</br>
+`<div class="ap-div-col"`
+<br>
+</br>
+*http://localhost:8000/gallery:943*
+<br>
+</br>
+`<div class="ap-box-cc"`
+<br>
+</br>
+*http://localhost:8000/gallery:948*
+<br>
+</br>
+`<div class="ap-icon-col-big"`
+<br>
+</br>
+*http://localhost:8000/gallery:955*
+<br>
+`<i class="icon-opacity-24px"`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+`<div class="ap-box-cc-text"`
+<br>
+</br>
+*http://localhost:8000/gallery:959*
+<br>
+</br>
+`<div class="ap-div-sc"`
+<br>
+</br>
+*http://localhost:8000/gallery:972*
+<br>
+</br>
+`<div class="ap-sc-circle"`
+<br>
+</br>
+*http://localhost:8000/gallery:963*
+<br>
+`<div class="ap-sc-text"`
+<br>
+</br>
+*http://localhost:8000/gallery:975*
+<br>
+`<div class="ap-div-tabs"`
+<br>
+</br>
+*http://localhost:8000/gallery:978*
+<br>
+`<div class="ap-tab-bground"`
+<br>
+</br>
+*http://localhost:8000/gallery:983*
+<br>
+`<div class="ap-tab-other"`
+<br>
+</br>
+*http://localhost:8000/gallery:990*
+#
 
 **(Saturation & Brightness)**
-\*<div class="ap-hslcolorpicker"\*
-http://localhost:8000/gallery:1005
-
-\*<input type="range"\* 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317 - 325
-
-\*script var hslSlider, var saturationSlider, var brightnessSlider\*
-\*<i class=“icon-reset-colour ap-icon-rc\*
-http://localhost:8000/gallery:1039
-
-\*<div class="ap-bpcpp"\*
-http://localhost:8000/gallery:1043
-
-\*<div ap-col-circles\*
-http://localhost:8000/gallery:1047
+`<div class="ap-hslcolorpicker"`
+<br>
+</br>
+*http://localhost:8000/gallery:1005*
+<br>
+`<input type="range"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317 - 325*
+<br>
+`script var hslSlider, var saturationSlider, var brightnessSlider`
+<br>
+`<i class=“icon-reset-colour ap-icon-rc`
+<br>
+</br>
+*http://localhost:8000/gallery:1039*
+<br>
+`<div class="ap-bpcpp"`
+<br>
+</br>
+*http://localhost:8000/gallery:1043*
+<br>
+`<div ap-col-circles`
+<br>
+</br>
+*http://localhost:8000/gallery:1047*
+#
 
 **(Container for three Contrast containers)**
 \*<div class="ap-div-contrast"\*
