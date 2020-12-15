@@ -871,7 +871,7 @@ http://localhost:8000/gallery:1115
 *http://localhost:8000/gallery:1350*
 <br>
 </br>
-**(Low Luminance 2)**
+**Low Luminance 2**
 <br>
 </br>
 `<div class="ap-hcl-title"`
@@ -880,7 +880,7 @@ http://localhost:8000/gallery:1115
 *http://localhost:8000/gallery:1354*
 <br>
 </br>
-**(Magnifier)**
+**Magnifier**
 <br>
 </br>
 `<div class="ap-mag-box"`
@@ -889,7 +889,7 @@ http://localhost:8000/gallery:1115
 *http://localhost:8000/gallery:1363*
 <br>
 </br>
-**(Close Function)**
+**Close Function**
 <br>
 </br>
 `<i class="icon-close sp-icon-close"`
@@ -905,614 +905,1184 @@ http://localhost:8000/gallery:1115
 <br>
 </br>
 
-**Navigation Components**
+**Navigation Components**<br>
 Header as inserted home page -  Navigation as inserted home page 
+<br>
 Footer Top & Bottom as inserted home page 
+<br>
 Newsletter Cards as inserted home page and newsletterCards.html
-
+<br>
+</br>
 **User Journey Stepped Control**
 load userJourney
-\*<form id="stepper” method="POST"\*
-\*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"\*
-
-\*<div class="step"\*
-http://localhost:8000/gallery:1824
-
+`<form id="stepper” method="POST"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css* 
+<br>
+</br>
+`<div class="step"`
+<br>
+</br>
+*http://localhost:8000/gallery:1824*
+<br>
+</br>
 **(Next Button)**
-\*<button type="submit" form="stepper" value="Submit"Next</button\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
+`<button type="submit" form="stepper" value="Submit"Next</button`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
 
 
 **Newsletter Signup** 
+<br>
 **(Newsletter Subscribe)**
-**newsletterSignup.html**
-\*<div class="card-body"\*
-\*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">\*
-
-\*<h4 class="card-title\*
-\*<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">\*
-
-\*<h6 class="card-subtitle mb-2 text-muted"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*form\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*<div class="col-auto"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
+<br>
+**NewsletterSignup.html**
+<br>
+</br>
+`<div class="card-body"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css* 
+<br>
+</br>
+`<h4 class="card-title\`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<h6 class="card-subtitle mb-2 text-muted"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`form`
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<div class="col-auto"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
 
 **Name Input** 
-\*label class="sr-only" for="inlineFormInput"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="John Doe">\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-
-\*<div class="col-auto"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-\*<button type="submit" class="btn btn-primary mb-2">Subscribe</button>\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*<div class="card-footer text-success"\*
-http://localhost:8000/gallery:1946
-
+<br>
+</br>
+label class="sr-only" for="inlineFormInput"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="John Doe">`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<div class="col-auto"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<button type="submit" class="btn btn-primary mb-2">Subscribe</button>`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<div class="card-footer text-success"`
+<br>
+</br>
+*http://localhost:8000/gallery:1946*
+<br>
+</br>
 
 **Language Selector**
-\*<div class="dropdown"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*<a class=btn btn-autisica dropdown-toggle\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-http://localhost:8000/gallery:1997
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*<div class="dropdown-menu"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-\*<a class="dropdown-item"\*
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
-
-**Defined Profile**
+<br>
+</br>
+`<div class="dropdown"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<a class=btn btn-autisica dropdown-toggle`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+*http://localhost:8000/gallery:1997*
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<div class="dropdown-menu"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+`<a class="dropdown-item"`
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
+**Defined Profile**<br>
 **(outer container)**
-\*<div class="dp-outerdiv"\*
-http://localhost:8000/gallery:2058
-
+<br>
+</br>
+`<div class="dp-outerdiv"`
+<br>
+</br>
+*http://localhost:8000/gallery:2058*
+<br>
+</br>
 **(inner container)**
-\*<div class="dp-questions"\*
-http://localhost:8000/gallery:2064
-
-\*<div class="dp-question-text"\*
-http://localhost:8000/gallery:2070
-
+<br>
+</br>
+`<div class="dp-questions"`
+<br>
+</br>
+*http://localhost:8000/gallery:2064*
+<br>
+</br>
+`<div class="dp-question-text"`
+<br>
+</br>
+*http://localhost:8000/gallery:2070*
+<br>
+</br>
 **Label title, duplicated three times for profile questions**
-\*class="dp-yesnotext"\*
-http://localhost:8000/gallery:2082
-
+<br>
+</br>
+`class="dp-yesnotext"`
+<br>
+</br>
+*http://localhost:8000/gallery:2082*
+<br>
+</br>
 **Input** 
-https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+<br>
+</br>
 
 **Submit Button**
-\*<div class="dp-submit"\*
-http://localhost:8000/gallery:2073
-
+<br>
+</br>
+`<div class="dp-submit"`
+<br>
+</br>
+*http://localhost:8000/gallery:2073*
+<br>
+</br>
 
 **User Experience Form** 
+<br>
 **Where (location)**
-\*<div class="uef-top-box"\*
+<br>
+</br>
+`<div class="uef-top-box"`
+<br>
+</br>
 http://localhost:8000/gallery:2247
-
-Fixes
-\*td.uef-top-text {
+<br>
+</br>
+**Fixes**
+`td.uef-top-text {
     border: none;
-}\*
-
-\*uef-td-input {
+}`
+<br>
+</br>
+`uef-td-input {
     padding-right: 0px;
-}\*
-
-\*td, th {
+}`
+<br>
+</br>
+`td, th {
     border: none;
-}\*
-http://localhost:8000/gallery:2750
-
-\*.uef-outer-div {
+}`
+<br>
+</br>
+*http://localhost:8000/gallery:2750*
+<br>
+</br>
+`.uef-outer-div {
     border-radius: 0px 0px 10px 10px;
     border-width: 2px;
     border-style: solid;
     border-color: var(--autistica-mint-green);
     padding-bottom: 0px;
-}\*
-http://localhost:8000/gallery:2257
-
-\*.uef-td-ip {
+}`
+<br>
+</br>
+*http://localhost:8000/gallery:2257*
+<br>
+</br>
+`.uef-td-ip {
     width: 100%;
     border: none;
     border-radius: 0px 0px 5px 0px;
-}\*
-http://localhost:8000/gallery:2295
-
-\*uef-td-txarea {
+}`
+<br>
+</br>
+*http://localhost:8000/gallery:2295*
+<br>
+</br>
+`uef-td-txarea {
     width: 100%;
     height: 100%;
     resize: none;
     border: none;
     border-radius: 0px 0px 5px 0px;
-}\*
+}`
+<br>
+</br>
 http://localhost:8000/gallery:2241
-
-\*<div class="uef-top-box"\*
+<br>
+</br>
+`<div class="uef-top-box"`
+<br>
+</br>
 http://localhost:8000/gallery:2247
-
-\*<td class="uef-top-text"\*
+<br>
+</br>
+`<td class="uef-top-text"`
+<br>
+</br>
 http://localhost:8000/gallery:2252
-
-\*<span class="uef-span-buttons"\*
+<br>
+</br>
+`<span class="uef-span-buttons"`
+<br>
+</br>
 http://localhost:8000/gallery:2300
-\*<span class="uef-buttontemp"><u>Templates</u></span>\*
+<br>
+</br>
+`<span class="uef-buttontemp"><u>Templates</u></span>`
+<br>
+</br>
 http://localhost:8000/gallery:2189
-
-\*<span class="uef-buttontemp"><i class="fas fa-save"></i><u>Save</u></span>\*
+<br>
+</br>
+`<span class="uef-buttontemp"><i class="fas fa-save"></i><u>Save</u></span>`
+<br>
+</br>
 http://localhost:8000/gallery:2189
-
-\*<i class="fas fa-save"\*
+<br>
+</br>
+`<i class="fas fa-save"`
+<br>
+</br>
 http://localhost:8000/static/css/fa/all.min.css:5
-
-\*<i class="uef-buttontemp"\*
+<br>
+</br>
+`<i class="uef-buttontemp"`
+<br>
+</br>
 http://localhost:8000/gallery:2189
-
-\*<i class="fas fa-trash"\*
-http://localhost:8000/static/css/fa/all.min.css:5
-
-\*<div class="uef-outer-div"\*
-\*<table class="uef-table"\*
-
-\*tbody\*
-\*tr class="uef-tr1-nb"\*
-http://localhost:8000/gallery:2276
+<br>
+</br>
+`<i class="fas fa-trash"`
+<br>
+</br>
+*http://localhost:8000/static/css/fa/all.min.css:5*
+<br>
+</br>
+`<div class="uef-outer-div"`
+<br>
+</br>
+`<table class="uef-table"`
+<br>
+</br>
+`tbody`
+<br>
+</br>
+`tr class="uef-tr1-nb"`
+<br>
+</br>
+*http://localhost:8000/gallery:2276*
+<br>
+</br>
 
 **(what)**
-\*td class="uef-td-wh uef-td-what"\*
-http://localhost:8000/gallery:2284
+<br>
+</br>
+`td class="uef-td-wh uef-td-what"`
+<br>
+</br>
+*http://localhost:8000/gallery:2284*
+<br>
+</br>
 
-**(input)**
-\*td class="uef-td-input"\*
-http://localhost:8000/gallery:2236
-
-\*<textarea class="uef-td-txarea" placeholder="Your experience can be entered here..."></textarea>\*
-http://localhost:8000/gallery:2239
+**Input**
+<br>
+</br>
+`td class="uef-td-input"`
+<br>
+</br>
+*http://localhost:8000/gallery:2236*
+<br>
+</br>
+`<textarea class="uef-td-txarea" placeholder="Your experience can be entered here..."></textarea>`
+<br>
+</br>
+*http://localhost:8000/gallery:2239
 
 
 **Different**
-\*<div class="uef-top-box"\*
+<br>
+</br>
+`<div class="uef-top-box"`
+<br>
+</br>
 http://localhost:8000/gallery:2247
-
-\*td class="uef-top-text"\*
+<br>
+</br>
+`td class="uef-top-text"`
+<br>
+</br>
 http://localhost:8000/gallery:2252
-
-\*<div class="uef-outer-div"\*
+<br>
+</br>
+`<div class="uef-outer-div"`
+<br>
+</br>
 http://localhost:8000/gallery:2257
-
-\*table class="uef-table"\*
+<br>
+</br>
+`table class="uef-table"`
+<br>
+</br>
 http://localhost:8000/gallery:2265
-
-\*tr class="uef-tr1-nb">\*
+<br>
+</br>
+`*tr class="uef-tr1-nb">`
+<br>
+</br>
 http://localhost:8000/gallery:2276
-
-\*td class="uef-td-wh uef-td-what">\*
+<br>
+</br>
+`td class="uef-td-wh uef-td-what">`
+<br>
+</br>
 http://localhost:8000/gallery:2284
-
-\*td class="uef-td-input">\*
+<br>
+</br>
+`td class="uef-td-input">`
+<br>
+</br>
 http://localhost:8000/gallery:2236                
            
 
 **Sharing Setting Part of Experience Page**
-\*<form class="sgs-form"\*
+<br>
+</br>
+`<form class="sgs-form"`
+<br>
+</br>
 http://localhost:8000/gallery:2458
-
-\*<h3 class="sgs-h3"\*
+<br>
+</br>
+`<h3 class="sgs-h3"`
+<br>
+</br>
 http://localhost:8000/gallery:2493
-
-\*<div class=sgs-div-inner\*
+<br>
+</br>
+`<div class=sgs-div-inner`
+<br>
+</br>
 http://localhost:8000/gallery:2497
+<br>
+</br>
 
 **Checkbox - Can be used for research**
-\*<input type="checkbox" class="sgs-checkb">\*
+<br>
+</br>
+`<input type="checkbox" class="sgs-checkb">`
+<br>
+</br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
+<br>
+</br>
 http://localhost:8000/gallery:2497:2508
+<br>
+</br>
 
 **Experience ID** 
-\*<span class="sgs-sp-userdata">Experience ID: 0118092019</span>\*
+<br>
+</br>
+`<span class="sgs-sp-userdata">Experience ID: 0118092019</span>\*
+<br>
+</br>
 http://localhost:8000/gallery:2466
-
+<br>
+</br>
 **Is Viewable by Others**
-\*<div class="sgs-div-inner"\*
+<br>
+</br>
+`<div class="sgs-div-inner"`
+<br>
+</br>
 http://localhost:8000/gallery:2497
-
-\*<span class="sgs-sp-text">Is viewable by others</span>\*
+<br>
+</br>
+`<span class="sgs-sp-text">Is viewable by others</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2461
-
-\*input type="checkbox" class="sgs-checkb">\*
+<br>
+</br>
+`input type="checkbox" class="sgs-checkb">`
+<br>
+</br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
+<br>
+</br>
 http://localhost:8000/gallery:2497:2508
-
+<br>
+</br>
 **Date**
-\*<span class="sgs-sp-userdata">Date: 10-12-2020 16:12</span>\*
+<br>
+</br>
+`<span class="sgs-sp-userdata">Date: 10-12-2020 16:12</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2497:2466
-
+<br>
+</br>
 **Submit Button** 
-\*<div class="sgs-div-inner">\*
+<br>
+</br>
+`<div class="sgs-div-inner">`
+<br>
+</br>
 http://localhost:8000/gallery:2497:2504
- 
-**(Audio Sound Added to Button Submit ref soundjay.com)**
-\*<audio id="submitSound" src="http://www.soundjay.com/button/beep-07.wav"></audio>\*
-\*<span class="sgs-submit-button" onclick="submitButton(this.form)">Submit</span>\*
+ <br>
+</br>
+**Audio Sound Added to Button Submit ref soundjay.com**
+<br>
+</br>
+`<audio id="submitSound" src="http://www.soundjay.com/button/beep-07.wav"></audio>`
+<br>
+</br>
+`<span class="sgs-submit-button" onclick="submitButton(this.form)">Submit</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2476
-
+<br>
+</br>
 **View Experiences as Button**  
-
-\*<span class="sgs-views-button" onclick="views()">Views</span>\*
+<br>
+</br>
+`<span class="sgs-views-button" onclick="views()">Views</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2484
           
-
+<br>
+</br>
 **Experience Viewer Control** 
-\*<div class="evc-cbid">\*
+<br>
+</br>
+`<div class="evc-cbid">\*
+<br>
+</br>
 http://localhost:8000/gallery:2569
-
-\*<span class="evc-cb"><input type="checkbox"></span>\*
+<br>
+</br>
+`<span class="evc-cb"><input type="checkbox"></span>`
+<br>
+</br>
 http://localhost:8000/gallery:2573
-
-\*<span class="evc-id">ID: 32097868 - Sept 18, 2019, 10:31 a.m.</span>\*
+<br>
+</br>
+`<span class="evc-id">ID: 32097868 - Sept 18, 2019, 10:31 a.m.</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2554
-
-\*<p class="evc-question">Event</p>\*
+<br>
+</br>
+`<p class="evc-question">Event</p>`
+<br>
+</br>
 http://localhost:8000/gallery:2560
-
-\*<p class="evc-text">The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate.</p>\*
+<br>
+</br>
+`<p class="evc-text">The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate.</p>`
+<br>
+</br>
 http://localhost:8000/gallery:2564
-   
+   <br>
+</br>
 
 **Community Approval Mechanism**
+<br>
 **communityapprovalmechanism.html**
-
-\*Fix\*
-\*.cam-views {
+<br>
+</br>
+Fix
+`.cam-views {
     font-size: 60px; (alter from 60px to larger 48px)
-}\*
-within styles for components (alter icon size to standard size 32px)
-
-\*.cam-ico {
+}`
+<br>
+</br>
+within styles for components (alter icon size to standard size 32px
+<br>
+</br>
+`.cam-ico {
     font-size: 32px;
     color: grey;
-}\*
-
+}`
+<br>
+</br>
 within styles for components (altered blue mouse over to mint green)
-
-\*.cam-ico:hover, .cam-ico-space:hover {
+<br>
+</br>
+`.cam-ico:hover, .cam-ico-space:hover {
         color: #008279;
-    }\*
-
-\*<div class="cam-odiv">\*
+    }`
+<br>
+</br>
+`<div class="cam-odiv">`
+<br>
+</br>
 http://localhost:8000/gallery:2653
-
-\*<i class="icon-views cam-views"></i>\*
+<br>
+</br>
+`<i class="icon-views cam-views"></i>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
-
-\*<div class="cam-cam">\*
+<br>
+</br>
+`<div class="cam-cam">`
+<br>
+</br>
 http://localhost:8000/gallery:2648
-
+<br>
+</br>
 **Component Title**
-\*<span class="cam-cam-text">Community: Approval Mechanism</span>\*
-
+<br>
+</br>
+`<span class="cam-cam-text">Community: Approval Mechanism</span>`
+<br>
+</br>
 **Descriptive Title**
-\*<span class="cam-other-text">List view of submitted events for approval</span>\*
-
-\*<div class="cam-boticons">\*
+<br>
+</br>
+`<span class="cam-other-text">List view of submitted events for approval</span>\*
+<br>
+</br>
+`<div class="cam-boticons">`
+<br>
+</br>
 http://localhost:8000/gallery:2660
-
+<br>
+</br>
 **Icon & Color Application**
-\*<i class="icon-folder-whole cam-ico"></i><span>&nbsp; Templates</span>\*
+<br>
+</br>
+`<i class="icon-folder-whole cam-ico"></i><span>&nbsp; Templates</span>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:2663
-
+<br>
+</br>
 **Icon & Color Application**
-\*<i class="icon-edit cam-ico-space"></i><span>&nbsp; Edit</span>\*
+<br>
+</br>
+`<i class="icon-edit cam-ico-space"></i><span>&nbsp; Edit</span>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:2689
-
+<br>
+</br>
 **Icon & Color Application**
-\*<i class="icon-delete cam-ico-space"></i><span>&nbsp; Delete</span>\*
+<br>
+</br>
+`<i class="icon-delete cam-ico-space"></i><span>&nbsp; Delete</span>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:2693
-
+<br>
+</br>
 **Icon & Color Application**
-\*<i class="icon-help cam-ico-space"></i><span>&nbsp; Help</span>\*
+<br>
+</br>
+`<i class="icon-help cam-ico-space"></i><span>&nbsp; Help</span>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:2667
-
+<br>
+</br>
 **Moderation Container**        
-\*<div class="cam-mod">\*
+<br>
+</br>
+`<div class="cam-mod">`
+<br>
+</br>
 http://localhost:8000/gallery:2684
-
+<br>
+</br>
 **Icon Tick / Approved**
-\*<i class="icon-check cam-tick"></i>\*
+<br>
+</br>
+`<i class="icon-check cam-tick"></i>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:2689
-
+<br>
+</br>
 **Icon Tick / Approved**
-\*<i class="icon-close cam-cross"></i>\*
+<br>
+</br>
+`<i class="icon-close cam-cross"></i>`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:2693
-
+<br>
+</br>
 **Moderation Box (Approved / Blocked Titles)**      
-\*<span class="cam-app-bl"> 1 Approved / 2 Blocked</span>\*
+<br>
+</br>
+`<span class="cam-app-bl"> 1 Approved / 2 Blocked</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2693
-
+<br>
+</br>
 **Search Input**
-\*<input placeholder="Search" class="cam-input">\*
+<br>
+</br>
+`<input placeholder="Search" class="cam-input">`
+<br>
+</br>
 http://localhost:8000/gallery:2705  
+<br>
+</br>
+
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:325/317
 
+<br>
+</br>
 
 Fix 
 (make header titles green)
 
-\*.cam-cam-text {
+`.cam-cam-text {
     color: var(--autistica-mint-green);
     font-size: 22px;
     margin-bottom: 10px;
-}\*
+}`
+<br>
+</br>
 
-**Moderation of New Experiences 
+**Moderation of New Experiences** <br> 
 moderationofnewexperiences.html**
-
-Fix: Table Header Color (From navy blue to mint green)
-
-\*thead {
+<br>
+</br>
+<br>
+**Fix: Table Header Color (From navy blue to mint green)**
+<br>
+</br>
+`thead {
 color: white;
 background-color: var(--autistica-mint-green);
-}\*
+}`
+<br>
+</br>
 http://localhost:8000/gallery:2916
-
+<br>
+</br>
 Replace orange submit button with green 
+<br>
+</br>
 http://localhost:8000/gallery:2936
-
-\*.mone-butsub {
+<br>
+</br>
+`.mone-butsub {
     background-color: orange;
     color: white;
     border-radius: 5px;
     border-color: orange;
-}\*
-
-\*.mone-butsub {
+}`
+<br>
+</br>
+`.mone-butsub {
     background-color: #008279;
     color: white;
     border-radius: 5px;
     border-color: #008279;
-}\*
-
-\*table\*
-\*thead\*
+}`
+<br>
+</br>
+`table
+`thead
+<br>
+</br>
 http://localhost:8000/gallery:2916
+<br>
+</br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266
-
+<br>
+</br>
 **Checkbox**
-\*td class="mone-cb">\*
+<br>
+</br>
+`td class="mone-cb">`
+<br>
+</br>
 http://localhost:8000/gallery:2943
-
+<br>
+</br>
 **Checkbox Input**
-\*input type="checkbox"></td>\*
+<br>
+</br>
+`input type="checkbox"></td>`
+<br>
+</br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 
-
+<br>
+</br>
 **Inputs**
+<br>
+</br>
 **Moderation** 
-\*<div class="mone-mod">\*
+<br>
+</br>
+`<div class="mone-mod">`
+<br>
+</br>
 http://localhost:8000/gallery:2931/2771
 
 **Tick & Check box**
-\*<span class="fas fa-check mone-tick">\*
+<br>
+</br>
+`<span class="fas fa-check mone-tick">`
+   <br>
+</br>
 http://localhost:8000/gallery:2923
-
-\*input type="radio" name="32097868">\*
+<br>
+</br>
+`input type="radio" name="32097868">`
+<br>
+</br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
-
+<br>
+</br>
 **Respond Link**
-\*<span class="mone-resp"><a href="#">Respond</a></span>\*
+<br>
+</br>
+`<span class="mone-resp"><a href="#">Respond</a></span>`
+<br>
+</br>
 http://localhost:8000/gallery:2947
-
+<br>
+</br>
 **Respond Link**
-\*<span class="mone-bs">\*
+<br>
+</br>
+`<span class="mone-bs">`
+<br>
+</br>
 http://localhost:8000/gallery:2953
-
-\*<button type="button" class="mone-butsub">Submit</button>\*            
+<br>
+</br>
+`<button type="button" class="mone-butsub">Submit</button>`           
+<br>
+</br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358
+<br>
+</br>
 http://localhost:8000/gallery:2937
-
+<br>
+</br>
+<br>
+</br>
 
 **Moderation No / Respond** 
-
-\*<div class="mone-mod">\*
+<br>
+</br>
+`<div class="mone-mod">\*
+<br>
+</br>
 http://localhost:8000/gallery:2931
+<br>
+</br>
+`<span class="fas fa-times mone-cross"><input type="radio" name="32097868">`
 
-\*<span class="fas fa-times mone-cross"><input type="radio" name="32097868">\*
 http://localhost:8000/static/css/fa/all.min.css:5
+<br>
+</br>
 http://localhost:8000/gallery:2927
-
-\*<span class="mone-resp mone-respbb"> <a href="#">Respond</a>\*
+<br>
+</br>
+`<span class="mone-resp mone-respbb"> <a href="#">Respond</a>`
+<br>
+</br>
 http://localhost:8000/gallery:2947
+<br>
+</br>
 http://localhost:8000/gallery:2950
-
-\*<span class="mone-nbs">&nbsp;</span>\*
+<br>
+</br>
+`<span class="mone-nbs">&nbsp;</span>`
+<br>
+</br>
 http://localhost:8000/gallery:2642
-
+<br>
+</br>
 
 **User ID 2 as above*
-\*<div class="mone-mod">\*
+<br>
+</br>
+`<div class="mone-mod">`
+<br>
+</br>
 http://localhost:8000/gallery:2931
 
-
+<br>
+</br>
 **Documentation Viewer**
+<br>
+</br>
 **Documentation viewer Styles within page**
+<br>
+</br>
 **documentationviewer.html**
+<br>
+</br>
 **Fix Alter Table Header Column from navy to mint green** 
-
-\*thead {
+<br>
+</br>
+`thead {
     color: white;
     background-color: #008279;
-}\*
+}`
+<br>
+</br>
+`<thead Column Headers\*
+`<thclass="mone-cb">\*
+`<ths>(Content)`
+<br>
+</br>
 
-\*<thead Column Headers\*
-\*<thclass="mone-cb">\*
-\*<ths>(Content)\*
-
-
-**Pictorial Experience Editor** 
+**Pictorial Experience Editor**<br> 
 **pictorialexperienceeditor.html Styles within page**
-
+<br><br>
+</br>
 Fix Header Top Replace Blue with Mint Green
-
-\*element.style {
+<br>
+</br>
+`element.style {
     background-color: #008279;
     padding-top: 30px;
     cursor: pointer;
     transform: translate3d(274px, 304px, 0px);
-}\*
+}`<br>
+</br>
 
 **Header / Home  Styles within page**
-
-\*<span class="peed-div-home icon-button">\*
-\*<i class="icon-home peed-icon-home icon-button">\*
-
-
+<br>
+</br>
+`<span class="peed-div-home icon-button">`
+<br>
+</br>
+`<i class="icon-home peed-icon-home icon-button">`
+<br>
+</br>
 **Enter your experience Input Tab**
-\*table style=“width: 100%”\*
+`table style=“width: 100%”`
+<br>
+</br>
 http://localhost:8000/gallery:2919
-
-\*<span class="peed-div-home icon-button"\*
+<br>
+</br>
+`<span class="peed-div-home icon-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3037
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
-
-\*<i class="icon-home peed-icon-home icon-button"\*
+<br>
+</br>
+`<i class="icon-home peed-icon-home icon-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3043
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
-
-\*<span class="peed-clear icon-button"\*
+<br>
+</br>
+`<span class="peed-clear icon-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3054
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
-
-\*<div class="peed-span-ta"\*
+<br>
+</br>
+`<div class="peed-span-ta"`
+<br>
+</br>
 http://localhost:8000/gallery:3064
-
-\*<span class="peed-span-clear"\*
+<br>
+</br>
+`<span class="peed-span-clear"`
+<br>
+</br>
 http://localhost:8000/gallery:3075
-
+<br>
+</br>
 **Clear Red Icon**
-\*<i class="icon-clear peed-icon-clear icon-button"\*
+<br>
+</br>
+`<i class="icon-clear peed-icon-clear icon-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3059
-
+<br>
+</br>
 **Play** 
-\*<span class="peed-play icon-button"\*
+<br>
+</br>
+`<span class="peed-play icon-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3101
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
-
-\*<span class="peed-play-ispan"\*
+<br>
+</br>
+`<span class="peed-play-ispan"`
+<br>
+</br>
 http://localhost:8000/gallery:3113
-
-\*<i class="icon-play_arrow peed-play-icon icon-button"\*
+<br>
+</br>
+`<i class="icon-play_arrow peed-play-icon icon-button"`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:3109
-
+<br>
+</br>
 **Share** 
-\*<span class="peed-play"\*
+<br>
+</br>
+`<span class="peed-play"`
+<br>
+</br>
 http://localhost:8000/gallery:3101
-
-\*<span class="peed-play-ispan"\*
+<br>
+</br>
+`<span class="peed-play-ispan"`
+<br>
+</br>
 http://localhost:8000/gallery:3113
-
-\*<i class="icon-share peed-play-icon icon-button"\*
+<br>
+</br>
+`<i class="icon-share peed-play-icon icon-button"`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:3109
 
-
+<br>
+</br>
 **Home Section Titles** 
-\*tr\*
-\*td\*
-\*<div class="peed-text-home"\*
+`tr\*
+<br>
+`td\*
+<br>
+</br>
+`<div class="peed-text-home"`
+<br>
+</br>
 http://localhost:8000/gallery:3047
-
+<br>
+</br>
 **Enter your experiences / Clear** 
-\*<div class="peed-exp-div"\*
-\*<span class="peed-exp-text"\*
+<br>
+</br>
+`<div class="peed-exp-div"`
+<br>
+</br>
+`<span class="peed-exp-text"`
+<br>
+</br>
 http://localhost:8000/gallery:3088
-
-\*<span class="peed-clear-text"\*
+<br>
+</br>
+`<span class="peed-clear-text"`
+<br>
+</br>
 http://localhost:8000/gallery:3094
-
+<br>
+</br>
 **Play** 
-\*<div class="peed-play-text"\*
+<br>
+</br>
+`<div class="peed-play-text"`
+<br>
+</br>
 http://localhost:8000/gallery:3117
-
+<br>
+</br>
 **Share** 
-\*<div class="peed-play-text"\*
+<br>
+</br>
+`<div class="peed-play-text"`
+<br>
+</br>
 http://localhost:8000/gallery:3117
-
+<br>
+</br>
 **Center Content** 
-\*class="peed1-outerdiv"\*
+<br>
+</br>
+`class="peed1-outerdiv"`
+<br>
+</br>
 http://localhost:8000/gallery:3172
+<br>
+</br>
 <table>
-
+<br>
+</br>
 **4 Columns** 
-\*tr\*
-\*<span class="peed1-span-item card-button"\*
+<br>
+</br>
+`tr\*
+<br>
+</br>
+`<span class="peed1-span-item card-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3178
-
-\*<span class="peed1-span-itext"\*
+<br>
+</br>
+`<span class="peed1-span-itext"`
+<br>
+</br>
 http://localhost:8000/gallery:3195
-
-\*<span class="peed1-span-iicon"\*
+<br>
+</br>
+`<span class="peed1-span-iicon"`
+<br>
+</br>
 http://localhost:8000/gallery:3202
-
-\*<i class="icon-Autistic-Person peed1-icon" id="iicon-Autistic-Person"\*
+<br>
+</br>
+`<i class="icon-Autistic-Person peed1-icon" id="iicon-Autistic-Person"`
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
+<br>
+</br>
 http://localhost:8000/gallery:3206
+<br>
+</br>
 http://localhost:8000/static/css/style.css:13
-
-**Same structure for the five lines of four boxes**
-**Bottom Card Settings** 
+<br>
+</br>
+**Same structure for the five lines of four boxes**<br>
+**Bottom Card Settings** <br>
 **Container** 
-\*div class="peed2-outerdiv"\*
+<br>
+`<div class="peed2-outerdiv"`
+<br>
+</br>
 http://localhost:8000/gallery:3123
-
-\*<span class="peed2-div-item\*
+<br>
+</br>
+`<span class="peed2-div-item\`
+<br>
+</br>
 http://localhost:8000/gallery:3132
-
-\*<span class="peed2-span-icon card-button"\*
+<br>
+</br>
+`<span class="peed2-span-icon card-button"`
+<br>
+</br>
 http://localhost:8000/gallery:3139
-
+<br>
+</br>
 **About Me Icon**
-\*<i class="icon-profile peed2-icon”\*
+<br>
+</br>
+`<i class="icon-profile peed2-icon”`
+<br>
+</br>
 http://localhost:8000/gallery:3153
-
+<br>
+</br>
 **About Me Title**
-\*<div class="peed2-span-text"\*
+<br>
+</br>
+`<div class="peed2-span-text"`
+<br>
+</br>
 http://localhost:8000/gallery:3157
-
+<br>
+</br>
 **Fixes** 
-
+<br>
+</br>
 1. Enter your experiences alter text colour to Mint Green 
 
-\*.peed-exp-text {
+`.peed-exp-text {
     color: #008279;
     font-size: 20px;
     margin-top: 20px;
-}\*
-
+}`
+<br>
+</br>
 **alter border on input enter experience box to mint green** 
 gallery:3064
-\*.peed-span-ta {
+<br>
+</br>
+`.peed-span-ta {
     border-style: solid;
     border-radius: 7px;
     border-color: #008279; X
@@ -1521,11 +2091,12 @@ gallery:3064
     position: relative;
     height: 44px;
     width: 100%;
-}\*
-
+}`
+<br>
+</br>
 gallery:3178
 
-\*.peed1-span-item {
+`.peed1-span-item {
     display: flex;
     flex-direction: column;
     border-style: solid;
@@ -1535,31 +2106,43 @@ gallery:3178
     border-color: #008279;
     margin: 0 10px 10px 0;
     border-width: 2px;
-}\*
+}`
+<br>
+</br>
 
 altered boarder on bottom menu to mint green 
-
 gallery:3139
-\*.peed2-span-icon {
+
+<br>
+</br>
+`.peed2-span-icon {
     border-style: solid;
     border-radius: 12px;
     border-color: #008279;
     padding: 7px 30px 7px 30px;
     display: inline-block;
-}\*
-
+}`
+<br>
+</br>
 altered colour of cards title to mint green 
 gallery:3164
-\*.peed2-span-cards {
+<br>
+</br>
+
+`.peed2-span-cards {
     font-size: 27px;
     color: #008279;
     display: inline-block;
     line-height: 55px;
     margin: 0px 15px 0px 20px;
-}\*
-
+}`
+<br>
+</br>
 altered size of icons to standard 32px
 gallery:3153
-\*.peed2-icon {
+
+`.peed2-icon {
     font-size: 32px;
-}\*
+}`
+<br>
+</br>
