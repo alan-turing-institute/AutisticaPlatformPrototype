@@ -17,6 +17,10 @@ https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documen
 
 **Linkage between Wireframes Components & Prototype Code (html/css)**
 
+The relationship between the .html componetns and .css (class) locations has been defined in the .md 
+https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/documentation/CLASSLOCATION.md
+to aid clarity.
+
 The platform prototype code (templates .html & .css) for the project can be accessed at via the Skeleton folder:
 
 **Skeleton Folder** 
