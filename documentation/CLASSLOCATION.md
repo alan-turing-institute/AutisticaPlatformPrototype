@@ -236,13 +236,14 @@ Aims
 </br>
 **Index style*
 <br>
+</br>
 `<i class="icon-how_it_works"`
 <br>
 </br>
 *http://localhost:8000/(index)269*
 #
 **Icon Expand**
-`i class="icon-expand_more hiw-right-icon"`
+`<i class="icon-expand_more hiw-right-icon"`
 <br>
 </br>
 *http://localhost:8000/(index)269*
