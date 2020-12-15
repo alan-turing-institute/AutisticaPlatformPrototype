@@ -1445,7 +1445,7 @@ http://localhost:8000/gallery:2189
 `<p class="evc-text">The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate.</p>`
 <br>
 </br>
-http://localhost:8000/gallery:2564
+*http://localhost:8000/gallery:2564*
 #
 
 **Community Approval Mechanism**
@@ -1481,19 +1481,19 @@ within styles for components - (altered blue mouse over to mint green)
 `<div class="cam-odiv">`
 <br>
 </br>
-http://localhost:8000/gallery:2653
+*http://localhost:8000/gallery:2653*
 <br>
 </br>
 `<i class="icon-views cam-views"></i>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
 `<div class="cam-cam">`
 <br>
 </br>
-http://localhost:8000/gallery:2648
+*http://localhost:8000/gallery:2648*
 <br>
 </br>
 **Component Title**
@@ -1505,13 +1505,13 @@ http://localhost:8000/gallery:2648
 **Descriptive Title**
 <br>
 </br>
-`<span class="cam-other-text">List view of submitted events for approval</span>\*
+`<span class="cam-other-text">List view of submitted events for approval</span>`
 <br>
 </br>
 `<div class="cam-boticons">`
 <br>
 </br>
-http://localhost:8000/gallery:2660
+*http://localhost:8000/gallery:2660*
 <br>
 </br>
 **Icon & Color Application**
@@ -1520,10 +1520,10 @@ http://localhost:8000/gallery:2660
 `<i class="icon-folder-whole cam-ico"></i><span>&nbsp; Templates</span>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:2663
+*http://localhost:8000/gallery:2663*
 <br>
 </br>
 **Icon & Color Application**
@@ -1532,10 +1532,10 @@ http://localhost:8000/gallery:2663
 `<i class="icon-edit cam-ico-space"></i><span>&nbsp; Edit</span>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:2689
+*http://localhost:8000/gallery:2689*
 <br>
 </br>
 **Icon & Color Application**
@@ -1544,10 +1544,10 @@ http://localhost:8000/gallery:2689
 `<i class="icon-delete cam-ico-space"></i><span>&nbsp; Delete</span>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:2693
+*http://localhost:8000/gallery:2693*
 <br>
 </br>
 **Icon & Color Application**
@@ -1556,10 +1556,10 @@ http://localhost:8000/gallery:2693
 `<i class="icon-help cam-ico-space"></i><span>&nbsp; Help</span>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:2667
+*http://localhost:8000/gallery:2667*
 <br>
 </br>
 **Moderation Container**        
@@ -1568,7 +1568,7 @@ http://localhost:8000/gallery:2667
 `<div class="cam-mod">`
 <br>
 </br>
-http://localhost:8000/gallery:2684
+*http://localhost:8000/gallery:2684*
 <br>
 </br>
 **Icon Tick / Approved**
@@ -1577,10 +1577,10 @@ http://localhost:8000/gallery:2684
 `<i class="icon-check cam-tick"></i>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:2689
+*http://localhost:8000/gallery:2689*
 <br>
 </br>
 **Icon Tick / Approved**
@@ -1589,10 +1589,10 @@ http://localhost:8000/gallery:2689
 `<i class="icon-close cam-cross"></i>`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:2693
+*http://localhost:8000/gallery:2693*
 <br>
 </br>
 **Moderation Box (Approved / Blocked Titles)**      
@@ -1601,7 +1601,7 @@ http://localhost:8000/gallery:2693
 `<span class="cam-app-bl"> 1 Approved / 2 Blocked</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2693
+*http://localhost:8000/gallery:2693*
 <br>
 </br>
 **Search Input**
@@ -1610,17 +1610,14 @@ http://localhost:8000/gallery:2693
 `<input placeholder="Search" class="cam-input">`
 <br>
 </br>
-http://localhost:8000/gallery:2705  
+*http://localhost:8000/gallery:2705*  
+<br>
+</br>
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:325/317*
 <br>
 </br>
 
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:325/317
-
-<br>
-</br>
-
-Fix 
-(make header titles green)
+**Fix (make header titles green)**
 
 `.cam-cam-text {
     color: var(--autistica-mint-green);
@@ -1631,7 +1628,8 @@ Fix
 </br>
 
 **Moderation of New Experiences** <br> 
-moderationofnewexperiences.html**
+</br> 
+**moderationofnewexperiences.html**
 <br>
 </br>
 <br>
@@ -1644,15 +1642,16 @@ background-color: var(--autistica-mint-green);
 }`
 <br>
 </br>
-http://localhost:8000/gallery:2916
+*http://localhost:8000/gallery:2916*
 <br>
 </br>
 Replace orange submit button with green 
 <br>
 </br>
-http://localhost:8000/gallery:2936
+*http://localhost:8000/gallery:2936*
 <br>
 </br>
+**Fix:**
 `.mone-butsub {
     background-color: orange;
     color: white;
@@ -1661,6 +1660,7 @@ http://localhost:8000/gallery:2936
 }`
 <br>
 </br>
+**Fix:**
 `.mone-butsub {
     background-color: #008279;
     color: white;
@@ -1669,14 +1669,14 @@ http://localhost:8000/gallery:2936
 }`
 <br>
 </br>
-`table
-`thead
+`table`
+`thead`
 <br>
 </br>
-http://localhost:8000/gallery:2916
+*http://localhost:8000/gallery:2916*
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266*
 <br>
 </br>
 **Checkbox**
@@ -1685,7 +1685,7 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:266
 `td class="mone-cb">`
 <br>
 </br>
-http://localhost:8000/gallery:2943
+*http://localhost:8000/gallery:2943*
 <br>
 </br>
 **Checkbox Input**
@@ -1694,11 +1694,7 @@ http://localhost:8000/gallery:2943
 `input type="checkbox"></td>`
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
-
-<br>
-</br>
-**Inputs**
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374*
 <br>
 </br>
 **Moderation** 
@@ -1707,21 +1703,22 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 `<div class="mone-mod">`
 <br>
 </br>
-http://localhost:8000/gallery:2931/2771
-
+*http://localhost:8000/gallery:2931/2771*
+<br>
+</br>
 **Tick & Check box**
 <br>
 </br>
 `<span class="fas fa-check mone-tick">`
-   <br>
+<br>
 </br>
-http://localhost:8000/gallery:2923
+*http://localhost:8000/gallery:2923*
 <br>
 </br>
 `input type="radio" name="32097868">`
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374*
 <br>
 </br>
 **Respond Link**
@@ -1731,9 +1728,6 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
 <br>
 </br>
 http://localhost:8000/gallery:2947
-<br>
-</br>
-**Respond Link**
 <br>
 </br>
 `<span class="mone-bs">`
