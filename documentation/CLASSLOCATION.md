@@ -7,8 +7,8 @@ Header / Static Navbar
 **Outer Light Grey Container**
 <br>
 </br>
-`nav class="navbar navbar-expand-lg navbar-light`</br>
-`nav class="bg-light"`</br>  
+`<nav class="navbar navbar-expand-lg navbar-light`</br>
+`<nav class="bg-light"`</br>  
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:19*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_background-variant.scss*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:225*<br>
@@ -18,13 +18,13 @@ Header / Static Navbar
 **Inner Light Grey Container**
 <br>
 </br>
-`div class="d-flex`
+`<div class="d-flex`
 <br>
 </br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_display.scss:12*
 <br>
 </br>
-`div class=“flex-grow-1`
+`<div class=“flex-grow-1`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:21*
@@ -32,7 +32,7 @@ Header / Static Navbar
 **Logo Container & Logo**
 <br>
 </br>
-`a class="navbar-brand d-none d-lg-inline-block`
+`<a class="navbar-brand d-none d-lg-inline-block`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:225*<br>
@@ -42,7 +42,7 @@ Header / Static Navbar
 **Logo Container & Logo Resize**
 <br>
 </br>
-`a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
+`<a class="navbar-brand-two mx-auto d-lg-none d-inline-block`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*<br>
@@ -52,7 +52,7 @@ Header / Static Navbar
 **Spacer to Align Nav Bar Links to The Right On Full Page View**
 <br>
 </br>
-`div class="w-100 text-right`
+`<div class="w-100 text-right`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_sizing.scss:7*<br>
@@ -61,7 +61,7 @@ Header / Static Navbar
 **Toggle Hidden Nav Hamburger**
 <br>
 </br>
-`button class="navbar-toggler`
+`<button class="navbar-toggler`
 <br>
 </br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:254*
@@ -69,7 +69,7 @@ Header / Static Navbar
 **Align to Right Navigation Titles**
 <br>
 </br>
-`div classs=“collapse navbar-collapse flex-grow-1 text-right`
+`<div classs=“collapse navbar-collapse flex-grow-1 text-right`
 <br>
 </br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:110*<br>
@@ -79,7 +79,7 @@ Header / Static Navbar
 **Unordered List Container for li list / Nav Titles**
 <br>
 </br>
-`ul class="navbar-nav ml-auto flex-nowrap`
+`<ul class="navbar-nav ml-auto flex-nowrap`
 <br>
 </br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:72*<br>
@@ -89,13 +89,13 @@ Header / Static Navbar
 **Nav Items Defined As List Items**
 <br>
 </br>
-`li class="nav-item`
+`<li class="nav-item`
 <br>
 </br>
-`class nav-link m-2 menu-item`
+`<class nav-link m-2 menu-item`
 <br>
 </br>
-*/../../static/css/main.css#L42-L44*<br>
+*https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/static/css/main.css#L42-44*
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:79*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
@@ -104,17 +104,18 @@ Strap Line / Secondary Banner Sub Header 2
 **Container For Secondary Banner, Light Mint Green**
 <br>
 </br>
-`nav class="navbar navbar-expand navbar-expand-md banner-autistica-light-blue`
+`<nav class="navbar navbar-expand navbar-expand-md banner-autistica-light-blue`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:19*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:170*<br>
-*http://localhost:8000/static/css/main.css:37*
+*http://localhost:8000/static/css/main.css:37*<br>
+*https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/static/css/main.css#L37*
 #
 **Div Nav Container**
 <br>
 </br>
-`div class="mx-auto order-0`
+`<div class="mx-auto order-0`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*<br>
@@ -123,7 +124,7 @@ Strap Line / Secondary Banner Sub Header 2
 **Strap Line Message**
 <br>
 </br>
-`a class="navbar-brand mx-auto`
+`<a class="navbar-brand mx-auto`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:53*<br>
@@ -132,7 +133,7 @@ Strap Line / Secondary Banner Sub Header 2
 **Nav Toggle Hamburger Responsive**
 <br>
 </br>
-`button class="navbar-toggler`
+`<button class="navbar-toggler`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:210*  
@@ -146,7 +147,7 @@ Secondary Banner
 **Home Icon**
 <br>
 </br>
-`i class="icon-home`
+`<i class="icon-home`
 <br>
 </br>
 *element.style*
@@ -154,7 +155,7 @@ Secondary Banner
 **Current Spans As Home & Page Tag Line**
 <br>
 </br>
-`i class="icon-label-24px`
+`<i class="icon-label-24px`
 <br>
 </br>
 *element.style*
@@ -165,7 +166,7 @@ Aims
 **Added to aim container - Outer Margin**
 <br>
 </br>
-`div style="margin:15px` 
+`<div style="margin:15px` 
 <br>
 </br>
 *element.style*
@@ -175,21 +176,22 @@ Aims
 **Aims Container with mint green boarder**
 <br>
 </br>
-`div class="jumbotron autistica-jumbotron`
+`<div class="jumbotron autistica-jumbotron`
 <br>
 </br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss*<br>
-*/../../static/css/main.css#L55-L62*
+*https://github.com/alan-turing-institute/AutisticaPlatformPrototype/blob/documentation/static/css/main.css#L55-62*
 #
 **h3 / Mark - Large Aims title / Container Title**
 <br> 
 </br> 
 **ul and li for stated aims with addition of marker for mark for green highlighted text styling the list li elements have the addition of a styled bullet point**
 <br>
+</br>
 **3 Columns How it works / Configure / Get Involved**
 <br>
 </br>
-`div class=“card-deck”` 
+`<div class=“card-deck”` 
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss*
@@ -201,7 +203,7 @@ Aims
 **Styling of individual containers, boarder, size and margins**
 <br>
 </br>
-`div class="card autistica-card my-3”`
+`<div class="card autistica-card my-3”`
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:161*<br>
@@ -220,7 +222,7 @@ Aims
 **Container Header**
 <br>
 </br>
-`h4 class="card-title hiw-heading"`
+`<h4 class="card-title hiw-heading"`
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:47*<br>
@@ -232,9 +234,9 @@ Aims
 `<mark>How it works</mark>`
 <br>
 </br>
-**ndex style*
+**Index style*
 <br>
-`i class="icon-how_it_works"`
+`<i class="icon-how_it_works"`
 <br>
 </br>
 *http://localhost:8000/(index)269*
@@ -248,7 +250,7 @@ Aims
 **Column Section Body Content)**
 <br>
 </br>
-`div class="hiw-body"`
+`<div class="hiw-body"`
 <br>
 </br>
 *http://localhost:8000/(index)264*
@@ -273,7 +275,7 @@ Aims
 **Inner & Outer Container Styling**
 <br>
 </br>
-`div class="card autistica-card my-3"` 
+`<div class="card autistica-card my-3"` 
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:161*<br>
@@ -314,13 +316,13 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
 **CTA Login & Centred Button CTA** 
 <br>
 </br>
-`div style="margin: 50px 0 0 50%;"`  
+`<div style="margin: 50px 0 0 50%;"`  
 <br>
 </br
 *element.style*
 <br>
 </br
-*<a hef href="https://www.openhumans.org/account/login/"* 
+*https://www.openhumans.org/account/login/* 
 #
 
 **CTA Login** 
@@ -332,11 +334,11 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
 http://localhost:8000/(index)57
 #
 
-**Fix**
+**Fix For Login**
 
 `.hm-ohlogin {
     border-radius: 5px;
-    background-color: #ff815c; X (alter color to mint green)
+    background-color: #ff815c; **(alter color to mint green)**
     padding: 10px 20px 10px 20px;
     color: var(--autistica-white);
 }`
@@ -349,7 +351,9 @@ http://localhost:8000/(index)57
 }`
 #
 
-**Footer**<br> 
+**Footer**
+<br> 
+</br>
 **Top & Bottom Footer Styling**
 <br>
 </br
@@ -358,9 +362,8 @@ http://localhost:8000/(index)57
 </br>
 *External cdn: https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:36*
 #
-**Space For Top Footer**
-<br>
-</br
+**Space For Top Footer**<br>
+</br>
 `p class="footer-top pnospace"`
 <br>
 </br>
@@ -376,13 +379,14 @@ http://localhost:8000/(index)57
 *http://localhost:8000/(index):367*<br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss:24*
 #
+
 **Styling For Copyright Text**
 <br>
-</br
+</br>
 `p class="copyrt"`
 <br>
 </br
-*http://localhost:8000/(index):379*<br>
+*http://localhost:8000/(index):379*
 #
 
 
@@ -390,10 +394,11 @@ http://0.0.0.0:8000/gallery
 ------
 Component Showcase
 ------
-**Panel Components > Secondary Banner & Secondary Banner Alt as Home Page**
+**Panel Components - Secondary Banner & Secondary Banner Alt as Home Page**
 <br>
-**Jumbotron - Aims As Home Page**
+**Jumbotron - Aims Also As Home Page**
 <br>
+</br>
 **Card**
 <br>
 </br>
@@ -409,7 +414,7 @@ Component Showcase
 `<h4 class="card-title hiw-heading"`
 <br>
 </br>
-*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:47*
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:47*<br>
 *http://localhost:8000/gallery:1773*
 #
 
@@ -429,13 +434,16 @@ Component Showcase
 </br>
 *http://localhost:8000/gallery:837*
 <br>
+</br>
 `<div class="ap-navadjust-expand"`
 <br>
 </br>
 *http://localhost:8000/gallery:850*
 #
 
-**Animated Panel Components**<br> 
+**Animated Panel Components**
+<br> 
+</br>
 **Modular Alert**<br> 
 **modularalerts.html**<br> 
 <br>
@@ -464,19 +472,19 @@ Component Showcase
 </br>
 *http://localhost:8000/gallery:335*
 <br>
-</br
+</br>
 `<i class="fas fa-times"`
 <br>
 </br>
 *http://localhost:8000/static/css/fa/all.min.css*
 <br>
-</br
+</br>
 `<class fas fa-exclamation-triangle ma_alert"`
 <br>
 </br>
 *http://localhost:8000/static/css/fa/all.min.css*
 <br>
-</br
+</br>
 `<div class="ma_timeout"`
 <br>
 </br>
@@ -555,9 +563,13 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 
 **Accessibility Menu**
 <br>
+</br>
 `<i class="icon-screen-reader ap-icon-na"`
+<br>
+</br>
 *http://localhost:8000/static/css/style.css:13*
 <br>
+</br>
 `<div class="sliding-panel left sliding-panel-open-left" id=“accessibilitypannel etc`
 *http://localhost:8000/gallery:785* 
 #
@@ -566,6 +578,8 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 <br>
 </br>
 **Three Section Accordions**
+<br>
+</br>
 `div class="ap-navadjust-outerdiv"`
 <br>
 </br>
@@ -580,6 +594,7 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 
 **Colour Adjustment** 
 <br>
+</br>
 **Three Section Accordions**
 <br>
 </br>
@@ -609,12 +624,12 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 `<div class="ap-icon-col"`
 <br>
 </br>
+</br>
 *http://localhost:8000/gallery:936*
 <br>
 </br>
 `<div class="ap-icon-col"`
 <br>
-</br>
 `<i class="icon-opacity-24px"`
 <br>
 </br>
@@ -650,6 +665,7 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 </br>
 *http://localhost:8000/static/css/style.css:13*
 <br>
+</br>
 `<div class="ap-box-cc-text"`
 <br>
 </br>
@@ -667,16 +683,19 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 </br>
 *http://localhost:8000/gallery:963*
 <br>
+</br>
 `<div class="ap-sc-text"`
 <br>
 </br>
 *http://localhost:8000/gallery:975*
 <br>
+</br>
 `<div class="ap-div-tabs"`
 <br>
 </br>
 *http://localhost:8000/gallery:978*
 <br>
+</br>
 `<div class="ap-tab-bground"`
 <br>
 </br>
@@ -690,6 +709,8 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 #
 
 **(Saturation & Brightness)**
+<br>
+</br>
 `<div class="ap-hslcolorpicker"`
 <br>
 </br>
@@ -762,12 +783,14 @@ http://localhost:8000/gallery:1115
 *http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-**(- & + Contrast Slider)**
+**- & + Contrast Slider**
 `script var Slider`
 <br>
 </br>
 #
-**(Content Adjustment)** 
+**Content Adjustment**
+<br> 
+</br>
 **accessibilitypanel.html** 
 `PanelID="accessibilitypannel" Direction="left"`
 <br>
@@ -818,8 +841,7 @@ http://localhost:8000/gallery:1115
 <br>
 </br>
 *http://localhost:8000/static/css/style.css:13*
-<br>
-</br>
+#
 **3 High Contrasts 1&2 / Low Luminance Text**
 <br>
 </br>
@@ -869,8 +891,7 @@ http://localhost:8000/gallery:1115
 <br>
 </br>
 *http://localhost:8000/gallery:1350*
-<br>
-</br>
+#
 **Low Luminance 2**
 <br>
 </br>
@@ -878,8 +899,7 @@ http://localhost:8000/gallery:1115
 <br>
 </br>
 *http://localhost:8000/gallery:1354*
-<br>
-</br>
+#
 **Magnifier**
 <br>
 </br>
@@ -887,8 +907,7 @@ http://localhost:8000/gallery:1115
 <br>
 </br>
 *http://localhost:8000/gallery:1363*
-<br>
-</br>
+#
 **Close Function**
 <br>
 </br>
@@ -902,19 +921,26 @@ http://localhost:8000/gallery:1115
 <br>
 </br>
 *http://localhost:8000/gallery:808*
+#
+
+**Navigation Components**
 <br>
 </br>
-
-**Navigation Components**<br>
 Header as inserted home page -  Navigation as inserted home page 
 <br>
+</br>
 Footer Top & Bottom as inserted home page 
 <br>
+</br>
 Newsletter Cards as inserted home page and newsletterCards.html
 <br>
 </br>
 **User Journey Stepped Control**
-load userJourney
+<br>
+</br>
+**Load UserJourney**
+<br>
+</br>
 `<form id="stepper” method="POST"`
 <br>
 </br>
@@ -927,17 +953,21 @@ load userJourney
 *http://localhost:8000/gallery:1824*
 <br>
 </br>
-**(Next Button)**
+**Next Button**
+<br>
+</br>
 `<button type="submit" form="stepper" value="Submit"Next</button`
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
-
+#
 
 **Newsletter Signup** 
 <br>
+</br>
 **(Newsletter Subscribe)**
 <br>
+</br>
 **NewsletterSignup.html**
 <br>
 </br>
@@ -947,7 +977,7 @@ load userJourney
 *https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css* 
 <br>
 </br>
-`<h4 class="card-title\`
+`<h4 class="card-title`
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
@@ -956,10 +986,6 @@ load userJourney
 `<h6 class="card-subtitle mb-2 text-muted"`
 <br>
 </br>
-*https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
-<br>
-</br>
-`form`
 *https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
 <br>
 </br>
@@ -973,7 +999,7 @@ load userJourney
 **Name Input** 
 <br>
 </br>
-label class="sr-only" for="inlineFormInput"`
+`label class="sr-only" for="inlineFormInput"`
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
@@ -1001,9 +1027,7 @@ label class="sr-only" for="inlineFormInput"`
 <br>
 </br>
 *http://localhost:8000/gallery:1946*
-<br>
-</br>
-
+#
 **Language Selector**
 <br>
 </br>
@@ -1035,10 +1059,11 @@ label class="sr-only" for="inlineFormInput"`
 <br>
 </br>
 *https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css*
+#
+**Defined Profile**
 <br>
 </br>
-**Defined Profile**<br>
-**(outer container)**
+**Outer Container**
 <br>
 </br>
 `<div class="dp-outerdiv"`
@@ -1047,7 +1072,7 @@ label class="sr-only" for="inlineFormInput"`
 *http://localhost:8000/gallery:2058*
 <br>
 </br>
-**(inner container)**
+**Inner Container**
 <br>
 </br>
 `<div class="dp-questions"`
@@ -1065,7 +1090,7 @@ label class="sr-only" for="inlineFormInput"`
 **Label title, duplicated three times for profile questions**
 <br>
 </br>
-`class="dp-yesnotext"`
+`<div class="dp-yesnotext"`
 <br>
 </br>
 *http://localhost:8000/gallery:2082*
@@ -1085,9 +1110,7 @@ label class="sr-only" for="inlineFormInput"`
 <br>
 </br>
 *http://localhost:8000/gallery:2073*
-<br>
-</br>
-
+#
 **User Experience Form** 
 <br>
 **Where (location)**
@@ -1100,6 +1123,8 @@ http://localhost:8000/gallery:2247
 <br>
 </br>
 **Fixes**
+<br>
+</br>
 `td.uef-top-text {
     border: none;
 }`
@@ -1216,7 +1241,7 @@ http://localhost:8000/gallery:2189
 <br>
 </br>
 
-**(what)**
+**What**
 <br>
 </br>
 `td class="uef-td-wh uef-td-what"`
@@ -1238,7 +1263,7 @@ http://localhost:8000/gallery:2189
 `<textarea class="uef-td-txarea" placeholder="Your experience can be entered here..."></textarea>`
 <br>
 </br>
-*http://localhost:8000/gallery:2239
+*http://localhost:8000/gallery:2239*
 
 
 **Different**
@@ -1247,87 +1272,85 @@ http://localhost:8000/gallery:2189
 `<div class="uef-top-box"`
 <br>
 </br>
-http://localhost:8000/gallery:2247
+*http://localhost:8000/gallery:2247*
 <br>
 </br>
 `td class="uef-top-text"`
 <br>
 </br>
-http://localhost:8000/gallery:2252
+*http://localhost:8000/gallery:2252*
 <br>
 </br>
 `<div class="uef-outer-div"`
 <br>
 </br>
-http://localhost:8000/gallery:2257
+*http://localhost:8000/gallery:2257*
 <br>
 </br>
 `table class="uef-table"`
 <br>
 </br>
-http://localhost:8000/gallery:2265
+*http://localhost:8000/gallery:2265*
 <br>
 </br>
 `*tr class="uef-tr1-nb">`
 <br>
 </br>
-http://localhost:8000/gallery:2276
+*http://localhost:8000/gallery:2276*
 <br>
 </br>
 `td class="uef-td-wh uef-td-what">`
 <br>
 </br>
-http://localhost:8000/gallery:2284
+*http://localhost:8000/gallery:2284*
 <br>
 </br>
-`td class="uef-td-input">`
+`<td class="uef-td-input">`
 <br>
 </br>
-http://localhost:8000/gallery:2236                
-           
-
+*http://localhost:8000/gallery:2236*                
+<br>
+</br>           
 **Sharing Setting Part of Experience Page**
 <br>
 </br>
 `<form class="sgs-form"`
 <br>
 </br>
-http://localhost:8000/gallery:2458
+*http://localhost:8000/gallery:2458*
 <br>
 </br>
 `<h3 class="sgs-h3"`
 <br>
 </br>
-http://localhost:8000/gallery:2493
+*http://localhost:8000/gallery:2493*
 <br>
 </br>
 `<div class=sgs-div-inner`
 <br>
 </br>
-http://localhost:8000/gallery:2497
+*http://localhost:8000/gallery:2497*
 <br>
 </br>
-
 **Checkbox - Can be used for research**
 <br>
 </br>
 `<input type="checkbox" class="sgs-checkb">`
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374*
 <br>
 </br>
-http://localhost:8000/gallery:2497:2508
+*http://localhost:8000/gallery:2508*
 <br>
 </br>
-
 **Experience ID** 
 <br>
 </br>
-`<span class="sgs-sp-userdata">Experience ID: 0118092019</span>\*
+`<span class="sgs-sp-userdata">Experience ID: 0118092019</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2466
+*http://localhost:8000/gallery:2466*
 <br>
 </br>
 **Is Viewable by Others**
@@ -1336,22 +1359,22 @@ http://localhost:8000/gallery:2466
 `<div class="sgs-div-inner"`
 <br>
 </br>
-http://localhost:8000/gallery:2497
+*http://localhost:8000/gallery:2497*
 <br>
 </br>
 `<span class="sgs-sp-text">Is viewable by others</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2461
+*http://localhost:8000/gallery:2461*
 <br>
 </br>
-`input type="checkbox" class="sgs-checkb">`
+`<input type="checkbox" class="sgs-checkb">`
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:374*
 <br>
 </br>
-http://localhost:8000/gallery:2497:2508
+*http://localhost:8000/gallery:2497:2508*
 <br>
 </br>
 **Date**
@@ -1360,7 +1383,7 @@ http://localhost:8000/gallery:2497:2508
 `<span class="sgs-sp-userdata">Date: 10-12-2020 16:12</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2497:2466
+*http://localhost:8000/gallery:2466*
 <br>
 </br>
 **Submit Button** 
@@ -1369,7 +1392,7 @@ http://localhost:8000/gallery:2497:2466
 `<div class="sgs-div-inner">`
 <br>
 </br>
-http://localhost:8000/gallery:2497:2504
+*http://localhost:8000/gallery:2504*
  <br>
 </br>
 **Audio Sound Added to Button Submit ref soundjay.com**
@@ -1381,7 +1404,7 @@ http://localhost:8000/gallery:2497:2504
 `<span class="sgs-submit-button" onclick="submitButton(this.form)">Submit</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2476
+*http://localhost:8000/gallery:2476*
 <br>
 </br>
 **View Experiences as Button**  
@@ -1390,8 +1413,7 @@ http://localhost:8000/gallery:2476
 `<span class="sgs-views-button" onclick="views()">Views</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2484
-          
+*http://localhost:8000/gallery:2484*
 <br>
 </br>
 **Experience Viewer Control** 
@@ -1400,25 +1422,25 @@ http://localhost:8000/gallery:2484
 `<div class="evc-cbid">\*
 <br>
 </br>
-http://localhost:8000/gallery:2569
+*http://localhost:8000/gallery:2569*
 <br>
 </br>
 `<span class="evc-cb"><input type="checkbox"></span>`
 <br>
 </br>
-http://localhost:8000/gallery:2573
+*http://localhost:8000/gallery:2573*
 <br>
 </br>
 `<span class="evc-id">ID: 32097868 - Sept 18, 2019, 10:31 a.m.</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2554
+*http://localhost:8000/gallery:2554*
 <br>
 </br>
 `<p class="evc-question">Event</p>`
 <br>
 </br>
-http://localhost:8000/gallery:2560
+*http://localhost:8000/gallery:2560*
 <br>
 </br>
 `<p class="evc-text">The air conditioning in the room where I was having a meeting was really loud and I found it really hard to concentrate.</p>`
