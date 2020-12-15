@@ -1265,7 +1265,6 @@ http://localhost:8000/gallery:2189
 </br>
 *http://localhost:8000/gallery:2239*
 
-
 **Different**
 <br>
 </br>
@@ -1447,21 +1446,22 @@ http://localhost:8000/gallery:2189
 <br>
 </br>
 http://localhost:8000/gallery:2564
-   <br>
-</br>
+#
 
 **Community Approval Mechanism**
 <br>
 **communityapprovalmechanism.html**
 <br>
 </br>
-Fix
+**Fix**
+<br>
+</br>
 `.cam-views {
     font-size: 60px; (alter from 60px to larger 48px)
 }`
 <br>
 </br>
-within styles for components (alter icon size to standard size 32px
+within styles for components - (alter icon size to standard size 32px
 <br>
 </br>
 `.cam-ico {
@@ -1470,7 +1470,7 @@ within styles for components (alter icon size to standard size 32px
 }`
 <br>
 </br>
-within styles for components (altered blue mouse over to mint green)
+within styles for components - (altered blue mouse over to mint green)
 <br>
 </br>
 `.cam-ico:hover, .cam-ico-space:hover {
