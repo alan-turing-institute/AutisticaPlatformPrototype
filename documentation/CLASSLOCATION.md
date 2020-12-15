@@ -743,7 +743,7 @@ script function `show_hideExpandingPanel(panelID, panel_arrow)`
 </br>
 *http://localhost:8000/gallery:1097*
 <br>
-`</br>
+</br>
 <div class="ap-bottom-slider"`
 <br>
 </br>
