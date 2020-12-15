@@ -1419,7 +1419,7 @@ http://localhost:8000/gallery:2189
 **Experience Viewer Control** 
 <br>
 </br>
-`<div class="evc-cbid">\*
+`<div class="evc-cbid">`
 <br>
 </br>
 *http://localhost:8000/gallery:2569*
