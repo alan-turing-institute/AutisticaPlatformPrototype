@@ -71,7 +71,7 @@ Header / Static Navbar
 </br>
 `div classs=“collapse navbar-collapse flex-grow-1 text-right`
 <br>
-</br>` 
+</br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:110*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:21*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss:23*
@@ -81,7 +81,7 @@ Header / Static Navbar
 </br>
 `ul class="navbar-nav ml-auto flex-nowrap`
 <br>
-</br>` 
+</br> 
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:72<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_flex.scss:17
@@ -89,24 +89,27 @@ Header / Static Navbar
 **Nav Items Defined As List Items**
 <br>
 </br>
-`li class="nav-item`<br>
+`li class="nav-item`
+<br>
+</br>
 `class nav-link m-2 menu-item`
 <br>
-</br>`
+</br>
 */../../static/css/main.css#L42-L44*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:79*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss*
 #
+
 Strap Line / Secondary Banner Sub Header 2
 ------
 <br>
 </br>
 **Container For Secondary Banner, Light Mint Green**
 <br>
-</br>`
+</br>
 `nav class="navbar navbar-expand navbar-expand-md banner-autistica-light-blue`
 <br>
-</br>`
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:19*<br>
 *External cdn url:https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:170*<br>
 *http://localhost:8000/static/css/main.css:37*
@@ -116,16 +119,17 @@ Strap Line / Secondary Banner Sub Header 2
 </br>
 `div class="mx-auto order-0`
 <br>
-</br>`
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_grid-framework.scss:58*
 #
+
 **Strap Line Message**
 <br>
 </br>
 `a class="navbar-brand mx-auto`
 <br>
-</br>`
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:53*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*
 #
@@ -134,9 +138,10 @@ Strap Line / Secondary Banner Sub Header 2
 </br>
 `button class="navbar-toggler`
 <br>
-</br>`
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_navbar.scss:210*  
 #
+
 Secondary Banner
 ------
 **Sub Header 1** 
@@ -144,22 +149,30 @@ Secondary Banner
 </br>
 **Home Icon**
 <br>
-</br>`
-`i class="icon-home`element.style
+</br>
+`i class="icon-home`
 <br>
-</br>`
+</br>
+*element.style*
+#
 **Current Spans As Home & Page Tag Line**
 <br>
-</br>`
+</br>
 `i class="icon-label-24px`
-element.style
+<br>
+</br>
+*element.style*
 #
+
 Aims
 ------
 **Added to aim container - Outer Margin**
 <br>
 </br>
-`div style="margin:15px` element.style
+`div style="margin:15px` 
+<br>
+</br>
+*element.style*
 <br>
 </br>
 #
@@ -168,11 +181,11 @@ Aims
 </br>
 `div class="jumbotron autistica-jumbotron`
 <br>
-</br>`
+</br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/_jumbotron.scss*<br>
 */../../static/css/main.css#L55-L62*
 #
-**h3 / mark Large Aims title (Container Title)**
+**h3 / Mark - Large Aims title / Container Title**
 <br> 
 </br> 
 **ul and li for stated aims with addition of marker for mark for green highlighted text styling the list li elements have the addition of a styled bullet point**
@@ -191,42 +204,48 @@ Aims
 #
 **Styling of individual containers, boarder, size and margins**
 <br>
+</br>
 `div class="card autistica-card my-3”`
 <br>
-</br>`
+</br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:161*<br>
 *http://localhost:8000/static/css/main.css:64*<br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:22*
 #
 
 **Body Container**<br>
-</br>`
+</br>
 `class="card-body”`
 <br>
-</br>`
+</br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:38*
 #
 
 **Container Header**
 <br>
-</br>`
+</br>
 `h4 class="card-title hiw-heading"`
 <br>
-</br>`
+</br>
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:47*<br>
 *http://localhost:8000/(index)250*
 #
 **Green Highlight to column title**
 <br>
-</br>`
+</br>
 `<mark>How it works</mark>`
+<br>
+</br>
 **index style**
 `i class="icon-how_it_works"`
 <br>
 </br>
+*http://localhost:8000/(index)269*
+#
+**Icon Expand**
 `i class="icon-expand_more hiw-right-icon"`
 <br>
-</br>`
+</br>
 *http://localhost:8000/(index)269*
 #
 **(column section body content)**
@@ -253,7 +272,11 @@ Aims
 **ul and li styled bullet pointed listed green highlighted)**
 
 **Columns 2 & 3** 
+<br>
+</br>
 Inner & Outer Container Styling
+<br>
+</br>
 `div class="card autistica-card my-3"` 
 <br>
 </br>
@@ -266,8 +289,9 @@ Inner & Outer Container Styling
 `div style="padding: 20px;"`
 <br>
 </br>
-element.style
+*element.style*
 #
+
 **Header Title Margin**
 <br>
 </br>
@@ -276,36 +300,49 @@ element.style
 </br>
 *element.style* 
 #
+
 **Linked Content Container**
+<br>
+</br>
 `div class="cfg-outerdiv"` 
 <br>
 </br>
 *http://localhost:8000/(index):302*
 #
+
 **div with links to content**
+<br>
+</br>
 `<a hrefs style>`
 <br>
 </br>
 https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
 #
 
-**CTA Login** 
-<br>
-</br>
-**Centred Button CTA**
+**CTA Login & Centred Button CTA** 
 <br>
 </br
 `div style="margin: 50px 0 0 50%;"`  
-element.style
+<br>
+</br
+*element.style*
+*<a hef href="https://www.openhumans.org/account/login/"* 
+#
 
-< a hef href="https://www.openhumans.org/account/login/" class="hm-ohlogin"
+**CTA Login** 
+<br>
+</br
+`class="hm-ohlogin"`
+<br>
+</br
 http://localhost:8000/(index)57
+#
 
 **Fix**
 
 `.hm-ohlogin {
     border-radius: 5px;
-    background-color: #ff815c; X alter color to mint green
+    background-color: #ff815c; X (alter color to mint green)
     padding: 10px 20px 10px 20px;
     color: var(--autistica-white);
 }`
@@ -320,7 +357,8 @@ http://localhost:8000/(index)57
 
 **Footer** 
 **Top & Bottom Footer Styling**
-
+<br>
+</br
 `Footer class="footer"`
 <br>
 </br>
@@ -348,7 +386,6 @@ http://localhost:8000/(index)57
 #
 
 
-
 http://0.0.0.0:8000/gallery
 ------
 Component Showcas
@@ -363,7 +400,7 @@ Component Showcas
 `<div class="card-body"`
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:38
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:38*
 #
 
 **Card Title**
@@ -377,7 +414,11 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:38
 #
 
 **Page Internal, Style** 
+<br>
+</br>
 `<div class="hiw-body"`
+<br>
+</br>
 *http://localhost:8000/gallery:1777*
 #
 
@@ -385,13 +426,14 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_card.scss:38
 **Expanding Panel - Accordion drop down**
 <br>
 </br>
-Page Internal, Style
+*Page Internal, Style*
 <br>
 </br>
 `<div class="ap-navadjust-outerdiv"`
+<br>
+</br>
 *http://localhost:8000/gallery:837*
-#
-
+<br>
 `<div class="ap-navadjust-expand"`
 <br>
 </br>
@@ -413,6 +455,7 @@ Page Internal, Style
 <br>
 </br>
 `class="ma-div-screen"`
+<br>
 `id="modularAlert"`
 <br>
 </br>
@@ -426,20 +469,17 @@ Page Internal, Style
 <br>
 </br>
 *http://localhost:8000/gallery:335*
-#
-
+<br>
 `<i class="fas fa-times"`
 <br>
 </br>
 http://localhost:8000/static/css/fa/all.min.css
-#
+<br>
 `<class fas fa-exclamation-triangle ma_alert"`
 <br>
 </br>
 http://localhost:8000/static/css/fa/all.min.css
-#
 <br>
-</br>
 `<div class="ma_timeout"`
 <br>
 </br>
