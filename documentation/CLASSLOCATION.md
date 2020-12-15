@@ -1727,70 +1727,68 @@ Replace orange submit button with green
 `<span class="mone-resp"><a href="#">Respond</a></span>`
 <br>
 </br>
-http://localhost:8000/gallery:2947
+*http://localhost:8000/gallery:2947*
 <br>
 </br>
 `<span class="mone-bs">`
 <br>
 </br>
-http://localhost:8000/gallery:2953
+*http://localhost:8000/gallery:2953*
 <br>
 </br>
 `<button type="button" class="mone-butsub">Submit</button>`           
 <br>
 </br>
-https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
 <br>
 </br>
-http://localhost:8000/gallery:2937
+*http://localhost:8000/gallery:2937*
 <br>
 </br>
-<br>
-</br>
+#
 
 **Moderation No / Respond** 
 <br>
 </br>
-`<div class="mone-mod">\*
+`<div class="mone-mod">` 
 <br>
 </br>
-http://localhost:8000/gallery:2931
+*http://localhost:8000/gallery:2931*
 <br>
 </br>
 `<span class="fas fa-times mone-cross"><input type="radio" name="32097868">`
-
-http://localhost:8000/static/css/fa/all.min.css:5
 <br>
 </br>
-http://localhost:8000/gallery:2927
+*http://localhost:8000/static/css/fa/all.min.css:5*
+<br>
+</br>
+*http://localhost:8000/gallery:2927*
 <br>
 </br>
 `<span class="mone-resp mone-respbb"> <a href="#">Respond</a>`
 <br>
 </br>
-http://localhost:8000/gallery:2947
+*http://localhost:8000/gallery:2947*
 <br>
 </br>
-http://localhost:8000/gallery:2950
+*http://localhost:8000/gallery:2950*
 <br>
 </br>
 `<span class="mone-nbs">&nbsp;</span>`
 <br>
 </br>
-http://localhost:8000/gallery:2642
+*http://localhost:8000/gallery:2642*
 <br>
 </br>
-
 **User ID 2 as above*
 <br>
 </br>
 `<div class="mone-mod">`
 <br>
 </br>
-http://localhost:8000/gallery:2931
+*http://localhost:8000/gallery:2931*
+#
 
-<br>
-</br>
 **Documentation Viewer**
 <br>
 </br>
@@ -1809,17 +1807,18 @@ http://localhost:8000/gallery:2931
 }`
 <br>
 </br>
-`<thead Column Headers\*
-`<thclass="mone-cb">\*
+`<thead Column Headers`
+`<thclass="mone-cb">`
 `<ths>(Content)`
+#
+
+**Pictorial Experience Editor**
 <br>
 </br>
-
-**Pictorial Experience Editor**<br> 
 **pictorialexperienceeditor.html Styles within page**
-<br><br>
+<br>
 </br>
-Fix Header Top Replace Blue with Mint Green
+**Fix: Header Top Replace Blue with Mint Green**
 <br>
 </br>
 `element.style {
@@ -1827,9 +1826,9 @@ Fix Header Top Replace Blue with Mint Green
     padding-top: 30px;
     cursor: pointer;
     transform: translate3d(274px, 304px, 0px);
-}`<br>
+}`
+<br>
 </br>
-
 **Header / Home  Styles within page**
 <br>
 </br>
@@ -1843,46 +1842,46 @@ Fix Header Top Replace Blue with Mint Green
 `table style=“width: 100%”`
 <br>
 </br>
-http://localhost:8000/gallery:2919
+*http://localhost:8000/gallery:2919*
 <br>
 </br>
 `<span class="peed-div-home icon-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3037
+*http://localhost:8000/gallery:3037*
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
 `<i class="icon-home peed-icon-home icon-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3043
+*http://localhost:8000/gallery:3043*
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
 `<span class="peed-clear icon-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3054
+*http://localhost:8000/gallery:3054*
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
 `<div class="peed-span-ta"`
 <br>
 </br>
-http://localhost:8000/gallery:3064
+*http://localhost:8000/gallery:3064*
 <br>
 </br>
 `<span class="peed-span-clear"`
 <br>
 </br>
-http://localhost:8000/gallery:3075
+*http://localhost:8000/gallery:3075*
 <br>
 </br>
 **Clear Red Icon**
@@ -1891,7 +1890,7 @@ http://localhost:8000/gallery:3075
 `<i class="icon-clear peed-icon-clear icon-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3059
+*http://localhost:8000/gallery:3059*
 <br>
 </br>
 **Play** 
@@ -1900,25 +1899,25 @@ http://localhost:8000/gallery:3059
 `<span class="peed-play icon-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3101
+*http://localhost:8000/gallery:3101*
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
 `<span class="peed-play-ispan"`
 <br>
 </br>
-http://localhost:8000/gallery:3113
+*http://localhost:8000/gallery:3113*
 <br>
 </br>
 `<i class="icon-play_arrow peed-play-icon icon-button"`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:3109
+*http://localhost:8000/gallery:3109*
 <br>
 </br>
 **Share** 
@@ -1927,35 +1926,34 @@ http://localhost:8000/gallery:3109
 `<span class="peed-play"`
 <br>
 </br>
-http://localhost:8000/gallery:3101
+*http://localhost:8000/gallery:3101*
 <br>
 </br>
 `<span class="peed-play-ispan"`
 <br>
 </br>
-http://localhost:8000/gallery:3113
+*http://localhost:8000/gallery:3113*
 <br>
 </br>
 `<i class="icon-share peed-play-icon icon-button"`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:3109
-
+*http://localhost:8000/gallery:3109*
 <br>
 </br>
 **Home Section Titles** 
-`tr\*
+`tr`
 <br>
-`td\*
+`td`
 <br>
 </br>
 `<div class="peed-text-home"`
 <br>
 </br>
-http://localhost:8000/gallery:3047
+*http://localhost:8000/gallery:3047*
 <br>
 </br>
 **Enter your experiences / Clear** 
@@ -1967,13 +1965,13 @@ http://localhost:8000/gallery:3047
 `<span class="peed-exp-text"`
 <br>
 </br>
-http://localhost:8000/gallery:3088
+*http://localhost:8000/gallery:3088*
 <br>
 </br>
 `<span class="peed-clear-text"`
 <br>
 </br>
-http://localhost:8000/gallery:3094
+*http://localhost:8000/gallery:3094*
 <br>
 </br>
 **Play** 
@@ -1982,7 +1980,7 @@ http://localhost:8000/gallery:3094
 `<div class="peed-play-text"`
 <br>
 </br>
-http://localhost:8000/gallery:3117
+*http://localhost:8000/gallery:3117*
 <br>
 </br>
 **Share** 
@@ -1991,7 +1989,7 @@ http://localhost:8000/gallery:3117
 `<div class="peed-play-text"`
 <br>
 </br>
-http://localhost:8000/gallery:3117
+*http://localhost:8000/gallery:3117*
 <br>
 </br>
 **Center Content** 
@@ -2000,46 +1998,45 @@ http://localhost:8000/gallery:3117
 `class="peed1-outerdiv"`
 <br>
 </br>
-http://localhost:8000/gallery:3172
+*http://localhost:8000/gallery:3172*
 <br>
 </br>
-<table>
 <br>
 </br>
 **4 Columns** 
 <br>
 </br>
-`tr\*
+`tr`
 <br>
 </br>
 `<span class="peed1-span-item card-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3178
+*http://localhost:8000/gallery:3178*
 <br>
 </br>
 `<span class="peed1-span-itext"`
 <br>
 </br>
-http://localhost:8000/gallery:3195
+*http://localhost:8000/gallery:3195*
 <br>
 </br>
 `<span class="peed1-span-iicon"`
 <br>
 </br>
-http://localhost:8000/gallery:3202
+*http://localhost:8000/gallery:3202*
 <br>
 </br>
 `<i class="icon-Autistic-Person peed1-icon" id="iicon-Autistic-Person"`
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
-http://localhost:8000/gallery:3206
+*http://localhost:8000/gallery:3206*
 <br>
 </br>
-http://localhost:8000/static/css/style.css:13
+*http://localhost:8000/static/css/style.css:13*
 <br>
 </br>
 **Same structure for the five lines of four boxes**<br>
@@ -2049,19 +2046,19 @@ http://localhost:8000/static/css/style.css:13
 `<div class="peed2-outerdiv"`
 <br>
 </br>
-http://localhost:8000/gallery:3123
+*http://localhost:8000/gallery:3123*
 <br>
 </br>
 `<span class="peed2-div-item\`
 <br>
 </br>
-http://localhost:8000/gallery:3132
-<br>
+http://localhost:8000/gallery:3132*
+*<br>
 </br>
 `<span class="peed2-span-icon card-button"`
 <br>
 </br>
-http://localhost:8000/gallery:3139
+*http://localhost:8000/gallery:3139*
 <br>
 </br>
 **About Me Icon**
@@ -2070,7 +2067,7 @@ http://localhost:8000/gallery:3139
 `<i class="icon-profile peed2-icon”`
 <br>
 </br>
-http://localhost:8000/gallery:3153
+*http://localhost:8000/gallery:3153*
 <br>
 </br>
 **About Me Title**
@@ -2079,14 +2076,14 @@ http://localhost:8000/gallery:3153
 `<div class="peed2-span-text"`
 <br>
 </br>
-http://localhost:8000/gallery:3157
+*http://localhost:8000/gallery:3157*
 <br>
 </br>
 **Fixes** 
 <br>
 </br>
-1. Enter your experiences alter text colour to Mint Green 
-
+**Fix: Enter your experiences alter text colour to Mint Green** 
+<br>
 `.peed-exp-text {
     color: #008279;
     font-size: 20px;
@@ -2094,10 +2091,11 @@ http://localhost:8000/gallery:3157
 }`
 <br>
 </br>
-**alter border on input enter experience box to mint green** 
-gallery:3064
+**alter border on input enter experience box to mint green** <br>
+*http://localhost:8000/gallery:3064*
 <br>
 </br>
+**Fix:** 
 `.peed-span-ta {
     border-style: solid;
     border-radius: 7px;
@@ -2110,8 +2108,12 @@ gallery:3064
 }`
 <br>
 </br>
-gallery:3178
-
+*http://localhost:8000/gallery:3178*
+<br>
+</br>
+**Fix:** 
+<br>
+</br>
 `.peed1-span-item {
     display: flex;
     flex-direction: column;
@@ -2125,10 +2127,9 @@ gallery:3178
 }`
 <br>
 </br>
-
-altered boarder on bottom menu to mint green 
-gallery:3139
-
+**Fix:** 
+**Altered boarder on bottom menu to mint green** 
+*http://localhost:8000/gallery:3139*
 <br>
 </br>
 `.peed2-span-icon {
@@ -2140,11 +2141,10 @@ gallery:3139
 }`
 <br>
 </br>
-altered colour of cards title to mint green 
-gallery:3164
+**Fix: Altered colour of cards title to mint green**
+*http://localhost:8000/gallery:3164*
 <br>
 </br>
-
 `.peed2-span-cards {
     font-size: 27px;
     color: #008279;
@@ -2154,9 +2154,12 @@ gallery:3164
 }`
 <br>
 </br>
-altered size of icons to standard 32px
-gallery:3153
-
+**Fix: Altered size of icons to standard 32px**
+<br>
+</br>
+*http://localhost:8000/gallery:3153*
+<br>
+</br>
 `.peed2-icon {
     font-size: 32px;
 }`
