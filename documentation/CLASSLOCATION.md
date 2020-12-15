@@ -123,7 +123,6 @@ Strap Line / Secondary Banner Sub Header 2
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_spacing.scss:70*<br>
 *External cdn url: https://stackpath.bootstrapcdn.com/bootstrap/scss/mixins/_grid-framework.scss:58*
 #
-
 **Strap Line Message**
 <br>
 </br>
