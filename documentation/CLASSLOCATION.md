@@ -232,7 +232,8 @@ Aims
 `<mark>How it works</mark>`
 <br>
 </br>
-**index style**
+**ndex style*
+<br>
 `i class="icon-how_it_works"`
 <br>
 </br>
@@ -244,7 +245,9 @@ Aims
 </br>
 *http://localhost:8000/(index)269*
 #
-**(column section body content)**
+**Column Section Body Content)**
+<br>
+</br>
 `div class="hiw-body"`
 <br>
 </br>
@@ -260,10 +263,10 @@ Aims
 `<p class="card-text”>`
 <br>
 </br>
-*//localhost/inspector-stylesheet*
+*http://localhost:8000/inspector-stylesheet*
 #
-**(paragraph spacing between top introduction paragraph and list)**
-**ul and li styled bullet pointed listed green highlighted)**
+**Paragraph Spacing between top introduction paragraph and list**
+**ul and li styled bullet pointed listed green highlighted**
 **Columns 2 & 3** 
 <br>
 </br>
@@ -310,11 +313,13 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
 #
 **CTA Login & Centred Button CTA** 
 <br>
-</br
+</br>
 `div style="margin: 50px 0 0 50%;"`  
 <br>
 </br
 *element.style*
+<br>
+</br
 *<a hef href="https://www.openhumans.org/account/login/"* 
 #
 
@@ -323,7 +328,7 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:187
 </br
 `class="hm-ohlogin"`
 <br>
-</br
+</br>
 http://localhost:8000/(index)57
 #
 
@@ -344,7 +349,7 @@ http://localhost:8000/(index)57
 }`
 #
 
-**Footer** 
+**Footer**<br> 
 **Top & Bottom Footer Styling**
 <br>
 </br
@@ -354,6 +359,8 @@ http://localhost:8000/(index)57
 *External cdn: https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:36*
 #
 **Space For Top Footer**
+<br>
+</br
 `p class="footer-top pnospace"`
 <br>
 </br>
@@ -370,7 +377,11 @@ http://localhost:8000/(index)57
 *https://stackpath.bootstrapcdn.com/bootstrap/scss/utilities/_text.scss:24*
 #
 **Styling For Copyright Text**
+<br>
+</br
 `p class="copyrt"`
+<br>
+</br
 *http://localhost:8000/(index):379*<br>
 #
 
@@ -413,9 +424,6 @@ Component Showcase
 **Expanding Panel - Accordion drop down**
 <br>
 </br>
-*Page Internal, Style*
-<br>
-</br>
 `<div class="ap-navadjust-outerdiv"`
 <br>
 </br>
@@ -456,21 +464,23 @@ Component Showcase
 </br>
 *http://localhost:8000/gallery:335*
 <br>
+</br
 `<i class="fas fa-times"`
 <br>
 </br>
 *http://localhost:8000/static/css/fa/all.min.css*
 <br>
+</br
 `<class fas fa-exclamation-triangle ma_alert"`
 <br>
 </br>
 *http://localhost:8000/static/css/fa/all.min.css*
 <br>
+</br
 `<div class="ma_timeout"`
 <br>
 </br>
 *http://localhost:8000/gallery:339*
-#
 <br>
 </br>
 `<div class="ma_to_text"`
@@ -515,8 +525,11 @@ https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:358*
 <br>
 </br>
 **sliding-panel and other related classes page styles**
-\*.ap-outerdiv and others related to .ap- styles, related classes page style
-script function show_hideExpandingPanel(panelID, panel_arrow)….\* 
+
+`.ap-outerdiv and others related to .ap- styles`
+<br>
+</br>
+script function `show_hideExpandingPanel(panelID, panel_arrow)`
 #
 
 **Accessibility Panel**
@@ -527,10 +540,16 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 </br>
 *http://localhost:8000/gallery:814*
 <br>
+</br>
 `<div class="ap-langsel"`
+<br>
+</br>
 *http://localhost:8000/gallery:820*
 <br>
+</br>
 `<div class="ap-language"`
+<br>
+</br>
 *http://localhost:8000/gallery:823*
 #
 
@@ -546,10 +565,16 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 **Navigation Adjustment**
 <br>
 </br>
-`div class="ap-navadjust-outerdiv" (three section accordions)`
+**Three Section Accordions**
+`div class="ap-navadjust-outerdiv"`
+<br>
+</br>
 *http://localhost:8000/gallery:837*
 <br>
+</br>
 `<div class=“ap-div-nai”`
+<br>
+</br>
 *http://localhost:8000/gallery:894*
 #
 
@@ -563,16 +588,19 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 </br>
 *http://localhost:8000/gallery:837*
 <br>
+</br>
 `<i class="ap-arrow-right icon-expand_more" id="arrow_expandingpanel_ca" onclick="show_hideExpandingPanel('coladjust', 'arrow_expandingpanel_ca')"></i>`
 <br>
 </br>
 *http://localhost:8000/static/css/style.css*
 <br>
+</br>
 `<div class="ap-navadjust-expand" id="coladjust"`
 <br>
 </br>
 *http://localhost:8000/gallery:850*
 <br>
+</br>
 `<div class="ap-div-cc"`
 <br>
 </br>
@@ -583,13 +611,16 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 </br>
 *http://localhost:8000/gallery:936*
 <br>
+</br>
 `<div class="ap-icon-col"`
 <br>
+</br>
 `<i class="icon-opacity-24px"`
 <br>
 </br>
 *http://localhost:8000/static/css/style.css:13*
 <br>
+</br>
 `<div class="ap-cc-text"`
 <br>
 </br>
@@ -613,6 +644,7 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 </br>
 *http://localhost:8000/gallery:955*
 <br>
+</br>
 `<i class="icon-opacity-24px"`
 <br>
 </br>
@@ -650,6 +682,7 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 </br>
 *http://localhost:8000/gallery:983*
 <br>
+</br>
 `<div class="ap-tab-other"`
 <br>
 </br>
@@ -662,122 +695,218 @@ script function show_hideExpandingPanel(panelID, panel_arrow)….\*
 </br>
 *http://localhost:8000/gallery:1005*
 <br>
+</br>
 `<input type="range"`
 <br>
 </br>
-*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317 - 325*
+*https://stackpath.bootstrapcdn.com/bootstrap/scss/_reboot.scss:317-325*
 <br>
+</br>
 `script var hslSlider, var saturationSlider, var brightnessSlider`
 <br>
+</br>
 `<i class=“icon-reset-colour ap-icon-rc`
 <br>
 </br>
 *http://localhost:8000/gallery:1039*
 <br>
+</br>
 `<div class="ap-bpcpp"`
 <br>
 </br>
 *http://localhost:8000/gallery:1043*
 <br>
+</br>
 `<div ap-col-circles`
 <br>
 </br>
 *http://localhost:8000/gallery:1047*
 #
 
-**(Container for three Contrast containers)**
-\*<div class="ap-div-contrast"\*
-http://localhost:8000/gallery:1085
-
-\*<div class="ap-contrast-box"\*
-http://localhost:8000/gallery:1089
-
-\*<div class="ap-icon-contrast\*
-http://localhost:8000/gallery:1097
-
-\*<div class="ap-bottom-slider"\*
-http://localhost:8000/gallery:1101
-
-\*<div class="ap-bottom-slider-left"\*
+**Container for three Contrast containers**
+<br>
+</br>
+`<div class="ap-div-contrast"`
+<br>
+</br>
+*http://localhost:8000/gallery:1085*
+<br>
+</br>
+`<div class="ap-contrast-box"`
+<br>
+</br>
+*http://localhost:8000/gallery:1089*
+<br>
+</br>
+`<div class="ap-icon-contrast`
+<br>
+</br>
+*http://localhost:8000/gallery:1097*
+<br>
+`</br>
+<div class="ap-bottom-slider"`
+<br>
+</br>
+*http://localhost:8000/gallery:1101*
+<br>
+</br>
+`<div class="ap-bottom-slider-left"`
+<br>
+</br>
 http://localhost:8000/gallery:1115
-
-\*<i class="icon-add_circle-24px\*
-http://localhost:8000/static/css/style.css:13
-
+<br>
+</br>
+`<i class="icon-add_circle-24px`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+</br>
 **(- & + Contrast Slider)**
-\*script var Slider
-
+`script var Slider`
+<br>
+</br>
+#
 **(Content Adjustment)** 
 **accessibilitypanel.html** 
-\*with PanelID="accessibilitypannel" Direction="left"\*
-
-\*<div class="ap-navadjust-outerdiv"\*
-http://localhost:8000/gallery:837
-
-\*<div class="ap-fs-box"\*
-http://localhost:8000/gallery:1283
-
-\*<i class="icon-font-sizing"\*
-http://localhost:8000/static/css/style.css:13
-
-\*<div class="ap-flw-outerdiv"\*
-http://localhost:8000/gallery:1295
-
-\*<div class="ap-fs-button"\*
-http://localhost:8000/gallery:1300
-
-\*<div class="ap-lws-button"\*
-http://localhost:8000/gallery:1311
-
-\*<div class="ap-icon-lum"\*
-http://localhost:8000/gallery:1320
-
-\*<i class="icon-luminance"\*
-http://localhost:8000/static/css/style.css:13
-
-
+`PanelID="accessibilitypannel" Direction="left"`
+<br>
+</br>
+`<div class="ap-navadjust-outerdiv"`
+<br>
+</br>
+*http://localhost:8000/gallery:837*
+<br>
+</br>
+`div class="ap-fs-box"`
+<br>
+</br>
+*http://localhost:8000/gallery:1283*
+<br>
+</br>
+`<i class="icon-font-sizing"`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+</br>
+`<div class="ap-flw-outerdiv"`
+<br>
+</br>
+*http://localhost:8000/gallery:1295*
+<br>
+</br>
+`<div class="ap-fs-button"`
+<br>
+</br>
+*http://localhost:8000/gallery:1300*
+<br>
+</br>
+`<div class="ap-lws-button"`
+<br>
+</br>
+*http://localhost:8000/gallery:1311*
+<br>
+</br>
+`<div class="ap-icon-lum"`
+<br>
+</br>
+*http://localhost:8000/gallery:1320*
+<br>
+</br>
+`<i class="icon-luminance"`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+</br>
 **(3 High Contrasts 1&2 / Low Luminance Text)**
-\*<div class ap-lum-outerdiv\*
-http://localhost:8000/gallery:1323
-
-\*<div class="ap-hcl"\*
-http://localhost:8000/gallery:1328
-
-\*<div class="ap-hc3-desc"\*
-http://localhost:8000/gallery:1345
-
-\*<div class="ap-hcl-title"\*
-http://localhost:8000/gallery:1354
-
-\*<i class="ap-arrow-right icon-expand_more"\*
-http://localhost:8000/static/css/style.css:13
-
-\*<div class="ap-navadjust-expand"\*
-http://localhost:8000/gallery:850
-
-\*<div class="ap-hcl"\*
-http://localhost:8000/gallery:1328
-
-\*<div class="ap-hc4-desc"\*
-http://localhost:8000/gallery:1350
-
+<br>
+</br>
+`<div class ap-lum-outerdiv`
+<br>
+</br>
+*http://localhost:8000/gallery:1323*
+<br>
+</br>
+`<div class="ap-hcl"\*
+<br>
+</br>
+*http://localhost:8000/gallery:1328*
+<br>
+</br>
+`<div class="ap-hc3-desc"`
+<br>
+</br>
+*http://localhost:8000/gallery:1345*
+<br>
+</br>
+`<div class="ap-hcl-title"`
+<br>
+</br>
+*http://localhost:8000/gallery:1354*
+<br>
+</br>
+`<i class="ap-arrow-right icon-expand_more"`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+</br>
+`<div class="ap-navadjust-expand"`
+<br>
+</br>
+*http://localhost:8000/gallery:850*
+<br>
+</br>
+`<div class="ap-hcl"`
+<br>
+</br>
+*http://localhost:8000/gallery:1328*
+<br>
+</br>
+`<div class="ap-hc4-desc"`
+<br>
+</br>
+*http://localhost:8000/gallery:1350*
+<br>
+</br>
 **(Low Luminance 2)**
-\*<div class="ap-hcl-title"\*
-http://localhost:8000/gallery:1354
-
+<br>
+</br>
+`<div class="ap-hcl-title"`
+<br>
+</br>
+*http://localhost:8000/gallery:1354*
+<br>
+</br>
 **(Magnifier)**
-\*<div class="ap-mag-box"\*
-http://localhost:8000/gallery:1363
-
+<br>
+</br>
+`<div class="ap-mag-box"`
+<br>
+</br>
+*http://localhost:8000/gallery:1363*
+<br>
+</br>
 **(Close Function)**
-\*<i class="icon-close sp-icon-close"\*
-\*onclick="citizenSciencePlatform_slidingpanelfunctions.ClosePanel('accessibilitypannel')"
-http://localhost:8000/static/css/style.css:13
-http://localhost:8000/gallery:808
+<br>
+</br>
+`<i class="icon-close sp-icon-close"`
+<br>
+</br>
+`onclick="citizenSciencePlatform_slidingpanelfunctions.ClosePanel('accessibilitypannel')`
+<br>
+</br>
+*http://localhost:8000/static/css/style.css:13*
+<br>
+</br>
+*http://localhost:8000/gallery:808*
+<br>
+</br>
 
 **Navigation Components**
-Header as inserted home page 
-Navigation as inserted home page 
+Header as inserted home page -  Navigation as inserted home page 
 Footer Top & Bottom as inserted home page 
 Newsletter Cards as inserted home page and newsletterCards.html
 
